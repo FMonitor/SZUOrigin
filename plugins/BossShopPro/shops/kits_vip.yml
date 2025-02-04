@@ -1,0 +1,756 @@
+ShopName: kits_vip
+DisplayName: "§f" 
+InventorySize: 54
+Command: show kits vip:show kit vip
+shop: 
+  kit_member_1:
+    MenuItem:
+    - "name:&f &l成员 礼包"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63作为一个 #5c5e63SMP 的 &7成员，'
+    - 'lore3:&f #5c5e63领取礼包'
+    - 'lore4:&f #5c5e63开始新的任务'
+    - 'lore5:&f #5c5e63迎接新的挑战。'
+    - 'lore6:&f '
+    RewardType: COMMAND
+    Reward: 'shop open kits_member %player%'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 1
+  kit_member_2:
+    MenuItem:
+    - "name:&f &l成员 礼包"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63作为一个 #5c5e63SMP 的 &7成员，'
+    - 'lore3:&f #5c5e63领取礼包'
+    - 'lore4:&f #5c5e63开始新的任务'
+    - 'lore5:&f #5c5e63迎接新的挑战。'
+    - 'lore6:&f '
+    RewardType: COMMAND
+    Reward: 'shop open kits_member %player%'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 2
+  kit_member_3:
+    MenuItem:
+    - "name:&f &l成员 礼包"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63作为一个 #5c5e63SMP 的 &7普通成员，'
+    - 'lore3:&f #5c5e63领取礼包'
+    - 'lore4:&f #5c5e63开始新的任务'
+    - 'lore5:&f #5c5e63迎接新的挑战。'
+    - 'lore6:&f '
+    RewardType: COMMAND
+    Reward: 'shop open kits_member %player%'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 3
+
+
+
+  kit_vip_1:
+    MenuItem:
+    - "name:&f &e&lVIP 礼包"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63作为一个 #5c5e63SMP 的 &7VIP成员，'
+    - 'lore3:&f #5c5e63领取礼包'
+    - 'lore4:&f #5c5e63开始新的任务'
+    - 'lore5:&f #5c5e63迎接新的挑战。'
+    - 'lore6:&f '
+    RewardType: COMMAND
+    Reward: 'shop open kits_vip %player%'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 10
+  kit_vip_2:
+    MenuItem:
+    - "name:&f &e&lVIP 礼包"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63作为一个 #5c5e63SMP 的 &7VIP成员，'
+    - 'lore3:&f #5c5e63领取礼包'
+    - 'lore4:&f #5c5e63开始新的任务'
+    - 'lore5:&f #5c5e63迎接新的挑战。'
+    - 'lore6:&f '
+    RewardType: COMMAND
+    Reward: 'shop open kits_vip %player%'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 11
+  kit_vip_3:
+    MenuItem:
+    - "name:&f &e&lVIP 礼包"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63作为一个 #5c5e63SMP 的 &7VIP成员，'
+    - 'lore3:&f #5c5e63领取礼包'
+    - 'lore4:&f #5c5e63开始新的任务'
+    - 'lore5:&f #5c5e63迎接新的挑战。'
+    - 'lore6:&f '
+    RewardType: COMMAND
+    Reward: 'shop open kits_vip %player%'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 12
+  kit_vip_4:
+    MenuItem:
+    - "name:&f &e&lVIP 礼包"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63作为一个 #5c5e63SMP 的 &7VIP成员，'
+    - 'lore3:&f #5c5e63领取礼包'
+    - 'lore4:&f #5c5e63开始新的任务'
+    - 'lore5:&f #5c5e63迎接新的挑战。'
+    - 'lore6:&f '
+    RewardType: COMMAND
+    Reward: 'shop open kits_vip %player%'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 13
+  kit_vip_5:
+    MenuItem:
+    - "name:&f &e&lVIP 礼包"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63作为一个 #5c5e63SMP 的 &7VIP成员，'
+    - 'lore3:&f #5c5e63领取礼包'
+    - 'lore4:&f #5c5e63开始新的任务'
+    - 'lore5:&f #5c5e63迎接新的挑战。'
+    - 'lore6:&f '
+    RewardType: COMMAND
+    Reward: 'shop open kits_vip %player%'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 19
+  kit_vip_6:
+    MenuItem:
+    - "name:&f &e&lVIP 礼包"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63作为一个 #5c5e63SMP 的 &7VIP成员，'
+    - 'lore3:&f #5c5e63领取礼包'
+    - 'lore4:&f #5c5e63开始新的任务'
+    - 'lore5:&f #5c5e63迎接新的挑战。'
+    - 'lore6:&f '
+    RewardType: COMMAND
+    Reward: 'shop open kits_vip %player%'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 20
+  kit_vip_7:
+    MenuItem:
+    - "name:&f &e&lVIP 礼包"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63作为一个 #5c5e63SMP 的 &7VIP成员，'
+    - 'lore3:&f #5c5e63领取礼包'
+    - 'lore4:&f #5c5e63开始新的任务'
+    - 'lore5:&f #5c5e63迎接新的挑战。'
+    - 'lore6:&f '
+    RewardType: COMMAND
+    Reward: 'shop open kits_vip %player%'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 21
+  kit_vip_8:
+    MenuItem:
+    - "name:&f &e&lVIP 礼包"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63作为一个 #5c5e63SMP 的 &7VIP成员，'
+    - 'lore3:&f #5c5e63领取礼包'
+    - 'lore4:&f #5c5e63开始新的任务'
+    - 'lore5:&f #5c5e63迎接新的挑战。'
+    - 'lore6:&f '
+    RewardType: COMMAND
+    Reward: 'shop open kits_vip %player%'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 22
+
+
+  kit_mvp_1:
+    MenuItem:
+    - "name:&f &b&lᴍᴠᴘ 礼包"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63作为一个 #5c5e63SMP 的 &7MVP成员'
+    - 'lore3:&f #5c5e63领取礼包'
+    - 'lore4:&f #5c5e63开始新的任务'
+    - 'lore5:&f #5c5e63迎接新的挑战。'
+    - 'lore6:&f '
+    RewardType: COMMAND
+    Reward: 'shop open kits_mvp %player%'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 28
+  kit_mvp_2:
+    MenuItem:
+    - "name:&f &b&lᴍᴠᴘ 礼包"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63作为一个 #5c5e63SMP 的 &7MVP成员'
+    - 'lore3:&f #5c5e63领取礼包'
+    - 'lore4:&f #5c5e63开始新的任务'
+    - 'lore5:&f #5c5e63迎接新的挑战。'
+    - 'lore6:&f '
+    RewardType: COMMAND
+    Reward: 'shop open kits_mvp %player%'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 29
+  kit_mvp_3:
+    MenuItem:
+    - "name:&f &b&lᴍᴠᴘ 礼包"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63作为一个 #5c5e63SMP 的 &7MVP成员'
+    - 'lore3:&f #5c5e63领取礼包'
+    - 'lore4:&f #5c5e63开始新的任务'
+    - 'lore5:&f #5c5e63迎接新的挑战。'
+    - 'lore6:&f '
+    RewardType: COMMAND
+    Reward: 'shop open kits_mvp %player%'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 30
+
+
+
+  kit_elite_1:
+    MenuItem:
+    - "name:&f #d427f2&l精英 礼包"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63作为一个 #5c5e63SMP 的 &7精英'
+    - 'lore3:&f #5c5e63领取礼包'
+    - 'lore4:&f #5c5e63开始新的任务'
+    - 'lore5:&f #5c5e63迎接新的挑战。'
+    - 'lore6:&f '
+    RewardType: COMMAND
+    Reward: 'shop open kits_elite %player%'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 37
+  kit_elite_2:
+    MenuItem:
+    - "name:&f #d427f2&l精英 礼包"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63作为一个 #5c5e63SMP 的 &7精英'
+    - 'lore3:&f #5c5e63领取礼包'
+    - 'lore4:&f #5c5e63开始新的任务'
+    - 'lore5:&f #5c5e63迎接新的挑战。'
+    - 'lore6:&f '
+    RewardType: COMMAND
+    Reward: 'shop open kits_elite %player%'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 38
+  kit_elite_3:
+    MenuItem:
+    - "name:&f #d427f2&l精英 礼包"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63作为一个 #5c5e63SMP 的 &7精英'
+    - 'lore3:&f #5c5e63领取礼包'
+    - 'lore4:&f #5c5e63开始新的任务'
+    - 'lore5:&f #5c5e63迎接新的挑战。'
+    - 'lore6:&f '
+    RewardType: COMMAND
+    Reward: 'shop open kits_elite %player%'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 39
+
+
+
+
+
+    
+  kit_elite_claim1:
+    MenuItem:
+    - "name:#1BD318&l可获得" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:#5c5e63此套装可领取。'
+    - 'lore2:#5c5e63 '
+    - 'lore3:#5c5e63点击领取此套装。'
+    RewardType: PLAYERCOMMAND
+    Reward: 'kit elite'
+    PriceType: ''
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 49
+    Condition:
+    - type:placeholdermatch
+    - "%essentials_kit_is_available_elite%:match:yes"
+    - type:permission 
+    - "match:essentials.kits.elite" 
+
+  kit_elite_claim2:
+    MenuItem:
+    - "name:#1BD318&l可获得" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:#5c5e63此套装可领取。'
+    - 'lore2:#5c5e63 '
+    - 'lore3:#5c5e63点击领取此套装。'
+    RewardType: PLAYERCOMMAND
+    Reward: 'kit elite'
+    PriceType: ''
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 50
+    Condition:
+    - type:placeholdermatch
+    - "%essentials_kit_is_available_elite%:match:yes"
+    - type:permission 
+    - "match:essentials.kits.elite" 
+
+  kit_elite_claim3:
+    MenuItem:
+    - "name:#1BD318&l可获得" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:#5c5e63此套装可领取。'
+    - 'lore2:#5c5e63 '
+    - 'lore3:#5c5e63点击领取此套装。'
+    RewardType: PLAYERCOMMAND
+    Reward: 'kit elite'
+    PriceType: ''
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 51
+    Condition:
+    - type:placeholdermatch
+    - "%essentials_kit_is_available_elite%:match:yes"
+    - type:permission 
+    - "match:essentials.kits.elite" 
+
+
+
+
+
+
+  kit_elite_cooldown1:
+    MenuItem:
+    - "name:#FF5733&l冷却中" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:#5c5e63此套装'
+    - 'lore2:#5c5e63暂&4不可用'
+    - 'lore3:#5c5e63请稍后再试'
+    - 'lore5:&8• &b状态： &7冷却中'
+    - 'lore6:&8• &b冷却时间： &7%essentials_kit_time_until_available_elite%'
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 49
+    Condition:
+    - type:placeholdermatch
+    - "%essentials_kit_is_available_elite%:match:no"
+    - type:permission 
+    - "match:essentials.kits.elite" 
+
+
+  kit_elite_cooldown2:
+    MenuItem:
+    - "name:#FF5733&l冷却中" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:#5c5e63此套装'
+    - 'lore2:#5c5e63暂&4不可用'
+    - 'lore3:#5c5e63请稍后再试'
+    - 'lore5:&8• &b状态： &7冷却中'
+    - 'lore6:&8• &b冷却时间： &7%essentials_kit_time_until_available_elite%'
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 50
+    Condition:
+    - type:placeholdermatch
+    - "%essentials_kit_is_available_elite%:match:no"
+    - type:permission 
+    - "match:essentials.kits.elite" 
+
+
+
+  kit_elite_cooldown3:
+    MenuItem:
+    - "name:#FF5733&l冷却中" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:#5c5e63此套装'
+    - 'lore2:#5c5e63暂&4不可用'
+    - 'lore3:#5c5e63请稍后再试'
+    - 'lore5:&8• &b状态： &7冷却中'
+    - 'lore6:&8• &b冷却时间： &7%essentials_kit_time_until_available_elite%'
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 51
+    Condition:
+    - type:placeholdermatch
+    - "%essentials_kit_is_available_elite%:match:no"
+    - type:permission 
+    - "match:essentials.kits.elite" 
+
+
+
+
+  kit_elite_locked1:
+    MenuItem:
+    - "name:#FF5733&l装备套装已锁定" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:#5c5e63此装备套装&4不可用。'
+    - 'lore2: '
+    - 'lore3:#5c5e63您可以通过升级'
+    - 'lore4:#5c5e63或在服务器商店购买'
+    - 'lore5:#5c5e63获得此套件。'
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 49
+
+  kit_elite_locked2:
+    MenuItem:
+    - "name:#FF5733&l装备套装已锁定" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:#5c5e63此装备套装&4不可用。'
+    - 'lore2: '
+    - 'lore3:#5c5e63您可以通过升级'
+    - 'lore4:#5c5e63或在服务器商店购买'
+    - 'lore5:#5c5e63获得此套件。'
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 50
+
+  kit_elite_locked3:
+    MenuItem:
+    - "name:#FF5733&l装备已锁定" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:#5c5e63此装备套装&4不可用。'
+    - 'lore2: '
+    - 'lore3:#5c5e63您可以通过升级'
+    - 'lore4:#5c5e63或在服务器商店购买'
+    - 'lore5:#5c5e63获得此套件。'
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 51
+
+
+
+
+
+
+
+
+  stone_sword:
+    MenuItem:
+    - "name:#fbac13I#fbb214r#fbb915o#fcbf15n#fcc616_#fccc17s#fcd318w#fdd918o#fde019r#fde61ad" 
+    - type:IRON_SWORD 
+    - amount:1 
+    - enchantment:FIRE_ASPECT#1
+    - enchantment:SHARPNESS#4
+    - enchantment:SWEEPING#2
+    - enchantment:UNBREAKING#3
+    RewardType: 'NOTHING'
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 6
+
+  shield:
+    MenuItem:
+    - "name:#fbac13S#fbb814h#fcc316i#fccf17e#fdda19l#fde61ad" 
+    - type:SHIELD 
+    - amount:1 
+    - enchantment:UNBREAKING#3
+    RewardType: 'NOTHING'
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 8
+
+  diamond_helmet:
+    MenuItem:
+    - "name:#fbac13D#fbb014i#fbb514a#fbb915m#fcbe15o#fcc216n#fcc716d#fccb17_#fcd017H#fcd418e#fdd918l#fddd19m#fde219e#fde61at" 
+    - type:DIAMOND_HELMET 
+    - amount:1 
+    - enchantment:PROTECTION#4
+    - enchantment:AQUA_AFFINITY#1
+    - enchantment:UNBREAKING#3
+    RewardType: 'NOTHING'
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 7
+
+  crossbow:
+    MenuItem:
+    - "name:#fbac13C#fbb414r#fcbd15o#fcc516s#fccd17s#fcd518B#fdde19o#fde61aw" 
+    - type:CROSSBOW 
+    - amount:1 
+    - enchantment:MULTISHOT#1
+    - enchantment:PIERCING#2
+    - enchantment:QUICK_CHARGE#2
+    - enchantment:UNBREAKING#3
+    RewardType: 'NOTHING'
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 15
+
+  diamond_chestplate:
+    MenuItem:
+    - "name:#fbac13D#fbaf13i#fbb314a#fbb614m#fbba15o#fcbd15n#fcc015d#fcc416_#fcc716C#fccb17h#fcce17e#fcd218s#fcd518t#fdd818p#fddc19l#fddf19a#fde31at#fde61ae" 
+    - type:DIAMOND_CHESTPLATE
+    - amount:1 
+    - enchantment:PROTECTION#4
+    - enchantment:UNBREAKING#3
+    RewardType: 'NOTHING'
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 16
+
+  diamonmd_axe:
+    MenuItem:
+    - "name:#fbac13D#fbb214i#fbb814a#fcbd15m#fcc316o#fcc917n#fccf17d#fcd518_#fdda19A#fde019x#fde61ae" 
+    - type:DIAMOND_AXE 
+    - amount:1 
+    - enchantment:EFFICIENCY#4
+    - enchantment:UNBREAKING#3
+    RewardType: 'NOTHING'
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 17
+
+
+
+
+  diamond_pickaxe:
+    MenuItem:
+    - "name:#fbac13D#fbb014i#fbb414a#fbb815m#fcbd15o#fcc116n#fcc516d#fcc917_#fccd17p#fcd118i#fcd518c#fdda19k#fdde19a#fde21ax#fde61ae" 
+    - type:DIAMOND_PICKAXE 
+    - amount:1 
+    - enchantment:EFFICIENCY#4
+    - enchantment:UNBREAKING#3
+    - enchantment:SILK_TOUCH#1
+    RewardType: 'NOTHING'
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 24
+    
+  diamond_leggings:
+    MenuItem:
+    - "name:#fbac13D#fbaf13i#fbb314a#fbb614m#fbba15o#fcbd15n#fcc015d#fcc416_#fccb17L#fccf17e#fcd318g#fcd718g#fdda19i#fdde19&#fde21ag#fde61as" 
+    - type:DIAMOND_LEGGINGS
+    - amount:1 
+    - enchantment:PROTECTION#4
+    - enchantment:UNBREAKING#3
+    RewardType: 'NOTHING'
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 25
+
+  diamond_shovel:
+    MenuItem:
+    - "name:#fbac13D#fbb014i#fbb414a#fbb815m#fcbd15o#fcc116n#fcc516d#fcc917_#fcd017S#fcd418h#fdd918o#fddd19v#fde219e#fde61al" 
+    - type:DIAMOND_SHOVEL
+    - amount:1 
+    - enchantment:EFFICIENCY#4
+    - enchantment:UNBREAKING#3
+    RewardType: 'NOTHING'
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 26
+
+
+  experience_bottle:
+    MenuItem:
+    - "name:&7Experience Bottle" 
+    - type:EXPERIENCE_BOTTLE
+    - amount:32
+    RewardType: 'NOTHING'
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 33
+
+
+  diamond_boots:
+    MenuItem:
+    - "name:#fbac13D#fbaf13i#fbb314a#fbb614m#fbba15o#fcbd15n#fcc015d#fcc416_#fccb17L#fccf17e#fcd318g#fcd718g#fdda19i#fdde19&#fde21ag#fde61as" 
+    - type:DIAMOND_BOOTS
+    - amount:1 
+    - enchantment:PROTECTION#4
+    - enchantment:UNBREAKING#3
+    - enchantment:DEPTH_STRIDER#2
+    - enchantment:FEATHER_FALLING#2
+    RewardType: 'NOTHING'
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 34
+
+
+  cooked_cod:
+    MenuItem:
+    - "name:&7Cooked Cod" 
+    - type:COOKED_COD
+    - amount:16
+    RewardType: 'NOTHING'
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 35
+
+
+  golden_apple:
+    MenuItem:
+    - "name:&7Golden Apple" 
+    - type:GOLDEN_APPLE
+    - amount:3
+    RewardType: 'NOTHING'
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 5
+
+  golden_ingot:
+    MenuItem:
+    - "name:&7Gold Ingot" 
+    - type:GOLD_INGOT
+    - amount:16
+    RewardType: 'NOTHING'
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 9
+
+  cobblestone:
+    MenuItem:
+    - "name:&7Cobblestone" 
+    - type:COBBLESTONE
+    - amount:64
+    RewardType: 'NOTHING'
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 14
+
+  oak_log:
+    MenuItem:
+    - "name:&7Oak logs" 
+    - type:OAK_LOG
+    - amount:32
+    RewardType: 'NOTHING'
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 18
+
+

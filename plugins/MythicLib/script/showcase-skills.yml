@@ -1,0 +1,34 @@
+
+# Some magical staff attack
+staff_attack:
+    public: true
+    mechanics:
+        raycast:
+            type: raytrace
+            hit_entity: staff_attack_hit_entity
+            tick: staff_attack_tick
+            size: 1
+
+staff_attack_hit_entity:
+    conditions:
+        cantarget:
+            type: can_target
+    mechanics:
+        dealdamage:
+            type: damage
+            amount: 10
+            ignore_immunity: true
+        showparticles:
+            type: particle
+            particle: LAVA
+            amount: 32
+
+staff_attack_tick:
+    mechanics:
+        showparticles:
+            type: particle
+            particle: REDSTONE
+            amount: 4
+            x: .5
+            y: .5
+            z: .5

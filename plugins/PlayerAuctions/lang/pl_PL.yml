@@ -1,0 +1,164 @@
+# PlayerAuctions by Olzie-12
+# https://www.spigotmc.org/resources/83073
+# We also have a discord server for help: https://olziedev.com/discord or check docs https://docs.olziedev.com/projects/playerauctions
+# Also if you find any bugs be happy to report them I will fix them :)
+# Made with love
+# Przetłumaczone przez Ciry05 aka KupSeMarchewe
+
+# Jeśli nie chcesz aby jakaś wiadomość się wyświetlała usuń jej treść. Poprzez
+# pozostawienie: "" <- Nie będzie już wysyłać wiadomości.
+
+
+# Każda wiadomość w tym pluginie jest zawarta tutaj.
+# Upewnij się że używasz "" na końcu każdej linijki
+# Możesz używać kolorów <3
+
+# aby używać kolorów kodowanych systemie HEX użyj
+# '{#HEX} text"
+
+lang:
+  cancel-chat-wait: "anuluj"
+  chat-wait-cancelled: "&cCancelled your request!"
+  friendly-max-auctions: "Bez limitu"
+  prefix: "&b&lDA &7»"
+  auction-confirmation: "ꑛ &aWystawienie przedmiotu na aukcji będzie cię kosztować &e%price%&a, użyj komendy jeszcze raz aby potwierdzić."
+  auction-sell: "ꑛ &aWystawiono &e%item%&a za &f;%price%&a na sprzedaż!"
+  auction-added: "ꑛ &aDodałeś &e%amount%&a przedmiotów do swojej aukcji, całkowita cena wynosi teraz &e%price%&a, tj. &e$%priceper%&a za sztukę."
+  auction-bid: "ꑛ &aPodbiłeś cenę do &e%price%&a!"
+  reloaded: "ꑛ &aPomyślnie przeładowano konfigurację!"
+  reloading: "%prefix% &aReloading the configuration..."
+  money-taken: "ꑛ &a%price% zostało ściągnietych z twojego konta."
+  auctions-cancelled: "ꑛ &aTwoje aukcje zostały anulowane!"
+  auctions-collected: "ꑛ &aOdebrałeś przedmioty: &e%items%&a które się przedawniły!"
+  bought-item: "ꑛ &aZakupiłeś &e%item%&a za &e%price%&a!"
+  someone-purchased: "&fꑛ &e%player%&a właśnie zakupił &e%item% x%amount%&a za &f;%price%&a!"
+  offline-title: "%prefix% &bKiedy byłeś offline..."
+  bidder: "%prefix% &e%player%&a właśnie zaproponował ofertę za &e%item%&a w wysokości &e%price%"
+  bidded: "ꑛ &aPodbiłeś cenę &e%item%&a o &e%price%"
+  bid-success: "%prefix% &e%player%&a wygrał aukcje o &e%item%&a za &e%price%"
+  bidder-success: "ꑛ &aWygrałeś aukcje &e%item%&a za &e%price%&a Sprawdź przedmioty przedawnione."
+  earned-offline: "ꑛ &aGdy byłeś offline, zarobiłeś &e$%total%&a!"
+  given-more-auctions-success: "ꑛ &aDodano graczowi &e%player%&a dodatkowe &e%extra%&a aukcji, teraz ma: &e%total%&a!"
+  dbexec-successful: "ꑛ &Pomyślnie zaktualizowano &d%count%&a wierszy. &aUżyj komedny &d/%cmd% reload&a aby zaktualizować zmiany."
+  current-amount-of-auctions:
+  - "%prefix% &7&l&m----------&7&l[ &e&lPlayerAuctions &7&l]&m----------"
+  - "%prefix% &bTwój limit wynosi &e%auctionsmax%&b (&e%staticauctions% static&b) miejsc aukcyjnych."
+  - "%prefix% &bObecnie używasz &e%auctionsused%&b miejsc aukcyjnych."
+  - "%prefix% &7&l&m----------&7&l[ &e&lPlayerAuctions &7&l]&m----------"
+  current-amount-of-auctions-other:
+  - "%prefix% &7&l&m----------&7&l[ &e&lPlayerAuctions &7&l]&m----------"
+  - "%prefix% &d%player%&b jego limit wynosi &e%auctionsmax%&b (&e%staticauctions% static&b) miejsc aukcyjnych."
+  - "%prefix% &d%player%&b aktualnie używa &e%auctionsused%&b miejsc aukcyjnych."
+  - "%prefix% &7&l&m----------&7&l[ &e&lPlayerAuctions &7&l]&m----------"
+  amount-auctions-others-alert: "&c%player% jest obecnie w trybie offline, widzisz tylko maksymalną jego liczbę miejsc aukcyjnych."
+  successfully-blacklisted-player: "%prefix% &aSuccessfully blacklisted %player% from purchasing your auctions!"
+  successfully-unblacklisted-player: "%prefix% &aSuccessfully removed %player% from the blacklist"
+  blacklist-list:
+  - "&7&m----------------------------------------"
+  - "&b&lBlacklisted Players"
+  - "%blacklisted%"
+  - "&7&m----------------------------------------"
+  blacklist-entry: "&b%position%. &e%name%"
+  items-added-to-backpack: "%prefix% &e%amount%&a items have been added to your backpack (you have &e%total%&a in your backpack). Execute &e/ah open backpack&a to view it."
+  
+  # menu pomocy dla gracza
+  # %cmd% to ustalone komendy w config.yml :)
+  help-player:
+  - "%prefix% &7&l&m----------&7&l[ &e&lPlayerAuctions &7&l]&m----------"
+  - "%prefix% &e/%cmd% help &7&l- &bWyświetla to menu."
+  - "%prefix% &e/%cmd% sell <price> [currency] [amount] &7&l- &bWystaw przedmiot trzymany w ręce na sprzedaż."
+  - "%prefix% &e/%cmd% bid <price> &7&l- &bWystaw przedmiot trzymany w ręce na licytację."
+  - "%prefix% &e/%cmd% auction &7&l- &bWystaw przedmiot trzymany w ręce używając panelu GUI."
+  - "%prefix% &e/%cmd% cancel [id] [player] &7&l- &bAnuluj aukcje gracza."
+  - "%prefix% &e/%cmd% collect &7&l- &bZbierz anulowane oferty."
+  - "%prefix% &e/%cmd% open [menu] [options] &7&l- &bOtwiera panel aukcyjny."
+  - "%prefix% &e/%cmd% amount &7&l- &bSprawdź ile miejsc aukcyjnych posiadasz."
+  - "%prefix% &e/%cmd% reload &7&l- &bPrzeładuj pliki konfiguracyjne."
+  - "%prefix% &7&l&m----------&7&l[ &e&lPlayerAuctions &7&l]&m----------"
+
+  # menu pomocy dla konsoli
+  # %cmd% to ustalone komendy w config.yml :)
+  help-console:
+  - "%prefix% &7&l&m----------&7&l[ &e&lPlayerAuctions &7&l]&m----------"
+  - "%prefix% &e/%cmd% help &7&l- &bOtwiera to menu."
+  - "%prefix% &e/%cmd% open [menu] [options] &7&l- &bOtwiera panel aukcyjny."
+  - "%prefix% &e/%cmd% reload &7&l- &bPrzeładuj pliki konfiguracyjne."
+  - "%prefix% &e/%cmd% dbexec <query> &7&l- &bWykonaj zapytanie."
+  - "%prefix% &7&l&m----------&7&l[ &e&lPlayerAuctions &7&l]&m----------"
+
+  # Wiadomości wysyłane podczas błędów.
+  errors:
+    command-syntax: "ꑚ&c Niepoprawnie użyłeś komendy, użyj:\n%syntax%"
+    player-only: "ꑚ&c Musisz być graczem!"
+    console-only: "ꑚ&c Tej komendy można użyć tylko z konsoli!"
+    not-a-number: "ꑚ&c To nie jest liczba!"
+    no-permission: "ꑚ&c Nie masz dostępu do tej komendy!"
+    auction-dont-exist: "ꑚ&c Ta aukcja nieistnieje!"
+    too-many-auctions: "ꑚ&c Nie możesz wystawić tylu aukcji, maksymalnie możesz mieć ich: &4%amount%&c!"
+    money-not-enough-sell: "ꑚ&c Nie masz wystarczająco środków aby sprzedać ten przedmiot!"
+    money-not-enough-buy: "ꑚ&c Nie masz wystarczająco środków aby kupić ten przedmiot!"
+    money-not-enough-bid: "ꑚ&c Nie masz wystarczająco środków aby przebić licytacje!"
+    disabled-world-sell: "ꑚ&c Nie możesz używać Domu Aukcyjnego na tym świecie!"
+    invalid-item: "ꑚ&c Tego przedmiotu nie możesz sprzedać!"
+    damaged-item: "%prefix%&c Nie możesz sprzedać zużytego przedmiotu!"
+    invalid-gamemode: "ꑚ&c Zmień tryb gry na survival!"
+    invalid-category: "ꑚ&c Użyj poprawnej kategorii"
+    min-price: "ꑚ&c Kwota minimalna za jaką możesz wystawić ten przedmiot to %min%!"
+    max-price: "ꑚ&c Kwota maksymalna za jaką możesz wystawić ten przedmiot to %max%!"
+    no-auctions: "ꑚ&c Aktualnie nie masz żadnych aukcji!"
+    no-expired-auctions: "ꑚ&c Aktualnie nie masz przedawnionych przedmiotów!"
+    purchase-own: "ꑚ&c Nie możesz kupić własnego przedmiotu!"
+    bid-own: "ꑚ&c Nie możesz przebijać na własnej licytacji!"
+    sell-cooldown: "ꑚ&c Musisz poczekać aby znowu móc wystawić przedmiot na sprzedaż! (%cooldown% left)"
+    bid-cooldown: "ꑚ&c Musisz poczekać aby znowu móc wystawić przedmiot na licytację! (%cooldown% left)"
+    offer-cooldown: "ꑚ&c Musisz poczekać aż znów będziesz mógł licytować! (%cooldown% left)"
+    purchase-cooldown: "ꑚ&c Musisz poczekać aż znów będziesz mógł kupić jakiś przedmiot! (%cooldown% left)"
+    no-player-joined: "ꑚ&c Taki gracz nie istnieje!"
+    bidder-no-money: "ꑚ&c %player% nie miał wystarczających środków aby kupić &e%item%, jego oferta została usunięta."
+    bid-no-money: "ꑚ&c Nie masz wystarczająco środków aby kupić &e%item%, twoja oferta została usunięta."
+    min-bid: "ꑚ&c Nie możesz zaoferować mniejszej kwoty!"
+    gui-cooldown: "ꑚ&c Musisz zaczekać aby znów móc tego używać."
+    not-enough-add-bid: "ꑚ&c Nie masz wystarczających środków!"
+    cancel-bid: "ꑚ&c Nie możesz anulować licytacji gdy ktoś złożył ofertę!"
+    auction-doesnt-exist: "%prefix% &cThat auction doesn't exist anymore!"
+    dbexec-failed: "ꑚ&c Wystąpił błąd. %error%"
+    sign-editor-out-of-bounds: "%prefix% &cUnfortunately you cannot use the sign editor here (out of world bounds)!"
+    already-blacklisted-player: "%prefix% &cYou have already blacklisted this player!"
+    not-blacklisted-player: "%prefix% &cYou haven't blacklisted this player!"
+    player-blacklisted: "%prefix% &cYou cannot purchase this auction due to the sellers' settings!"
+    page-not-found: "%prefix% &cPage not found!"
+    no-blacklisted-players: "%prefix% &cYou've not got anyone blacklisted!"
+    inventory-is-full: "%prefix% &cYour inventory is full! Please make some space before collecting your items."
+
+  restapi:
+    help:
+    - "%prefix% &7&l&m----------&7&l[ &b&lPlayer Auctions &7&l]&m----------"
+    - "%prefix% &e/%cmd% apikeys &7&l- &bDisplays this menu."
+    - "%prefix% &e/%cmd% apikeys generate &7&l- &bGenerates a new API key."
+    - "%prefix% &e/%cmd% apikeys delete <key> &7&l- &bDeletes your current API key."
+    - "%prefix% &7&l&m----------&7&l[ &b&lPlayer Auctions &7&l]&m----------"
+    no-api-key: "%prefix% &cYou do not have an API key, generate one with /%cmd% apikeys generate"
+    no-api-key-other: "%prefix% &cThat player does not have an API key."
+    no-confirmation: "%prefix% &cYou cannot confirm this action, it might of expired"
+    confirmation-expired: "%prefix% &cYour confirmation action has expired."
+    deleted-api-key: "%prefix% &aSuccessfully deleted your API key!"
+    confirm-delete: "%prefix% <green>Are you sure you want to delete your API key? Click <red><hover:show_text:'<red>Confirm</red>'><click:run_command:'/%cmd% apikeys delete confirm'>here</click></hover></red> to confirm.</green>"
+    confirm-delete-other: "%prefix% <green>Are you sure you want to delete <red>%player%'s</red> api key? Click <red><hover:show_text:'<red>Confirm</red>'><click:run_command:'/%cmd% apikeys delete %player% confirm'>here</click></hover></red> to confirm.</green>"
+    confirm-generate: "%prefix% <green>Are you sure you want to generate a new API key? This will delete your current key. Click <red><hover:show_text:'<red>Confirm</red>'><click:run_command:'/%cmd% apikeys generate %player% confirm'>here</click></hover></red> to confirm.</green>"
+    generated-api-key: "%prefix% <green>Successfully generated an API key! Click <click:copy_to_clipboard:'%key%'><hover:show_text:'<red>Copy API key</red>'><red>here </red></hover></click>to copy your API key!"
+
+# Tutaj możesz ustawić jakie wiadomości ma wysyłać konsola gdy gracz nie będzie miał uprawnień.
+# Lub możesz pozostawić pustę aby nie wysyłało żadnych wiadomości.
+# no-permission:
+#   pa.purchase: "Nie masz uprawnień aby kupować na aukcjach!"
+
+n/a:
+  no-seller: "N/A"
+  no-expire: "N/A"
+  no-category: "N/A"
+  no-displayname: "%player%"
+
+# Tutaj możesz ustawić jak mają nazywać się przedmioty, pamiętaj że musisz je dodać niżej aby działały
+# Możesz zobaczyć listę przedmiotów tutaj: https://javadocs.olziedev.com/spigot/latest/org/bukkit/Material.html
+item-names:
+  ARMOR_STAND: "Armor Stand"

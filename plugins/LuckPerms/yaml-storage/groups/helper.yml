@@ -1,0 +1,10 @@
+name: helper
+permissions:
+- weight.500
+parents:
+- default
+prefixes:
+- §f§r:
+    priority: 500
+
+

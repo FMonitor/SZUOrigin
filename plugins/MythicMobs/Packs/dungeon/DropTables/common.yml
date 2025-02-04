@@ -1,0 +1,83 @@
+commonDROPS:
+  TotalItems: 1
+  MinItems: 1
+  MaxItems: 1
+  Conditions:
+  - playerwithin 10
+  Drops:
+  - STRING 1
+  - LAVA_BUCKET 1
+  - LEAD 1
+  - CROSSBOW 1
+  - GOLDEN_PICKAXE 1
+  - COOKED_SALMON 1
+  - TURTLE_HELMET 1
+  - EGG 1
+  - BUCKET 1
+  - TORCH 5
+  - ARROW 15
+  - FISHING_ROD 1
+  - KELP 1
+  - POTATO 1
+  - DRIED_KELP 5
+  - GLASS_BOTTLE 1
+  - GOLD_INGOT 1
+  - IRON_INGOT 1
+  - EMERALD 1
+  - RAW_COPPER 1
+  - BREAD 1
+  - BOWL 1
+  - APPLE 1
+  - COOKED_CHICKEN 2
+
+rareDROPS:
+  TotalItems: 1
+  MinItems: 1
+  MaxItems: 1
+  Conditions:
+  - playerwithin 10
+  Drops:
+  - COMPASS 1
+  - LEAD 1
+  - CROSSBOW 1
+  - GOLDEN_PICKAXE 1
+  - COOKED_SALMON 1
+  - TURTLE_HELMET 1
+  - NETHERITE_SCRAP 1
+  - BUCKET 1
+  - ARROW 15
+  - FISHING_ROD 1
+  - KELP 1
+  - COOKED_BEEF 1
+  - DRIED_KELP 5
+  - GLASS_BOTTLE 1
+  - GOLD_INGOT 1
+  - IRON_INGOT 1
+  - EMERALD 1
+  - RAW_COPPER 1
+  - COOKED_PORKCHOP 2
+  - DIAMOND 1
+  - APPLE 1
+  - GOLDEN_APPLE 1 .2
+  - COOKED_CHICKEN 2
+  - TOTEM_OF_UNDYING 1 .2
+  - DIAMOND_HORSE_ARMOR 1 .2
+  - NAME_TAG 1 .5
+  - Amethyst_axe 1 .1
+  - emerald_axe 1 .1
+  - obsidian_axe 1 .1
+  - ruby_axe 1 .1
+
+
+pouchesDROPS:
+  TotalItems: 1
+  MinItems: 1
+  MaxItems: 1
+  Conditions:
+  - playerwithin 10
+  Drops:
+  - little_pouch 1 .9
+  - small_pouch 1 .6
+  - medium_pouch 1 .3
+
+

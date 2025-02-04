@@ -1,0 +1,755 @@
+menus:
+  taskMenu:
+    title: '&f'
+    height: 5
+    open_events: openBattlepassSound
+    command: /task
+    items:
+      back:
+        item: ScrollLeft
+        amount: 1
+        text:
+         - '&a返回'
+        close: true
+        click: openBattlepass
+      clock:
+        item: clock
+        amount: 1
+        text:
+         - '&7---------------------'
+         - '&e在每天的12:00后'
+         - '&e任务都将会被重置'  
+         - '&7---------------------'
+      compass:
+        item: compass
+        amount: 1
+        text:
+         - '&7---------------------'
+         - '&e在每周日23:59后'
+         - '&e任务都将会被重置'  
+         - '&7---------------------'
+##############################easy
+      stonesobj:
+        item: quest_daily_normal
+        amount: 1
+        conditions: '!stones_started,!stones_done'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7挖掘&a64 stones'
+         - '&f &7以完成任务'
+         - '&f  '   
+        click: stone_folder
+      doingStones:
+        item: in_progress
+        amount: 1
+        conditions: stones_started,!stones_done
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7挖掘&a64 stones'
+         - '&f &7以完成任务'
+         - '&f &7破坏&3%objective.stonesobj.left% &7Stones'
+         - '&f  '
+      stoneDone:
+        item: rewards_item
+        amount: 1
+        conditions: stones_done,stones_started
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7你完成了这项任务！'
+         - '&f &a点击，以领取你的'
+         - '&f &a&6通行证点数&a奖励!'
+         - '&f '
+         - "&f  &a&l任务到此结束~!"
+         - '&f  '
+        close: false
+        click: stones64Rewards
+
+      stonesCompleted:
+        item: quest_daily_complete
+        amount: 1
+        conditions: stones_paid
+        text:
+         - '&f &f&lꞯᴜᴇꜱᴛ'
+         - '&f '
+         - '&f &a&l已认领'
+         - '&f  '
+        close: false
+
+########## Coals TASKS
+
+      coalsobj:
+        item: quest_daily_normal
+        amount: 1
+        conditions: '!coals_started,!coals_done'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7挖掘&a32 coal ores'
+         - '&f &7以完成任务'
+         - '&f  '   
+        click: coals_folder
+      doingcoals:
+        item: in_progress
+        amount: 1
+        conditions: coals_started,!coals_done
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7挖掘&a32 coal ores'
+         - '&f &7以完成任务'
+         - '&f &7破坏&3%objective.coalsobj.left% &7Coals'
+         - '&f  '
+      coalsDone:
+        item: rewards_item
+        amount: 1
+        conditions: coals_done,coals_started
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7你完成了这项任务！'
+         - '&f &a点击，以领取你的'
+         - '&f &a&6通行证点数&a奖励!'
+         - '&f '
+         - "&f  &a&l任务到此结束~!"
+         - '&f  '
+        close: false
+        click: coals32Rewards
+      coalsCompleted:
+        item: quest_daily_complete
+        amount: 1
+        conditions: coals_paid
+        text:
+         - '&f &f&lꞯᴜᴇꜱᴛ'
+         - '&f '
+         - '&f &a&l已认领'
+         - '&f  '
+        close: false
+
+
+########## IRON_ORE TASKS
+
+      ironOreobj:
+        item: quest_daily_normal
+        amount: 1
+        conditions: '!ironOre_started,!ironOre_done'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7挖掘&a16 Iron ores'
+         - '&f &7以完成任务'
+         - '&f  '   
+        click: ironOre_folder
+      doingironOre:
+        item: in_progress
+        amount: 1
+        conditions: ironOre_started,!ironOre_done
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7挖掘&a16 Iron ores'
+         - '&f &7以完成任务'
+         - '&f &7破坏&3%objective.ironOreobj.left% &7Iron ores'
+         - '&f  '
+      ironOreDone:
+        item: rewards_item
+        amount: 1
+        conditions: ironOre_done,ironOre_started
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7你完成了这项任务！'
+         - '&f &a点击，以领取你的'
+         - '&f &a&6通行证点数&a奖励!'
+         - '&f '
+         - "&f  &a&l任务到此结束~!"
+         - '&f  '
+        close: false
+        click: ironOre16Rewards
+      ironOreCompleted:
+        item: quest_daily_complete
+        amount: 1
+        conditions: ironOre_paid
+        text:
+         - '&f &f&lꞯᴜᴇꜱᴛ'
+         - '&f '
+         - '&f &a&l已认领'
+         - '&f  '
+        close: false
+
+
+
+########## COPPER_ORE TASKS
+
+      copperOreobj:
+        item: quest_daily_normal
+        amount: 1
+        conditions: '!copperOre_started,!copperOre_done'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7挖掘&a16 Copper ores'
+         - '&f &7以完成任务'
+         - '&f  ' 
+        click: copperOre_folder
+      doingcopperOre:
+        item: in_progress
+        amount: 1
+        conditions: copperOre_started,!copperOre_done
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7挖掘&a16 Copper ores'
+         - '&f &7以完成任务'
+         - '&f &7破坏&3%objective.copperOreobj.left% &7Copper ores'
+         - '&f  '
+      copperOreDone:
+        item: rewards_item
+        amount: 1
+        conditions: copperOre_done,copperOre_started
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7你完成了这项任务！'
+         - '&f &a点击，以领取你的'
+         - '&f &a&6通行证点数&a奖励!'
+         - '&f '
+         - "&f  &a&l任务到此结束~!"
+         - '&f  '
+        close: false
+        click: copperOre16Rewards
+      copperOreCompleted:
+        item: quest_daily_complete
+        amount: 1
+        conditions: copperOre_paid
+        text:
+         - '&f &f&lꞯᴜᴇꜱᴛ'
+         - '&f '
+         - '&f &a&l已认领'
+         - '&f  '
+        close: false
+
+
+########## GOLD_ORE TASKS
+
+      goldOreobj:
+        item: quest_daily_normal
+        amount: 1
+        conditions: '!goldOre_started,!goldOre_done'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7挖掘&a16 Gold ores'
+         - '&f &7以完成任务'
+         - '&f  '  
+        click: goldOre_folder
+      doinggoldOre:
+        item: in_progress
+        amount: 1
+        conditions: goldOre_started,!goldOre_done
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7挖掘&a16 Iron ores'
+         - '&f &7以完成任务'
+         - '&f &7破坏&3%objective.goldOreobj.left% &7Gold ores'
+         - '&f  '
+      goldOreDone:
+        item: rewards_item
+        amount: 1
+        conditions: goldOre_done,goldOre_started
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7你完成了这项任务！'
+         - '&f &a点击，以领取你的'
+         - '&f &a&6通行证点数&a奖励!'
+         - '&f '
+         - "&f  &a&l任务到此结束~!"
+         - '&f  '
+        close: false
+        click: goldOre12Rewards
+      goldOreCompleted:
+        item: quest_daily_complete
+        amount: 1
+        conditions: goldOre_paid
+        text:
+         - '&f &f&lꞯᴜᴇꜱᴛ'
+         - '&f '
+         - '&f &a&l已认领'
+         - '&f  '
+        close: false
+
+
+########## REDSTONE_ORE TASKS
+
+      redstoneOreobj:
+        item: quest_daily_normal
+        amount: 1
+        conditions: '!redstoneOre_started,!redstoneOre_done'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7挖掘&a16 Redstone ores'
+         - '&f &7以完成任务'
+         - '&f  ' 
+        click: redstoneOre_folder
+      doingredstoneOre:
+        item: in_progress
+        amount: 1
+        conditions: redstoneOre_started,!redstoneOre_done
+        close: false
+        text: 
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7挖掘&a16 Redstone ores'
+         - '&f &7以完成任务'
+         - '&f &7破坏&3%objective.redstoneOreobj.left% &7Redstone ores'
+         - '&f  '
+      redstoneOreDone:
+        item: rewards_item
+        amount: 1
+        conditions: redstoneOre_done,redstoneOre_started
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7你完成了这项任务！'
+         - '&f &a点击，以领取你的'
+         - '&f &a&6通行证点数&a奖励!'
+         - '&f '
+         - "&f  &a&l任务到此结束~!"
+         - '&f  '
+        close: false
+        click: redstoneOre16Rewards
+      redstoneOreCompleted:
+        item: quest_daily_complete
+        amount: 1
+        conditions: redstoneOre_paid
+        text:
+         - '&f &f&lꞯᴜᴇꜱᴛ'
+         - '&f '
+         - '&f &a&l已认领'
+         - '&f  '
+        close: false
+
+
+
+########## WHEATS TASKS
+
+      wheatsobj:
+        item: quest_daily_normal
+        amount: 1
+        conditions: '!wheats_started,!wheats_done'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7收割 &a32 Wheats'
+         - '&f &7以完成任务'
+         - '&f  '  
+        click: wheats_folder
+      doingwheats:
+        item: in_progress
+        amount: 1
+        conditions: wheats_started,!wheats_done
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7收割 &a32 Wheats'
+         - '&f &7以完成任务'
+         - '&f &7收割 &3%objective.wheatsobj.left% &7Wheats'
+         - '&f  '
+      wheatsDone:
+        item: rewards_item
+        amount: 1
+        conditions: wheats_done,wheats_started
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7你完成了这项任务！'
+         - '&f &a点击，以领取你的'
+         - '&f &a&6通行证点数&a奖励!'
+         - '&f '
+         - "&f  &a&l任务到此结束~!"
+         - '&f  '
+        close: false
+        click: wheats32Rewards
+      wheatsCompleted:
+        item: quest_daily_complete
+        amount: 1
+        conditions: wheats_paid
+        text:
+         - '&f &f&lꞯᴜᴇꜱᴛ'
+         - '&f '
+         - '&f &a&l已认领'
+         - '&f  '
+        close: false
+
+########## POTATOES TASKS
+
+      potatoesobj:
+        item: quest_daily_normal
+        amount: 1
+        conditions: '!potatoes_started,!potatoes_done'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7收割 &a32 Potatoes'
+         - '&f &7以完成任务'
+         - '&f  '  
+        click: potatoes_folder
+      doingpotatoes:
+        item: in_progress
+        amount: 1
+        conditions: potatoes_started,!potatoes_done
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7收割 &a32 Potatoes'
+         - '&f &7以完成任务'
+         - '&f &7收割 &3%objective.potatoesobj.left% &7Potatoes'
+         - '&f  '
+      potatoesDone:
+        item: rewards_item
+        amount: 1
+        conditions: potatoes_done,potatoes_started
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7你完成了这项任务！'
+         - '&f &a点击，以领取你的'
+         - '&f &a&6通行证点数&a奖励!'
+         - '&f '
+         - "&f  &a&l任务到此结束~!"
+         - '&f  '
+        close: false
+        click: potatoes32Rewards
+      potatoesCompleted:
+        item: quest_daily_complete
+        amount: 1
+        conditions: potatoes_paid
+        text:
+         - '&f &f&lꞯᴜᴇꜱᴛ'
+         - '&f '
+         - '&f &a&l已认领'
+         - '&f  '
+        close: false
+
+
+########## CARROTS TASKS
+
+      carrotsobj:
+        item: quest_daily_normal
+        amount: 1
+        conditions: '!carrots_started,!carrots_done'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7收割 &a32 carrots'
+         - '&f &7以完成任务'
+         - '&f  ' 
+        click: carrots_folder
+      doingcarrots:
+        item: in_progress
+        amount: 1
+        conditions: carrots_started,!carrots_done
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7收割 &a32 Carrots'
+         - '&f &7以完成任务'
+         - '&f &7收割 &3%objective.carrotsobj.left% &7Carrots'
+         - '&f  '
+      carrotsDone:
+        item: rewards_item
+        amount: 1
+        conditions: carrots_done,carrots_started
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7你完成了这项任务！'
+         - '&f &a点击，以领取你的'
+         - '&f &a&6通行证点数&a奖励!'
+         - '&f '
+         - "&f  &a&l任务到此结束~!"
+         - '&f  '
+        close: false
+        click: carrots32Rewards
+      carrotsCompleted:
+        item: quest_daily_complete
+        amount: 1
+        conditions: carrots_paid
+        text:
+         - '&f &f&lꞯᴜᴇꜱᴛ'
+         - '&f '
+         - '&f &a&l已认领'
+         - '&f  '
+        close: false
+
+
+
+
+
+########## WEEKLY STONES TASKS
+
+      stonesweeklyobj:
+        item: quest_daily_hard
+        amount: 1
+        conditions: '!stonesweekly_started,!stonesweekly_done'
+        close: false
+        text:
+         - '&f &f&l每 周 任 务'
+         - '&f '
+         - '&f &7挖掘&a2000 Stones'
+         - '&f &7&7在一周之内完成'
+         - '&f &7以完成任务'
+         - '&f  '  
+        click: stonesweekly_folder
+      doingstonesweekly:
+        item: in_progress
+        amount: 1
+        conditions: stonesweekly_started,!stonesweekly_done
+        close: false
+        text:
+         - '&f &f&l每 周 任 务'
+         - '&f '
+         - '&f &7挖掘&a2000 Stones'
+         - '&f &7在一周之内完成'
+         - '&f &7以完成任务'
+         - '&f &7挖掘&3%objective.stonesweeklyobj.left% &7stones'
+         - '&f  '
+      stonesweeklyDone:
+        item: rewards_item
+        amount: 1
+        conditions: stonesweekly_done,stonesweekly_started
+        text:
+         - '&f &f&l每 周 任 务'
+         - '&f '
+         - '&f &7你完成了这项任务！'
+         - '&f &a点击，以领取你的'
+         - '&f &a&6通行证点数&a奖励!'
+         - '&f '
+         - "&f  &a&l任务到此结束~!"
+         - '&f  '
+        close: false
+        click: stonesweeklyRewards
+      stonesweeklyCompleted:
+        item: quest_daily_complete
+        amount: 1
+        conditions: stonesweekly_paid
+        text:
+         - '&f &f&l每 周 任 务'
+         - '&f '
+         - '&f &a&l已认领'
+         - '&f  '
+        close: false
+
+########## WEEKLY IRON ORE TASKS
+
+      ironOreweeklyobj:
+        item: quest_daily_hard
+        amount: 1
+        conditions: '!ironOreweekly_started,!ironOreweekly_done'
+        close: false
+        text:
+         - '&f &f&l每 周 任 务'
+         - '&f '
+         - '&f &7挖掘&a500 Iron Ores'
+         - '&f &7在一周之内完成'
+         - '&f &7以完成任务'
+         - '&f  '
+        click: ironOreweekly_folder
+      doingironOreweekly:
+        item: in_progress
+        amount: 1
+        conditions: ironOreweekly_started,!ironOreweekly_done
+        close: false
+        text:
+         - '&f &f&l每 周 任 务'
+         - '&f '
+         - '&f &7挖掘&a500 Iron Ores'
+         - '&f &7在一周之内完成'
+         - '&f &7以完成任务'
+         - '&f &7挖掘&3%objective.ironOreweeklyobj.left% &7iron Ores'
+         - '&f  '
+      ironOreweeklyDone:
+        item: rewards_item
+        amount: 1
+        conditions: ironOreweekly_done,ironOreweekly_started
+        text:
+         - '&f &f&l每 周 任 务'
+         - '&f '
+         - '&f &7你完成了这项任务！'
+         - '&f &a点击，以领取你的'
+         - '&f &a&6通行证点数&a奖励!'
+         - '&f '
+         - "&f  &a&l任务到此结束~!"
+         - '&f  '
+        close: false
+        click: ironOreweeklyRewards
+      ironOreweeklyCompleted:
+        item: quest_daily_complete
+        amount: 1
+        conditions: ironOreweekly_paid
+        text:
+         - '&f &f&l每 周 任 务'
+         - '&f '
+         - '&f &a&l已认领'
+         - '&f  '
+        close: false
+
+########## WEEKLY IRON ORE TASKS
+
+      wheatsweeklyobj:
+        item: quest_daily_hard
+        amount: 1
+        conditions: '!wheatsweekly_started,!wheatsweekly_done'
+        close: false
+        text:
+         - '&f &f&l每 周 任 务'
+         - '&f '
+         - '&f &7收割 &a1000 Wheats'
+         - '&f &7在一周之内完成'
+         - '&f &7以完成任务'
+         - '&f  '
+        click: wheatsweekly_folder
+      doingwheatsweekly:
+        item: in_progress
+        amount: 1
+        conditions: wheatsweekly_started,!wheatsweekly_done
+        close: false
+        text:
+         - '&f &f&l每 周 任 务'
+         - '&f '
+         - '&f &7收割 &a1000 Wheats'
+         - '&f &7在一周之内完成'
+         - '&f &7以完成任务'
+         - '&f &7收割 &3%objective.wheatsweeklyobj.left% &7Wheats'
+         - '&f  '
+      wheatsweeklyDone:
+        item: rewards_item
+        amount: 1
+        conditions: wheatsweekly_done,wheatsweekly_started
+        text:
+         - '&f &f&l每 周 任 务'
+         - '&f '
+         - '&f &7你完成了这项任务！'
+         - '&f &a点击，以领取你的'
+         - '&f &a&6通行证点数&a奖励!'
+         - '&f '
+         - "&f  &a&l任务到此结束~!"
+         - '&f  '
+        close: false
+        click: wheatsweeklyRewards
+      wheatsweeklyCompleted:
+        item: quest_daily_complete
+        amount: 1
+        conditions: wheatsweekly_paid
+        text:
+         - '&f &f&l每 周 任 务'
+         - '&f '
+         - '&f &a&l已认领'
+         - '&f  '
+        close: false
+
+########## WEEKLY LOGS TASKS
+
+      logsweeklyobj:
+        item: quest_daily_hard
+        amount: 1
+        conditions: '!logsweekly_started,!logsweekly_done'
+        close: false
+        text:
+         - '&f &f&l每 周 任 务'
+         - '&f '
+         - '&f &7砍伐&a1000 logs'
+         - '&f &7在一周之内完成'
+         - '&f &7以完成任务'
+         - '&f  '
+        click: logsweekly_folder
+      doinglogsweekly:
+        item: in_progress
+        amount: 1
+        conditions: logsweekly_started,!logsweekly_done
+        close: false
+        text:
+         - '&f &f&l每 周 任 务'
+         - '&f '
+         - '&f &7砍伐&a1000 logs'
+         - '&f &7在一周之内完成'
+         - '&f &7以完成任务'
+         - '&f &7砍伐&3%objective.logsweeklyobj.left% &7logs'
+         - '&f  '
+      logsweeklyDone:
+        item: rewards_item
+        amount: 1
+        conditions: logsweekly_done,logsweekly_started
+        text:
+         - '&f &f&l每 周 任 务'
+         - '&f '
+         - '&f &7你完成了这项任务！'
+         - '&f &a点击，以领取你的'
+         - '&f &a&6通行证点数&a奖励!'
+         - '&f '
+         - "&f  &a&l任务到此结束~!"
+         - '&f  '
+        close: false
+        click: logsweeklyRewards
+      logsweeklyCompleted:
+        item: quest_daily_complete
+        amount: 1
+        conditions: logsweekly_paid
+        text:
+         - '&f &f&l每 周 任 务'
+         - '&f '
+         - '&f &a&l已认领'
+         - '&f  '
+        close: false
+
+
+    slots:
+      0: clock
+      8: compass
+      10: stonesobj,doingStones,stoneDone,stonesCompleted
+      11: coalsobj,doingcoals,coalsDone,coalsCompleted
+      12: ironOreobj,doingironOre,ironOreDone,ironOreCompleted
+      19: copperOreobj,doingcopperOre,copperOreDone,copperOreCompleted
+      20: goldOreobj,doinggoldOre,goldOreDone,goldOreCompleted
+      21: redstoneOreobj,doingredstoneOre,redstoneOreDone,redstoneOreCompleted
+      28: wheatsobj,doingwheats,wheatsDone,wheatsCompleted
+      29: potatoesobj,doingpotatoes,potatoesDone,potatoesCompleted
+      30: carrotsobj,doingcarrots,carrotsDone,carrotsCompleted
+      14: stonesweeklyobj,doingstonesweekly,stonesweeklyDone,stonesweeklyCompleted
+      16: ironOreweeklyobj,doingironOreweekly,ironOreweeklyDone,ironOreweeklyCompleted
+      32: wheatsweeklyobj,doingwheatsweekly,wheatsweeklyDone,wheatsweeklyCompleted
+      34: logsweeklyobj,doinglogsweekly,logsweeklyDone,logsweeklyCompleted
+      40: back
+
+events:
+
+  openBattlepass: menu open battlepass
+
+conditions:
+  pendingHard: tag pendingHard
+  completedHard: tag hardCompleted
+  hard: tag hardTag
+
+

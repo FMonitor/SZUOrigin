@@ -1,0 +1,55 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 223.74.150.82
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1738593152087
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1738593529886
+  login: 1738593038316
+money: '0'
+last-account-name: milkAD
+lastlocation:
+  world: 877e483a-8c3b-40fa-9738-40239679b77e
+  world-name: isla
+  x: 50.7320475643721
+  y: 85.0
+  z: 148.44855701050932
+  yaw: -141.11651611328125
+  pitch: 55.578102111816406
+logoutlocation:
+  world: 04c00a4f-fe5c-47c6-8998-babf81130ba2
+  world-name: world
+  x: -405.30000001192093
+  y: 56.0
+  z: 413.69999998807907
+  yaw: 102.30675506591797
+  pitch: 18.677343368530273
+homes:
+  home:
+    world: 04c00a4f-fe5c-47c6-8998-babf81130ba2
+    world-name: world
+    x: 415.06377801913334
+    y: 119.0
+    z: 332.20685530529204
+    yaw: 85.0487060546875
+    pitch: -1.7998011112213135
+  temp:
+    world: 04c00a4f-fe5c-47c6-8998-babf81130ba2
+    world-name: world
+    x: -399.68957549250763
+    y: 64.0
+    z: 407.583278270196
+    yaw: 82.36300659179688
+    pitch: 29.327457427978516

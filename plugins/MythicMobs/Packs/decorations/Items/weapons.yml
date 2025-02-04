@@ -1,0 +1,177 @@
+
+# http://www.mythicmobs.net
+#  
+
+Amethyst_sword:
+  Id: DIAMOND_SWORD
+  Model: 10000
+  Display: '<#b022d3>紫水晶剑'
+  Lore:
+  - '&8--------------'
+  - '&6一把使用'
+  - '&6镶嵌紫水晶的强力剑'
+  - '&8--------------'
+  Enchantments:
+  - DAMAGE_ALL:5
+  - KNOCKBACK:2
+  - FIRE_ASPECT:2
+  - DURABILITY:2
+  Attributes:
+    MainHand:
+      Damage: 8.5
+
+emerald_sword:
+  Id: DIAMOND_SWORD
+  Model: 10001
+  Display: '<#00ff3c>绿宝石剑'
+  Lore:
+  - '&8--------------'
+  - '&6一把使用'
+  - '&6镶嵌绿宝石的强力剑'
+  - '&8--------------'
+  Enchantments:
+  - DAMAGE_ALL:5
+  - FIRE_ASPECT:2
+  Attributes:
+    MainHand:
+      Damage: 8.5
+
+obsidian_sword:
+  Id: DIAMOND_SWORD
+  Model: 10002
+  Display: '<#9c00ff>黑曜石剑'
+  Lore:
+  - '&8--------------'
+  - '&6一把使用'
+  - '&6镶嵌黑曜石的强力剑'
+  - '&8--------------'
+  Enchantments:
+  - DAMAGE_ALL:4
+  - KNOCKBACK:2
+  - FIRE_ASPECT:2
+  - DURABILITY:3
+  Attributes:
+    MainHand:
+      Damage: 8.5
+
+ruby_sword:
+  Id: DIAMOND_SWORD
+  Model: 10003
+  Display: '<#e81e6f>红宝石剑'
+  Lore:
+  - '&8--------------'
+  - '&6一把使用'
+  - '&6镶嵌红宝石的强力剑'
+  - '&8--------------'
+  Enchantments:
+  - DAMAGE_ALL:5
+  - FIRE_ASPECT:2
+  - DURABILITY:3
+  - MENDING:1
+  Attributes:
+    MainHand:
+      Damage: 8.5
+
+      
+
+Amethyst_axe:
+  Id: DIAMOND_AXE
+  Model: 10000
+  Display: '<#b022d3>紫水晶斧'
+  Lore:
+  - '&8--------------'
+  - '&6一把强力的斧头，'
+  - '&6适合砍伐木材'
+  - '&6或劈开头骨，'
+  - '&6取决于你的心情。'
+  - '&8--------------'
+  Enchantments:
+  - DAMAGE_ALL:5
+  - DIG_SPEED:5
+  - DURABILITY:2
+  Attributes:
+    MainHand:
+      Damage: 9.5
+
+emerald_axe:
+  Id: DIAMOND_AXE
+  Model: 10001
+  Display: '<#00ff3c>绿宝石斧'
+  Lore:
+  - '&8--------------'
+  - '&6一件强力武器，'
+  - '&616世纪骑兵使用，'
+  - '&6适合砍伐木材'
+  - '&6或劈开头骨。'
+  - '&8--------------'
+  Enchantments:
+  - DAMAGE_ALL:4
+  - DIG_SPEED:2
+  - DURABILITY:2
+  Attributes:
+    MainHand:
+      Damage: 9.5
+
+obsidian_axe:
+  Id: DIAMOND_AXE
+  Model: 10002
+  Display: '<#9c00ff>黑曜石斧'
+  Lore:
+  - '&8--------------'
+  - '&6黑曜石斧是一种独特武器，'
+  - '&6适用于砍伐木材'
+  - '&6或劈开头骨。'
+  - '&8--------------'
+  Enchantments:
+  - DAMAGE_ALL:4
+  - DIG_SPEED:4
+  - SILK_TOUCH:1
+  - DURABILITY:3
+  Attributes:
+    MainHand:
+      Damage: 9.5
+
+ruby_axe:
+  Id: DIAMOND_AXE
+  Model: 10003
+  Display: '<#e81e6f>红宝石斧'
+  Lore:
+  - '&8--------------'
+  - '&6它看起来可能'
+  - '&6太闪亮、太美丽，'
+  - '&6不适合拿去战斗，'
+  - '&6但却适用于'
+  - '&6砍伐木材或劈开头骨。'
+  - '&8--------------'
+  Enchantments:
+  - DAMAGE_ALL:5
+  - DIG_SPEED:5
+  - DURABILITY:3
+  Attributes:
+    MainHand:
+      Damage: 9.5
+
+Ghoulhead:
+  Id: PLAYER_HEAD
+  Data: 3
+  Display: '&5Ghoul Heal'
+  Options:
+    SkinTexture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjMxY2ZiZDY4OTllZWVjOTQ2NmYwMjZjYTg0NzgwN2ZiNjBlMjc2Y2JkMDFhY2Y5MTkyNWViNzkwMmI5YTYzMiJ9fX0=
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:3
+  Lore:
+  - '&e&o食尸鬼头'
+
+Pennywise:
+  Id: PLAYER_HEAD
+  Data: 3
+  Display: '&5Pennywise'
+  Options:
+    SkinTexture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODEzN2FjY2E3NmRlYWZhMGMzZTFjMTZiZTE4ZDg0YTA5ZGMzM2QzYzZjODc2ZDM2NzA1Y2RmYTJlMzQxMzFiYyJ9fX0=
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:3
+  Lore:
+  - '&e&o小丑头'
+      
+
+

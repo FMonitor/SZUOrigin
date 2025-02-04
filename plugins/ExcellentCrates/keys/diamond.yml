@@ -1,0 +1,11 @@
+Name: '
+Virtual: false
+Item:
+  Material: STICK
+  Name: '#4AEDD9Diamond Key'
+  Custom_Model_Data: 103
+  Item_Flags:
+  - HIDE_ATTRIBUTES
+
+
+

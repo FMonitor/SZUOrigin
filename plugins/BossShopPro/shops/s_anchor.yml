@@ -1,0 +1,900 @@
+ShopName: shop_anchor 
+DisplayName: "§f" 
+InventorySize: 54 
+Command: fisherman
+shop: 
+  background_0_00: 
+    MenuItem: 
+    - "name:#bc8f1dAnchor" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    InventoryLocation: 7 
+  background_1_00: 
+    MenuItem: 
+    - "name:#bc8f1dAnchor" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    InventoryLocation: 8 
+  background_2_00: 
+    MenuItem: 
+    - "name:#bc8f1dAnchor" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    InventoryLocation: 16 
+  background_3_00: 
+    MenuItem: 
+    - "name:#bc8f1dAnchor" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    InventoryLocation: 17 
+  background_4_00: 
+    MenuItem: 
+    - "name:#bc8f1dAnchor" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    InventoryLocation: 25 
+  background_5_00: 
+    MenuItem: 
+    - "name:#bc8f1dAnchor" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    InventoryLocation: 26 
+  background_6_00: 
+    MenuItem: 
+    - "name:#bc8f1dAnchor" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    InventoryLocation: 34 
+  background_7_00: 
+    MenuItem: 
+    - "name:#bc8f1dAnchor" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    InventoryLocation: 35 
+  background_8_00: 
+    MenuItem: 
+    - "name:#bc8f1dAnchor" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    InventoryLocation: 43 
+  background_9_00: 
+    MenuItem: 
+    - "name:#bc8f1dAnchor" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    InventoryLocation: 44 
+  background_10_00: 
+    MenuItem: 
+    - "name:#bc8f1dAnchor" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    InventoryLocation: 52 
+  background_11_00: 
+    MenuItem: 
+    - "name:#bc8f1dAnchor" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    InventoryLocation: 53 
+  daytime_1: 
+    MenuItem: 
+    - "name:#bc8f1dAnchor"
+    - type:PAPER 
+    - amount:1 
+    - custommodeldata:100141
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    InventoryLocation: 9 
+  nighttime_1: 
+    MenuItem: 
+    - "name:#bc8f1dAnchor"
+    - type:PAPER 
+    - amount:1 
+    - custommodeldata:100142
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    InventoryLocation: 9 
+
+
+
+  1_1_1_1_1: 
+    MenuItem: 
+    - "name:§f 热带鱼"
+    - type:TROPICAL_FISH 
+    - amount:4 
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f32 "
+    - "lore3:§f "
+    - "lore4:§f §a→ 点击以卖出 "
+    RewardType: MONEY 
+    Reward: 32 
+    PriceType: ITEM 
+    Price: 
+    - - type:TROPICAL_FISH 
+      - amount:4
+    RewardType_shift_left: MONEY 
+    Reward_shift_left: 512 
+    PriceType_shift_left: ITEM 
+    Price_shift_left:
+    - - type:TROPICAL_FISH 
+      - amount:64 
+    RewardType_shift_right: MONEY 
+    Reward_shift_right: 512
+    PriceType_shift_right: ITEM 
+    Price_shift_right:
+    - - type:TROPICAL_FISH 
+      - amount:64
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    - type:placeholdernumber 
+    - "%checkitem_amount_mat[colon]tropical_fish%:over:3" 
+    InventoryLocation: 2 
+
+  1_1_1_1_2: 
+    MenuItem: 
+    - "name:§f 热带鱼"
+    - type:TROPICAL_FISH 
+    - amount:4 
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f32 "
+    - "lore3:§f "
+    - "lore4:§f §4❌  无法支付交易  "
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    InventoryLocation: 2 
+
+  1_1_1_1_3: 
+    MenuItem: 
+    - "name:§f 热带鱼"
+    - type:TROPICAL_FISH 
+    - amount:6 
+    - "lore1:§f "
+    - "lore2:§f §7购买价格： §f240 "
+    - "lore3:§f "
+    - "lore4:§f §a→ 点击以购买 "
+    RewardType: ITEM 
+    Reward:
+    - - type:TROPICAL_FISH 
+      - amount:6 
+    PriceType: MONEY
+    Price: 240
+    RewardType_shift_left: ITEM 
+    Reward_shift_left:
+    - - type:TROPICAL_FISH 
+      - amount:64 
+    PriceType_shift_left: MONEY
+    Price_shift_left: 2560
+    RewardType_shift_right: ITEM 
+    Reward_shift_right:
+    - - type:TROPICAL_FISH 
+      - amount:64 
+    PriceType_shift_right: MONEY 
+    Price_shift_right: 2560
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    - type:money 
+    - over:239 
+    InventoryLocation: 2 
+
+  1_1_1_1_4: 
+    MenuItem: 
+    - "name:§f 热带鱼"
+    - type:TROPICAL_FISH 
+    - amount:6 
+    - "lore1:§f " 
+    - "lore2:§f §7购买价格： §f240" 
+    - "lore3:§f " 
+    - "lore4:§f §4❌  无法支付交易 "
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    InventoryLocation: 2 
+
+##
+  1_1_1_2_1: 
+    MenuItem: 
+    - "name:§f 生鲑鱼"
+    - type:SALMON 
+    - amount:4 
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f16 "
+    - "lore3:§f "
+    - "lore4:§f §a→ 点击以卖出 "
+    RewardType: MONEY 
+    Reward: 16 
+    PriceType: ITEM 
+    Price: 
+    - - type:SALMON 
+      - amount:4 
+    RewardType_shift_left: MONEY 
+    Reward_shift_left: 256 
+    PriceType_shift_left: ITEM 
+    Price_shift_left:
+    - - type:SALMON 
+      - amount:64 
+    RewardType_shift_right: MONEY 
+    Reward_shift_right: 256
+    PriceType_shift_right: ITEM 
+    Price_shift_right:
+    - - type:SALMON 
+      - amount:64
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    - type:placeholdernumber 
+    - "%checkitem_amount_mat[colon]salmon%:over:3" 
+    InventoryLocation: 3 
+
+  1_1_1_2_2: 
+    MenuItem: 
+    - "name:§f 生鲑鱼"
+    - type:SALMON 
+    - amount:4 
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f16 "
+    - "lore3:§f "
+    - "lore4:§f §4❌  无法支付交易  "
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    InventoryLocation: 3 
+
+  1_1_1_2_3: 
+    MenuItem: 
+    - "name:§f 生鲑鱼"
+    - type:SALMON 
+    - amount:4 
+    - "lore1:§f "
+    - "lore2:§f §7购买价格： §f160 "
+    - "lore3:§f "
+    - "lore4:§f §a→ 点击以购买 "
+    RewardType: ITEM 
+    Reward:
+    - - type:SALMON 
+      - amount:6
+    PriceType: MONEY
+    Price: 160
+    RewardType_shift_left: ITEM 
+    Reward_shift_left:
+    - - type:SALMON 
+      - amount:64 
+    PriceType_shift_left: MONEY
+    Price_shift_left: 2560
+    RewardType_shift_right: ITEM 
+    Reward_shift_right:
+    - - type:SALMON 
+      - amount:64 
+    PriceType_shift_right: MONEY 
+    Price_shift_right: 2560
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    - type:money 
+    - over:299 
+    InventoryLocation: 3 
+
+  1_1_1_2_4: 
+    MenuItem: 
+    - "name:§f 生鲑鱼"
+    - type:SALMON 
+    - amount:6 
+    - "lore1:§f " 
+    - "lore2:§f §7购买价格： §f160" 
+    - "lore3:§f " 
+    - "lore4:§f §4❌  无法支付交易 "
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    InventoryLocation: 3 
+
+##
+  1_1_1_3_1: 
+    MenuItem: 
+    - "name:§f 生鳕鱼"
+    - type:COD  
+    - amount:4 
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f16 "
+    - "lore3:§f "
+    - "lore4:§f §a→ 点击以卖出 "
+    RewardType: MONEY 
+    Reward: 16 
+    PriceType: ITEM 
+    Price: 
+    - - type:COD 
+      - amount:4 
+    RewardType_shift_left: MONEY 
+    Reward_shift_left: 256 
+    PriceType_shift_left: ITEM 
+    Price_shift_left:
+    - - type:COD 
+      - amount:64 
+    RewardType_shift_right: MONEY 
+    Reward_shift_right: 256
+    PriceType_shift_right: ITEM 
+    Price_shift_right:
+    - - type:COD 
+      - amount:64
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    - type:placeholdernumber 
+    - "%checkitem_amount_mat[colon]COD%:over:3" 
+    InventoryLocation: 4 
+
+  1_1_1_3_2: 
+    MenuItem: 
+    - "name:§f 生鳕鱼"
+    - type:COD  
+    - amount:4 
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f16 "
+    - "lore3:§f "
+    - "lore4:§f §4❌  无法支付交易  "
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    InventoryLocation: 4 
+
+  1_1_1_3_3: 
+    MenuItem: 
+    - "name:§f 生鳕鱼"
+    - type:COD  
+    - amount:4 
+    - "lore1:§f "
+    - "lore2:§f §7购买价格： §f160 "
+    - "lore3:§f "
+    - "lore4:§f §a→ 点击以购买 "
+    RewardType: ITEM 
+    Reward:
+    - - type:COD 
+      - amount:6 
+    PriceType: MONEY
+    Price: 870
+    RewardType_shift_left: ITEM 
+    Reward_shift_left:
+    - - type:COD 
+      - amount:64 
+    PriceType_shift_left: MONEY
+    Price_shift_left: 2560
+    RewardType_shift_right: ITEM 
+    Reward_shift_right:
+    - - type:COD 
+      - amount:64 
+    PriceType_shift_right: MONEY 
+    Price_shift_right: 2560
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    - type:money 
+    - over:159 
+    InventoryLocation: 4 
+
+  1_1_1_3_4: 
+    MenuItem: 
+    - "name:§f 生鳕鱼"
+    - type:COD  
+    - amount:4 
+    - "lore1:§f " 
+    - "lore2:§f §7购买价格： §f160" 
+    - "lore3:§f " 
+    - "lore4:§f §4❌  无法支付交易 "
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    InventoryLocation: 4 
+
+
+##
+  1_1_2_1_1: 
+    MenuItem: 
+    - "name:§f 河豚"
+    - type:PUFFERFISH 
+    - amount:8
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f8 "
+    - "lore3:§f "
+    - "lore4:§f §a→ 点击以卖出 "
+    RewardType: MONEY 
+    Reward: 8
+    PriceType: ITEM 
+    Price: 
+    - - type:PUFFERFISH 
+      - amount:8 
+    RewardType_shift_left: MONEY 
+    Reward_shift_left: 64
+    PriceType_shift_left: ITEM 
+    Price_shift_left:
+    - - type:PUFFERFISH 
+      - amount:64 
+    RewardType_shift_right: MONEY 
+    Reward_shift_right: 64
+    PriceType_shift_right: ITEM 
+    Price_shift_right:
+    - - type:PUFFERFISH 
+      - amount:64
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    - type:placeholdernumber 
+    - "%checkitem_amount_mat[colon]PUFFERFISH%:over:7" 
+    InventoryLocation: 11
+
+  1_1_2_1_2: 
+    MenuItem: 
+    - "name:§f 河豚"
+    - type:PUFFERFISH 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f8 "
+    - "lore3:§f "
+    - "lore4:§f §4❌  无法支付交易  "
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    InventoryLocation: 11 
+
+  1_1_2_1_3: 
+    MenuItem: 
+    - "name:§f 河豚"
+    - type:PUFFERFISH 
+    - amount:4 
+    - "lore1:§f "
+    - "lore2:§f §7购买价格： §f100 "
+    - "lore3:§f "
+    - "lore4:§f §a→ 点击以购买 "
+    RewardType: ITEM 
+    Reward:
+    - - type:PUFFERFISH 
+      - amount:4
+    PriceType: MONEY
+    Price: 100
+    RewardType_shift_left: ITEM 
+    Reward_shift_left:
+    - - type:PUFFERFISH 
+      - amount:64 
+    PriceType_shift_left: MONEY
+    Price_shift_left: 1600
+    RewardType_shift_right: ITEM 
+    Reward_shift_right:
+    - - type:PUFFERFISH 
+      - amount:64 
+    PriceType_shift_right: MONEY 
+    Price_shift_right: 1600
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    - type:money 
+    - over:99 
+    InventoryLocation: 11 
+
+  1_1_2_1_4: 
+    MenuItem: 
+    - "name:§f 河豚"
+    - type:PUFFERFISH 
+    - amount:4
+    - "lore1:§f " 
+    - "lore2:§f §7购买价格： §f100" 
+    - "lore3:§f " 
+    - "lore4:§f §4❌  无法支付交易 "
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    InventoryLocation: 11 
+
+
+
+
+##
+  1_1_3_2_1: 
+    MenuItem: 
+    - "name:§f 海晶碎片"
+    - type:PRISMARINE_SHARD 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f6 "
+    - "lore3:§f "
+    - "lore4:§f §a→ 点击以卖出 "
+    RewardType: MONEY 
+    Reward: 6 
+    PriceType: ITEM 
+    Price: 
+    - - type:PRISMARINE_SHARD 
+      - amount:8 
+    RewardType_shift_left: MONEY 
+    Reward_shift_left: 48 
+    PriceType_shift_left: ITEM 
+    Price_shift_left:
+    - - type:PRISMARINE_SHARD 
+      - amount:64 
+    RewardType_shift_right: MONEY 
+    Reward_shift_right: 48
+    PriceType_shift_right: ITEM 
+    Price_shift_right:
+    - - type:PRISMARINE_SHARD 
+      - amount:64
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    - type:placeholdernumber 
+    - "%checkitem_amount_mat[colon]prismarine_shard%:over:7" 
+    InventoryLocation: 20
+
+  1_1_3_2_2: 
+    MenuItem: 
+    - "name:§f 海晶碎片"
+    - type:PRISMARINE_SHARD 
+    - amount:8
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f6" 
+    - "lore3:§f "  
+    - "lore4:§f §4❌  无法支付交易 " 
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    InventoryLocation: 20 
+
+  1_1_3_2_3: 
+    MenuItem: 
+    - "name:§f 海晶碎片"
+    - type:PRISMARINE_SHARD 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7购买价格： §f65 "
+    - "lore3:§f "
+    - "lore4:§f §a→ 点击以购买 "
+    RewardType: ITEM 
+    Reward:
+    - - type:PRISMARINE_SHARD 
+      - amount:8 
+    PriceType: MONEY
+    Price: 65
+    RewardType_shift_left: ITEM 
+    Reward_shift_left:
+    - - type:PRISMARINE_SHARD 
+      - amount:64 
+    PriceType_shift_left: MONEY
+    Price_shift_left: 448
+    RewardType_shift_right: ITEM 
+    Reward_shift_right:
+    - - type:PRISMARINE_SHARD 
+      - amount:64 
+    PriceType_shift_right: MONEY 
+    Price_shift_right: 448
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    - type:money 
+    - over:55  
+    InventoryLocation: 20 
+
+  1_1_3_2_4: 
+    MenuItem: 
+    - "name:§f 海晶碎片"
+    - type:PRISMARINE_SHARD 
+    - amount:8 
+    - "lore1:§f " 
+    - "lore2:§f §7购买价格： §f56" 
+    - "lore3:§f " 
+    - "lore4:§f §4❌  无法支付交易 "
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    InventoryLocation: 20
+
+##
+  1_1_3_3_1: 
+    MenuItem: 
+    - "name:§f 海晶沙砾"
+    - type:PRISMARINE_CRYSTALS 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f8 "
+    - "lore3:§f "
+    - "lore4:§f §a→ 点击以卖出 "
+    RewardType: MONEY 
+    Reward: 8 
+    PriceType: ITEM 
+    Price: 
+    - - type:PRISMARINE_CRYSTALS 
+      - amount:8 
+    RewardType_shift_left: MONEY 
+    Reward_shift_left: 64 
+    PriceType_shift_left: ITEM 
+    Price_shift_left:
+    - - type:PRISMARINE_CRYSTALS 
+      - amount:64 
+    RewardType_shift_right: MONEY 
+    Reward_shift_right: 64
+    PriceType_shift_right: ITEM 
+    Price_shift_right:
+    - - type:PRISMARINE_CRYSTALS 
+      - amount:64
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    - type:placeholdernumber 
+    - "%checkitem_amount_mat[colon]prismarine_crystals%:over:7" 
+    InventoryLocation: 21
+
+  1_1_3_3_2: 
+    MenuItem: 
+    - "name:§f 海晶沙砾"
+    - type:PRISMARINE_CRYSTALS 
+    - amount:8
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f8 "
+    - "lore3:§f "
+    - "lore4:§f §4❌  无法支付交易  "
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    InventoryLocation: 21 
+
+  1_1_3_3_3: 
+    MenuItem: 
+    - "name:§f 海晶沙砾"
+    - type:PRISMARINE_CRYSTALS 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7购买价格： §f120 "
+    - "lore3:§f "
+    - "lore4:§f §a→ 点击以购买 "
+    RewardType: ITEM 
+    Reward:
+    - - type:PRISMARINE_CRYSTALS 
+      - amount:8 
+    PriceType: MONEY
+    Price: 120
+    RewardType_shift_left: ITEM 
+    Reward_shift_left:
+    - - type:PRISMARINE_CRYSTALS 
+      - amount:64 
+    PriceType_shift_left: MONEY
+    Price_shift_left: 960
+    RewardType_shift_right: ITEM 
+    Reward_shift_right:
+    - - type:PRISMARINE_CRYSTALS 
+      - amount:64 
+    PriceType_shift_right: MONEY 
+    Price_shift_right: 960
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    - type:money 
+    - over:55  
+    InventoryLocation: 21 
+
+  1_1_3_3_4: 
+    MenuItem: 
+    - "name:§f 海晶沙砾"
+    - type:PRISMARINE_CRYSTALS 
+    - amount:8 
+    - "lore1:§f " 
+    - "lore2:§f §7购买价格： §f120" 
+    - "lore3:§f " 
+    - "lore4:§f §4❌  无法支付交易 "
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    InventoryLocation: 21
+
+
+
+
+
+##
+  1_1_4_1_1: 
+    MenuItem: 
+    - "name:§f 睡莲"
+    - type:LILY_PAD 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f4 "
+    - "lore3:§f "
+    - "lore4:§f §a→ 点击以卖出 "
+    RewardType: MONEY 
+    Reward: 4 
+    PriceType: ITEM 
+    Price: 
+    - - type:LILY_PAD 
+      - amount:8 
+    RewardType_shift_left: MONEY 
+    Reward_shift_left: 32 
+    PriceType_shift_left: ITEM 
+    Price_shift_left:
+    - - type:LILY_PAD 
+      - amount:64 
+    RewardType_shift_right: MONEY 
+    Reward_shift_right: 32
+    PriceType_shift_right: ITEM 
+    Price_shift_right:
+    - - type:LILY_PAD 
+      - amount:64
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    - type:placeholdernumber 
+    - "%checkitem_amount_mat[colon]lily_pad%:over:7" 
+    InventoryLocation: 29
+
+  1_1_4_1_2: 
+    MenuItem: 
+    - "name:§f 睡莲"
+    - type:LILY_PAD 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f4 "
+    - "lore3:§f "
+    - "lore4:§f §4❌  无法支付交易  "
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    InventoryLocation: 29 
+
+  1_1_4_1_3: 
+    MenuItem: 
+    - "name:§f 睡莲"
+    - type:LILY_PAD 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7购买价格： §f120 "
+    - "lore3:§f "
+    - "lore4:§f §a→ 点击以购买 "
+    RewardType: ITEM 
+    Reward:
+    - - type:LILY_PAD 
+      - amount:8 
+    PriceType: MONEY
+    Price: 120
+    RewardType_shift_left: ITEM 
+    Reward_shift_left:
+    - - type:LILY_PAD 
+      - amount:64 
+    PriceType_shift_left: MONEY
+    Price_shift_left: 960
+    RewardType_shift_right: ITEM 
+    Reward_shift_right:
+    - - type:LILY_PAD 
+      - amount:64 
+    PriceType_shift_right: MONEY 
+    Price_shift_right: 960
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    - type:money 
+    - over:119  
+    InventoryLocation: 29 
+
+  1_1_4_1_4: 
+    MenuItem: 
+    - "name:§f 睡莲"
+    - type:LILY_PAD 
+    - amount:8
+    - "lore1:§f " 
+    - "lore2:§f §7购买价格： §f120" 
+    - "lore3:§f " 
+    - "lore4:§f §4❌  无法支付交易 "
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    InventoryLocation: 29
+
+
+
+##
+  1_1_4_2_1: 
+    MenuItem: 
+    - "name:§f Sponge"
+    - type:SPONGE  
+    - amount:4 
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f20 "
+    - "lore3:§f "
+    - "lore4:§f §a→ 点击以卖出 "
+    RewardType: MONEY 
+    Reward: 20 
+    PriceType: ITEM 
+    Price: 
+    - - type:SPONGE 
+      - amount:4 
+    RewardType_shift_left: MONEY 
+    Reward_shift_left: 320 
+    PriceType_shift_left: ITEM 
+    Price_shift_left:
+    - - type:SPONGE 
+      - amount:64 
+    RewardType_shift_right: MONEY 
+    Reward_shift_right: 320
+    PriceType_shift_right: ITEM 
+    Price_shift_right:
+    - - type:SPONGE 
+      - amount:64
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    - type:placeholdernumber 
+    - "%checkitem_amount_mat[colon]sponge%:over:3" 
+    InventoryLocation: 30
+
+  1_1_4_2_2: 
+    MenuItem: 
+    - "name:§f 海绵"
+    - type:SPONGE 
+    - amount:4 
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f20 "
+    - "lore3:§f "
+    - "lore4:§f §4❌  无法支付交易  "
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    InventoryLocation: 30 
+
+  1_1_4_2_3: 
+    MenuItem: 
+    - "name:§f 海绵"
+    - type:SPONGE 
+    - amount:1 
+    - "lore1:§f "
+    - "lore2:§f §7购买价格： §f750 "
+    - "lore3:§f "
+    - "lore4:§f §a→ 点击以购买 "
+    RewardType: ITEM 
+    Reward:
+    - - type:SPONGE 
+      - amount:4 
+    PriceType: MONEY
+    Price: 750
+    RewardType_shift_left: ITEM 
+    Reward_shift_left:
+    - - type:SPONGE 
+      - amount:64 
+    PriceType_shift_left: MONEY
+    Price_shift_left: 48000
+    RewardType_shift_right: ITEM 
+    Reward_shift_right:
+    - - type:SPONGE 
+      - amount:64 
+    PriceType_shift_right: MONEY 
+    Price_shift_right: 48000
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    - type:money 
+    - over:749  
+    InventoryLocation: 30 
+
+  1_1_4_2_4: 
+    MenuItem: 
+    - "name:§f 海绵"
+    - type:SPONGE 
+    - amount:1 
+    - "lore1:§f " 
+    - "lore2:§f §7购买价格： §f750" 
+    - "lore3:§f " 
+    - "lore4:§f §4❌  无法支付交易 "
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    InventoryLocation: 30
+
+
+
+

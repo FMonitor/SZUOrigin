@@ -1,0 +1,65 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 115.210.159.132
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1738639701420
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1738638526266
+  login: 1738638530852
+  kits:
+    vip: 1738428612195
+money: '28673.0'
+last-account-name: Slatermy
+lastlocation:
+  world: 877e483a-8c3b-40fa-9738-40239679b77e
+  world-name: isla
+  x: 55.5
+  y: 84.0
+  z: 153.5
+  yaw: 171.60684204101562
+  pitch: 9.678236961364746
+logoutlocation:
+  world: 04c00a4f-fe5c-47c6-8998-babf81130ba2
+  world-name: world
+  x: 482.23886225338236
+  y: 64.0
+  z: -248.13190235481548
+  yaw: 92.54248046875
+  pitch: 35.249855041503906
+homes:
+  home:
+    world: 04c00a4f-fe5c-47c6-8998-babf81130ba2
+    world-name: world
+    x: 511.6792202627416
+    y: 67.0
+    z: -317.8327483213476
+    yaw: 10.049163818359375
+    pitch: 38.70014572143555
+  a:
+    world: 04c00a4f-fe5c-47c6-8998-babf81130ba2
+    world-name: world
+    x: 489.30000001192093
+    y: 30.0
+    z: -341.30000001192093
+    yaw: -151.35052490234375
+    pitch: 24.299951553344727
+  b:
+    world: 04c00a4f-fe5c-47c6-8998-babf81130ba2
+    world-name: world
+    x: -407.62349373933756
+    y: 62.0
+    z: -234.1630680548254
+    yaw: 170.2476806640625
+    pitch: 13.500131607055664

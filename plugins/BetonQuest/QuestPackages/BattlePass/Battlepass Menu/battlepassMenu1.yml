@@ -1,0 +1,403 @@
+menus:
+  battlepass:
+    title: '&f'
+    height: 6
+    command: /battlepass
+    open_events: openBattlepassSound
+    items:
+      close:
+        item: close
+        amount: 1
+        text:
+         - '&c关闭'
+        close: true
+      green1:
+        item: green1
+        amount: 1
+        text:
+         - '&f'
+      task:
+        item: task
+        amount: 1
+        text:
+         - '&e打开任务菜单'
+        close: true
+        click: openTask
+      Informations:
+        item: Informations
+        amount: 1
+        text:
+         - '&a你现在点数为%point.BattlePass.amount% '
+        close: false
+      battlepass2:
+        item: ScrollRight
+        amount: 1
+        text:
+         - '&a下一页'
+        close: true
+        click: battlepass2
+
+#################progress spam#####
+      ProgressBarBlank:
+        item: ProgressBarBlank
+        amount: 1
+        close: false
+        text:
+         - '&7进度'
+      progress1:
+        item: ProgressBar
+        amount: 1
+        conditions: progress1
+        close: false
+        text:
+         - '&7进度'
+      
+      progress2:
+        item: ProgressBar1
+        amount: 1
+        conditions: progress2
+        close: false
+        text:
+         - '&7进度'
+      
+      progress3:
+        item: ProgressBar2
+        amount: 1
+        conditions: progress3
+        close: false
+        text:
+         - '&7进度'
+      
+      progress4:
+        item: ProgressBar3
+        amount: 1
+        conditions: progress4
+        close: false
+        text:
+         - '&7进度'
+      
+      progress5:
+        item: ProgressBar
+        amount: 1
+        conditions: progress5
+        close: false
+        text:
+         - '&7进度'
+#################Rewards#####
+########################PREMIUM
+      p1-1:
+        item: KeyLocked
+        amount: 1
+        close: false
+        text:
+         - '&f &f&lʙᴀᴛᴛʟᴇᴘᴀꜱꜱ ʀᴇᴡᴀʀᴅꜱ'
+         - '&f '
+         - '&f &7Coins: 60'
+         - '&f &7Experience: 30'
+         - '&f &7Iron ingot: 8'
+         - '&f '
+         - '&f &fᴄᴏꜱᴍᴇᴛɪᴄꜱ'
+         - '&f '
+         - '&f &bBaseBall Cap &7[&5Dyeable&7]'
+         - '&f  ' 
+      p1-2:
+        item: ChestUnclaim
+        amount: 1
+        conditions: progress1,battlepassPermission
+        close: false
+        text:
+         - '&f &f&lʙᴀᴛᴛʟᴇᴘᴀꜱꜱ ʀᴇᴡᴀʀᴅꜱ'
+         - '&f '
+         - '&f &7Coins: 60'
+         - '&f &7Experience: 30'
+         - '&f &7Iron ingot: 8'
+         - '&f '
+         - '&f &fᴄᴏꜱᴍᴇᴛɪᴄꜱ'
+         - '&f '
+         - '&f &bBaseBall Cap &7[&5Dyeable&7]'
+         - '&f  ' 
+        click: pbp1Rewards
+      p1-3:
+        item: ChestClaim
+        amount: 1
+        conditions: pbp1Paid,battlepassPermission
+        close: false
+        text:
+         - '&f &f&lʙᴀᴛᴛʟᴇᴘᴀꜱꜱ ʀᴇᴡᴀʀᴅꜱ'
+         - '&f '
+         - '&f &7Coins: 60'
+         - '&f &7Experience: 30'
+         - '&f &7Iron ingot: 8'
+         - '&f '
+         - '&f &fᴄᴏꜱᴍᴇᴛɪᴄꜱ'
+         - '&f '
+         - '&f &bBaseBall Cap &7[&5Dyeable&7]'
+         - '&f &a&lCLAIMED'
+         - '&f  ' 
+
+
+      p2-1:
+        item: KeyLocked
+        amount: 1
+        close: false
+        text:
+         - '&f &f&lʙᴀᴛᴛʟᴇᴘᴀꜱꜱ ʀᴇᴡᴀʀᴅꜱ'
+         - '&f '
+         - '&f &7Coins: 80'
+         - '&f &7Experience: 45'
+         - '&f &7Iron ingot: 4'
+         - '&f &7Gold ingot: 4'
+         - '&f '
+         - '&f &fᴄᴏꜱᴍᴇᴛɪᴄꜱ'
+         - '&f '
+         - '&f &bHotair Balloon &7[&5Dyeable&7]'
+         - '&f  ' 
+      p2-2:
+        item: ChestUnclaim
+        amount: 1
+        conditions: progress3,battlepassPermission
+        close: false
+        text:
+         - '&f &f&lʙᴀᴛᴛʟᴇᴘᴀꜱꜱ ʀᴇᴡᴀʀᴅꜱ'
+         - '&f '
+         - '&f &7Coins: 80'
+         - '&f &7Experience: 45'
+         - '&f &7Iron ingot: 4'
+         - '&f &7Gold ingot: 4'
+         - '&f '
+         - '&f &fᴄᴏꜱᴍᴇᴛɪᴄꜱ'
+         - '&f '
+         - '&f &bHotair Balloon &7[&5Dyeable&7]'
+         - '&f  ' 
+        click: pbp2Rewards
+      p2-3:
+        item: ChestClaim
+        amount: 1
+        conditions: pbp2Paid,battlepassPermission
+        close: false
+        text:
+         - '&f &f&lʙᴀᴛᴛʟᴇᴘᴀꜱꜱ ʀᴇᴡᴀʀᴅꜱ'
+         - '&f '
+         - '&f &7Coins: 80'
+         - '&f &7Experience: 45'
+         - '&f &7Iron ingot: 4'
+         - '&f &7Gold ingot: 4'
+         - '&f '
+         - '&f &fᴄᴏꜱᴍᴇᴛɪᴄꜱ'
+         - '&f '
+         - '&f &bHotair Balloon &7[&5Dyeable&7]'
+         - '&f &a&lCLAIMED'
+         - '&f  ' 
+
+      p3-1:
+        item: KeyLocked
+        amount: 1
+        close: false
+        text:
+         - '&f &f&lʙᴀᴛᴛʟᴇᴘᴀꜱꜱ ʀᴇᴡᴀʀᴅꜱ'
+         - '&f '
+         - '&f &7Coins: 100'
+         - '&f &7Experience: 60'
+         - '&f &7Iron ingot: 8'
+         - '&f &7Gold ingot: 4'
+         - '&f  ' 
+      p3-2:
+        item: ChestUnclaim
+        amount: 1
+        conditions: progress5,battlepassPermission
+        close: false
+        text:
+         - '&f &f&lʙᴀᴛᴛʟᴇᴘᴀꜱꜱ ʀᴇᴡᴀʀᴅꜱ'
+         - '&f '
+         - '&f &7Coins: 100'
+         - '&f &7Experience: 60'
+         - '&f &7Iron ingot: 8'
+         - '&f &7Gold ingot: 4'
+         - '&f  ' 
+        click: pbp3Rewards
+      p3-3:
+        item: ChestClaim
+        amount: 1
+        conditions: pbp3Paid,battlepassPermission
+        close: false
+        text:
+         - '&f &f&lʙᴀᴛᴛʟᴇᴘᴀꜱꜱ ʀᴇᴡᴀʀᴅꜱ'
+         - '&f '
+         - '&f &7Coins: 100'
+         - '&f &7Experience: 60'
+         - '&f &7Iron ingot: 8'
+         - '&f &7Gold ingot: 4'
+         - '&f '
+         - '&f &a&lCLAIMED'
+         - '&f  ' 
+
+
+
+###############FREE
+      f1-1:
+        item: KeyLocked
+        amount: 1
+        close: false
+        text:
+         - '&f &f&lʙᴀᴛᴛʟᴇᴘᴀꜱꜱ ʀᴇᴡᴀʀᴅꜱ'
+         - '&f '
+         - '&f &7Coins: 40'
+         - '&f &7Experience: 15'
+         - '&f &7Coal: 8'
+         - '&f '
+         - '&f  ' 
+      f1-2:
+        item: ChestUnclaim
+        amount: 1
+        conditions: progress1
+        close: false
+        text:
+         - '&f &f&lʙᴀᴛᴛʟᴇᴘᴀꜱꜱ ʀᴇᴡᴀʀᴅꜱ'
+         - '&f '
+         - '&f &7Coins: 40'
+         - '&f &7Experience: 15'
+         - '&f &7Coal: 8'
+         - '&f '
+         - '&f  ' 
+        click: fbp1Rewards
+      f1-3:
+        item: ChestClaim
+        amount: 1
+        conditions: fbp1Paid
+        close: false
+        text:
+         - '&f &f&lʙᴀᴛᴛʟᴇᴘᴀꜱꜱ ʀᴇᴡᴀʀᴅꜱ'
+         - '&f '
+         - '&f &7Coins: 40'
+         - '&f &7Experience: 15'
+         - '&f &7Coal: 8'
+         - '&f '
+         - '&f &a&lCLAIMED'
+         - '&f  ' 
+
+      f2-1:
+        item: KeyLocked
+        amount: 1
+        close: false
+        text:
+         - '&f &f&lʙᴀᴛᴛʟᴇᴘᴀꜱꜱ ʀᴇᴡᴀʀᴅꜱ'
+         - '&f '
+         - '&f &7Coins: 60'
+         - '&f &7Experience: 30'
+         - '&f &7Iron Ingot: 4'
+         - '&f '
+         - '&f  ' 
+      f2-2:
+        item: ChestUnclaim
+        amount: 1
+        conditions: progress3
+        close: false
+        text:
+         - '&f &f&lʙᴀᴛᴛʟᴇᴘᴀꜱꜱ ʀᴇᴡᴀʀᴅꜱ'
+         - '&f '
+         - '&f &7Coins: 60'
+         - '&f &7Experience: 30'
+         - '&f &7Iron Ingot: 4'
+         - '&f '
+         - '&f  ' 
+        click: fbp2Rewards
+      f2-3:
+        item: ChestClaim
+        amount: 1
+        conditions: fbp2Paid
+        close: false
+        text:
+         - '&f &f&lʙᴀᴛᴛʟᴇᴘᴀꜱꜱ ʀᴇᴡᴀʀᴅꜱ'
+         - '&f '
+         - '&f &7Coins: 60'
+         - '&f &7Experience: 30'
+         - '&f &7Iron Ingot: 4'
+         - '&f '
+         - '&f &a&lCLAIMED'
+         - '&f  ' 
+
+      f3-1:
+        item: KeyLocked
+        amount: 1
+        close: false
+        text:
+         - '&f &f&lʙᴀᴛᴛʟᴇᴘᴀꜱꜱ ʀᴇᴡᴀʀᴅꜱ'
+         - '&f '
+         - '&f &7Coins: 80'
+         - '&f &7Experience: 45'
+         - '&f &7Iron Ingot: 8'
+         - '&f &7Gold Ingot: 4'
+         - '&f '
+         - '&f  ' 
+      f3-2:
+        item: ChestUnclaim
+        amount: 1
+        conditions: progress5
+        close: false
+        text:
+         - '&f &f&lʙᴀᴛᴛʟᴇᴘᴀꜱꜱ ʀᴇᴡᴀʀᴅꜱ'
+         - '&f '
+         - '&f &7Coins: 80'
+         - '&f &7Experience: 45'
+         - '&f &7Iron Ingot: 8'
+         - '&f &7Gold Ingot: 4'
+         - '&f '
+         - '&f  ' 
+        click: fbp3Rewards
+      f3-3:
+        item: ChestClaim
+        amount: 1
+        conditions: fbp3Paid
+        close: false
+        text:
+         - '&f &f&lʙᴀᴛᴛʟᴇᴘᴀꜱꜱ ʀᴇᴡᴀʀᴅꜱ'
+         - '&f '
+         - '&f &7Coins: 80'
+         - '&f &7Experience: 45'
+         - '&f &7Iron Ingot: 8'
+         - '&f &7Gold Ingot: 4'
+         - '&f '
+         - '&f &a&lCLAIMED'
+         - '&f  ' 
+
+    slots:
+      8: Informations
+      18: green1
+      20: p1-3,p1-2,p1-1
+      22: p2-3,p2-2,p2-1
+      24: p3-3,p3-2,p3-1
+      29: f1-3,f1-2,f1-1
+      31: f2-3,f2-2,f2-1
+      33: f3-3,f3-2,f3-1
+      11: progress1,ProgressBarBlank
+      12: progress2,ProgressBarBlank
+      13: progress3,ProgressBarBlank
+      14: progress4,ProgressBarBlank
+      15: progress5,ProgressBarBlank
+      16: battlepass2
+      38: task
+      42: close
+
+events:
+  openTask: menu open taskMenu
+  battlepass2: menu open battlepass2
+  battlepass: menu open battlepass
+  battlepass3: menu open battlepass3
+  battlepass4: menu open battlepass4
+  battlepass5: menu open battlepass5
+  battlepass6: menu open battlepass6
+  battlepass7: menu open battlepass7
+  openBattlepassSound: notify sound:entity.experience_orb.pickup io:sound
+
+conditions:
+  battlepassPermission: permission battlepass.premium
+  progress0: point battlepass 0
+  progress1: point battlepass 20
+  progress2: point battlepass 40
+  progress3: point battlepass 60
+  progress4: point battlepass 80
+  progress5: point battlepass 100
+
+
+
+

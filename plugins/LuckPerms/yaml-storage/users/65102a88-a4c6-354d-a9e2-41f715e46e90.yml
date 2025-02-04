@@ -1,0 +1,7 @@
+uuid: 65102a88-a4c6-354d-a9e2-41f715e46e90
+name: CX009
+primary-group: default
+permissions:
+- chatmanager
+parents:
+- default

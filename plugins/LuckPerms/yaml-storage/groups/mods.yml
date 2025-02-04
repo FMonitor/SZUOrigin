@@ -1,0 +1,10 @@
+name: mods
+permissions:
+- weight.1000
+parents:
+- helper
+prefixes:
+- §f§r:
+    priority: 1000
+
+

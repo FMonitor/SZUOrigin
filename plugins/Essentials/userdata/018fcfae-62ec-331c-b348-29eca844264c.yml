@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 120.238.234.159
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1738320433429
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1738321047181
+  login: 1738320411827
+money: '16.0'
+last-account-name: Skyashark
+lastlocation:
+  world: 877e483a-8c3b-40fa-9738-40239679b77e
+  world-name: isla
+  x: 81.23947024644075
+  y: 83.0
+  z: -46.11250634078097
+  yaw: -62.184814453125
+  pitch: 7.369686603546143
+logoutlocation:
+  world: 04c00a4f-fe5c-47c6-8998-babf81130ba2
+  world-name: world
+  x: -735.655461207879
+  y: 78.0
+  z: 412.2541378476996
+  yaw: 71.34335327148438
+  pitch: 33.52360153198242

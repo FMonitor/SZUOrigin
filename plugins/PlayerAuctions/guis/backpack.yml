@@ -1,0 +1,94 @@
+# PlayerAuctions by Olzie-12
+# https://www.spigotmc.org/resources/83073
+# We also have a discord server for help: https://olziedev.com/discord or check docs https://docs.olziedev.com/projects/playerauctions
+# Also if you find any bugs be happy to report them I will fix them :)
+# Made with love
+
+backpack:
+  # Should you enable backpack gui meaning dropped items will be put into a gui?
+  enabled: true
+  # What is the name of the gui?
+  name: "backpack"
+  # The title of the gui (Can use color codes)
+  title: "&b&lBackpack ([page]/[pages])"
+  # What is the size of this GUI? (multiples of 9 can only go up to 54)
+  size: 54
+  # What are the actions when this menu is opened up?
+  open-actions: []
+  # What are the actions when this menu is closed?
+  close-actions: []
+  # Should the page items be removed if there is page for that button. E.g. you're on page 0, it won't show the previous item.
+  # You can also put an item where this page item is, and it'll only show if the page item isn't there.
+  show-needed-page-items: false
+  # What are the blacklisted slots that items will not appear in the GUI?
+  # This is useful if you want to add empty slots in the middle of the GUI instead of having an item there instead.
+  blacklisted-slots:
+  - "48"
+  - "50"
+
+  icon-lore:
+  - " "
+  - "&bClick to collect your items."
+
+  clickable-items:
+    next-page:
+      # This is the name of the next page item
+      # If you wish to disable any of these please set them the material to "AIR"
+      name: "&bNext Page"
+      # this is the material of the next page item. valid material names: https://javadocs.olziedev.com/spigot/latest/org/bukkit/Material.html
+      material: "ARROW"
+      data: 0
+      lore:
+      - "&eClick&b to go to the next page."
+      slot: 50
+      amount: 1
+      glowing: false
+      # These only work if the skull is a PLAYER_HEAD and the data is 3!
+      #texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWE0ZjY4YzhmYjI3OWU1MGFiNzg2ZjlmYTU0Yzg4Y2E0ZWNmZTFlYjVmZDVmMGMzOGM1NGM5YjFjNzIwM2Q3YSJ9fX0= - Skull texture
+      #owner: Next - Skull owner
+    previous-page:
+      name: "&bPrevious page"
+      material: "BARRIER"
+      data: 0
+      lore:
+      - "&eClick&b to go to the previous page."
+      slot: 48
+      amount: 1
+      glowing: false
+
+  items:
+    1:
+      # This is the name of the item.
+      name: " "
+      # This is the item material. To disable set this to AIR
+      material: "LIGHT_BLUE_STAINED_GLASS_PANE"
+      # This is the data item
+      data: 3
+      # You can add lores!
+      # lore:
+      #   - "&bThis is a pane."
+      slot:
+      - 45
+      - 47
+      - 49
+      - 51
+      - 53
+      # What is the stack amount?
+      amount: 1
+      # commands that will be executed on click.
+      # [server] means the command is executed as the console
+      # [player] means the command is executed as the player
+      # commands:
+      #   - "[server] msg %player% you clicked this item!"
+      glowing: false
+      # These only work if the skull is a PLAYER_HEAD and the data is 3!
+      #texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZmOGFmYjI3YmFmYzc3YzJiODI1OTljMmY3YjhmMWY2ODMxMGU2YWE5MDRmMDUxYjA3YWIxYzJiNmIifX19 - Skull texture
+      #owner: Glass - Skull owner
+    2:
+      name: " "
+      material: "YELLOW_STAINED_GLASS_PANE"
+      data: 4
+      slot:
+      - 46
+      - 52
+      amount: 1

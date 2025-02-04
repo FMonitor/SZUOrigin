@@ -1,0 +1,352 @@
+menus:
+  questMenu:
+    height: 5
+    title: "&f"
+    command: "/warriorguild"
+    slots:
+#      0-3: "filler,filler,filler,filler"
+      34: "ForgedinBattle,ForgedinBattleActive,ForgedinBattleQuestCompleted,ForgedinBattleQuestpaid"
+      41: "ForgedinBattle_128_locked,ForgedinBattle_128_inactive,ForgedinBattle_128_active,ForgedinBattle_128_QuestCompleted,ForgedinBattle_128_Questpaid"
+      29: "ForgedinBattle_192_locked,ForgedinBattle_192_inactive,ForgedinBattle_192_active,ForgedinBattle_192_QuestCompleted,ForgedinBattle_192_Questpaid"
+      19: "ForgedinBattle_256_locked,ForgedinBattle_256_inactive,ForgedinBattle_256_active,ForgedinBattle_256_QuestCompleted,ForgedinBattle_256_Questpaid"
+
+
+
+    items:
+      ForgedinBattle:
+        item: "QuestInactiveItem"
+        amount: 1
+        conditions: "!monsterhunter1_done,!monsterhunter1_started"
+        text:
+            - '&f &f&l 悬赏'
+            - '&f '
+            - "&f &4&l战斗中成长 &6Level I"
+            - "&f "
+            - "&f &7剑在手中"
+            - "&f &7怪在前方"
+            - "&f &416 只敌对生物等待战胜&7."
+            - '&f '
+            - "&f &e左键认领此悬赏."
+            - '&f ' 
+        click:
+          left: "monsterhunter1,monsterhunter1_started,entry_monsterhunter1_started"
+        close: true
+
+      ForgedinBattleActive:
+        item: "QuestActiveItem"
+        amount: 1
+        conditions: "monsterhunter1_started,!monsterhunter1_done,!monsterhunter1_paid"
+        text:
+            - '&f &f&l 悬赏'
+            - '&f '
+            - "&f &4&l战斗中成长 &6Level I"
+            - "&f "
+            - "&f &7剑在手中"
+            - "&f &7怪在前方"
+            - "&f &4&4&3%objective.monsterhunter4.left% 只敌对生物&7."
+            - '&f '
+        close: false
+
+      ForgedinBattleQuestCompleted:
+        item: "QuestCompletedUnclaim"
+        amount: 1
+        conditions: "monsterhunter1_done,!monsterhunter1_paid"
+        text:
+            - '&f &f&l 悬赏'
+            - '&f '
+            - "&f &4&l战斗中成长 &6Level I"
+            - "&f "
+            - "&f &7经过几场恶战"
+            - "&f &7杀死几只敌对生物&7."
+            - "&f &7你需要一场休息."
+            - "&f "
+            - "&f &e左键以领取奖励"
+            - "&f  &a&l任务到此结束~!"
+        click:
+          left: "money_64_rewards,monsterhunter1_paid"
+        close: true
+
+      ForgedinBattleQuestpaid:
+        item: "QuestCompleted"
+        amount: 1
+        conditions: "monsterhunter1_paid,monsterhunter1_done"
+        text:
+            - '&f &f&l 悬赏'
+            - '&f '
+            - "&f &4&l战斗中成长 &6Level I"
+            - "&f "
+            - "&f &7经过几场恶战"
+            - "&f &7杀死几只敌对生物&7."
+            - "&f &7你需要一场休息."
+            - "&f "
+            - '&f &a&l   已认领'
+            - "&f  &a&l任务到此结束~!"
+        close: false
+#################################
+      ForgedinBattle_128_locked:
+        item: "questlocked"
+        amount: 1
+        conditions: "!monsterhunter1_paid"
+        text:
+            - '&f &f&l 悬赏'
+            - '&f '
+            - "&f &7需要先完成其他"
+            - "&f &7任务来完成解锁此任务."
+            - '&f '
+            - "&f &f   要求"
+            - "&f "
+            - "&f &5战斗中成长 Level I"
+            - '&f &f &4&l已上锁&f' 
+        close: false
+
+      ForgedinBattle_128_inactive:
+        item: "QuestInactiveItem"
+        amount: 1
+        conditions: "!monsterhunter2_done,!monsterhunter2_started"
+        text:
+            - '&f &f&l 悬赏'
+            - '&f '
+            - "&f &4&l战斗中成长 &6Level II"
+            - "&f "
+            - "&f &7剑在手中"
+            - "&f &7怪在前方"
+            - "&f &416 只敌对生物等待战胜&7."
+            - '&f '
+            - "&f &e左键认领此悬赏."
+            - '&f ' 
+        click:
+          left: "monsterhunter2,monsterhunter2_started,entry_monsterhunter2_started"
+        close: true
+
+
+      ForgedinBattle_128_active:
+        item: "QuestActiveItem"
+        amount: 1
+        conditions: "monsterhunter2_started,!monsterhunter2_done,!monsterhunter2_paid"
+        text:
+            - '&f &f&l 悬赏'
+            - '&f '
+            - "&f &4&l战斗中成长 &6Level II"
+            - "&f "
+            - "&f &7剑在手中"
+            - "&f &7怪在前方"
+            - "&f &4&4&3%objective.monsterhunter4.left% 只敌对生物&7."
+            - '&f '
+        close: false
+
+      ForgedinBattle_128_QuestCompleted:
+        item: "QuestCompletedUnclaim"
+        amount: 1
+        conditions: "monsterhunter2_done,!monsterhunter2_paid"
+        text:
+            - '&f &f&l 悬赏'
+            - '&f '
+            - "&f &4&l战斗中成长 &6Level II"
+            - "&f "
+            - "&f &7经过几场恶战"
+            - "&f &7杀死几只敌对生物&7."
+            - "&f &7你需要一场休息."
+            - "&f "
+            - "&f &e左键以领取奖励"
+            - "&f  &a&l任务到此结束~!"
+        click:
+          left: "money_128_rewards,monsterhunter2_paid"
+        close: true
+
+      ForgedinBattle_128_Questpaid:
+        item: "QuestCompleted"
+        amount: 1
+        conditions: "monsterhunter2_paid,monsterhunter2_done"
+        text:
+            - '&f &f&l 悬赏'
+            - '&f '
+            - "&f &4&l战斗中成长 &6Level IIV"
+            - "&f "
+            - "&f &7经过几场恶战"
+            - "&f &7杀死几只敌对生物&7."
+            - "&f &7你需要一场休息."
+            - "&f "
+            - '&f &a&l   已认领'
+            - "&f  &a&l任务到此结束~!"
+        close: false
+
+#################################
+      ForgedinBattle_192_locked:
+        item: "questlocked"
+        amount: 1
+        conditions: "!monsterhunter2_paid"
+        text:
+            - '&f &f&l 悬赏'
+            - '&f '
+            - "&f &7需要先完成其他"
+            - "&f &7任务来完成解锁此任务."
+            - '&f '
+            - "&f &f   要求"
+            - "&f "
+            - "&f &5战斗中成长 Level II"
+            - '&f &f &4&l已上锁&f' 
+        close: false
+
+
+      ForgedinBattle_192_inactive:
+        item: "QuestInactiveItem"
+        amount: 1
+        conditions: "!monsterhunter3_done,!monsterhunter3_started"
+        text:
+            - '&f &f&l 悬赏'
+            - '&f '
+            - "&f &4&l战斗中成长 &6Level III"
+            - "&f "
+            - "&f &7剑在手中"
+            - "&f &7怪在前方"
+            - "&f &416 只敌对生物等待战胜&7."
+            - '&f '
+            - "&f &e左键认领此悬赏."
+            - '&f ' 
+        click:
+          left: "monsterhunter3,monsterhunter3_started,entry_monsterhunter3_started"
+        close: true
+
+
+      ForgedinBattle_192_active:
+        item: "QuestActiveItem"
+        amount: 1
+        conditions: "monsterhunter3_started,!monsterhunter3_done,!monsterhunter3_paid"
+        text:
+            - '&f &f&l 悬赏'
+            - '&f '
+            - "&f &4&l战斗中成长 &6Level III"
+            - "&f "
+            - "&f &7剑在手中"
+            - "&f &7怪在前方"
+            - "&f &4&4&3%objective.monsterhunter4.left% 只敌对生物&7."
+            - '&f '
+        close: false
+
+      ForgedinBattle_192_QuestCompleted:
+        item: "QuestCompletedUnclaim"
+        amount: 1
+        conditions: "monsterhunter3_done,!monsterhunter3_paid"
+        text:
+            - '&f &f&l 悬赏'
+            - '&f '
+            - "&f &4&l战斗中成长 &6Level III"
+            - "&f "
+            - "&f &7经过几场恶战"
+            - "&f &7杀死几只敌对生物&7."
+            - "&f &7你需要一场休息."
+            - "&f "
+            - "&f &e左键以领取奖励"
+            - "&f  &a&l任务到此结束~!"
+        click:
+          left: "money_192_rewards,monsterhunter3_paid"
+        close: true
+
+      ForgedinBattle_192_Questpaid:
+        item: "QuestCompleted"
+        amount: 1
+        conditions: "monsterhunter3_paid,monsterhunter3_done"
+        text:
+            - '&f &f&l 悬赏'
+            - '&f '
+            - "&f &4&l战斗中成长 &6Level III"
+            - "&f "
+            - "&f &7经过几场恶战"
+            - "&f &7Slaying &464 只敌对生物&7."
+            - "&f &7你需要一场休息."
+            - "&f "
+            - '&f &a&l   已认领'
+            - "&f  &a&l任务到此结束~!"
+        close: false
+
+#################################
+      ForgedinBattle_256_locked:
+        item: "questlocked"
+        amount: 1
+        conditions: "!monsterhunter3_paid"
+        text:
+            - '&f &f&l 悬赏'
+            - '&f '
+            - "&f &7需要先完成其他"
+            - "&f &7任务来完成解锁此任务."
+            - '&f '
+            - "&f &f   要求"
+            - "&f "
+            - "&f &5战斗中成长 Level III"
+            - '&f &f &4&l已上锁&f' 
+        close: false
+
+
+      ForgedinBattle_256_inactive:
+        item: "QuestInactiveItem"
+        amount: 1
+        conditions: "!monsterhunter4_done,!monsterhunter4_started"
+        text:
+            - '&f &f&l 悬赏'
+            - '&f '
+            - "&f &4&l战斗中成长 &6Level IV"
+            - "&f "
+            - "&f &7剑在手中"
+            - "&f &7怪在前方"
+            - "&f &416 只敌对生物等待战胜&7."
+            - '&f '
+            - "&f &e左键认领此悬赏."
+            - '&f ' 
+        click:
+          left: "monsterhunter4,monsterhunter4_started,entry_monsterhunter4_started"
+        close: true
+
+
+      ForgedinBattle_256_active:
+        item: "QuestActiveItem"
+        amount: 1
+        conditions: "monsterhunter4_started,!monsterhunter4_done,!monsterhunter4_paid"
+        text:
+            - '&f &f&l 悬赏'
+            - '&f '
+            - "&f &4&l战斗中成长 &6Level IV"
+            - "&f "
+            - "&f &7剑在手中"
+            - "&f &7怪在前方"
+            - "&f &4&4&3%objective.monsterhunter4.left% 只敌对生物&7."
+            - '&f '
+        close: false
+
+      ForgedinBattle_256_QuestCompleted:
+        item: "QuestCompletedUnclaim"
+        amount: 1
+        conditions: "monsterhunter4_done,!monsterhunter4_paid"
+        text:
+            - '&f &f&l 悬赏'
+            - '&f '
+            - "&f &4&l战斗中成长 &6Level IV"
+            - "&f "
+            - "&f &7经过几场恶战"
+            - "&f &7杀死几只敌对生物&7."
+            - "&f &7你需要一场休息."
+            - "&f "
+            - "&f &e左键以领取奖励"
+            - "&f  &a&l任务到此结束~!"
+        click:
+          left: "money_256_rewards,monsterhunter4_paid"
+        close: true
+
+      ForgedinBattle_256_Questpaid:
+        item: "QuestCompleted"
+        amount: 1
+        conditions: "monsterhunter4_paid,monsterhunter4_done"
+        text:
+            - '&f &f&l 悬赏'
+            - '&f '
+            - "&f &4&l战斗中成长 &6Level IV"
+            - "&f "
+            - "&f &7经过几场恶战"
+            - "&f &7杀死几只敌对生物&7."
+            - "&f &7你需要一场休息."
+            - "&f "
+            - '&f &a&l   已认领'
+            - "&f  &a&l任务到此结束~!"
+        close: false
+
+
+

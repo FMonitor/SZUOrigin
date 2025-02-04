@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 192.168.1.15
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1738079701152
+  login: 1738079430646
+money: '0'
+last-account-name: Fallen_wind
+lastlocation:
+  world: 04c00a4f-fe5c-47c6-8998-babf81130ba2
+  world-name: world
+  x: 0.0
+  y: 66.0
+  z: 0.0
+  yaw: 0.0
+  pitch: 0.0
+logoutlocation:
+  world: 877e483a-8c3b-40fa-9738-40239679b77e
+  world-name: isla
+  x: 52.88657613731077
+  y: 83.5
+  z: 40.16125184146585
+  yaw: -175.37823486328125
+  pitch: 34.34572982788086

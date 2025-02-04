@@ -1,0 +1,441 @@
+## 在这个文件中, 所有的选项和通用设置都可以被修改。 ##
+## 如果这个配置文件格式不正确, 请参考这里的文档: ##
+## https://github.com/XZot1K/DisplayShopsAPI/blob/master/config.yml ##
+
+## 所有 MySQL 设置都可以在此部分设置和处理。 ##
+mysql:
+  ## 这是多长时间(以秒为单位)每 6 小时 mysql 数据库将被转储到一个文件中(设置为 -1 禁用)。##
+  dump-interval: 21600
+  ## "use-ssl" 功能启用 SSL 连接支持。 ##
+  use-ssl: false
+  database: "DisplayShops"
+  ## "host" 选项可以留空, 以确定是否使用 mysql。 ##
+  ## 如果禁用, 本地将使用 SQLite。 ##
+  host: ""
+  port: "3306"
+  username: "root"
+  password: ""
+
+## 当显示数据包被发送和删除时, 内存会越来越多。启用此选项将在所有数据包发送和管理后立即调用垃圾收集。 ##
+## 这将解决增加的内存使用量, 直到垃圾收集自动化。 ##
+run-gc-immediately: true
+
+## 当商店被加载或执行清理命令时, 所有拥有者长时间未活跃的商店(以秒为单位)将被删除。 ##
+clean-inactive-duration: -1
+
+## 这些选项将完全确定活塞保护的处理方式。 ##
+piston-protection:
+  ## 此选项确定是否应使用活塞保护(警告: 如果禁用, 基础方块将在推出/收回时受损)。 ##
+  check: true
+  ## 此选项将尝试使用一种更强大但更快速的算法来保护商店免受活塞的影响。 ##
+  alternative-method: false
+
+## 这是日志文件的最大大小(以兆字节为单位)。如果文件大小超过这个值, 日志将不会被写入。 ##
+## (注意: 将该值设置为-1以取消限制。) ##
+log-max-size: -1
+
+## 如果禁用此选项, Vault 将被忽略, 并且将使用内置的实际物品货币。 ##
+use-vault: true
+
+## 如果启用了 Towny 并安装了 Towny, 玩家可用的商店地块将是唯一允许摆放商店的区域。 ##
+towny-shop-plots-only: true
+
+## 如果禁用此选项, 将阻止对不在线的商店所有者进行交易。 ##
+offline-mode: true
+
+## 如果启用此选项, 创造模式中的玩家将无法对商店执行某些操作。 ##
+block-creative: false
+
+## 这是自动保存任务的时间间隔(以秒为单位)。 ##
+auto-save-interval: 900
+
+## 聊天交互在取消之前应等待多长时间(以秒为单位)？ ##
+## (注意: 将其设置为-1可禁用超时功能。) ##
+chat-interaction-timeout: 15
+
+## 每当达到下面的延迟时间(以秒为单位), 此选项会检查商店并删除其基础方块无效的商店。 ##
+base-block-sync-delay: -1
+
+## 在商店的买卖交易保持不变之前, 动态修改器将被重置的时间(以秒为单位)。 ##
+dynamic-price-change: 14400
+
+## 租赁者将在到期前剩余时间的这些间隔内收到续租提醒(以秒为单位)。 ##
+rent-notify-intervals: [ 7200, 3600, 1800, 900, 300, 60, 15, 5 ]
+
+## 玩家租赁市场区域的默认到期时间(以秒为单位)。 ##
+rent-expire-duration: 259200
+
+## 每次续租时, 市场区域的租赁时间将延长。 ##
+rent-extend-duration: 86400
+
+## 玩家需要支付的费用以续租他们已经租赁的市场区域。 ##
+rent-renew-cost: 250.0
+
+## 玩家开始租赁市场区域时需要支付的费用。 ##
+rent-cost: 300.0
+
+## 玩家在传送到他们想去的商店之前需要等待多长时间？(以秒为单位) ##
+visit-delay: 5
+
+## 当使用该功能时, 参观商店将花费玩家的价格。 ##
+## (注意: 除了错误和最终消息外, 没有其他确认。) ##
+visit-charge: 100.0
+
+## 如果启用此选项, 则玩家将无法使用访问命令或与之相关的任何功能。 ##
+shop-visiting: true
+
+## 玩家在向其他玩家展示他们的商店之间必须等待的持续时间。 ##
+shop-advertise-cooldown: 60
+
+## 表示广告商店费用的货币数量。 ##
+shop-advertise-cost: 120.0
+
+## 这是在广播JSON消息中用于物品名称的默认颜色。 ##
+## (注意: 如果物品有自定义名称, 则优先使用该颜色。) ##
+shop-broadcast-color: "&f"
+
+## 商店在同一时间可以有多少个助手。 ##
+assistants-cap: 5
+
+## 如果启用此选项, 玩家只能将商店和交易物品设置为手中的物品, 数量为1。 ##
+## (注意: 这只是强制商店的单位数量始终为1, 而不是任何值。不会影响现有的商店) ##
+force-single-items: false
+
+## 这是所有商店描述的字数限制。 ##
+description-character-limit: 30
+
+## 这是描述换行机制, 根据字的大小将文本换行到新行。 ##
+description-long-word-wrap: 64
+
+## 描述每行可以有多少个单词。 ##
+description-word-line-limit: 5
+
+## 所有商店描述中的字符串将被删除。 ##
+## (注意: 短语也可以添加到此列表中。该列表也可以更改为与配置中的其他列表相同的格式。) ##
+description-filter: [ "fuck", "shit", "cunt", "fag", "faggot", "bitch", "dick", "damn", "www.", ".com", ".net" ]
+
+## 当将商店物品插入商店时, 商店的描述将设置为物品的附魔, 以及下面的"enchantment-description-format"选项。 ##
+## (注意: 如果商店的物品没有附魔, 这不会影响描述。) ##
+enchantment-description-set: true
+
+## 这个格式添加到末尾, 显示除了"enchantment-cut-count"之外的其他附魔数量。 ##
+enchantment-description-format: "(还有{remainder}个)"
+
+## 仅显示"enchantment-description-format"之前, 此选项确定显示多少个附魔。 ##
+enchantment-cut-count: 3
+
+## 当将商店物品插入商店时, 商店的描述将设置为物品的药水效果, 以及下面的"potion-description-format"选项。 ##
+## (注意: 如果商店的物品没有附魔, 这不会影响描述。) ##
+potion-description-set: true
+
+## 此格式添加到末尾, 显示与药水相关联的自定义效果数量。 ##
+potion-description-format: "(还有{remainder}个)" 
+
+## 此文本与药水类型一起使用, 以确定药水是否具有延长持续时间。 ##
+potion-description-extended: "延长"
+
+## 此文本与药水类型一起使用, 以确定药水是否在效力方面升级。 ##
+potion-description-upgraded: "升级"
+
+## 如果启用此选项, 则商店上方的展示物品始终为单个物品。 ##
+force-single-stack: false
+
+## 如果启用此选项并删除商店, 则创建物品也会掉落。 ##
+creation-item-drop: true
+
+## 如果启用此选项, 则空商店将显示为具有障碍方块的浮动物品, 而不是没有任何东西。 ##
+empty-shop-item: true
+
+## 如果启用此选项, 则商店在线时将使用所有者的余额, 而不是存储的余额。 ##
+sync-owner-balance: false
+
+## 此冷却时间作为在交易菜单中执行买入/卖出操作之间的延迟, 以防止自动点击。 ##
+transaction-cooldown: 1
+
+## 玩家必须支付这个价格才能获得商店创建物品。 ##
+creation-item-price: 250
+
+## 如果这个选项大于零, 将从买卖交易值中取出定义的百分比, 然后作为税收形式到达玩家。 ##
+transaction-tax: 0
+
+## 如果启用此选项, 则可以使用动态价格, 反之亦然。 ##
+dynamic-prices: true
+
+## 这是每次购买价格将按下面列出的百分比增加的增量。 ##
+## 例如, 如果增量为3, 则商店不会在其总交易计数可以被3整除之前, 在商店的基础买价上堆叠一个百分比。 ##
+dynamic-buy-increment: 3
+dynamic-buy-percentage: 0.05
+
+## 这是每次出售价格将按照下面列出的百分比减少的增量。 ##
+## 例如, 如果增量为3, 则商店不会在其总交易计数可以被3整除之前, 在商店的基础卖价上堆叠一个百分比。 ##
+dynamic-sell-increment: 3
+dynamic-sell-percentage: 0.05
+
+## 这用于增强插件中显示的数字格式。(注意: 将其设置为0表示整数) ##
+minimum-fraction-digits: 2
+
+## 如果启用此选项, 则所有数字条目都必须是整数。小数和非数字将向玩家发送“invalid-amount”消息。 ##
+whole-number-entries: false
+
+## 如果启用此选项, 则数字将以简短的方式格式化(例如1.2k或1.4m) ##
+## (注意: 'minimum-fraction-digits'选项仅影响此格式之前的数字, 短格式分别具有大约三个小数位) ##
+short-number-format: false
+
+## 如果启用此选项而禁用了短数字格式, 则数字将使用点号在逗号之前进行格式化, 以模拟英国数字格式。 ##
+use-uk-format: false
+
+## 这是玩家必须键入的消息, 以退出聊天交互。 ##
+chat-interaction-cancel: "cancel"
+
+## 当点击帮助命令消息时, 这就是建议给玩家的链接。 ##
+## (注意: 将其设置为“wiki”将使用默认的GitHub页面链接。将其设置为“”将完全禁用它。) ##
+help-command-link: "wiki"
+
+## 这是商店本身的默认基础材料。该材料必须是一个方块, 在玩家没有基于权限的基础块或无效块时才会使用。 ##
+## (注意: 所使用的格式可以是仅为材料名称或<material>:<durability>用于旧版本和损坏物品) ##
+shop-block-material: "END_PORTAL_FRAME:0"
+
+## 如果启用此选项, 则将忽略玻璃显示。 ##
+hide-glass: false
+
+## 这是当玩家查看时显示更新的速度(以刻为单位, 20刻 = 1秒)。 ##
+## (注意: 值越高, 效率越高；但是, 外观效果会变差) ##
+view-tick: 4
+
+## 玩家必须至少离基本方块这么近才能显示商店。 ##
+## (注意: 值越低, 效率越高；但是, 玩家需要靠近基本方块) ##
+view-distance: 10
+
+## 如果启用此选项, 则当玩家在范围内时, 商店显示将始终可见。 ##
+## (注意: 此功能基于区块进行距离计算) ##
+always-display: false
+
+## 如果允许广播, 则下面列表中的世界将是商店广播的地方。 ##
+broadcasting-worlds:
+  - "world"
+  - "world_nether"
+  - "world_the_end"
+
+## 这些是每种材料的偏移量, 可以让您调整商店的整个显示效果, 使其在基础材料上看起来更好。 ##
+material-based-offsets:
+  - "END_PORTAL_FRAME:0.5,-0.4,0.5"
+  - "ENDER_PORTAL_FRAME:0.5,-0.4,0.5"
+  - "CHEST:0.5,-0.2,0.5"
+
+## 这是创建商店时或商店物品无效时使用的全息图格式。 ##
+invalid-item-format:
+  - "&c空方块商店"
+  - "&eShift+鼠标右键点击 设置商品"
+  - "&eShift+鼠标左键点击 关闭商店"
+  - "&f店主: &e{owner}"
+
+## 这是商店完全创建并具有商店物品时使用的全息图格式。 ##
+## (注意: {description}占位符必须单独一行或仅为颜色代码值) ##
+valid-item-format:
+  - "&f[交易物品]: {item}"
+  - "&f[单次购买量]: &a{amount} &f个"
+  - "&b{description}"
+  - "&f[标价]: &e{buy-price}金币/个"
+  - "&f[收购价]: &e{sell-price}金币/个"
+  - "&f库存: &e{stock}&f个, &f店主: &e{owner}"
+
+## 这是商店的全息图格式, 用于当商店的库存是无限的并且没有所有者时使用。 ##
+## (注意: {description} 占位符必须单独占据一行, 或者只包含颜色代码值) ##
+admin-shop-format:
+  - "&c世 &e界 &9商 &a店"
+  - "&b{description}"
+  - "&f[交易物品]: {item}"
+  - "&f[单次购买量]: &a{amount} &f个"
+  - "&f[标价]: &e{buy-price}金币/个"
+  - "&f[收购价]: &e{sell-price}金币/个"
+  - "&f存货: &e{stock}&f个, &e∞&f则表示库存无限"
+
+## 这是商店的全息图格式, 用于当商店的库存是无限的并且没有所有者, 但没有有效的商品时使用。 ##
+admin-invalid-item-format:
+  - "&c空世界商店, &f请稍后再来"
+
+## 这是玩家在其商店中设置的最高售价。 ##
+sell-price-limit: 9999999999
+
+## 这是玩家在其商店中设置的最高购买价。 ##
+buy-price-limit: 9999999999
+
+## 这是商店可以作为余额存储的最大货币数量。
+max-stored-currency: 9999999999
+
+## 这是玩家可以在商店物品中设置的最大数量。
+max-item-stack-size: 2560
+
+## 这是玩家可以同时拥有的默认商店限制。 ##
+## (注意: 这可以通过权限为每个玩家更改) ##
+default-shop-limit: 5
+
+## 这是玩家可以同时租用的默认市场区域限制。 ##
+## (注意: 这可以通过权限为每个玩家更改) ##
+default-region-limit: 15
+
+## These are the default prices for shops. ##
+default-buy-price: 100
+default-sell-price: 25
+
+## 这是单个商店在一次的最大库存。 ##
+max-shop-stock: 1000
+
+## 这些是玩家可以通过一次交易从购买/出售所有功能中购买或出售的最大单位数量。 ##
+maximum-buy-all: 64
+maximum-sell-all: 64
+
+## 如果启用此选项, 商店将要求库存为零才允许进行操作, 如商店删除。 ##
+require-empty-stock: true
+
+## 如果启用此选项, 交易界面将在交易完成后关闭。 ##
+close-transaction-gui: true
+
+## 商店必须与另一个商店的区块距离(无论是否可以在一个区块半径内放置另一个商店)。 ##
+required-shop-distance: 1
+
+## 此列表中的世界不允许创建商店。 ##
+blocked-worlds:
+  - "创建不可放置商店方块的世界"
+
+## 此列表中的材料将阻止在其上创建商店。 ##
+blocked-material-list:
+  - "LAVA"
+  - "STATIONARY_LAVA"
+
+## 此列表中的物品材料无法在商店中出售。 ##
+## (请注意, 已包含这些物品的商店不受影响。) ##
+## 格式: <material:durability>(如果没有影响, 则不要放置耐久度) ##
+blocked-item-list:
+  - "END_PORTAL"
+  - "PORTAL"
+
+## 在此列表中, 特定材料可以直接限制最高购买和销售价格(每个材料堆栈的最大值“在单位计数之外”)。 ##
+max-material-prices:
+  DIAMOND_SWORD:
+    buy: 50000.0
+    sell: 25000.0
+
+## 在此列表中, 特定材料可以直接限制最低购买和销售价格(每个材料堆栈的最小值“在单位计数之外”)。 ##
+min-material-prices:
+  DIAMOND_SWORD:
+    buy: 100.0
+    sell: 25.0
+
+## 以下是在特定事件或操作下执行的事件命令。 ##
+## 默认情况下, 每个列表都是空的。与配置中的其他列表一样, 请遵循 YAML 的格式。 ##
+##(注意: 除非需要两个斜杠命令(如在 WorldEdit 中), 否则不要以斜杠开头。 ##
+## 并且所有命令结尾都必须是:PLAYER 或:CONSOLE) ##
+
+event-commands:
+
+  ## 当商店被打开时执行的命令列表(交易界面)。 ##
+  shop-open: [ ]
+
+  ## 当商店被打开时执行的命令列表(编辑界面)。 ##
+  shop-edit: [ ]
+
+  ## 当商店进行购买交易完成时执行的命令列表。 ##
+  shop-buy: [ ]
+
+  ## 当商店进行出售交易完成时执行的命令列表。 ##
+  shop-sell: [ ]
+
+  ## 当商店的物品设置时执行的命令列表。 ##
+  shop-item-set: [ ]
+
+  ## 当商店的交易物品设置时执行的命令列表。 ##
+  trade-item-set: [ ]
+
+  ## 当商店的购买价格更改时执行的命令列表。 ##
+  shop-buy-price: [ ]
+
+  ## 当商店的出售价格更改时执行的命令列表。 ##
+  shop-sell-price: [ ]
+ 
+  ## 当商店撤回物品时执行的命令列表。 ##
+  shop-withdraw: [ ]
+
+  ## 当商店存入物品时执行的命令列表。 ##
+  shop-deposit: [ ]
+
+  ## 当商店的购买限制更改时执行的命令列表。 ##
+  shop-buy-limit: [ ]
+
+  ## 当商店的出售限制更改时执行的命令列表。 ##
+  shop-sell-limit: [ ]
+
+  ## 当商店的数量更改时执行的命令列表。 ##
+  shop-amount: [ ]
+
+  ## 当商店的描述更改时执行的命令列表。 ##
+  shop-description: [ ]
+
+  ## 当商店被删除时执行的命令列表。 ##
+  shop-delete: [ ]
+
+## 在这里, 您可以自定义声音和效果。 ##
+## (注意: 请确保这些始终与您的 MC 版本匹配) ##
+immersion-section:
+  shop-creation-sound: "ENTITY_ITEM_PICKUP"     ## 商店创建时的声音 ##
+  shop-creation-particle: "CLOUD"               ## 商店创建时的粒子效果 ##
+  shop-delete-sound: "BLOCK_WOOD_BREAK"         ## 商店删除时的声音 ##
+  shop-delete-particle: "SMOKE_NORMAL"          ## 商店删除时的粒子效果 ##
+  shop-visit-particle: "CLOUD"                  ## 访问商店时的粒子效果 ##
+  shop-visit-sound: "ENTITY_ENDERMAN_TELEPORT"  ## 访问商店时的声音 ##
+  shop-bbm-sound: "ENTITY_SNOWBALL_THROW"       ## 购买/出售物品时的声音 ##
+  shop-bbm-particle: "FLAME"                    ## 购买/出售物品时的粒子效果 ##
+
+## 这里是商店创建物品的完全配置。 ##
+## (注意: 材料是在“商店选项”部分下定义的“shop-block-material”) ##
+shop-creation-item:
+  
+  ## 这个选项告诉插件玩家是否可以制作它。 ##
+  craftable: true
+
+  ## 这个选项是用于创建该物品的配方, 每行有3个插槽。每个材料可以在后面跟着一个冒号来表示耐久度。 ##
+  ## 用逗号分隔插槽(对于不重要的材料, 使用-1作为耐久度)。 ##
+  recipe:
+    line-one: "AIR:-1,GLASS:-1,AIR:-1"
+    line-two: "END_STONE:-1,CHEST:-1,END_STONE:-1"
+    line-three: "OBSIDIAN:-1,OBSIDIAN:-1,OBSIDIAN:-1"
+
+  ## 这个选项决定了创建物品是否会发光。 ##
+  enchanted: false
+
+  display-name: "&b商店方块"
+  ## 附魔使用来自以下网址的id: ##
+  ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html ##
+  ## (注意: 使用格式"<id>:<从0开始的等级>") ##
+  enchantments: [ ]
+  ## 标记与附魔类似, 使用来自以下网址的id: ##
+  ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemFlag.html ##
+  ## (注意: 如果标记在列表中, 则只需要添加id, 它将设置为 true。) ##
+  flags: [ ]
+  ## 这是用于特殊纹理的。将其设置为-1以避免使用。 ##
+  model-data: 0
+  lore:
+    - "&f放置商店方块来新建一个商店。"
+    - ""
+
+# Here is where the shop currency item can be fully configured.
+# (Note: This is only used as the currency if Vault is disabled)
+shop-currency-item:
+
+  # If this is enabled, shop owners will not be able to change the trade item and this item will be used.
+  force-use: false
+  material: "GOLD_INGOT"
+  durability: 0
+
+  # Enchantments use the ids from:  https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html
+  # (NOTE: Use the format "<id>:<level starting at 0>")
+  enchantments: [ ]
+  # Flags work similar to the enchantments and pull the ids from: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemFlag.html
+  # (NOTE: You only need to add the id, if the flag is in the list it is just set to true.)
+  flags: [ ]
+  # This is for special use of textures. Leave at -1 to avoid.
+  model-data: 0
+
+  # Leave the display name and lore blank for no item meta (Vanilla Item).
+  display-name: ""
+  lore: [ ]

@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1737267900749
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1737268232006
+  login: 1737267506402
+money: '0'
+last-account-name: neckProtecter
+lastlocation:
+  world: 877e483a-8c3b-40fa-9738-40239679b77e
+  world-name: isla
+  x: 120.30000001192093
+  y: 85.0
+  z: 74.92929393093921
+  yaw: 164.9970703125
+  pitch: 25.799869537353516
+logoutlocation:
+  world: 877e483a-8c3b-40fa-9738-40239679b77e
+  world-name: isla
+  x: 115.28998217495868
+  y: 83.0
+  z: -15.699999988079071
+  yaw: 138.27908325195312
+  pitch: 2.7851054668426514

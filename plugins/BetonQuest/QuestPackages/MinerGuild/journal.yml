@@ -1,0 +1,30 @@
+journal:
+  break64stones_started:
+    en: 'mine 64 stones'
+  break64stones_done:
+    en: 'You mined 64 stones'
+  break64stones_paid:
+    en: 'Rewards for breaking 64 stones'
+    
+  break128stones_started:
+    en: 'mine 128 stones'
+  break128stones_done:
+    en: 'You mined 128 stones'
+  break128stones_paid:
+    en: 'Rewards for breaking 128 stones'
+
+  break192stones_started:
+    en: 'mine 192 stones'
+  break192stones_done:
+    en: 'You mined 192 stones'
+  break192stones_paid:
+    en: 'Rewards for breaking 192 stones'
+
+  break256stones_started:
+    en: 'mine 256 stones'
+  break256stones_done:
+    en: 'You mined 256 stones'
+  break256stones_paid:
+    en: 'Rewards for breaking 256 stones'
+
+

@@ -1,0 +1,582 @@
+Name: '
+Preview_Config: diamond
+Permission_Required: false
+Opening:
+  Cooldown: 0
+  Cost:
+    MONEY: 0.0
+    EXP: 0.0
+Key:
+  Ids:
+  - diamond
+Block:
+  Locations:
+  - 32.0,84.0,91.0,0.0,0.0,isla
+  Pushback:
+    Enabled: true
+  Hologram:
+    Enabled: true
+    Offset:
+      Y: 1.0
+    Text:
+    - 
+  Effect:
+    Model: HELIX
+    Particle:
+      Name: DRAGON_BREATH
+Animation_Config: wander
+Rewards:
+  List:
+    netherite_scrap_8:
+      Name: '&aNetherite Scrap 8'
+      Chance: 25.0
+      Rarity: rare
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: 1800020009km800pdlkmspb3e9gmct1qdpin8q35e9kn8pavedhn4obg0400agrfeln78200
+      Commands: []
+      Items:
+      - 1800020009km800pdlkmspb3e9gmct1qdpin8q35e9kn8pavedhn4obg0400agrfeln78200
+      Ignored_For_Permissions: []
+    netherite_ingot_2:
+      Name: '&aNetherite Ingot 2'
+      Chance: 25.0
+      Rarity: rare
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: 1800020009km800pdlkmspb3e9gmct1qdpin8q35e9kn8pavd5n6errk0400agrfeln780g0
+      Commands: []
+      Items:
+      - 1800020009km800pdlkmspb3e9gmct1qdpin8q35e9kn8pavd5n6errk0400agrfeln780g0
+      Ignored_For_Permissions: []
+    diamond_helmet:
+      Name: '&aDiamond Helmet'
+      Chance: 25.0
+      Rarity: rare
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: k00010004qb400c6qqbeclhn4ob6egt68qb1dlnmsp2vd1imorb5eg5000rkc5jg60068hgmqob7ck0000001400ohbecdk62rjkdlimst3j1800000210004qb4008mqqbeclhn4ob6egt6qpbechkmspo2001motjc000g020009km800kdlkmspb3e9gmct1qe1p6ut35cdq6irre08006r3mdg0060000400agrfeln78080
+      Commands: []
+      Items:
+      - k00010004qb400c6qqbeclhn4ob6egt68qb1dlnmsp2vd1imorb5eg5000rkc5jg60068hgmqob7ck0000001400ohbecdk62rjkdlimst3j1800000210004qb4008mqqbeclhn4ob6egt6qpbechkmspo2001motjc000g020009km800kdlkmspb3e9gmct1qe1p6ut35cdq6irre08006r3mdg0060000400agrfeln78080
+      Ignored_For_Permissions: []
+    netherite_ingot_6:
+      Name: '&aNetherite Ingot 6'
+      Chance: 25.0
+      Rarity: rare
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: 1800020009km800pdlkmspb3e9gmct1qdpin8q35e9kn8pavd5n6errk0400agrfeln781g0
+      Commands: []
+      Items:
+      - 1800020009km800pdlkmspb3e9gmct1qdpin8q35e9kn8pavd5n6errk0400agrfeln781g0
+      Ignored_For_Permissions: []
+    netherite_helmet:
+      Name: '&aNetherite Helmet'
+      Chance: 25.0
+      Rarity: rare
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: 1800020009km800qdlkmspb3e9gmct1qdpin8q35e9kn8pavd1imorb5eg5000rkc5jg60068hgmqob7ck0000001400ohbecdk62rjkdlimst3j1800000210004qb4008mqqbeclhn4ob6egt6qpbechkmspo2001motjc000g020009km800kdlkmspb3e9gmct1qe1p6ut35cdq6irre08006r3mdg0040000400agrfeln78080
+      Commands: []
+      Items:
+      - 1800020009km800qdlkmspb3e9gmct1qdpin8q35e9kn8pavd1imorb5eg5000rkc5jg60068hgmqob7ck0000001400ohbecdk62rjkdlimst3j1800000210004qb4008mqqbeclhn4ob6egt6qpbechkmspo2001motjc000g020009km800kdlkmspb3e9gmct1qe1p6ut35cdq6irre08006r3mdg0040000400agrfeln78080
+      Ignored_For_Permissions: []
+    netherite_ingot_4:
+      Name: '&aNetherite Ingot 4'
+      Chance: 25.0
+      Rarity: rare
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: 1800020009km800pdlkmspb3e9gmct1qdpin8q35e9kn8pavd5n6errk0400agrfeln78100
+      Commands: []
+      Items:
+      - 1800020009km800pdlkmspb3e9gmct1qdpin8q35e9kn8pavd5n6errk0400agrfeln78100
+      Ignored_For_Permissions: []
+    netherite_scrap_16:
+      Name: '&aNetherite Scrap 16'
+      Chance: 25.0
+      Rarity: rare
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: 1800020009km800pdlkmspb3e9gmct1qdpin8q35e9kn8pavedhn4obg0400agrfeln78400
+      Commands: []
+      Items:
+      - 1800020009km800pdlkmspb3e9gmct1qdpin8q35e9kn8pavedhn4obg0400agrfeln78400
+      Ignored_For_Permissions: []
+    diamond_36:
+      Name: '&aDiamond 36'
+      Chance: 25.0
+      Rarity: common
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: 2g0004000j9cg012rb9dpim6sj1cpq3kp39c5mmurj40400agrfeln78900
+      Commands: []
+      Items:
+      - 2g0004000j9cg012rb9dpim6sj1cpq3kp39c5mmurj40400agrfeln78900
+      Ignored_For_Permissions: []
+    diamond_12:
+      Name: '&aDiamond 12'
+      Chance: 25.0
+      Rarity: common
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: 2g0004000j9cg012rb9dpim6sj1cpq3kp39c5mmurj40400agrfeln78300
+      Commands: []
+      Items:
+      - 2g0004000j9cg012rb9dpim6sj1cpq3kp39c5mmurj40400agrfeln78300
+      Ignored_For_Permissions: []
+    diamond_chestplate:
+      Name: '&aDiamond Chestplate'
+      Chance: 25.0
+      Rarity: rare
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: 2g0004000j9cg01orb9dpim6sj1cpq3kp39c5mmurj4bthmgpbjeho6oobkck5000rkc5jg60068hgmqob7ck0000001400ohbecdk62rjkdlimst3j1800000210004qb4008mqqbeclhn4ob6egt6qpbechkmspo2001motjc000g020009km800kdlkmspb3e9gmct1qe1p6ut35cdq6irre08006r3mdg0060000400agrfeln78080
+      Commands: []
+      Items:
+      - 2g0004000j9cg01orb9dpim6sj1cpq3kp39c5mmurj4bthmgpbjeho6oobkck5000rkc5jg60068hgmqob7ck0000001400ohbecdk62rjkdlimst3j1800000210004qb4008mqqbeclhn4ob6egt6qpbechkmspo2001motjc000g020009km800kdlkmspb3e9gmct1qe1p6ut35cdq6irre08006r3mdg0060000400agrfeln78080
+      Ignored_For_Permissions: []
+    totem_of_undying:
+      Name: '&aTotem Of Undying'
+      Chance: 25.0
+      Rarity: rare
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: a0000g002d5i006jdd5n6aoric5j78ejkdtq6aravdtj5utbechsmirj70400agrfeln78080
+      Commands: []
+      Items:
+      - a0000g002d5i006jdd5n6aoric5j78ejkdtq6aravdtj5utbechsmirj70400agrfeln78080
+      Ignored_For_Permissions: []
+    netherite_chestplate:
+      Name: '&aNetherite Chestplate'
+      Chance: 25.0
+      Rarity: rare
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: 5000080016ip003pmmirj5cdp62pjk79n6at38clp6it35bthmgpbjeho6oobkck5000rkc5jg60068hgmqob7ck0000001400ohbecdk62rjkdlimst3j1800000210004qb4008mqqbeclhn4ob6egt6qpbechkmspo2001motjc000g020009km800kdlkmspb3e9gmct1qe1p6ut35cdq6irre08006r3mdg0040000400agrfeln78080
+      Commands: []
+      Items:
+      - 5000080016ip003pmmirj5cdp62pjk79n6at38clp6it35bthmgpbjeho6oobkck5000rkc5jg60068hgmqob7ck0000001400ohbecdk62rjkdlimst3j1800000210004qb4008mqqbeclhn4ob6egt6qpbechkmspo2001motjc000g020009km800kdlkmspb3e9gmct1qe1p6ut35cdq6irre08006r3mdg0040000400agrfeln78080
+      Ignored_For_Permissions: []
+    gold_ingot_32:
+      Name: '&aGold Ingot 32'
+      Chance: 25.0
+      Rarity: common
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: 1800020009km800kdlkmspb3e9gmct1qctnmop2vd5n6errk0400agrfeln78800
+      Commands: []
+      Items:
+      - 1800020009km800kdlkmspb3e9gmct1qctnmop2vd5n6errk0400agrfeln78800
+      Ignored_For_Permissions: []
+    gold_ingot_64:
+      Name: '&aGold Ingot 64'
+      Chance: 25.0
+      Rarity: rare
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: 1800020009km800kdlkmspb3e9gmct1qctnmop2vd5n6errk0400agrfeln78g00
+      Commands: []
+      Items:
+      - 1800020009km800kdlkmspb3e9gmct1qctnmop2vd5n6errk0400agrfeln78g00
+      Ignored_For_Permissions: []
+    shulker_16:
+      Name: '&aShulker 16'
+      Chance: 25.0
+      Rarity: legendary
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: k00010004qb400bmqqbeclhn4ob6egt76q3ldhlmasivedk6ar3c0400agrfeln78400
+      Commands: []
+      Items:
+      - k00010004qb400bmqqbeclhn4ob6egt76q3ldhlmasivedk6ar3c0400agrfeln78400
+      Ignored_For_Permissions: []
+    shulker_8:
+      Name: '&aShulker 8'
+      Chance: 25.0
+      Rarity: legendary
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: k00010004qb400bmqqbeclhn4ob6egt76q3ldhlmasivedk6ar3c0400agrfeln78200
+      Commands: []
+      Items:
+      - k00010004qb400bmqqbeclhn4ob6egt76q3ldhlmasivedk6ar3c0400agrfeln78200
+      Ignored_For_Permissions: []
+    diamond_leggings:
+      Name: '&aDiamond Leggings'
+      Chance: 25.0
+      Rarity: rare
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: 1800020009km800qdlkmspb3e9gmct1qchkm2rbfdpi5ur35ctjmirj7ec5000rkc5jg60068hgmqob7ck0000001400ohbecdk62rjkdlimst3j1800000210004qb4008mqqbeclhn4ob6egt6qpbechkmspo2001motjc000g020009km800kdlkmspb3e9gmct1qe1p6ut35cdq6irre08006r3mdg0060000400agrfeln78080
+      Commands: []
+      Items:
+      - 1800020009km800qdlkmspb3e9gmct1qchkm2rbfdpi5ur35ctjmirj7ec5000rkc5jg60068hgmqob7ck0000001400ohbecdk62rjkdlimst3j1800000210004qb4008mqqbeclhn4ob6egt6qpbechkmspo2001motjc000g020009km800kdlkmspb3e9gmct1qe1p6ut35cdq6irre08006r3mdg0060000400agrfeln78080
+      Ignored_For_Permissions: []
+    gold_block_32:
+      Name: '&aGold Block 32'
+      Chance: 25.0
+      Rarity: legendary
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: 1800020009km800kdlkmspb3e9gmct1qctnmop2vc9m6uorb0400agrfeln78800
+      Commands: []
+      Items:
+      - 1800020009km800kdlkmspb3e9gmct1qctnmop2vc9m6uorb0400agrfeln78800
+      Ignored_For_Permissions: []
+    netherite_leggings:
+      Name: '&aNetherite Leggings'
+      Chance: 25.0
+      Rarity: rare
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: 2g0004000j9cg01orb9dpim6sj1cpq3krj5ehk6asj9ehilur35ctjmirj7ec5000rkc5jg60068hgmqob7ck0000001400ohbecdk62rjkdlimst3j1800000210004qb4008mqqbeclhn4ob6egt6qpbechkmspo2001motjc000g020009km800kdlkmspb3e9gmct1qe1p6ut35cdq6irre08006r3mdg0040000400agrfeln78080
+      Commands: []
+      Items:
+      - 2g0004000j9cg01orb9dpim6sj1cpq3krj5ehk6asj9ehilur35ctjmirj7ec5000rkc5jg60068hgmqob7ck0000001400ohbecdk62rjkdlimst3j1800000210004qb4008mqqbeclhn4ob6egt6qpbechkmspo2001motjc000g020009km800kdlkmspb3e9gmct1qe1p6ut35cdq6irre08006r3mdg0040000400agrfeln78080
+      Ignored_For_Permissions: []
+    golden_carrots_16:
+      Name: '&aGolden Carrots 16'
+      Chance: 25.0
+      Rarity: common
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: k00010004qb400bmqqbeclhn4ob6egt6errcchimsnr3c5p74rrk0400agrfeln78400
+      Commands: []
+      Items:
+      - k00010004qb400bmqqbeclhn4ob6egt6errcchimsnr3c5p74rrk0400agrfeln78400
+      Ignored_For_Permissions: []
+    golden_carrots_48:
+      Name: '&aGolden Carrots 48'
+      Chance: 25.0
+      Rarity: common
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: k00010004qb400bmqqbeclhn4ob6egt6errcchimsnr3c5p74rrk0400agrfeln78c00
+      Commands: []
+      Items:
+      - k00010004qb400bmqqbeclhn4ob6egt6errcchimsnr3c5p74rrk0400agrfeln78c00
+      Ignored_For_Permissions: []
+    iron_ingot_64:
+      Name: '&aIron Ingot 64'
+      Chance: 25.0
+      Rarity: common
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: 1800020009km800kdlkmspb3e9gmct1qd5p6urivd5n6errk0400agrfeln78g00
+      Commands: []
+      Items:
+      - 1800020009km800kdlkmspb3e9gmct1qd5p6urivd5n6errk0400agrfeln78g00
+      Ignored_For_Permissions: []
+    budding_amethyst_10:
+      Name: '&aBudding Amethyst 10'
+      Chance: 25.0
+      Rarity: legendary
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: a0000g002d5i006jdd5n6aoric5j78ej2eli68qbectfm2rb5ehk7isrk0400agrfeln782g0
+      Commands: []
+      Items:
+      - a0000g002d5i006jdd5n6aoric5j78ej2eli68qbectfm2rb5ehk7isrk0400agrfeln782g0
+      Ignored_For_Permissions: []
+    diamond_boots:
+      Name: '&aDiamond Boots'
+      Chance: 25.0
+      Rarity: rare
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: 2g0004000j9cg01erb9dpim6sj1cpq3kp39c5mmurj4bth6urrkec5000rkc5jg60068hgmqob7ck0000001400ohbecdk62rjkdlimst3j1800000210004qb4008mqqbeclhn4ob6egt6qpbechkmspo2001motjc000g020009km800kdlkmspb3e9gmct1qe1p6ut35cdq6irre08006r3mdg0060000400agrfeln78080
+      Commands: []
+      Items:
+      - 2g0004000j9cg01erb9dpim6sj1cpq3kp39c5mmurj4bth6urrkec5000rkc5jg60068hgmqob7ck0000001400ohbecdk62rjkdlimst3j1800000210004qb4008mqqbeclhn4ob6egt6qpbechkmspo2001motjc000g020009km800kdlkmspb3e9gmct1qe1p6ut35cdq6irre08006r3mdg0060000400agrfeln78080
+      Ignored_For_Permissions: []
+    emerald_block_8:
+      Name: '&aEmerald Block 8'
+      Chance: 25.0
+      Rarity: common
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: k00010004qb400bmqqbeclhn4ob6egt6arb5e9gmop2vc9m6uorb0400agrfeln78200
+      Commands: []
+      Items:
+      - k00010004qb400bmqqbeclhn4ob6egt6arb5e9gmop2vc9m6uorb0400agrfeln78200
+      Ignored_For_Permissions: []
+    netherite_boots:
+      Name: '&aNetherite Boots'
+      Chance: 25.0
+      Rarity: rare
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: 5000080016ip0035mmirj5cdp62pjk79n6at38clp6it35bth6urrkec5000rkc5jg60068hgmqob7ck0000001400ohbecdk62rjkdlimst3j1800000210004qb4008mqqbeclhn4ob6egt6qpbechkmspo2001motjc000g020009km800kdlkmspb3e9gmct1qe1p6ut35cdq6irre08006r3mdg0040000400agrfeln78080
+      Commands: []
+      Items:
+      - 5000080016ip0035mmirj5cdp62pjk79n6at38clp6it35bth6urrkec5000rkc5jg60068hgmqob7ck0000001400ohbecdk62rjkdlimst3j1800000210004qb4008mqqbeclhn4ob6egt6qpbechkmspo2001motjc000g020009km800kdlkmspb3e9gmct1qe1p6ut35cdq6irre08006r3mdg0040000400agrfeln78080
+      Ignored_For_Permissions: []
+    budding_amethyst_5:
+      Name: '&aBudding Amethyst 5'
+      Chance: 25.0
+      Rarity: rare
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: a0000g002d5i006jdd5n6aoric5j78ej2eli68qbectfm2rb5ehk7isrk0400agrfeln78180
+      Commands: []
+      Items:
+      - a0000g002d5i006jdd5n6aoric5j78ej2eli68qbectfm2rb5ehk7isrk0400agrfeln78180
+      Ignored_For_Permissions: []
+    iron_ingot_32:
+      Name: '&aIron Ingot 32'
+      Chance: 25.0
+      Rarity: common
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: 1800020009km800kdlkmspb3e9gmct1qd5p6urivd5n6errk0400agrfeln78800
+      Commands: []
+      Items:
+      - 1800020009km800kdlkmspb3e9gmct1qd5p6urivd5n6errk0400agrfeln78800
+      Ignored_For_Permissions: []
+    copper_ingot_64:
+      Name: '&aCopper Ingot 64'
+      Chance: 25.0
+      Rarity: common
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: 2g0004000j9cg01crb9dpim6sj1cpq3korfe1o6asivd5n6errk0400agrfeln78g00
+      Commands: []
+      Items:
+      - 2g0004000j9cg01crb9dpim6sj1cpq3korfe1o6asivd5n6errk0400agrfeln78g00
+      Ignored_For_Permissions: []
+    copper_ingot_32:
+      Name: '&aCopper Ingot 32'
+      Chance: 25.0
+      Rarity: common
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: 2g0004000j9cg01crb9dpim6sj1cpq3korfe1o6asivd5n6errk0400agrfeln78800
+      Commands: []
+      Items:
+      - 2g0004000j9cg01crb9dpim6sj1cpq3korfe1o6asivd5n6errk0400agrfeln78800
+      Ignored_For_Permissions: []
+    golden_apple_8:
+      Name: '&aGolden Apple 8'
+      Chance: 25.0
+      Rarity: common
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: 2g0004000j9cg01crb9dpim6sj1cpq3kprfdhi6arivc5o70r350400agrfeln78200
+      Commands: []
+      Items:
+      - 2g0004000j9cg01crb9dpim6sj1cpq3kprfdhi6arivc5o70r350400agrfeln78200
+      Ignored_For_Permissions: []
+    diamond_horse_armor:
+      Name: '&aDiamond Horse Armor'
+      Chance: 25.0
+      Rarity: common
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: 5000080016ip003lmmirj5cdp62pjk79i6iobddtn68nr8dtp76pavc5p6qrri0400agrfeln78080
+      Commands: []
+      Items:
+      - 5000080016ip003lmmirj5cdp62pjk79i6iobddtn68nr8dtp76pavc5p6qrri0400agrfeln78080
+      Ignored_For_Permissions: []
+    gold_key:
+      Name: '&aGold Key'
+      Chance: 25.0
+      Rarity: common
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: 1800020009km800fdlkmspb3e9gmct1qedq6iorb18006t31cs5004igelh6oqb389qmmqr9ehb62r3lclpgg00scls66pbcdhimst33e9gn8pbj79hn4obkclfmmpbp5pkm8008ctnmop2vddini00a003m8qbje1m62u880024sobdck096up2cls78sj148t5mup2c9nmop1279j62r3jckm24qbkc5m6iop279j62r3jckm24tbechin4r39dpim88hqcpgmosr55gh76t3id5lmat38e9nnapr848t6cobcediio8jfc9j7asr3c5q6ap1279j62r3jckm24orfdhnn48hq48hkchi16gp488hc49q6au3k48t24hrfdhi20ir5f4h7qn9c49q6au3k48t248jt001g03q3elpn8rrd9lnm8pbc8hgn8o800006c0o01546ip358pm62prj000000g00400agrfeln78080
+      Commands:
+      - '[CONSOLE] crates key give %player_name% gold_key 1'
+      Items: []
+      Ignored_For_Permissions: []
+    diamond_key:
+      Name: '&aDiamond Key'
+      Chance: 25.0
+      Rarity: common
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: 2g0004000j9cg00urb9dpim6sj1cpq3ksrkd5hmm2g00dq62poa00950tb2dhkm6gjlddlmit2mc5m7apbj1001opbocdimor35dpq66sj1ehin6ej3e9gn8pavddinibj9cg00ep39c5mmurj4005001r4d5pn0r31f440012ec5mma04mfch6au3ke9gi4eirfch64rrccgh3kpj1dhpmab12d5q62r39cch3kpj1dhpmab12eln68pbidhkmspb448t6cobcediio8jjehp6iqr5ehk74rrlctk24ej6c5m76p9c49nm4pjledhm2t35cgh3kpj1dhpmab12cdnmorri48t248pk852k8h1p48m24t35f1q24eh28hkm2rbfdpi20ir5f4h7qn9c49q6au3k48t248jt001g03q3elpn8rrd9lnm8pbc8hgn8o800006e0o01546ip358pm62prj000000g00400agrfeln78080
+      Commands:
+      - '[CONSOLE] crates key give %player_name% diamond 1'
+      Items: []
+      Ignored_For_Permissions: []
+    elytra:
+      Name: '&aElytra'
+      Chance: 25.0
+      Rarity: legendary
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: a0000g002d5i0043dd5n6aoric5j78ej5dhsn8sj118006t31cs1g01i4c5mm2pr5000000000400agrfeln78080
+      Commands: []
+      Items:
+      - a0000g002d5i0043dd5n6aoric5j78ej5dhsn8sj118006t31cs1g01i4c5mm2pr5000000000400agrfeln78080
+      Ignored_For_Permissions: []
+    coal_ore_64:
+      Name: '&aCoal Ore 64'
+      Chance: 25.0
+      Rarity: common
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: k00010004qb40096qqbeclhn4ob6egt66rr1dhfmusj50400agrfeln78g00
+      Commands: []
+      Items:
+      - k00010004qb40096qqbeclhn4ob6egt66rr1dhfmusj50400agrfeln78g00
+      Ignored_For_Permissions: []
+    copper_ore_48:
+      Name: '&aCopper Ore 48'
+      Chance: 25.0
+      Rarity: common
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: 1800020009km800kdlkmspb3e9gmct1qcdnn0s35e9fmusj50400agrfeln78c00
+      Commands: []
+      Items:
+      - 1800020009km800kdlkmspb3e9gmct1qcdnn0s35e9fmusj50400agrfeln78c00
+      Ignored_For_Permissions: []
+    iron_ore_48:
+      Name: '&aIron Ore 48'
+      Chance: 25.0
+      Rarity: common
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: k00010004qb40096qqbeclhn4ob6egt6isjfdpfmusj50400agrfeln78c00
+      Commands: []
+      Items:
+      - k00010004qb40096qqbeclhn4ob6egt6isjfdpfmusj50400agrfeln78c00
+      Ignored_For_Permissions: []
+    gold_ore_48:
+      Name: '&aGold Ore 48'
+      Chance: 25.0
+      Rarity: common
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: k00010004qb40096qqbeclhn4ob6egt6errcchfmusj50400agrfeln78c00
+      Commands: []
+      Items:
+      - k00010004qb40096qqbeclhn4ob6egt6errcchfmusj50400agrfeln78c00
+      Ignored_For_Permissions: []
+    emerald_ore_48:
+      Name: '&aEmerald Ore 48'
+      Chance: 25.0
+      Rarity: common
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: a0000g002d5i005bdd5n6aoric5j78ej5dlin4obcchfmusj50400agrfeln78c00
+      Commands: []
+      Items:
+      - a0000g002d5i005bdd5n6aoric5j78ej5dlin4obcchfmusj50400agrfeln78c00
+      Ignored_For_Permissions: []
+    quartz_ore_48:
+      Name: '&aQuartz Ore 48'
+      Chance: 25.0
+      Rarity: common
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: 2g0004000j9cg01mrb9dpim6sj1cpq3krj5ehk6asive5qm2sjkf9fmusj50400agrfeln78c00
+      Commands: []
+      Items:
+      - 2g0004000j9cg01mrb9dpim6sj1cpq3krj5ehk6asive5qm2sjkf9fmusj50400agrfeln78c00
+      Ignored_For_Permissions: []
+    diamond_ore_12:
+      Name: '&aDiamond Ore 12'
+      Chance: 25.0
+      Rarity: common
+      Broadcast: false
+      Win_Limits:
+        Amount: -1
+        Cooldown: 0
+      Preview: a0000g002d5i005bdd5n6aoric5j78ej4d5gmqrrechfmusj50400agrfeln78300
+      Commands: []
+      Items:
+      - a0000g002d5i005bdd5n6aoric5j78ej4d5gmqrrechfmusj50400agrfeln78300
+      Ignored_For_Permissions: []
+Item:
+  Material: PAPER
+  Name: '&fDiamond Crates'
+  Custom_Model_Data: 100126
+
+
+

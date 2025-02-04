@@ -1,0 +1,7 @@
+objectives:
+  break64wheats: "block WHEAT -64 events:break64wheats_done,entry_break64wheats_done"
+  break128carrots: "block CARROT -128 events:break128carrots_done,entry_break128carrots_done"
+  break128potatoes: "block POTATO -128 events:break128potatoes_done,entry_break128potatoes_done"
+  break128beetroots: "block BEETROOT -128 events:break128beetroots_done,entry_break128beetroots_done"
+
+

@@ -1,0 +1,47 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 192.168.1.15
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1738065150223
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1738066620804
+  login: 1738065175496
+money: '0'
+last-account-name: JunZi_
+lastlocation:
+  world: 04c00a4f-fe5c-47c6-8998-babf81130ba2
+  world-name: world
+  x: 947.7491974207003
+  y: 110.0
+  z: 647.1073059834212
+  yaw: -88.0479736328125
+  pitch: 1.3500198125839233
+logoutlocation:
+  world: 16c0d5de-e05c-437b-bfdb-3422519e8bd3
+  world-name: mine
+  x: -21.88287217793913
+  y: 45.0
+  z: 273.14937207609705
+  yaw: -23.588134765625
+  pitch: 36.60148239135742
+homes:
+  junzi:
+    world: 04c00a4f-fe5c-47c6-8998-babf81130ba2
+    world-name: world
+    x: 939.412750914144
+    y: 110.0
+    z: 652.2854896349722
+    yaw: 84.0013198852539
+    pitch: 23.849977493286133

@@ -1,0 +1,464 @@
+
+
+events:
+  rewardsOne_paid: 'tag add rewardsOne_paid'
+  rewardsOne_done: 'tag add rewardsOne_done'
+  rewardsTwo_paid: 'tag add rewardsTwo_paid'
+  rewardsTwo_done: 'tag add rewardsTwo_done'
+  rewardsThree_paid: 'tag add rewardsThree_paid'
+  rewardsThree_done: 'tag add rewardsThree_done'
+  rewardsNumber_reset: tag del rewardsOne_paid,rewardsOne_done,rewardsTwo_paid,rewardsTwo_done,rewardsThree_paid,rewardsThree_done
+####################RANDOM_1
+  stones: "objective start stonesobj"
+  stones_started: 'tag add stones_started'
+  stones_started_del: 'tag delete stones_started'
+  stones_done: 'tag add stones_done'
+  stones_paid: 'tag add stones_paid'
+  stone_folder: folder stones,notifyStarted,stones_started,random_1_started
+  stones_reset: "tag del stones_started,stones_done,stones_paid,random_1_started,random_1_done"
+
+
+  wheats: "objective start wheatsobj"
+  wheats_started: 'tag add wheats_started'
+  wheats_started_del: 'tag delete wheats_started'
+  wheats_done: 'tag add wheats_done'
+  wheats_paid: 'tag add wheats_paid'
+  wheats_folder: folder wheats,notifyStarted,wheats_started,random_1_started
+  wheats_reset: "tag del wheats_started,wheats_done,wheats_paid,random_1_started,random_1_done"
+
+  random_1: "folder wheats_folder,stone_folder random:1"
+  random_1_started: 'tag add random_1_started'
+  random_1_done: 'tag add random_1_done'
+  random_1_started_del: 'tag del random_1_started'
+
+
+####################RANDOM_2_1
+
+  logs: "objective start logsobj"
+  logs_started: 'tag add logs_started'
+  logs_started_del: 'tag delete logs_started'
+  logs_done: 'tag add logs_done'
+  logs_paid: 'tag add logs_paid'
+  logs_folder: folder logs,notifyStarted,logs_started,random_2_1_started
+  logs_reset: "tag del logs_started,logs_done,logs_paid,random_2_1_started,random_2_1_done"
+
+
+  copperOre: "objective start copperOreobj"
+  copperOre_started: 'tag add copperOre_started'
+  copperOre_started_del: 'tag delete copperOre_started'
+  copperOre_done: 'tag add copperOre_done'
+  copperOre_paid: 'tag add copperOre_paid'
+  copperOre_folder: folder copperOre,notifyStarted,copperOre_started,random_2_1_started
+  copperOre_reset: "tag del copperOre_started,copperOre_done,copperOre_paid,random_2_1_started,random_2_1_done"
+
+  random_2_1: "folder copperOre_folder,logs_folder random:1"
+  random_2_1_started: 'tag add random_2_1_started'
+  random_2_1_done: 'tag add random_2_1_done'
+  random_2_1_started_del: 'tag del random_2_1_started'
+
+
+
+####################RANDOM_2_2
+
+  coalOre: "objective start coalOreobj"
+  coalOre_started: 'tag add coalOre_started'
+  coalOre_started_del: 'tag delete coalOre_started'
+  coalOre_done: 'tag add coalOre_done'
+  coalOre_paid: 'tag add coalOre_paid'
+  coalOre_folder: folder coalOre,notifyStarted,coalOre_started,random_2_2_started
+  coalOre_reset: "tag del coalOre_started,coalOre_done,coalOre_paid,random_2_2_started,random_2_2_done,random_2_1_started_del"
+
+
+  potato: "objective start potatoobj"
+  potato_started: 'tag add potato_started'
+  potato_started_del: 'tag delete potato_started'
+  potato_done: 'tag add potato_done'
+  potato_paid: 'tag add potato_paid'
+  potato_folder: folder potato,notifyStarted,potato_started,random_2_2_started
+  potato_reset: "tag del potato_started,potato_done,potato_paid,random_2_2_started,random_2_2_done,random_2_2_started_del"
+
+  random_2_2: "folder potato_folder,coalOre_folder random:1"
+  random_2_2_started: 'tag add random_2_2_started'
+  random_2_2_done: 'tag add random_2_2_done'
+  random_2_2_started_del: 'tag del random_2_2_started'
+
+
+####################RANDOM_3_1
+
+  ironOre: "objective start ironOreobj"
+  ironOre_started: 'tag add ironOre_started'
+  ironOre_started_del: 'tag delete ironOre_started'
+  ironOre_done: 'tag add ironOre_done'
+  ironOre_paid: 'tag add ironOre_paid'
+  ironOre_folder: folder ironOre,notifyStarted,ironOre_started,random_3_1_started
+  ironOre_reset: "tag del ironOre_started,ironOre_done,ironOre_paid,random_3_1_started,random_3_1_done,random_3_1_started_del"
+
+
+  carrot: "objective start carrotobj"
+  carrot_started: 'tag add carrot_started'
+  carrot_started_del: 'tag delete carrot_started'
+  carrot_done: 'tag add carrot_done'
+  carrot_paid: 'tag add carrot_paid'
+  carrot_folder: folder carrot,notifyStarted,carrot_started,random_3_1_started
+  carrot_reset: "tag del carrot_started,carrot_done,carrot_paid,random_3_1_started,random_3_1_done,random_3_1_started_del"
+
+  random_3_1: "folder carrot_folder,ironOre_folder random:1"
+  random_3_1_started: 'tag add random_3_1_started'
+  random_3_1_done: 'tag add random_3_1_done'
+  random_3_1_started_del: 'tag del random_3_1_started'
+
+####################RANDOM_4_1
+
+  cow: "objective start cowobj"
+  cow_started: 'tag add cow_started'
+  cow_started_del: 'tag delete cow_started'
+  cow_done: 'tag add cow_done'
+  cow_paid: 'tag add cow_paid'
+  cow_folder: folder cow,notifyStarted,cow_started,random_4_1_started
+  cow_reset: "tag del cow_started,cow_done,cow_paid,random_4_1_started,random_4_1_done,random_4_1_started_del"
+
+
+  sheep: "objective start sheepobj"
+  sheep_started: 'tag add sheep_started'
+  sheep_started_del: 'tag delete sheep_started'
+  sheep_done: 'tag add sheep_done'
+  sheep_paid: 'tag add sheep_paid'
+  sheep_folder: folder sheep,notifyStarted,sheep_started,random_4_1_started
+  sheep_reset: "tag del sheep_started,sheep_done,sheep_paid,random_4_1_started,random_4_1_done,random_4_1_started_del"
+
+  random_4_1: "folder sheep_folder,cow_folder random:1"
+  random_4_1_started: 'tag add random_4_1_started'
+  random_4_1_done: 'tag add random_4_1_done'
+  random_4_1_started_del: 'tag del random_4_1_started'
+
+####################RANDOM_4_2
+
+  zombie: "objective start zombieobj"
+  zombie_started: 'tag add zombie_started'
+  zombie_started_del: 'tag delete zombie_started'
+  zombie_done: 'tag add zombie_done'
+  zombie_paid: 'tag add zombie_paid'
+  zombie_folder: folder zombie,notifyStarted,zombie_started,random_4_2_started
+  zombie_reset: "tag del zombie_started,zombie_done,zombie_paid,random_4_2_started,random_4_2_done,random_4_2_started_del"
+
+
+  skeleton: "objective start skeletonobj"
+  skeleton_started: 'tag add skeleton_started'
+  skeleton_started_del: 'tag delete skeleton_started'
+  skeleton_done: 'tag add skeleton_done'
+  skeleton_paid: 'tag add skeleton_paid'
+  skeleton_folder: folder skeleton,notifyStarted,skeleton_started,random_4_2_started
+  skeleton_reset: "tag del skeleton_started,skeleton_done,skeleton_paid,random_4_2_started,random_4_2_done,random_4_2_started_del"
+
+  random_4_2: "folder skeleton_folder,zombie_folder random:1"
+  random_4_2_started: 'tag add random_4_2_started'
+  random_4_2_done: 'tag add random_4_2_done'
+  random_4_2_started_del: 'tag del random_4_2_started'
+
+####################RANDOM_7_2
+
+  netherQuartzOre: "objective start netherQuartzOreobj"
+  netherQuartzOre_started: 'tag add netherQuartzOre_started'
+  netherQuartzOre_started_del: 'tag delete netherQuartzOre_started'
+  netherQuartzOre_done: 'tag add netherQuartzOre_done'
+  netherQuartzOre_paid: 'tag add netherQuartzOre_paid'
+  netherQuartzOre_folder: folder netherQuartzOre,notifyStarted,netherQuartzOre_started,random_7_2_started
+  netherQuartzOre_reset: "tag del netherQuartzOre_started,netherQuartzOre_done,netherQuartzOre_paid,random_7_2_started,random_7_2_done,random_7_2_started_del"
+
+
+  netherGoldOre: "objective start netherGoldOreobj"
+  netherGoldOre_started: 'tag add netherGoldOre_started'
+  netherGoldOre_started_del: 'tag delete netherGoldOre_started'
+  netherGoldOre_done: 'tag add netherGoldOre_done'
+  netherGoldOre_paid: 'tag add netherGoldOre_paid'
+  netherGoldOre_folder: folder netherGoldOre,notifyStarted,netherGoldOre_started,random_7_2_started
+  netherGoldOre_reset: "tag del netherGoldOre_started,netherGoldOre_done,netherGoldOre_paid,random_7_2_started,random_7_2_done,random_7_2_started_del"
+
+  random_7_2: "folder netherGoldOre_folder,netherQuartzOre_folder random:1"
+  random_7_2_started: 'tag add random_7_2_started'
+  random_7_2_done: 'tag add random_7_2_done'
+  random_7_2_started_del: 'tag del random_7_2_started'
+
+
+####################RANDOM_7_1
+
+  goldOre: "objective start goldOreobj"
+  goldOre_started: 'tag add goldOre_started'
+  goldOre_started_del: 'tag delete goldOre_started'
+  goldOre_done: 'tag add goldOre_done'
+  goldOre_paid: 'tag add goldOre_paid'
+  goldOre_folder: folder goldOre,notifyStarted,goldOre_started,random_7_1_started
+  goldOre_reset: "tag del goldOre_started,goldOre_done,goldOre_paid,random_7_1_started,random_7_1_done,random_7_1_started_del"
+
+
+  emeraldOre: "objective start emeraldOreobj"
+  emeraldOre_started: 'tag add emeraldOre_started'
+  emeraldOre_started_del: 'tag delete emeraldOre_started'
+  emeraldOre_done: 'tag add emeraldOre_done'
+  emeraldOre_paid: 'tag add emeraldOre_paid'
+  emeraldOre_folder: folder emeraldOre,notifyStarted,emeraldOre_started,random_7_1_started
+  emeraldOre_reset: "tag del emeraldOre_started,emeraldOre_done,emeraldOre_paid,random_7_1_started,random_7_1_done,random_7_1_started_del"
+
+  random_7_1: "folder emeraldOre_folder,goldOre_folder random:1"
+  random_7_1_started: 'tag add random_7_1_started'
+  random_7_1_done: 'tag add random_7_1_done'
+  random_7_1_started_del: 'tag del random_7_1_started'
+
+
+####################RANDOM_3_2
+
+  redstoneOre: "objective start redstoneOreobj"
+  redstoneOre_started: 'tag add redstoneOre_started'
+  redstoneOre_started_del: 'tag delete redstoneOre_started'
+  redstoneOre_done: 'tag add redstoneOre_done'
+  redstoneOre_paid: 'tag add redstoneOre_paid'
+  redstoneOre_folder: folder redstoneOre,notifyStarted,redstoneOre_started,random_3_2_started
+  redstoneOre_reset: "tag del redstoneOre_started,redstoneOre_done,redstoneOre_paid,random_3_2_started,random_3_2_done,random_3_2_started_del"
+
+
+  beetroot: "objective start beetrootobj"
+  beetroot_started: 'tag add beetroot_started'
+  beetroot_started_del: 'tag delete beetroot_started'
+  beetroot_done: 'tag add beetroot_done'
+  beetroot_paid: 'tag add beetroot_paid'
+  beetroot_folder: folder beetroot,notifyStarted,beetroot_started,random_3_2_started
+  beetroot_reset: "tag del beetroot_started,beetroot_done,beetroot_paid,random_3_2_started,random_3_2_done,random_3_2_started_del"
+
+  random_3_2: "folder beetroot_folder,redstoneOre_folder random:1"
+  random_3_2_started: 'tag add random_3_2_started'
+  random_3_2_done: 'tag add random_3_2_done'
+  random_3_2_started_del: 'tag del random_3_2_started'
+
+
+####################RANDOM_5_1
+
+  diamondOre: "objective start diamondOreobj"
+  diamondOre_started: 'tag add diamondOre_started'
+  diamondOre_started_del: 'tag delete diamondOre_started'
+  diamondOre_done: 'tag add diamondOre_done'
+  diamondOre_paid: 'tag add diamondOre_paid'
+  diamondOre_folder: folder diamondOre,notifyStarted,diamondOre_started,random_5_1_started
+  diamondOre_reset: "tag del diamondOre_started,diamondOre_done,diamondOre_paid,random_5_1_started,random_5_1_done,random_5_1_started_del"
+
+
+  lapisOre: "objective start lapisOreobj"
+  lapisOre_started: 'tag add lapisOre_started'
+  lapisOre_started_del: 'tag delete lapisOre_started'
+  lapisOre_done: 'tag add lapisOre_done'
+  lapisOre_paid: 'tag add lapisOre_paid'
+  lapisOre_folder: folder lapisOre,notifyStarted,lapisOre_started,random_5_1_started
+  lapisOre_reset: "tag del lapisOre_started,lapisOre_done,lapisOre_paid,random_5_1_started,random_5_1_done,random_5_1_started_del"
+
+  random_5_1: "folder lapisOre_folder,diamondOre_folder random:1"
+  random_5_1_started: 'tag add random_5_1_started'
+  random_5_1_done: 'tag add random_5_1_done'
+  random_5_1_started_del: 'tag del random_5_1_started'
+
+
+
+############### REWARDS 
+
+  stones64Rewards: folder claimNotify,money100,stones_paid,stones_done,stones_started_del,random_1_started_del,random_1_done
+  wheats16Rewards: folder claimNotify,money100,wheats_paid,wheats_done,wheats_started_del,random_1_started_del,random_1_done
+
+  logs64Rewards: folder claimNotify,money150,logs_paid,logs_done,logs_started_del,random_2_1_done
+  copperOre16Rewards: folder claimNotify,money150,copperOre_paid,copperOre_done,copperOre_started_del,random_2_1_done
+
+
+  coalOre32Rewards: folder claimNotify,money150,coalOre_paid,coalOre_done,coalOre_started_del,random_2_2_done
+  potato16Rewards: folder claimNotify,money150,potato_paid,potato_done,potato_started_del,random_2_2_done
+
+  ironOre16Rewards: folder claimNotify,money150,ironOre_paid,ironOre_done,ironOre_started_del,random_3_1_done
+  carrot16Rewards: folder claimNotify,money150,carrot_paid,carrot_done,carrot_started_del,random_3_1_done
+
+  cowRewards: folder claimNotify,money150,cow_paid,cow_done,cow_started_del,random_4_1_done
+  sheepRewards: folder claimNotify,money150,sheep_paid,sheep_done,sheep_started_del,random_4_1_done
+
+  zombieRewards: folder claimNotify,money150,zombie_paid,zombie_done,zombie_started_del,random_4_2_done
+  skeletonRewards: folder claimNotify,money150,skeleton_paid,skeleton_done,skeleton_started_del,random_4_2_done
+
+  netherQuartzOreRewards: folder claimNotify,money500,netherQuartzOre_paid,netherQuartzOre_done,netherQuartzOre_started_del,random_7_2_done
+  netherGoldOreRewards: folder claimNotify,money500,netherGoldOre_paid,netherGoldOre_done,netherGoldOre_started_del,random_7_2_done
+
+  goldOreRewards: folder claimNotify,money500,goldOre_paid,goldOre_done,goldOre_started_del,random_7_1_done
+  emeraldOreRewards: folder claimNotify,money500,emeraldOre_paid,emeraldOre_done,emeraldOre_started_del,random_7_1_done
+
+  redstoneOreRewards: folder claimNotify,money150,redstoneOre_paid,redstoneOre_done,redstoneOre_started_del,random_3_2_done
+  beetrootRewards: folder claimNotify,money150,beetroot_paid,beetroot_done,beetroot_started_del,random_3_2_done
+
+  diamondOreRewards: folder claimNotify,money150,diamondOre_paid,diamondOre_done,diamondOre_started_del,random_5_1_done
+  lapisOreRewards: folder claimNotify,money150,lapisOre_paid,lapisOre_done,lapisOre_started_del,random_5_1_done
+
+
+
+  notifyStarted: notify &2Task Started!
+  claimNotify: notify &2You have claimed the rewards!
+  doneNotify: notify &aTask is completed!
+
+
+
+#################################OBJECTIVES
+objectives:
+  stonesobj: block STONE -64 events:stones_done,doneNotify
+  wheatsobj: block WHEAT[age=7] -16 events:wheats_done,doneNotify
+
+  logsobj: block $logs$ -64 events:logs_done,doneNotify
+  copperOreobj: block COPPER_ORE -16 events:copperOre_done,doneNotify
+
+  coalOreobj: block COAL_ORE|DEEPSLATE_COAL_ORE -32 events:coalOre_done,doneNotify
+  potatoobj: block POTATOES[age=7] -16 events:potato_done,doneNotify
+
+  ironOreobj: block IRON_ORE|DEEPSLATE_IRON_ORE -16 events:ironOre_done,doneNotify
+  carrotobj: block CARROTS[age=7] -16 events:carrot_done,doneNotify
+
+  cowobj: breed COW 10 events:cow_done,doneNotify
+  sheepobj: breed SHEEP 10 events:sheep_done,doneNotify
+
+  zombieobj: mobkill ZOMBIE 10 events:zombie_done,doneNotify
+  skeletonobj: mobkill SKELETON 10 events:skeleton_done,doneNotify
+
+  netherQuartzOreobj: block NETHER_QUARTZ_ORE -128 events:netherQuartzOre_done,doneNotify
+  netherGoldOreobj: block NETHER_GOLD_ORE -92 events:netherGoldOre_done,doneNotify
+
+  goldOreobj: block GOLD_ORE|DEEPSLATE_GOLD_ORE -32 events:goldOre_done,doneNotify
+  emeraldOreobj: block EMERALD_ORE|DEEPSLATE_EMERALD_ORE -8 events:emeraldOre_done,doneNotify
+
+  redstoneOreobj: block REDSTONE_ORE|DEEPSLATE_REDSTONE_ORE -32 events:redstoneOre_done,doneNotify
+  beetrootobj: block BEETROOTS -16 events:beetroot_done,doneNotify
+
+  diamondOreobj: block DIAMOND_ORE|DEEPSLATE_DIAMOND_ORE -12 events:diamondOre_done,doneNotify
+  lapisOreobj: block LAPIS_ORE|DEEPSLATE_LAPIS_ORE -16 events:lapisOre_done,doneNotify
+
+
+
+  
+#################################CONDITIONS
+conditions:
+  stones_done: tag stones_done
+  stones_started: tag stones_started
+  stones_paid: tag stones_paid
+
+  wheats_done: tag wheats_done
+  wheats_started: tag wheats_started
+  wheats_paid: tag wheats_paid
+  random_1_started: tag random_1_started
+  random_1_done: tag random_1_done
+##############
+  logs_done: tag logs_done
+  logs_started: tag logs_started
+  logs_paid: tag logs_paid
+
+  copperOre_done: tag copperOre_done
+  copperOre_started: tag copperOre_started
+  copperOre_paid: tag copperOre_paid
+  random_2_1_started: tag random_2_1_started
+  random_2_1_done: tag random_2_1_done
+
+##############
+  coalOre_done: tag coalOre_done
+  coalOre_started: tag coalOre_started
+  coalOre_paid: tag coalOre_paid
+
+  potato_done: tag potato_done
+  potato_started: tag potato_started
+  potato_paid: tag potato_paid
+  random_2_2_started: tag random_2_2_started
+  random_2_2_done: tag random_2_2_done
+
+##############
+  ironOre_done: tag ironOre_done
+  ironOre_started: tag ironOre_started
+  ironOre_paid: tag ironOre_paid
+
+  carrot_done: tag carrot_done
+  carrot_started: tag carrot_started
+  carrot_paid: tag carrot_paid
+  random_3_1_started: tag random_3_1_started
+  random_3_1_done: tag random_3_1_done
+
+##############
+  cow_done: tag cow_done
+  cow_started: tag cow_started
+  cow_paid: tag cow_paid
+
+  sheep_done: tag sheep_done
+  sheep_started: tag sheep_started
+  sheep_paid: tag sheep_paid
+  random_4_1_started: tag random_4_1_started
+  random_4_1_done: tag random_4_1_done
+
+##############
+  zombie_done: tag zombie_done
+  zombie_started: tag zombie_started
+  zombie_paid: tag zombie_paid
+
+  skeleton_done: tag skeleton_done
+  skeleton_started: tag skeleton_started
+  skeleton_paid: tag skeleton_paid
+  random_4_2_started: tag random_4_2_started
+  random_4_2_done: tag random_4_2_done
+
+##############
+  netherQuartzOre_done: tag netherQuartzOre_done
+  netherQuartzOre_started: tag netherQuartzOre_started
+  netherQuartzOre_paid: tag netherQuartzOre_paid
+
+  netherGoldOre_done: tag netherGoldOre_done
+  netherGoldOre_started: tag netherGoldOre_started
+  netherGoldOre_paid: tag netherGoldOre_paid
+  random_7_2_started: tag random_7_2_started
+  random_7_2_done: tag random_7_2_done
+
+
+##############
+  goldOre_done: tag goldOre_done
+  goldOre_started: tag goldOre_started
+  goldOre_paid: tag goldOre_paid
+
+  emeraldOre_done: tag emeraldOre_done
+  emeraldOre_started: tag emeraldOre_started
+  emeraldOre_paid: tag emeraldOre_paid
+  random_7_1_started: tag random_7_1_started
+  random_7_1_done: tag random_7_1_done
+
+##############
+  redstoneOre_done: tag redstoneOre_done
+  redstoneOre_started: tag redstoneOre_started
+  redstoneOre_paid: tag redstoneOre_paid
+
+  beetroot_done: tag beetroot_done
+  beetroot_started: tag beetroot_started
+  beetroot_paid: tag beetroot_paid
+  random_3_2_started: tag random_3_2_started
+  random_3_2_done: tag random_3_2_done
+
+##############
+  diamondOre_done: tag diamondOre_done
+  diamondOre_started: tag diamondOre_started
+  diamondOre_paid: tag diamondOre_paid
+
+  lapisOre_done: tag lapisOre_done
+  lapisOre_started: tag lapisOre_started
+  lapisOre_paid: tag lapisOre_paid
+  random_5_1_started: tag random_5_1_started
+  random_5_1_done: tag random_5_1_done
+
+
+  rewardsOne_paid: 'tag rewardsOne_paid'
+  rewardsOne_done: 'tag rewardsOne_done'
+  rewardsTwo_paid: 'tag rewardsTwo_paid'
+  rewardsTwo_done: 'tag rewardsTwo_done'
+  rewardsThree_paid: 'tag rewardsThree_paid'
+  rewardsThree_done: 'tag rewardsThree_done'
+
+
+
+
+
+
+
+
+
+
+
+

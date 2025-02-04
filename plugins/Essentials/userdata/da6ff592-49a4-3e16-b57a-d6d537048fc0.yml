@@ -1,0 +1,47 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 223.74.75.182
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1738640516384
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1738639080364
+  login: 1738639950502
+money: '0'
+last-account-name: HZR3407
+lastlocation:
+  world: 04c00a4f-fe5c-47c6-8998-babf81130ba2
+  world-name: world
+  x: -99.0317211119717
+  y: 82.0
+  z: 5517.699999988079
+  yaw: 1.373266577720642
+  pitch: 0.14953716099262238
+logoutlocation:
+  world: 04c00a4f-fe5c-47c6-8998-babf81130ba2
+  world-name: world
+  x: -116.14188705172812
+  y: 63.5
+  z: 5780.524453927534
+  yaw: -131.1727294921875
+  pitch: -61.950439453125
+homes:
+  hzr:
+    world: 04c00a4f-fe5c-47c6-8998-babf81130ba2
+    world-name: world
+    x: -123.30000001192093
+    y: 90.0
+    z: 5497.603453862816
+    yaw: 90.64981842041016
+    pitch: 79.49989318847656

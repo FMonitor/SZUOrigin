@@ -1,0 +1,1447 @@
+menus:
+  dailytask:
+    title: '&f'
+    height: 6
+    open_events: openDailySound
+    command: /daily
+    items:
+      back:
+        item: close
+        amount: 1
+        text:
+         - '&a返回'
+        close: true
+##############################Random_1
+      random_1_obj:
+        item: unknown_quest
+        amount: 1
+        conditions: '!random_1_started,!random_1_done'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7点击以打开你的菜单'
+         - '&f &7今日任务'
+         - '&f '
+         - '&f  '
+        click: random_1
+
+      doingStones:
+        item: in_progress
+        amount: 1
+        conditions: stones_started,!stones_done
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7挖掘 &a64 stones'
+         - '&f &7以完成这个任务'
+         - '&f '
+         - '&f &7以破坏&3%objective.stonesobj.left% &7Stones'
+         - '&f '
+         - '&f  '
+
+      stonesDone:
+        item: rewards_item
+        amount: 1
+        conditions: stones_done,stones_started
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7你以完成这一每日任务'
+         - '&f &a点击以认领'
+         - '&f &7你的奖励！!'
+         - '&f '
+         - '&f  '
+        close: false
+        click: stones64Rewards
+
+      stonesCompleted:
+        item: quest_daily_complete
+        amount: 1
+        conditions: stones_paid
+        text:
+         - '&f &f&l每日奖励'
+         - '&f &a&l   已认领'
+         - '&f  '
+        close: false
+
+
+      doingWheats:
+        item: in_progress
+        amount: 1
+        conditions: wheats_started,!wheats_done
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7收割 &a16 wheats'
+         - '&f &7以完成这个任务'
+         - '&f '
+         - '&f &7以破坏&3%objective.wheatsobj.left% &7Wheats'
+         - '&f '
+         - '&f  '
+
+      wheatsDone:
+        item: rewards_item
+        amount: 1
+        conditions: wheats_done,wheats_started
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7你以完成这一每日任务'
+         - '&f &a点击以认领'
+         - '&f &7你的奖励！!'
+         - '&f '
+         - '&f  '
+        close: false
+        click: wheats16Rewards
+
+      wheatsCompleted:
+        item: quest_daily_complete
+        amount: 1
+        conditions: wheats_paid
+        text:
+         - '&f &f&l每日奖励'
+         - '&f &a&l   已认领'
+         - '&f  '
+        close: false
+
+##############################Random_2_1
+      random_2_obj_close:
+        item: unknown_quest_no
+        amount: 1
+        conditions: '!random_2_1_started,!random_2_1_done,!random_1_done'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7需要先完成任务 1'
+         - '&f &7来解锁这个每日任务'
+         - '&f '
+         - '&f  '
+
+      random_2_1_obj_close_started:
+        item: unknown_quest_no
+        amount: 1
+        conditions: 'random_2_2_started,!random_2_1_done,!random_2_1_started'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &c   这个任务现在.'
+         - '&f &7还不能领取.'
+         - '&f '
+         - '&f  '
+
+
+      random_2_1_obj:
+        item: unknown_quest
+        amount: 1
+        conditions: '!random_2_1_started,!random_2_2_started,random_1_done'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7点击以打开你的菜单'
+         - '&f &7今日任务.'
+         - '&f '
+         - '&f  '
+        click: random_2_1
+
+      doingLogs:
+        item: in_progress
+        amount: 1
+        conditions: logs_started,!logs_done
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7砍伐 &a64 logs'
+         - '&f &7以完成这个任务'
+         - '&f '
+         - '&f &7以破坏&3%objective.logsobj.left% &7logs'
+         - '&f '
+         - '&f  '
+
+      logsDone:
+        item: rewards_item
+        amount: 1
+        conditions: logs_done,logs_started
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7你以完成这一每日任务'
+         - '&f &a点击以认领'
+         - '&f &7你的奖励！!'
+         - '&f '
+         - '&f  '
+        close: false
+        click: logs64Rewards
+
+      logsCompleted:
+        item: quest_daily_complete
+        amount: 1
+        conditions: logs_paid
+        text:
+         - '&f &f&l每日奖励'
+         - '&f &a&l   已认领'
+         - '&f  '
+        close: false
+
+
+      doingCopperOre:
+        item: in_progress
+        amount: 1
+        conditions: copperOre_started,!copperOre_done
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7挖掘 &a16 copper Ore'
+         - '&f &7以完成这个任务.'
+         - '&f &7以破坏&3%objective.copperOreobj.left% &7Copper Ore'
+         - '&f '
+         - '&f  '
+
+      copperOreDone:
+        item: rewards_item
+        amount: 1
+        conditions: copperOre_done,copperOre_started
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7你以完成这一每日任务'
+         - '&f &a点击以认领'
+         - '&f &7你的奖励！!'
+         - '&f '
+         - '&f  '
+        close: false
+        click: copperOre16Rewards
+
+      copperOreCompleted:
+        item: quest_daily_complete
+        amount: 1
+        conditions: copperOre_paid
+        text:
+         - '&f &f&l每日奖励'
+         - '&f &a&l   已认领'
+         - '&f  '
+        close: false
+
+
+##############################Random_2_2
+      random_2_2_obj_close:
+        item: unknown_quest_no
+        amount: 1
+        conditions: '!random_2_2_started,!random_2_2_done,!random_1_done'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7需要先完成任务 1'
+         - '&f &7来解锁这个每日任务'
+         - '&f '
+         - '&f  '
+
+      random_2_2_obj_close_started:
+        item: unknown_quest_no
+        amount: 1
+        conditions: 'random_2_1_started,!random_2_2_done,!random_2_2_started'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &c这个任务'
+         - '&f &c目前还.'
+         - '&f &7还不能领取.'
+         - '&f '
+         - '&f  '
+
+
+      random_2_2_obj:
+        item: unknown_quest
+        amount: 1
+        conditions: '!random_2_2_started,!random_2_1_started,random_1_done'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7点击以打开你的菜单'
+         - '&f &7今日任务'
+         - '&f '
+         - '&f  '
+        click: random_2_2
+
+      doing煤Ore:
+        item: in_progress
+        amount: 1
+        conditions: coalOre_started,!coalOre_done
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7挖掘 &a32 煤 Ore'
+         - '&f &7以完成这个任务'
+         - '&f &7以破坏&3%objective.coalOreobj.left% &7煤 Ore'
+         - '&f '
+         - '&f  '
+
+      coalOreDone:
+        item: rewards_item
+        amount: 1
+        conditions: coalOre_done,coalOre_started
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7你以完成这一每日任务'
+         - '&f &a点击以认领'
+         - '&f &7你的奖励！!'
+         - '&f '
+         - '&f  '
+        close: false
+        click: coalOre32Rewards
+
+      coalOreCompleted:
+        item: quest_daily_complete
+        amount: 1
+        conditions: coalOre_paid
+        text:
+         - '&f &f&l每日奖励'
+         - '&f &a&l   已认领'
+         - '&f  '
+        close: false
+
+
+      doingPotato:
+        item: in_progress
+        amount: 1
+        conditions: potato_started,!potato_done
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7收割 &a16 Potatoes'
+         - '&f &7以完成这个任务'
+         - '&f &7收割 &3%objective.potatoobj.left% &7Potatoes'
+         - '&f '
+         - '&f  '
+
+      potatoDone:
+        item: rewards_item
+        amount: 1
+        conditions: potato_done,potato_started
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7你以完成这一每日任务'
+         - '&f &a点击以认领'
+         - '&f &7你的奖励！!'
+         - '&f '
+         - '&f  '
+        close: false
+        click: potato16Rewards
+
+      potatoCompleted:
+        item: quest_daily_complete
+        amount: 1
+        conditions: potato_paid
+        text:
+         - '&f &f&l每日奖励'
+         - '&f &a&l   已认领'
+         - '&f  '
+        close: false
+
+
+
+##############################Random_2_2
+      random_3_1_obj_close:
+        item: unknown_quest_no
+        amount: 1
+        conditions: 'random_2_1_started,!random_2_1_done'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7需要先完成任务 2'
+         - '&f &7来解锁这个每日任务'
+         - '&f '
+         - '&f  '
+
+      random_3_1_obj_close_started:
+        item: unknown_quest_no
+        amount: 1
+        conditions: 'random_2_2_started,!random_2_1_done,!random_2_1_started'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &c这个任务'
+         - '&f &c目前还.'
+         - '&f &7还不能领取.'
+         - '&f '
+         - '&f  '
+
+
+      random_3_1_obj:
+        item: unknown_quest
+        amount: 1
+        conditions: '!random_3_1_started,random_2_1_started,random_2_1_done'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7点击以打开你的菜单'
+         - '&f &7今日任务'
+         - '&f '
+         - '&f  '
+        click: random_3_1
+
+      doingIronOre:
+        item: in_progress
+        amount: 1
+        conditions: '!ironOre_done,ironOre_started'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7挖掘 &a16 Iron Ore'
+         - '&f &7以完成这个任务'
+         - '&f &7以破坏&3%objective.ironOreobj.left% &7Iron Ore'
+         - '&f '
+         - '&f  '
+
+      ironOreDone:
+        item: rewards_item
+        amount: 1
+        conditions: ironOre_done,ironOre_started
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7你以完成这一每日任务'
+         - '&f &a点击以认领'
+         - '&f &7你的奖励！!'
+         - '&f '
+         - '&f  '
+        close: false
+        click: ironOre16Rewards
+
+      ironOreCompleted:
+        item: quest_daily_complete
+        amount: 1
+        conditions: ironOre_paid
+        text:
+         - '&f &f&l每日奖励'
+         - '&f &a&l   已认领'
+         - '&f  '
+        close: false
+
+
+      doingCarrot:
+        item: in_progress
+        amount: 1
+        conditions: 'carrot_started,!carrot_done'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7收割 &a16 Carrots'
+         - '&f &7以完成这个任务'
+         - '&f &7收割 &3%objective.carrotobj.left% &7Carrots'
+         - '&f '
+         - '&f  '
+
+      carrotDone:
+        item: rewards_item
+        amount: 1
+        conditions: carrot_done,carrot_started
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7你以完成这一每日任务'
+         - '&f &a点击以认领'
+         - '&f &7你的奖励！!'
+         - '&f '
+         - '&f  '
+        close: false
+        click: carrot16Rewards
+
+      carrotCompleted:
+        item: quest_daily_complete
+        amount: 1
+        conditions: carrot_paid
+        text:
+         - '&f &f&l每日奖励'
+         - '&f &a&l   已认领'
+         - '&f  '
+        close: false
+
+
+##############################Random_4_1
+      random_4_1_obj_close:
+        item: unknown_quest_no
+        amount: 1
+        conditions: 'random_3_1_started,!random_3_1_done'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '  
+         - '&f &7需要先完成任务 3'
+         - '&f &7来解锁这个每日任务'
+         - '&f '
+         - '&f  '
+
+      random_4_1_obj_close_started:
+        item: unknown_quest_no
+        amount: 1
+        conditions: 'random_4_2_started,!random_4_1_done,!random_4_1_started'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &c这个任务'
+         - '&f &c.'
+         - '&f &7还不能领取.'
+         - '&f '
+         - '&f  '
+
+
+      random_4_1_obj:
+        item: unknown_quest
+        amount: 1
+        conditions: '!random_4_1_started,random_3_1_started,random_3_1_done'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7点击以打开你的菜单'
+         - '&f &7今日任务'
+         - '&f '
+         - '&f  '
+        click: random_4_1
+
+      doingCow:
+        item: in_progress
+        amount: 1
+        conditions: '!cow_done,cow_started'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7Breed &a10 cows'
+         - '&f &7以完成这个任务'
+         - '&f &7Breed &3%objective.cowobj.left% &7Cows'
+         - '&f '
+         - '&f  '
+
+      cowDone:
+        item: rewards_item
+        amount: 1
+        conditions: cow_done,cow_started
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7你以完成这一每日任务'
+         - '&f &a点击以认领'
+         - '&f &7你的奖励！!'
+         - '&f '
+         - '&f  '
+        close: false
+        click: cowRewards
+
+      cowCompleted:
+        item: quest_daily_complete
+        amount: 1
+        conditions: cow_paid
+        text:
+         - '&f &f&l每日奖励'
+         - '&f &a&l   已认领'
+         - '&f  '
+        close: false
+
+
+      doingSheep:
+        item: in_progress
+        amount: 1
+        conditions: 'sheep_started,!sheep_done'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7Breed &a10 sheeps'
+         - '&f &7以完成这个任务'
+         - '&f &7Breed &3%objective.sheepobj.left% &7Sheeps'
+         - '&f '
+         - '&f  '
+
+      sheepDone:
+        item: rewards_item
+        amount: 1
+        conditions: sheep_done,sheep_started
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7你以完成这一每日任务'
+         - '&f &a点击以认领'
+         - '&f &7你的奖励！!'
+         - '&f '
+         - '&f  '
+        close: false
+        click: sheepRewards
+
+      sheepCompleted:
+        item: quest_daily_complete
+        amount: 1
+        conditions: sheep_paid
+        text:
+         - '&f &f&l每日奖励'
+         - '&f &a&l   已认领'
+         - '&f  '
+        close: false
+
+##############################Random_4_2
+      random_4_2_obj_close:
+        item: unknown_quest_no
+        amount: 1
+        conditions: 'random_3_1_started,!random_3_1_done'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '  
+         - '&f &7需要先完成任务 3'
+         - '&f &7来解锁这个每日任务'
+         - '&f '
+         - '&f  '
+
+      random_4_2_obj_close_started:
+        item: unknown_quest_no
+        amount: 1
+        conditions: 'random_4_1_started,!random_4_2_done,!random_4_2_started'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &c这个任务'
+         - '&f &c目前还.'
+         - '&f &7还不能领取.'
+         - '&f '
+         - '&f  '
+
+
+      random_4_2_obj:
+        item: unknown_quest
+        amount: 1
+        conditions: '!random_4_2_started,random_3_1_started,random_3_1_done'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7点击以打开你的菜单'
+         - '&f &7今日任务'
+         - '&f '
+         - '&f  '
+        click: random_4_2
+
+      doingZombie:
+        item: in_progress
+        amount: 1
+        conditions: '!zombie_done,zombie_started'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7杀死 &a10 zombies'
+         - '&f &7以完成这个任务'
+         - '&f &7杀死 &3%objective.zombieobj.left% &7Zombies'
+         - '&f '
+         - '&f  '
+
+      zombieDone:
+        item: rewards_item
+        amount: 1
+        conditions: zombie_done,zombie_started
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7你以完成这一每日任务'
+         - '&f &a点击以认领'
+         - '&f &7你的奖励！!'
+         - '&f '
+         - '&f  '
+        close: false
+        click: zombieRewards
+
+      zombieCompleted:
+        item: quest_daily_complete
+        amount: 1
+        conditions: zombie_paid
+        text:
+         - '&f &f&l每日奖励'
+         - '&f &a&l   已认领'
+         - '&f  '
+        close: false
+
+
+      doingSkeleton:
+        item: in_progress
+        amount: 1
+        conditions: 'skeleton_started,!skeleton_done'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7杀死 &a10 skeletons'
+         - '&f &7以完成这个任务'
+         - '&f &7杀死 &3%objective.skeletonobj.left% &7Skeletons'
+         - '&f '
+         - '&f  '
+
+      skeletonDone:
+        item: rewards_item
+        amount: 1
+        conditions: skeleton_done,skeleton_started
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7你以完成这一每日任务'
+         - '&f &a点击以认领'
+         - '&f &7你的奖励！!'
+         - '&f '
+         - '&f  '
+        close: false
+        click: skeletonRewards
+
+      skeletonCompleted:
+        item: quest_daily_complete
+        amount: 1
+        conditions: skeleton_paid
+        text:
+         - '&f &f&l每日奖励'
+         - '&f &a&l   已认领'
+         - '&f  '
+        close: false
+
+##############################Random_7_2
+      random_7_2_obj_close:
+        item: unknown_quest_no
+        amount: 1
+        conditions: 'random_4_1_started,!random_4_1_done'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '  
+         - '&f &7需要先完成任务 4'
+         - '&f &7来解锁这个每日任务'
+         - '&f '
+         - '&f  '
+
+      random_7_2_obj_close_started:
+        item: unknown_quest_no
+        amount: 1
+        conditions: 'random_7_1_started,!random_4_1_done,!random_4_1_started'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &c这个任务'
+         - '&f &c目前还.'
+         - '&f &7还不能领取.'
+         - '&f '
+         - '&f  '
+
+
+      random_7_2_obj:
+        item: unknown_quest
+        amount: 1
+        conditions: '!random_7_2_started,random_4_1_started,random_4_1_done'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7点击以打开你的菜单'
+         - '&f &7今日任务'
+         - '&f '
+         - '&f  '
+        click: random_7_2
+
+      doingNetherQuartzOre:
+        item: in_progress
+        amount: 1
+        conditions: '!netherQuartzOre_done,netherQuartzOre_started'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7以破坏&a128 Nether Quartz Ores'
+         - '&f &7以完成这个任务'
+         - '&f &7以破坏&3%objective.netherQuartzOreobj.left% &7Nether Quartz Ores'
+         - '&f '
+         - '&f  '
+
+      netherQuartzOreDone:
+        item: rewards_item
+        amount: 1
+        conditions: netherQuartzOre_done,netherQuartzOre_started
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7你以完成这一每日任务'
+         - '&f &a点击以认领'
+         - '&f &7你的奖励！!'
+         - '&f '
+         - '&f  '
+        close: false
+        click: netherQuartzOreRewards,rewardsTwo_done
+
+      netherQuartzOreCompleted:
+        item: quest_daily_complete
+        amount: 1
+        conditions: netherQuartzOre_paid
+        text:
+         - '&f &f&l每日奖励'
+         - '&f &a&l   已认领'
+         - '&f  '
+        close: false
+
+
+      doingNetherGoldOre:
+        item: in_progress
+        amount: 1
+        conditions: 'netherGoldOre_started,!netherGoldOre_done'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7挖掘 &a92 Nethe Gold Ore'
+         - '&f &7以完成这个任务'
+         - '&f &7挖掘 &3%objective.netherGoldOreobj.left% &7Nether Gold Ore'
+         - '&f '
+         - '&f  '
+
+      netherGoldOreDone:
+        item: rewards_item
+        amount: 1
+        conditions: netherGoldOre_done,netherGoldOre_started
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7你以完成这一每日任务'
+         - '&f &a点击以认领'
+         - '&f &7你的奖励！!'
+         - '&f '
+         - '&f  '
+        close: false
+        click: netherGoldOreRewards,rewardsTwo_done
+
+      netherGoldOreCompleted:
+        item: quest_daily_complete
+        amount: 1
+        conditions: netherGoldOre_paid
+        text:
+         - '&f &f&l每日奖励'
+         - '&f &a&l   已认领'
+         - '&f  '
+        close: false
+
+##############################Random_7_1
+      random_7_1_obj_close:
+        item: unknown_quest_no
+        amount: 1
+        conditions: 'random_4_2_started,!random_4_2_done'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '  
+         - '&f &7需要先完成任务 4'
+         - '&f &7来解锁这个每日任务'
+         - '&f '
+         - '&f  '
+
+      random_7_1_obj_close_started:
+        item: unknown_quest_no
+        amount: 1
+        conditions: 'random_7_2_started,!random_4_2_done,!random_4_2_started'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &c这个任务'
+         - '&f &c目前还.'
+         - '&f &7还不能领取.'
+         - '&f '
+         - '&f  '
+
+
+      random_7_1_obj:
+        item: unknown_quest
+        amount: 1
+        conditions: '!random_7_1_started,random_4_2_started,random_4_2_done'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7点击以打开你的菜单'
+         - '&f &7今日任务'
+         - '&f '
+         - '&f  '
+        click: random_7_1
+
+      doingGoldOre:
+        item: in_progress
+        amount: 1
+        conditions: '!goldOre_done,goldOre_started'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7挖掘 &a32 Gold ore'
+         - '&f &7以完成这个任务'
+         - '&f &7挖掘 &3%objective.goldOreobj.left% &7Gold ore'
+         - '&f '
+         - '&f  '
+
+      goldOreDone:
+        item: rewards_item
+        amount: 1
+        conditions: goldOre_done,goldOre_started
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7你以完成这一每日任务'
+         - '&f &a点击以认领'
+         - '&f &7你的奖励！!'
+         - '&f '
+         - '&f  '
+        close: false
+        click: goldOreRewards,rewardsThree_done
+
+      goldOreCompleted:
+        item: quest_daily_complete
+        amount: 1
+        conditions: goldOre_paid
+        text:
+         - '&f &f&l每日奖励'
+         - '&f &a&l   已认领'
+         - '&f  '
+        close: false
+
+
+      doing绿宝石Ore:
+        item: in_progress
+        amount: 1
+        conditions: 'emeraldOre_started,!emeraldOre_done'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7挖掘 &a8 绿宝石 Ore'
+         - '&f &7以完成这个任务'
+         - '&f &7挖掘 &3%objective.emeraldOreobj.left% &7绿宝石 Ore'
+         - '&f '
+         - '&f  '
+
+      emeraldOreDone:
+        item: rewards_item
+        amount: 1
+        conditions: emeraldOre_done,emeraldOre_started
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7你以完成这一每日任务'
+         - '&f &a点击以认领'
+         - '&f &7你的奖励！!'
+         - '&f '
+         - '&f  '
+        close: false
+        click: emeraldOreRewards,rewardsThree_done
+
+      emeraldOreCompleted:
+        item: quest_daily_complete
+        amount: 1
+        conditions: emeraldOre_paid
+        text:
+         - '&f &f&l每日奖励'
+         - '&f &a&l   已认领'
+         - '&f  '
+        close: false
+
+
+##############################Random_3_2
+      random_3_2_obj_close:
+        item: unknown_quest_no
+        amount: 1
+        conditions: 'random_2_2_started,!random_2_2_done'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '  
+         - '&f &7需要先完成任务 2'
+         - '&f &7来解锁这个每日任务'
+         - '&f '
+         - '&f  '
+
+      random_3_2_obj_close_started:
+        item: unknown_quest_no
+        amount: 1
+        conditions: 'random_3_1_started,!random_2_1_done,!random_2_1_started'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &c这个任务'
+         - '&f &c目前还.'
+         - '&f &7还不能领取.'
+         - '&f '
+         - '&f  '
+
+
+      random_3_2_obj:
+        item: unknown_quest
+        amount: 1
+        conditions: '!random_3_2_started,random_2_2_started,random_2_2_done'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7点击以打开你的菜单'
+         - '&f &7今日任务'
+         - '&f '
+         - '&f  '
+        click: random_3_2
+
+      doingRedstoneOre:
+        item: in_progress
+        amount: 1
+        conditions: 'redstoneOre_started,!redstoneOre_done'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7挖掘 &a32 Redstone ore'
+         - '&f &7To complete this task'
+         - '&f &7挖掘 &3%objective.redstoneOreobj.left% &7Redstone Ore'
+         - '&f '
+         - '&f  '
+
+      redstoneOreDone:
+        item: rewards_item
+        amount: 1
+        conditions: redstoneOre_done,redstoneOre_started
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7你以完成这一每日任务'
+         - '&f &a点击以认领'
+         - '&f &7你的奖励！!'
+         - '&f '
+         - '&f  '
+        close: false
+        click: redstoneOreRewards
+
+      redstoneOreCompleted:
+        item: quest_daily_complete
+        amount: 1
+        conditions: redstoneOre_paid
+        text:
+         - '&f &f&l每日奖励'
+         - '&f &a&l   已认领'
+         - '&f  '
+        close: false
+
+
+      doingBeetroot:
+        item: in_progress
+        amount: 1
+        conditions: 'beetroot_started,!beetroot_done'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7收割 &a16 Beetroots'
+         - '&f &7以完成这个任务'
+         - '&f &7收割 &3%objective.beetrootobj.left% &7Beetroots'
+         - '&f '
+         - '&f  '
+
+      beetrootDone:
+        item: rewards_item
+        amount: 1
+        conditions: beetroot_done,beetroot_started
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7你以完成这一每日任务'
+         - '&f &a点击以认领'
+         - '&f &7你的奖励！!'
+         - '&f '
+         - '&f  '
+        close: false
+        click: beetrootRewards
+
+      beetrootCompleted:
+        item: quest_daily_complete
+        amount: 1
+        conditions: beetroot_paid
+        text:
+         - '&f &f&l每日奖励'
+         - '&f &a&l   已认领'
+         - '&f  '
+        close: false
+
+
+
+##############################Random_5_1
+      random_5_1_obj_close:
+        item: unknown_quest_no
+        amount: 1
+        conditions: 'random_3_2_started,!random_3_2_done'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '  
+         - '&f &7需要先完成任务 3'
+         - '&f &7来解锁这个每日任务'
+         - '&f '
+         - '&f  '
+
+      random_5_1_obj_close_started:
+        item: unknown_quest_no
+        amount: 1
+        conditions: 'random_3_1_started,!random_3_1_done,!random_3_1_started'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &c这个任务'
+         - '&f &c目前还.'
+         - '&f &7还不能领取.'
+         - '&f '
+         - '&f  '
+
+
+      random_5_1_obj:
+        item: unknown_quest
+        amount: 1
+        conditions: '!random_5_1_started,random_3_2_started,random_3_2_done'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7点击以打开你的菜单'
+         - '&f &7今日任务'
+         - '&f '
+         - '&f  '
+        click: random_5_1
+
+      doingDiamondOre:
+        item: in_progress
+        amount: 1
+        conditions: 'diamondOre_started,!diamondOre_done'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7挖掘 &a12 Diamond ore'
+         - '&f &7以完成这个任务'
+         - '&f &7挖掘 &3%objective.diamondOreobj.left% &7Diamond Ore'
+         - '&f '
+         - '&f  '
+
+      diamondOreDone:
+        item: rewards_item
+        amount: 1
+        conditions: diamondOre_done,diamondOre_started
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7你以完成这一每日任务'
+         - '&f &a点击以认领'
+         - '&f &7你的奖励！!'
+         - '&f '
+         - '&f  '
+        close: false
+        click: diamondOreRewards,rewardsOne_done
+
+      diamondOreCompleted:
+        item: quest_daily_complete
+        amount: 1
+        conditions: diamondOre_paid
+        text:
+         - '&f &f&l每日奖励'
+         - '&f &a&l   已认领'
+         - '&f  '
+        close: false
+
+
+      doingLapisOre:
+        item: in_progress
+        amount: 1
+        conditions: 'lapisOre_started,!lapisOre_done'
+        close: false
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7挖掘 &a16 Lapis Ore'
+         - '&f &7以完成这个任务'
+         - '&f &7挖掘 &3%objective.lapisOreobj.left% &7Lapis Ore'
+         - '&f '
+         - '&f  '
+
+      lapisOreDone:
+        item: rewards_item
+        amount: 1
+        conditions: lapisOre_done,lapisOre_started
+        text:
+         - '&f &f&l每 日 任 务'
+         - '&f '
+         - '&f &7你以完成这一每日任务'
+         - '&f &a点击以认领'
+         - '&f &7你的奖励！!'
+         - '&f '
+         - '&f  '
+        close: false
+        click: lapisOreRewards,rewardsOne_done
+
+      lapisOreCompleted:
+        item: quest_daily_complete
+        amount: 1
+        conditions: lapisOre_paid
+        text:
+         - '&f &f&l每日奖励'
+         - '&f &a&l   已认领'
+         - '&f  '
+        close: false
+
+
+
+########################################rewards1
+      showdailyRewards:
+        item: rewards_item_unclaim
+        amount: 1
+        conditions: '!rewardsOne_done,!rewardsOne_paid'
+        text:
+         - '&f &f&l任 务 回 报'
+         - '&f '
+         - '&f &7完成一个每日任务'
+         - '&f &7你就拥有一个机会'
+         - '&f &7一个赢得奖励的机会'
+         - '&f &7奖励如下'
+         - '&f '
+         - '&f &7 x1 &a银色宝箱钥匙'
+         - '&f &7 x1 &a金色宝箱钥匙'
+         - '&f &7 x1 &a下届合金锭'
+         - '&f &7 x5 &a钻石'
+         - '&f &7 x8 &a金锭'
+         - '&f &7 x8 &a绿宝石'
+         - '&f &7 x32 &a煤'
+         - '&f &7 x2 &a下届合金碎片'
+         - '&f &7 x32 &a铁锭'
+         - '&f  '
+        close: false
+
+      dailyRewards:
+        item: rewards_notify_to_claim
+        amount: 1
+        conditions: rewardsOne_done,!rewardsOne_paid
+        text:
+         - '&f &f&l任 务 回 报'
+         - '&f '
+         - '&f &7完成一个每日任务'
+         - '&f &7你就拥有一个机会'
+         - '&f &7一个赢得奖励的机会'
+         - '&f &7奖励如下'
+         - '&f '
+         - '&f &7 x1 &a银色宝箱钥匙'
+         - '&f &7 x1 &a金色宝箱钥匙'
+         - '&f &7 x1 &a下届合金锭'
+         - '&f &7 x5 &a钻石'
+         - '&f &7 x8 &a金锭'
+         - '&f &7 x8 &a绿宝石'
+         - '&f &7 x32 &a煤'
+         - '&f &7 x2 &a下届合金碎片'
+         - '&f &7 x32 &a铁锭'
+         - '&f  '
+        close: false
+        click: rewards_daily_1,rewardsOne_paid
+
+      claimedDailyRewards:
+        item: chest_claim
+        amount: 1
+        conditions: rewardsOne_paid
+        text:
+         - '&f &f&l任 务 回 报'
+         - '&f '
+         - '&f &7You completed this'
+         - '&f &7今日任务.'
+         - '&f '
+         - '&f &a&l   已认领'
+         - '&f  '
+        close: false
+
+########################################rewards2
+      showdailyRewards2:
+        item: rewards_item_unclaim
+        amount: 1
+        conditions: '!rewardsTwo_done,!rewardsTwo_paid'
+        text:
+         - '&f &f&l任 务 回 报'
+         - '&f '
+         - '&f &7完成一个每日任务'
+         - '&f &7你就拥有一个机会'
+         - '&f &7一个赢得奖励的机会'
+         - '&f &7奖励如下'
+         - '&f '
+         - '&f &7 x1 &a银色宝箱钥匙'
+         - '&f &7 x1 &a金色宝箱钥匙'
+         - '&f &7 x1 &a下届合金锭'
+         - '&f &7 x5 &a钻石'
+         - '&f &7 x8 &a金锭'
+         - '&f &7 x8 &a绿宝石'
+         - '&f &7 x32 &a煤'
+         - '&f &7 x2 &a下届合金碎片'
+         - '&f &7 x32 &a铁锭'
+         - '&f  '
+        close: false
+
+      dailyRewards2:
+        item: rewards_notify_to_claim
+        amount: 1
+        conditions: rewardsTwo_done,!rewardsTwo_paid
+        text:
+         - '&f &f&l任 务 回 报'
+         - '&f '
+         - '&f &7完成一个每日任务'
+         - '&f &7你就拥有一个机会'
+         - '&f &7一个赢得奖励的机会'
+         - '&f &7奖励如下'
+         - '&f '
+         - '&f &7 x1 &a银色宝箱钥匙'
+         - '&f &7 x1 &a金色宝箱钥匙'
+         - '&f &7 x1 &a下届合金锭'
+         - '&f &7 x5 &a钻石'
+         - '&f &7 x8 &a金锭'
+         - '&f &7 x8 &a绿宝石'
+         - '&f &7 x32 &a煤'
+         - '&f &7 x2 &a下届合金碎片'
+         - '&f &7 x32 &a铁锭'
+         - '&f  '
+        close: false
+        click: rewards_daily_1,rewardsTwo_paid
+
+      claimedDailyRewards2:
+        item: chest_claim
+        amount: 1
+        conditions: rewardsTwo_paid
+        text:
+         - '&f &f&l任 务 回 报'
+         - '&f '
+         - '&f &7You completed this'
+         - '&f &7今日任务.'
+         - '&f '
+         - '&f &a&l   已认领'
+         - '&f  '
+        close: false
+
+########################################rewards3
+      showdailyRewards3:
+        item: rewards_item_unclaim
+        amount: 1
+        conditions: '!rewardsThree_done,!rewardsThree_paid'
+        text:
+         - '&f &f&l任 务 回 报'
+         - '&f '
+         - '&f &7完成一个每日任务'
+         - '&f &7你就拥有一个机会'
+         - '&f &7一个赢得奖励的机会'
+         - '&f &7奖励如下'
+         - '&f '
+         - '&f &7 x1 &a银色宝箱钥匙'
+         - '&f &7 x1 &a金色宝箱钥匙'
+         - '&f &7 x1 &a下届合金锭'
+         - '&f &7 x5 &a钻石'
+         - '&f &7 x8 &a金锭'
+         - '&f &7 x8 &a绿宝石'
+         - '&f &7 x32 &a煤'
+         - '&f &7 x2 &a下届合金碎片'
+         - '&f &7 x32 &a铁锭'
+         - '&f  '
+        close: false
+
+      dailyRewards3:
+        item: rewards_notify_to_claim
+        amount: 1
+        conditions: rewardsThree_done,!rewardsThree_paid
+        text:
+         - '&f &f&l任 务 回 报'
+         - '&f '
+         - '&f &7完成一个每日任务'
+         - '&f &7你就拥有一个机会'
+         - '&f &7一个赢得奖励的机会'
+         - '&f &7奖励如下'
+         - '&f '
+         - '&f &7 x1 &a银色宝箱钥匙'
+         - '&f &7 x1 &a金色宝箱钥匙'
+         - '&f &7 x1 &a下届合金锭'
+         - '&f &7 x5 &a钻石'
+         - '&f &7 x8 &a金锭'
+         - '&f &7 x8 &a绿宝石'
+         - '&f &7 x32 &a煤'
+         - '&f &7 x2 &a下届合金碎片'
+         - '&f &7 x32 &a铁锭'
+         - '&f  '
+        close: false
+        click: rewards_daily_1,rewardsThree_paid
+
+      claimedDailyRewards3:
+        item: chest_claim
+        amount: 1
+        conditions: rewardsThree_paid
+        text:
+         - '&f &f&l任 务 回 报'
+         - '&f '
+         - '&f &7You completed this'
+         - '&f &7今日任务.'
+         - '&f '
+         - '&f &a&l   已认领'
+         - '&f  '
+        close: false
+
+
+    slots:
+      1: showdailyRewards2,dailyRewards2,claimedDailyRewards2
+      2: random_7_2_obj_close,random_7_2_obj_close_started,random_7_2_obj,doingNetherQuartzOre,netherQuartzOreDone,netherQuartzOreCompleted,doingNetherGoldOre,netherGoldOreDone,netherGoldOreCompleted
+      11: random_4_1_obj_close,random_4_1_obj_close_started,random_4_1_obj,doingCow,cowDone,cowCompleted,doingSheep,sheepDone,sheepCompleted
+      20: random_3_1_obj_close,random_3_1_obj_close_started,random_3_1_obj,doingIronOre,ironOreDone,ironOreCompleted,doingCarrot,carrotDone,carrotCompleted
+      21: random_2_obj_close,random_2_1_obj_close_started,random_2_1_obj,doingLogs,logsDone,logsCompleted,doingCopperOre,copperOreDone,copperOreCompleted
+      22: random_1_obj,doingStones,stonesDone,stonesCompleted,doingWheats,wheatsDone,wheatsCompleted
+      23: random_2_2_obj_close,random_2_2_obj_close_started,random_2_2_obj,doing煤Ore,coalOreDone,coalOreCompleted,doingPotato,potatoDone,potatoCompleted
+      24: random_3_2_obj_close,random_3_2_obj_close_started,random_3_2_obj,doingRedstoneOre,redstoneOreDone,redstoneOreCompleted,doingBeetroot,beetrootDone,beetrootCompleted
+      25: random_5_1_obj_close,random_5_1_obj_close_started,random_5_1_obj,doingDiamondOre,diamondOreDone,diamondOreCompleted,doingLapisOre,lapisOreDone,lapisOreCompleted
+      26: showdailyRewards,dailyRewards,claimedDailyRewards
+      29: random_4_2_obj_close,random_4_2_obj_close_started,random_4_2_obj,doingZombie,zombieDone,zombieCompleted,doingSkeleton,skeletonDone,skeletonCompleted
+      38: random_7_1_obj_close,random_7_1_obj_close_started,random_7_1_obj,doingGoldOre,goldOreDone,goldOreCompleted,doing绿宝石Ore,emeraldOreDone,emeraldOreCompleted
+      37: showdailyRewards3,dailyRewards3,claimedDailyRewards3
+      49: back
+
+events:
+
+  daily: menu open dailytask
+  openDailySound: notify sound:entity.experience_orb.pickup io:sound
+
+  silverKey: command crate key give %player% silver 1
+  goldenKey: command crate key give %player% golden 1
+  givenetherite_ingot: give netherite_ingot:1
+  giveemerald: give emerald:8
+  givediamond: give diamond:5
+  givecoal: give coal:32
+  givegold: give gold_ingot:8
+  givecrap: give netherite_scrap:2
+  giveiron_ingot: give iron_ingot:12
+  rewards_daily_1: pickrandom 5%silverKey,5%goldenKey,10%givenetherite_ingot,15%giveemerald,10%givediamond,15%givecoal,15%givegold,10%givecrap,15%giveiron_ingot amount:1
+
+conditions:
+  pendingHard: tag pendingHard
+  completedHard: tag hardCompleted
+  hard: tag hardTag
+
+

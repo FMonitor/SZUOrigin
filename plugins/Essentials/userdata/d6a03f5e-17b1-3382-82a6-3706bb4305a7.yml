@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 183.198.11.185
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1738502583599
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1738503524844
+  login: 1738502467529
+money: '0'
+last-account-name: HIRUNA_
+lastlocation:
+  world: 877e483a-8c3b-40fa-9738-40239679b77e
+  world-name: isla
+  x: 170.23281985669405
+  y: 63.0
+  z: 67.19231941844718
+  yaw: 0.453125
+  pitch: 9.196009635925293
+logoutlocation:
+  world: 04c00a4f-fe5c-47c6-8998-babf81130ba2
+  world-name: world
+  x: -684.2511768286685
+  y: 97.0
+  z: 211.40632432241418
+  yaw: -109.04765319824219
+  pitch: 29.187294006347656

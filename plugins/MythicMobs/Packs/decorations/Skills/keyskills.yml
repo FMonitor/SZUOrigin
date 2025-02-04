@@ -1,0 +1,94 @@
+iron_bars_gate_open:
+  Cooldown: 2
+  TriggerConditions:
+  - holding{m=iron_bars_key} true
+  Skills:
+  - effect:particles{particle=cloud;amount=50;speed=0.25;d=true;dir=0,1,0} @self
+  - effect:particleorbital{r=1;points=32;t=20;i=1;vy=20;particle=flame;rX=45;rY=45;d=true;dir=0,1,0} @self
+  - effect:particleorbital{r=1;points=32;t=20;i=1;vy=20;particle=flame;rX=-45;rY=-45;d=true;dir=0,1,0} @self
+  - delay 20
+  - command{c="fakeblock hide ironbars <target.name>";asTarget=true;asOp=true} @Trigger ~onInteract
+  - effect:particles{particle=heart;amount=1;y=1} @self
+  - takeitem{i=iron_bars_key} @Trigger
+  - delay 36000
+  - command{c="fakeblock show ironbars <target.name>";asTarget=true;asOp=true} @Trigger ~onInteract
+
+crimson_gate_open:
+  Cooldown: 2
+  TriggerConditions:
+  - holding{m=crimson_key} true
+  Skills:
+  - effect:particles{particle=cloud;amount=50;speed=0.25;d=true;dir=0,1,0} @self
+  - effect:particleorbital{r=1;points=32;t=20;i=1;vy=20;particle=flame;rX=45;rY=45;d=true;dir=0,1,0} @self
+  - effect:particleorbital{r=1;points=32;t=20;i=1;vy=20;particle=flame;rX=-45;rY=-45;d=true;dir=0,1,0} @self
+  - delay 20
+  - command{c="fakeblock hide crimson <target.name>";asTarget=true;asOp=true} @Trigger ~onInteract
+  - effect:particles{particle=heart;amount=1;y=1} @self
+  - takeitem{i=crimson_key} @Trigger
+  - delay 36000
+  - command{c="fakeblock show crimson <target.name>";asTarget=true;asOp=true} @Trigger ~onInteract
+
+
+
+gold_gate_open:
+  Cooldown: 2
+  TriggerConditions:
+  - holding{m=kings_key} true
+  Skills:
+  - effect:particles{particle=cloud;amount=50;speed=0.25;d=true;dir=0,1,0} @self
+  - effect:particleorbital{r=1;points=32;t=20;i=1;vy=20;particle=flame;rX=45;rY=45;d=true;dir=0,1,0} @self
+  - effect:particleorbital{r=1;points=32;t=20;i=1;vy=20;particle=flame;rX=-45;rY=-45;d=true;dir=0,1,0} @self
+  - delay 20
+  - command{c="fakeblock hide gold <target.name>";asTarget=true;asOp=true} @Trigger ~onInteract
+  - effect:particles{particle=heart;amount=1;y=1} @self
+  - takeitem{i=kings_key} @Trigger
+  - delay 36000
+  - command{c="fakeblock show gold <target.name>";asTarget=true;asOp=true} @Trigger ~onInteract
+
+red_nether_gate_open:
+  Cooldown: 2
+  TriggerConditions:
+  - holding{m=nether_key} true
+  Skills:
+  - effect:particles{particle=cloud;amount=50;speed=0.25;d=true;dir=0,1,0} @self
+  - effect:particleorbital{r=1;points=32;t=20;i=1;vy=20;particle=flame;rX=45;rY=45;d=true;dir=0,1,0} @self
+  - effect:particleorbital{r=1;points=32;t=20;i=1;vy=20;particle=flame;rX=-45;rY=-45;d=true;dir=0,1,0} @self
+  - delay 20
+  - command{c="fakeblock hide nether <target.name>";asTarget=true;asOp=true} @Trigger ~onInteract
+  - effect:particles{particle=heart;amount=1;y=1} @self
+  - takeitem{i=nether_key} @Trigger
+  - delay 36000
+  - command{c="fakeblock show nether <target.name>";asTarget=true;asOp=true} @Trigger ~onInteract
+
+
+stone_gate_open:
+  Cooldown: 2
+  TriggerConditions:
+  - holding{m=stone_key} true
+  Skills:
+  - effect:particles{particle=cloud;amount=50;speed=0.25;d=true;dir=0,1,0} @self
+  - effect:particleorbital{r=1;points=32;t=20;i=1;vy=20;particle=flame;rX=45;rY=45;d=true;dir=0,1,0} @self
+  - effect:particleorbital{r=1;points=32;t=20;i=1;vy=20;particle=flame;rX=-45;rY=-45;d=true;dir=0,1,0} @self
+  - delay 20
+  - command{c="fakeblock hide stones <target.name>";asTarget=false;asOp=true} @Trigger ~onInteract
+  - effect:particles{particle=heart;amount=1;y=1} @self
+  - takeitem{i=stone_key} @Trigger
+  - delay 36000
+  - command{c="fakeblock show stones <target.name>";asTarget=true;asOp=true} @Trigger ~onInteract
+
+warped_gate_open:
+  Cooldown: 2
+  TriggerConditions:
+  - holding{m=warped_key} true
+  Skills:
+  - effect:particles{particle=cloud;amount=50;speed=0.25;d=true;dir=0,1,0} @self
+  - effect:particleorbital{r=1;points=32;t=20;i=1;vy=20;particle=flame;rX=45;rY=45;d=true;dir=0,1,0} @self
+  - effect:particleorbital{r=1;points=32;t=20;i=1;vy=20;particle=flame;rX=-45;rY=-45;d=true;dir=0,1,0} @self
+  - delay 20
+  - command{c="fakeblock hide warped <target.name>";asTarget=false;asOp=true} @Trigger ~onInteract
+  - effect:particles{particle=heart;amount=1;y=1} @self
+  - takeitem{i=warped_key} @Trigger 
+  - delay 36000
+  - command{c="fakeblock show warped <target.name>";asTarget=true;asOp=true} @Trigger ~onInteract
+
+

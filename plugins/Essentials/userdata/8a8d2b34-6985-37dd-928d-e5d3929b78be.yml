@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 120.229.33.2
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1737895177548
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1738323807631
+  login: 1738323686077
+money: '144.0'
+last-account-name: pilipala
+lastlocation:
+  world: 04c00a4f-fe5c-47c6-8998-babf81130ba2
+  world-name: world
+  x: 646.4344641818901
+  y: -53.0
+  z: -996.0161894035712
+  yaw: 26.09912109375
+  pitch: 14.37558650970459
+logoutlocation:
+  world: 04c00a4f-fe5c-47c6-8998-babf81130ba2
+  world-name: world
+  x: 642.8517027775088
+  y: 69.875
+  z: -1080.0964524607944
+  yaw: -159.33123779296875
+  pitch: 51.2487678527832

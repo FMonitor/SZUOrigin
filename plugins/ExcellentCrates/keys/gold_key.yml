@@ -1,0 +1,11 @@
+Name: gold
+Virtual: false
+Item:
+  Material: STICK
+  Name: '#FFA42DGold Key'
+  Custom_Model_Data: 102
+  Item_Flags:
+  - HIDE_ATTRIBUTES
+
+
+

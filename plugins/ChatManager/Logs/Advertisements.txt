@@ -1,0 +1,8 @@
+[Sat Jan 25 16:32:15 UTC 2025] [Command] neckProtecter: /tp @s 267 72.5 308
+[Sat Jan 25 16:32:19 UTC 2025] [Command] neckProtecter: /tp @s 258 79.5 266
+[Sat Jan 25 16:35:53 UTC 2025] [Command] pilipala: /tp @s 502 -54.5 -501
+[Sun Jan 26 08:29:52 UTC 2025] [Chat] huihuiaxy: Xaero-waypoint:gui.xaero-deathpoint:D:-81:-58:-140:0:false:0:Internal-overworld-waypoints. 
+[Sun Jan 26 08:30:07 UTC 2025] [Command] huihuiaxy: /tp @s -81 -57.5 -140
+[Mon Jan 27 09:12:24 UTC 2025] [Chat] huihuiaxy: Xaero-waypoint:gui.xaero-deathpoint:D:-428:-41:424:0:false:0:Internal-dim%minecraft$mine-waypoints. 
+[Mon Jan 27 09:12:33 UTC 2025] [Command] huihuiaxy: /tp @s -428 -40.5 424
+[Mon Feb 03 16:45:57 UTC 2025] [Chat] neckProtecter: 8 - 160 4 - 36. 

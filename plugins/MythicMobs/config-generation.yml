@@ -1,0 +1,59 @@
+#
+# Generation Configuration Options
+#
+# More information about Mythic pack generation features can be found here:
+# https://git.mythiccraft.io/mythiccraft/mythiccrucible/-/wikis/ResourcePack-Generator
+#
+Generation:
+
+  #================================================================================
+  # General Generator Options
+  #================================================================================
+  Namespace: mythic                 # Namespace to save everything under
+  MergeModelEngine: true            # Whether to merge ModelEngine files if available
+  MergeHappyHUD: true               # Whether to merge HappyHUD files if available
+  ZipPack: true                     # Whether to zip the pack after completion. Required for deployment.
+
+  #================================================================================
+  # Automatic Deployment Options
+  # - Used to automatically deploy the pack to an end-point once it's generated
+  #================================================================================
+  Deployment:
+    Enabled: false                  # Whether to enable automatic deployment
+    Type: SELFHOST                  # Can currently be SELFHOST or S3
+    SelfHosting:
+      Port: 8080
+    S3:
+      Storage:
+        Key: pack
+        Bucket: packs
+      Authentication:
+        Endpoint: ''
+        AccessKey: ''
+        SecretKey: ''
+    AutoSend:                       # Automatically sending the pack to players
+      Enabled: false
+      SendOnUpdate: false
+      PublicURL: https://s3.yourcoolwebsite.com
+
+  #================================================================================
+  # Custom Armor Generation Settings
+  # - These settings affect custom armor generation.
+  #================================================================================
+  CustomArmor:
+    DefaultMethod: TRIMS
+    GenerateOptifineFiles: true
+    Trims:
+      Enabled: false
+      GenerateDataPack: true
+      HideBaseArmor: []
+      ConvertBaseArmor: false
+    Shaders:
+      Enabled: false
+      Shader: lessfancypants
+
+  #================================================================================
+  # Font Image Generation Settings
+  #================================================================================
+  FontImages:
+    StartingCharacter: '\u5001'
