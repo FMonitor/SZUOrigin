@@ -1,0 +1,10 @@
+name: admin
+permissions:
+- weight.10000
+parents:
+- mods
+prefixes:
+- §f§r:
+    priority: 10000
+
+

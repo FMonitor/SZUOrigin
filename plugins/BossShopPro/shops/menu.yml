@@ -1,0 +1,669 @@
+ShopName: menu
+DisplayName: "§f" 
+InventorySize: 45 
+Command: menu:help:wiki
+shop: 
+  warps1:
+    MenuItem:
+    - "name:&f &l传送点"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63一张互联的网，'
+    - 'lore3:&f #5c5e63每个点代表'
+    - 'lore4:&f #5c5e63一个独特的维度。'
+    - 'lore5:&f '
+    - 'lore6:&f #5c5e63旅行者可以通过这些'
+    - 'lore7:&f #5c5e63传送点进行传送，'
+    - 'lore8:&f #5c5e63探索拥有独特特征的，'
+    - 'lore9:&f #5c5e63多样的领域。'
+    - 'lore10:&f '
+    RewardType: SHOP
+    Reward: 'warps'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 1
+  warps2:
+    MenuItem:
+    - "name:&f &l传送点"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63一张互联的网，'
+    - 'lore3:&f #5c5e63每个点代表'
+    - 'lore4:&f #5c5e63一个独特的维度。'
+    - 'lore5:&f '
+    - 'lore6:&f #5c5e63旅行者可以通过这些'
+    - 'lore7:&f #5c5e63传送点进行传送，'
+    - 'lore8:&f #5c5e63探索拥有独特特征的，'
+    - 'lore9:&f #5c5e63多样的领域。'
+    - 'lore10:&f '
+    RewardType: SHOP
+    Reward: 'warps'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 2
+  warps10:
+    MenuItem:
+    - "name:&f &l传送点"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63一张互联的网，'
+    - 'lore3:&f #5c5e63每个点代表'
+    - 'lore4:&f #5c5e63一个独特的维度。'
+    - 'lore5:&f '
+    - 'lore6:&f #5c5e63旅行者可以通过这些'
+    - 'lore7:&f #5c5e63传送点进行传送，'
+    - 'lore8:&f #5c5e63探索拥有独特特征的，'
+    - 'lore9:&f #5c5e63多样的领域。'
+    - 'lore10:&f '
+    RewardType: SHOP
+    Reward: 'warps'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 10
+  warps11:
+    MenuItem:
+    - "name:&f &l传送点"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63一张互联的网，'
+    - 'lore3:&f #5c5e63每个点代表'
+    - 'lore4:&f #5c5e63一个独特的维度。'
+    - 'lore5:&f '
+    - 'lore6:&f #5c5e63旅行者可以通过这些'
+    - 'lore7:&f #5c5e63传送点进行传送，'
+    - 'lore8:&f #5c5e63探索拥有独特特征的，'
+    - 'lore9:&f #5c5e63多样的领域。'
+    - 'lore10:&f '
+    RewardType: SHOP
+    Reward: 'warps'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 11
+  warps19:
+    MenuItem:
+    - "name:&f &l传送点"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63一张互联的网，'
+    - 'lore3:&f #5c5e63每个点代表'
+    - 'lore4:&f #5c5e63一个独特的维度。'
+    - 'lore5:&f '
+    - 'lore6:&f #5c5e63旅行者可以通过这些'
+    - 'lore7:&f #5c5e63传送点进行传送，'
+    - 'lore8:&f #5c5e63探索拥有独特特征的，'
+    - 'lore9:&f #5c5e63多样的领域。'
+    - 'lore10:&f '
+    RewardType: SHOP
+    Reward: 'warps'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 19
+  warps20:
+    MenuItem:
+    - "name:&f &l传送点"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63一张互联的网，'
+    - 'lore3:&f #5c5e63每个点代表'
+    - 'lore4:&f #5c5e63一个独特的维度。'
+    - 'lore5:&f '
+    - 'lore6:&f #5c5e63旅行者可以通过这些'
+    - 'lore7:&f #5c5e63传送点进行传送，'
+    - 'lore8:&f #5c5e63探索拥有独特特征的，'
+    - 'lore9:&f #5c5e63多样的领域。'
+    - 'lore10:&f '
+    RewardType: SHOP
+    Reward: 'warps'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 20
+  warps28:
+    MenuItem:
+    - "name:&f &l传送点"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63一张互联的网，'
+    - 'lore3:&f #5c5e63每个点代表'
+    - 'lore4:&f #5c5e63一个独特的维度。'
+    - 'lore5:&f '
+    - 'lore6:&f #5c5e63旅行者可以通过这些'
+    - 'lore7:&f #5c5e63传送点进行传送，'
+    - 'lore8:&f #5c5e63探索拥有独特特征的，'
+    - 'lore9:&f #5c5e63多样的领域。'
+    - 'lore10:&f '
+    RewardType: SHOP
+    Reward: 'warps'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 28
+  warps29:
+    MenuItem:
+    - "name:&f &l传送点"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63一张互联的网，'
+    - 'lore3:&f #5c5e63每个点代表'
+    - 'lore4:&f #5c5e63一个独特的维度。'
+    - 'lore5:&f '
+    - 'lore6:&f #5c5e63旅行者可以通过这些'
+    - 'lore7:&f #5c5e63传送点进行传送，'
+    - 'lore8:&f #5c5e63探索拥有独特特征的，'
+    - 'lore9:&f #5c5e63多样的领域。'
+    - 'lore10:&f '
+    RewardType: SHOP
+    Reward: 'warps'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 29
+  warps37:
+    MenuItem:
+    - "name:&f &l传送点"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63一张互联的网，'
+    - 'lore3:&f #5c5e63每个点代表'
+    - 'lore4:&f #5c5e63一个独特的维度。'
+    - 'lore5:&f '
+    - 'lore6:&f #5c5e63旅行者可以通过这些'
+    - 'lore7:&f #5c5e63传送点进行传送，'
+    - 'lore8:&f #5c5e63探索拥有独特特征的，'
+    - 'lore9:&f #5c5e63多样的领域。'
+    - 'lore10:&f '
+    RewardType: SHOP
+    Reward: 'warps'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 37
+  warps38:
+    MenuItem:
+    - "name:&f &l传送点"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63一张互联的网，'
+    - 'lore3:&f #5c5e63每个点代表'
+    - 'lore4:&f #5c5e63一个独特的维度。'
+    - 'lore5:&f '
+    - 'lore6:&f #5c5e63旅行者可以通过这些'
+    - 'lore7:&f #5c5e63传送点进行传送，'
+    - 'lore8:&f #5c5e63探索拥有独特特征的，'
+    - 'lore9:&f #5c5e63多样的领域。'
+    - 'lore10:&f '
+    RewardType: SHOP
+    Reward: 'warps'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 38
+##########################################################################GUIDE
+
+
+  guide1:
+    MenuItem:
+    - "name:&f &l指南"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63服务器指南，'
+    - 'lore3:&f #5c5e63帮助旅行者了解服务器的玩法。'
+    - 'lore4:&f '
+    RewardType: SHOP
+    Reward: 'guide'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 3
+  guide2:
+    MenuItem:
+    - "name:&f &l指南"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63服务器指南，'
+    - 'lore3:&f #5c5e63帮助旅行者了解服务器的玩法。'
+    - 'lore4:&f '
+    RewardType: SHOP
+    Reward: 'guide'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 4
+  guide10:
+    MenuItem:
+    - "name:&f &l指南"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63服务器指南，'
+    - 'lore3:&f #5c5e63帮助旅行者了解服务器的玩法。'
+    - 'lore4:&f '
+    RewardType: SHOP
+    Reward: 'guide'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 12
+  guide11:
+    MenuItem:
+    - "name:&f &l指南"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63服务器指南，'
+    - 'lore3:&f #5c5e63帮助旅行者了解服务器的玩法。'
+    - 'lore4:&f '
+    RewardType: SHOP
+    Reward: 'guide'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 13
+  guide19:
+    MenuItem:
+    - "name:&f &l指南"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63服务器指南，'
+    - 'lore3:&f #5c5e63帮助旅行者了解服务器的玩法。'
+    - 'lore4:&f '
+    RewardType: SHOP
+    Reward: 'guide'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 21
+  guide20:
+    MenuItem:
+    - "name:&f &l指南"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63服务器指南，'
+    - 'lore3:&f #5c5e63帮助旅行者了解服务器的玩法。'
+    - 'lore4:&f '
+    RewardType: SHOP
+    Reward: 'guide'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 22
+  guide28:
+    MenuItem:
+    - "name:&f &l指南"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63服务器指南，'
+    - 'lore3:&f #5c5e63帮助旅行者了解服务器的玩法。'
+    - 'lore4:&f '
+    RewardType: SHOP
+    Reward: 'guide'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 30
+  guide29:
+    MenuItem:
+    - "name:&f &l指南"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63服务器指南，'
+    - 'lore3:&f #5c5e63帮助旅行者了解服务器的玩法。'
+    - 'lore4:&f '
+    RewardType: SHOP
+    Reward: 'guide'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 31
+  guide37:
+    MenuItem:
+    - "name:&f &l指南"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63服务器指南，'
+    - 'lore3:&f #5c5e63帮助旅行者了解服务器的玩法。'
+    - 'lore4:&f '
+    RewardType: SHOP
+    Reward: 'guide'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 39
+  guide38:
+    MenuItem:
+    - "name:&f &l指南"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63服务器指南，'
+    - 'lore3:&f #5c5e63帮助旅行者了解服务器的玩法。'
+    - 'lore4:&f '
+    RewardType: SHOP
+    Reward: 'guide'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 40
+
+
+    #########################################################PROFILE
+
+  profile32:
+    MenuItem:
+    - "name:&f &l个人资料"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63可以查看个人'
+    - 'lore3:&f #5c5e63余额、成就、等级、外观、装备等。'
+    - 'lore4:&f '
+    RewardType: PLAYERCOMMAND
+    Reward: 'profile'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 32
+  profile33:
+    MenuItem:
+    - "name:&f &l个人资料"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63可以查看个人'
+    - 'lore3:&f #5c5e63余额、成就、等级、外观、装备等。'
+    - 'lore4:&f '
+    RewardType: PLAYERCOMMAND
+    Reward: 'profile'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 33
+  profile41:
+    MenuItem:
+    - "name:&f &l个人资料"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63可以查看个人'
+    - 'lore3:&f #5c5e63余额、成就、等级、外观、装备等。'
+    - 'lore4:&f '
+    RewardType: PLAYERCOMMAND
+    Reward: 'profile'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 41
+  profile42:
+    MenuItem:
+    - "name:&f &l个人资料"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63可以查看个人'
+    - 'lore3:&f #5c5e63余额、成就、等级、外观、装备等。'
+    - 'lore4:&f '
+    RewardType: PLAYERCOMMAND
+    Reward: 'profile'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 42
+
+
+  quest2:
+    MenuItem:
+    - "name:&f &l任务"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63在这里，'
+    - 'lore3:&f #5c5e63您可以找到一系列有趣的任务和使命，'
+    - 'lore4:&f #5c5e63每个任务都提供独特的'
+    - 'lore5:&f #5c5e63成长机会、奖励和激动人心的体验。'
+    - 'lore6:&f '
+    RewardType: SHOP
+    Reward: 'quest_menu'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 35
+  quest33:
+    MenuItem:
+    - "name:&f &l任务"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63在这里，'
+    - 'lore3:&f #5c5e63您可以找到一系列有趣的任务和使命，'
+    - 'lore4:&f #5c5e63每个任务都提供独特的'
+    - 'lore5:&f #5c5e63成长机会、奖励和激动人心的体验。'
+    - 'lore6:&f '
+    RewardType: SHOP
+    Reward: 'quest_menu'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 36
+  quest41:
+    MenuItem:
+    - "name:&f &l任务"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63在这里，'
+    - 'lore3:&f #5c5e63您可以找到一系列有趣的任务和使命，'
+    - 'lore4:&f #5c5e63每个任务都提供独特的'
+    - 'lore5:&f #5c5e63成长机会、奖励和激动人心的体验。'
+    - 'lore6:&f '
+    RewardType: SHOP
+    Reward: 'quest_menu'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 44
+  quest42:
+    MenuItem:
+    - "name:&f &l任务"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63在这里，'
+    - 'lore3:&f #5c5e63您可以找到一系列有趣的任务和使命，'
+    - 'lore4:&f #5c5e63每个任务都提供独特的'
+    - 'lore5:&f #5c5e63成长机会、奖励和激动人心的体验。'
+    - 'lore6:&f '
+    RewardType: SHOP
+    Reward: 'quest_menu'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 45
+
+  kits_1:
+    MenuItem:
+    - "name:&f &l套装"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63旅行者套装由'
+    - 'lore3:&f #5c5e63轻便透气的材料制成，'
+    - 'lore4:&f #5c5e63确保舒适.'
+    - 'lore5:&f '
+    RewardType: SHOP
+    Reward: kits_member
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 8
+  kits_2:
+    MenuItem:
+    - "name:&f &l套装"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63旅行者套装由'
+    - 'lore3:&f #5c5e63轻便透气的材料制成，'
+    - 'lore4:&f #5c5e63确保舒适。'
+    - 'lore5:&f '
+    RewardType: SHOP
+    Reward: kits_member
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 9
+  kits_3:
+    MenuItem:
+    - "name:&f &l套装"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63旅行者套装由'
+    - 'lore3:&f #5c5e63轻便透气的材料制成，'
+    - 'lore4:&f #5c5e63确保舒适。'
+    - 'lore5:&f '
+    RewardType: SHOP
+    Reward: kits_member
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 17
+  kits_4:
+    MenuItem:
+    - "name:&f &l套装"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63旅行者套装由'
+    - 'lore3:&f #5c5e63轻便透气的材料制成，'
+    - 'lore4:&f #5c5e63确保舒适。'
+    - 'lore5:&f '
+    RewardType: SHOP
+    Reward: kits_member
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 18
+
+
+  ranks_1:
+    MenuItem:
+    - "name:&f &l排名"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63升级排名是对成员成就和'
+    - 'lore3:&f #5c5e63增加责任的认可与奖励方式。'
+    - 'lore4:&f '
+    RewardType: SHOP
+    Reward: ranks_menu
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 6
+  ranks_2:
+    MenuItem:
+    - "name:&f &l排名"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63升级排名是对成员成就和'
+    - 'lore3:&f #5c5e63增加责任的认可与奖励方式。'
+    - 'lore4:&f '
+    RewardType: SHOP
+    Reward: ranks_menu
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 7
+  ranks_3:
+    MenuItem:
+    - "name:&f &l排名"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63升级排名是对成员成就和'
+    - 'lore3:&f #5c5e63增加责任的认可与奖励方式。'
+    - 'lore4:&f '
+    RewardType: SHOP
+    Reward: ranks_menu
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 15
+  ranks_4:
+    MenuItem:
+    - "name:&f &l排名"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63升级排名是对成员成就和'
+    - 'lore3:&f #5c5e63增加责任的认可与奖励方式。'
+    - 'lore4:&f '
+    RewardType: SHOP
+    Reward: ranks_menu
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 16
+
+    
+
+

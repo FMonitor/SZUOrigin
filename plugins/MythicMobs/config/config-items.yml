@@ -1,0 +1,24 @@
+Configuration:
+  
+  ItemUpdating:
+    Enabled: true
+  
+  DefaultItemOptions:
+    Material: STONE
+    PreventEnchanting: false # Can be true or false
+    PreventCrafting: modeled # Can be true, false, modeled, or default
+    PreventAnviling: default # Can be true, false, modeled, or default
+    PreventSmithing: default # Can be true, false, modeled, or default
+  
+  ItemSkills:
+    JoinDelay: 20 # Delay when joining before items are scanned
+  
+  ItemStats:
+    Rounding: 2 # Default decimal places to round stats to when generated
+    SaveRatios: false # Save generated stat ratios for the Item Updater
+  
+  CustomBlocks:
+    SwapIsPickBlock: true # Can be true or false
+  
+  Furniture:
+    DefaultType: DISPLAY # Can be DISPLAY, ARMOR_STAND or ITEM_FRAME

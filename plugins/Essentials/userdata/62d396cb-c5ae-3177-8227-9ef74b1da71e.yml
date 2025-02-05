@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 192.168.1.15
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1737809905544
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1737809927813
+  login: 1737808597909
+money: '0'
+last-account-name: 4_winter
+lastlocation:
+  world: 877e483a-8c3b-40fa-9738-40239679b77e
+  world-name: isla
+  x: 56.46800276242506
+  y: 82.0
+  z: 143.57106612985362
+  yaw: 173.7064208984375
+  pitch: -5.921766757965088
+logoutlocation:
+  world: 877e483a-8c3b-40fa-9738-40239679b77e
+  world-name: isla
+  x: 60.42736182484229
+  y: 82.5
+  z: 143.70654718824488
+  yaw: 111.75736999511719
+  pitch: 4.878230571746826

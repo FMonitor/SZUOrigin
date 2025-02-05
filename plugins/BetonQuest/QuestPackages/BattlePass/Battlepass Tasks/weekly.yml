@@ -1,0 +1,100 @@
+
+#############
+# medium = gain exp, kill mob
+##########
+events:
+
+####################
+  stonesweekly: "objective start stonesweeklyobj"
+  stonesweekly_started: 'tag add stonesweekly_started'
+  stonesweekly_started_del: 'tag delete stonesweekly_started'
+  stonesweekly_done: 'tag add stonesweekly_done'
+  stonesweekly_paid: 'tag add stonesweekly_paid'
+
+  stonesweekly_folder: folder stonesweekly,mediumNotifyStarted,stonesweekly_started
+  stonesweekly_reset: "tag del stonesweekly_started,stonesweekly_done,stonesweekly_paid"
+
+
+  ironOreweekly: "objective start ironOreweeklyobj"
+  ironOreweekly_started: 'tag add ironOreweekly_started'
+  ironOreweekly_started_del: 'tag delete ironOreweekly_started'
+  ironOreweekly_done: 'tag add ironOreweekly_done'
+  ironOreweekly_paid: 'tag add ironOreweekly_paid'
+
+  ironOreweekly_folder: folder ironOreweekly,mediumNotifyStarted,ironOreweekly_started
+  ironOreweekly_reset: "tag del ironOreweekly_started,ironOreweekly_done,ironOreweekly_paid"
+
+
+  wheatsweekly: "objective start wheatsweeklyobj"
+  wheatsweekly_started: 'tag add wheatsweekly_started'
+  wheatsweekly_started_del: 'tag delete wheatsweekly_started'
+  wheatsweekly_done: 'tag add wheatsweekly_done'
+  wheatsweekly_paid: 'tag add wheatsweekly_paid'
+
+  wheatsweekly_folder: folder wheatsweekly,mediumNotifyStarted,wheatsweekly_started
+  wheatsweekly_reset: "tag del wheatsweekly_started,wheatsweekly_done,wheatsweekly_paid"
+
+  logsweekly: "objective start logsweeklyobj"
+  logsweekly_started: 'tag add logsweekly_started'
+  logsweekly_started_del: 'tag delete logsweekly_started'
+  logsweekly_done: 'tag add logsweekly_done'
+  logsweekly_paid: 'tag add logsweekly_paid'
+
+  logsweekly_folder: folder logsweekly,mediumNotifyStarted,logsweekly_started
+  logsweekly_reset: "tag del logsweekly_started,logsweekly_done,logsweekly_paid"
+
+
+
+############### REWARDS 
+
+  stonesweeklyRewards: folder mediumClaimNotify,addPointweekly,stonesweekly_paid,stonesweekly_done,stonesweekly_started_del
+  ironOreweeklyRewards: folder mediumClaimNotify,addPointweekly,ironOreweekly_paid,ironOreweekly_done,ironOreweekly_started_del
+  wheatsweeklyRewards: folder mediumClaimNotify,addPointweekly,wheatsweekly_paid,wheatsweekly_done,wheatsweekly_started_del
+  logsweeklyRewards: folder mediumClaimNotify,addPointweekly,logsweekly_paid,logsweekly_done,logsweekly_started_del
+
+##########free
+
+#########PRemium  
+
+###############################FREE TAGS
+
+
+
+
+objectives:
+  stonesweeklyobj: block STONE -2000 events:stonesweekly_done,mediumDoneNotify
+  ironOreweeklyobj: block IRON_ORE|DEEPSLATE_IRON_ORE -500 events:ironOreweekly_done,mediumDoneNotify
+  wheatsweeklyobj: block $wheats$ -1000 events:wheatsweekly_done,mediumDoneNotify
+  logsweeklyobj: block $logs$ -1000 events:logsweekly_done,mediumDoneNotify
+
+
+conditions:
+  stonesweekly_done: tag stonesweekly_done
+  stonesweekly_started: tag stonesweekly_started
+  stonesweekly_paid: tag stonesweekly_paid
+
+  ironOreweekly_done: tag ironOreweekly_done
+  ironOreweekly_started: tag ironOreweekly_started
+  ironOreweekly_paid: tag ironOreweekly_paid
+
+  wheatsweekly_done: tag wheatsweekly_done
+  wheatsweekly_started: tag wheatsweekly_started
+  wheatsweekly_paid: tag wheatsweekly_paid
+
+
+  logsweekly_done: tag logsweekly_done
+  logsweekly_started: tag logsweekly_started
+  logsweekly_paid: tag logsweekly_paid
+
+
+
+
+
+
+
+
+
+
+
+
+

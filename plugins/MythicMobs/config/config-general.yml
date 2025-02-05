@@ -1,0 +1,51 @@
+Configuration:
+  Version: 5.6
+  
+  
+  General:
+    AllowMetrics: true
+    CheckForUpdates: true
+    DebugLevel: 0
+    DebugMode: false
+    DebugSpawners: false
+    ErrorLogging: true
+    ThreadPoolSize: -1
+    
+    CompatibilityMode: false
+  
+  Features:
+    PlayerFactions: true
+    RandomSpawning: true
+    Spawners: true
+  
+  Commands:
+    SendGiveItemFeedback: true
+  
+  Clock:
+    Main: 1
+    Saving: 300
+    Spawners: 2
+    RandomSpawning: 1
+    Scanner: 10
+    Cleanup: 600
+    Bars: 20
+  
+  Compatibility:
+    ProtocolLib:
+      Enabled: true
+    Heroes:
+      Enabled: true
+      ShowXPMessage: true
+      XPMessageFormat: ''
+    McMMO:
+      Enabled: true
+      ShowXPMessage: true
+      XPMessageFormat: '&7在杀死 <caster.name> 后，你将获得 <drop.amount> 经验。'
+    SkillAPI:
+      Enabled: true
+      ShowXPMessage: true
+      XPMessageFormat: '&7在杀死 <caster.name> 后，你将获得 <drop.amount> 经验。'
+    Vault:
+      Enabled: true
+      ShowMoneyMessage: true
+      MoneyMessageFormat: '&7在杀死 <caster.name> 后，你将获得 <drop.amount> 货币。'

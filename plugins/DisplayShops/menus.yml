@@ -1,0 +1,763 @@
+## 这个文件可以完全定制每一个GUI界面。 ##
+## 如果安装了HeadDatabase或想使用普通玩家头像, 可以使用"HEAD: <value>"作为任何材料。其中<value>是ID或玩家名称。 ##
+## 在此配置文件格式化错误时, 请参阅以下文档:  ##
+## https://github.com/XZot1K/DisplayShopsAPI/blob/master/menus.yml ##
+
+## 这些商品用于覆盖在原始菜单中找到的商品, 作为装饰形式。 ##
+decorative-items: 
+  ## 这是自定义商品的ID, 绝不能与本节中的其他商品相同。 ##
+  example-item: 
+    ## 它将被添加到的菜单。 ##
+    ## 可用菜单: [BASE_BLOCK, EDIT和TRANSACTION] ##
+    menu: "EDIT"
+    ## (注意: 此示例项目默认情况下为-1, 因此处于静止状态。) ##
+    slot: -1
+    material: "COMPASS"
+    durability: 0
+    amount: 1
+    ## 附魔使用来自以下网站的ID:  ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html ##
+    ## (注意: 使用格式"<id>:<从0开始的等级>") ##
+    enchantments: [ ]
+    ## 标志类似于附魔并从以下网站获取ID:  ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemFlag.html##
+    ## (注意: 如果在列表中存在标志, 则只需添加ID即可设置为true。) ##
+    flags: [ ]
+    ## 这是用于特殊纹理的特殊用途。将其保留为-1以避免。 ##
+    model-data: 0
+    display-name: "&c简单信息"
+    lore:
+      - "&7我只是提供一些简单的信息!"
+      - ""
+
+
+## 这是基座方块选择菜单, 根据可选材料调整其大小并允许选择以将商店的基座方块调整为所选材料。 ##
+base-block-menu:
+
+  ## 菜单的标题
+  title: "&8基座方块选择"
+
+  ## 如果此大小大于9, 菜单将显示为箱子容器。否则, 它将显示为漏斗容器。 ##
+  ## (注意: 这个值必须是9的倍数, 大于9, 并且小于或等于54)  ##
+  size: 45
+
+  ## 此选项将按字母顺序对基座方块材料的列表进行排序。 ##
+  sort-alphabetically: false
+  
+  ## 由于背景商品只能设置在底部行, 建议将这个商品的槽位放在同一区域。 ##
+  next-page-item:
+    slot: 40
+    material: "HEAD:MHF_ArrowRight"
+    durability: 0
+    amount: 1
+    ## 附魔使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html ##
+    ## (注意: 使用格式"<id>:<从0开始的等级>") ##
+    enchantments: [ ]
+    ## 标记与附魔类似, 使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemFlag.html ##
+    ## (注意: 如果标记在列表中, 则只需要添加id, 它将设置为 true。) ##
+    flags: [ ]
+    ## 这是用于特殊纹理的。将其设置为-1以避免使用。 ##
+    model-data: 0
+    display-name: "&c下一页"
+    lore:
+      - ""
+      - "&a点击&e进入下一页"
+
+  ## 由于背景商品只能设置在底部行, 建议将这个商品的槽位放在同一区域。 ##
+  previous-page-item:
+    slot: 40
+    material: "HEAD:MHF_ArrowLeft"
+    durability: 0
+    amount: 1
+    ## 附魔使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html ##
+    ## (注意: 使用格式"<id>:<从0开始的等级>") ##
+    enchantments: [ ]
+    ## 标记与附魔类似, 使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemFlag.html ##
+    ## (注意: 如果标记在列表中, 则只需要添加id, 它将设置为 true。) ##
+    flags: [ ]
+    ## 这是用于特殊纹理的。将其设置为-1以避免使用。 ##
+    model-data: 0
+    display-name: "&c上一页"
+    lore:
+      - ""
+      - "&a点击&e进入上一页"
+
+  ## 背景商品只填充商品栏的最后一行, 除了下一页和上一页按钮。 ##
+  background-item:
+    material: "BLACK_STAINED_GLASS_PANE"
+    durability: 15
+    amount: 1
+    ## 附魔使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html ##
+    ## (注意: 使用格式"<id>:<从0开始的等级>") ##
+    enchantments: [ ]
+    ## 标记与附魔类似, 使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemFlag.html ##
+    ## (注意: 如果标记在列表中, 则只需要添加id, 它将设置为 true。) ##
+    flags: [ ]
+    ## 这是用于特殊纹理的。将其设置为-1以避免使用。 ##
+    model-data: 0
+    display-name: "&f做人呢, 要有底线!"
+    lore: [ ]
+
+
+  ## 这是已选择的材料所显示的商品。 ##
+  ## (注意: 将材料设置为"", 会使材料恢复为原始材料。) ##
+  current-selection-item:
+    material: ""
+    ## 附魔使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html ##
+    ## (注意: 使用格式"<id>:<从0开始的等级>") ##
+    enchantments:
+      - "DURABILITY:0"
+    ## 标记与附魔类似, 使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemFlag.html ##
+    ## (注意: 如果标记在列表中, 则只需要添加id, 它将设置为 true。) ##
+    flags:
+      - "HIDE_ENCHANTS"
+    ## 这是用于特殊纹理的。将其设置为-1以避免使用。 ##
+    model-data: 0
+    display-name: "&b当前基座方块"
+    lore:
+      - "&a已激活"
+      - ""
+
+
+  ## 每个锁定外观将使用此商品格式。 ##
+  locked-item-format:
+    display-name: "&f{material}"
+    lore:
+      - "{requirement}"
+      - "&c已被锁定"
+      - "&a鼠标点击 &7解锁此基座方块"
+      - "&7需要花费: &e{price}硬币"
+      - ""
+
+
+  ## 每个解锁外观将使用此商品格式。 ##
+  unlocked-item-format:
+    display-name: "&f{material}"
+    lore:
+      - "{requirement}"
+      - "&e已解锁"
+      - "&a鼠标点击 &7选择此基座方块"
+      - ""
+
+  ## 可供选择的材料, 格式为 <material>:<durability>:<price>:<requirement>。 ##
+  available-materials:
+    - "END_PORTAL_FRAME:-1:50.0:&7末地传送门框架"
+    - "ENDER_PORTAL_FRAME:-1:50.0:&7末地传送门框架"
+    - "CRAFTING_BENCH:-1:75.0:&7工作台"
+    - "WORKBENCH:-1:75.0:&7工作台"
+    - "CHEST:-1:25.0:&7箱子"
+    - "ENDER_CHEST:-1:250.0:&7末影箱"
+    - "LOCKED_CHEST:-1:50.0:&7上锁的箱子"
+    - "BARREL:-1:25.0:&7木桶"
+    - "FURNACE:-1:80.0:&7熔炉"
+    - "JUKEBOX:-1:80.0:&7唱片机"
+    - "NOTE_BLOCK:-1:100.0:&7音符盒"
+    - "DIAMOND_BLOCK:-1:150.0:&7钻石块"
+    - "GOLD_BLOCK:-1:100.0:&7金块"
+    - "IRON_BLOCK:-1:100.0:&7铁块"
+    - "COAL_BLOCK:-1:80.0:&7煤炭块"
+    - "LAPIS_BLOCK:-1:80.0:&7青金石块"
+    - "QUARTZ_BLOCK:-1:60.0:&7石英块"
+    - "EMERALD_BLOCK:-1:200.0:&7绿宝石块"
+    - "STONE:-1:1.0:&7石头"
+    - "BEDROCK:-1:200.0:&7基岩"
+    - "GLASS:-1:10.0:&7玻璃"
+    - "OAK_FENCE:-1:100.0:&7橡木栅栏"
+    - "MAGENTA_CONCRETE:-1:15.0:&7品红色混凝土"
+    - "PURPLE_CONCRETE:-1:15.0:&7紫色混凝土"
+    - "BLUE_CONCRETE:-1:15.0:&7蓝色混凝土"
+    - "LIGHT_BLUE_CONCRETE:-1:15.0:&7淡蓝色混凝土"
+    - "LIME_CONCRETE:-1:15.0:&7黄绿色混凝土"
+    - "GREEN_CONCRETE:-1:15.0:&7绿色混凝土"
+    - "YELLOW_CONCRETE:-1:15.0:&7黄色混凝土"
+    - "ORANGE_CONCRETE:-1:15.0:&7橙色混凝土"
+    - "RED_CONCRETE:-1:15.0:&7红色混凝土"
+    - "PINK_CONCRETE:-1:15.0:&7粉色混凝土"
+    - "WHITE_CONCRETE:-1:15.0:&7白色混凝土"
+    - "LIGHT_GRAY_CONCRETE:-1:15.0:&7淡灰色混凝土"
+    - "GRAY_CONCRETE:-1:15.0:&7灰色混凝土"
+    - "BLACK_CONCRETE:-1:15.0:&7黑色混凝土"
+
+## 这是玩家用来传送到服务器上任意商店的商店访问菜单! ##
+shop-visit-menu:
+
+  ## 菜单的标题 ##
+  title: "&8全服商店菜单"
+
+  ## 如果此大小大于9, 菜单将显示为箱子容器。否则, 它将显示为漏斗容器。 ##
+  ## (注意: 这个值必须是9的倍数, 大于9, 并且小于或等于54)  ##
+  size: 45
+
+  ## 此选项将按字母顺序对基座方块材料的列表进行排序。 ##
+  show-admin-shops: false
+  ## 这些是用于替换 {type} 占位符的格式。 ##
+  type-admin: "&c官方"
+  type-normal: "&b玩家"
+
+  ## 这是商店访问图标所使用的名称。 ##
+  shop-name: "&f{item} &6方块商店" 
+  ## 占位符 {item} 将向玩家提供商店销售的简要想法。 ##
+
+  ## 这将用于商店访问图标的描述 ({item}和{trade-item}也可以在描述中使用)。 ##
+  shop-lore:
+    - "&7&m------------------"
+    - ""
+    - "&7描述: &f{description}"
+    - ""
+    - "&7商店类型: &b{type}" ## {type} 占位符将向玩家说明该商店是否为管理员商店。 ##
+    - "&7店主: &e{owner}"  ## 如果所有者无效或商店是管理员商店, 则将跳过包含{owner}占位符的行。 ##
+    - ""
+    - "&7地址坐标: &e{x} &e{y} &e{z}"
+    - "&7存货量: &e{stock}"
+    - "&7余额: &e{balance}"
+    - ""
+    - "&e点击&7花费&a{cost}硬币&7传送到方块商店"
+    - ""
+    - "&7&m------------------"
+
+
+  ## 由于背景商品只能设置在底部行, 建议将这个商品的槽位放在同一区域。 ##
+  filter-item:
+    slot: 27
+    material: "ARROW"
+    durability: 0
+    amount: 1
+    ## 附魔使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html ##
+    ## (注意: 使用格式"<id>:<从0开始的等级>") ##
+    enchantments: [ ]
+    ## 标记与附魔类似, 使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemFlag.html ##
+    ## (注意: 如果标记在列表中, 则只需要添加id, 它将设置为 true。) ##
+    flags: [ ]
+    ## 这是用于特殊纹理的。将其设置为-1以避免使用。 ##
+    model-data: 0
+
+    no-previous: "无"  ## 如果之前没有搜索记录, 将显示为"无" ##
+    display-name: "&e过滤器: &d{filter}"  ## {filter} 仅为玩家显示, 用于展示先前搜索的内容 ##
+    lore:
+      - ""
+      - "&a点击&e以商品、描述、类型、价格"
+      - "&e过滤商店"
+
+  ## 由于背景商品只能设置在底部行, 建议将这个商品的槽位放在同一区域。 ##
+  type-item:
+    slot: 28
+    material: "MINECART"
+    durability: 0
+    amount: 1
+    ## 附魔使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html ##
+    ## (注意: 使用格式"<id>:<从0开始的等级>") ##
+    enchantments: [ ]
+    ## 标记与附魔类似, 使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemFlag.html ##
+    ## (注意: 如果标记在列表中, 则只需要添加id, 它将设置为 true。) ##
+    flags: [ ]
+    ## 这是用于特殊纹理的。将其设置为-1以避免使用。 ##
+    model-data: 0
+
+    ## 这些类型将替换名称中的 {type} 占位符。 ##
+    buy-type: "出售"
+    sell-type: "收购"
+    both-type: "出售 & 收购"
+
+    display-name: "&e类型: &d{type}" ## {type} 决定加载的商店是用于购买、出售还是两者皆有 ##
+    lore:
+      - ""
+      - "&a点击&e切换商店的类型"
+
+  ## 由于背景商品只能设置在底部行, 建议将这个商品的槽位放在同一区域。 ##
+  next-page-item:
+    slot: 34
+    material: "HEAD:MHF_ArrowRight"
+    durability: 0
+    amount: 1
+    ## 附魔使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html ##
+    ## (注意: 使用格式"<id>:<从0开始的等级>") ##
+    enchantments: [ ]
+    ## 标记与附魔类似, 使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemFlag.html ##
+    ## (注意: 如果标记在列表中, 则只需要添加id, 它将设置为 true。) ##
+    flags: [ ]
+    ## 这是用于特殊纹理的。将其设置为-1以避免使用。 ##
+    model-data: 0
+    display-name: "&c下一页"
+    lore:
+      - ""
+      - "&a点击&e进入下一页"
+
+  ## 由于背景商品只能设置在底部行, 建议将这个商品的槽位放在同一区域。 ##
+  previous-page-item:
+    slot: 33
+    material: "HEAD:MHF_ArrowLeft"
+    durability: 0
+    amount: 1
+    ## 附魔使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html ##
+    ## (注意: 使用格式"<id>:<从0开始的等级>") ##
+    enchantments: [ ]
+    ## 标记与附魔类似, 使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemFlag.html ##
+    ## (注意: 如果标记在列表中, 则只需要添加id, 它将设置为 true。) ##
+    flags: [ ]
+    ## 这是用于特殊纹理的。将其设置为-1以避免使用。 ##
+    model-data: 0
+    display-name: "&c上一页"
+    lore:
+      - ""
+      - "&a点击&e进入上一页"
+
+  ## 由于背景商品只能设置在底部行, 建议将这个商品的槽位放在同一区域。 ##
+  refresh-page-item:
+    slot: 32
+    material: "RED_DYE"
+    durability: 0
+    amount: 1
+    ## 附魔使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html ##
+    ## (注意: 使用格式"<id>:<从0开始的等级>") ##
+    enchantments: [ ]
+    ## 标记与附魔类似, 使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemFlag.html ##
+    ## (注意: 如果标记在列表中, 则只需要添加id, 它将设置为 true。) ##
+    flags: [ ]
+    ## 这是用于特殊纹理的。将其设置为-1以避免使用。 ##
+    model-data: 0
+    display-name: "&c刷新"
+    lore:
+      - ""
+      - "&a点击&e刷新本页方块商店"
+
+  ## 背景商品只填充商品栏的最后一行, 除了下一页和上一页按钮。 ##
+  background-item:
+    material: "BLACK_STAINED_GLASS_PANE"
+    durability: 15
+    amount: 1
+    ## 附魔使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html ##
+    ## (注意: 使用格式"<id>:<从0开始的等级>") ##
+    enchantments: [ ]
+    ## 标记与附魔类似, 使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemFlag.html ##
+    ## (注意: 如果标记在列表中, 则只需要添加id, 它将设置为 true。) ##
+    flags: [ ]
+    ## 这是用于特殊纹理的。将其设置为-1以避免使用。 ##
+    model-data: 0
+    display-name: "&f做人呢, 要有底线!"
+    lore: [ ]
+
+## 这些都很容易理解, 您无法添加新商品, 但请确保所有材料等与您的《Minecraft》版本匹配。 ##
+shop-edit-menu:
+
+  ## 菜单的标题 ##
+  title: "&8方块商店编辑菜单"
+
+  ## 如果此大小大于9, 菜单将显示为箱子容器。否则, 它将显示为漏斗容器。 ##
+  ## (注意: 这个值必须是9的倍数, 大于9, 并且小于或等于54)  ##
+  size: 18
+
+  background-item:
+    material: "BLACK_STAINED_GLASS_PANE"
+    durability: 15
+    amount: 1
+    ## 附魔使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html ##
+    ## (注意: 使用格式"<id>:<从0开始的等级>") ##
+    enchantments: [ ]
+    ## 标记与附魔类似, 使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemFlag.html ##
+    ## (注意: 如果标记在列表中, 则只需要添加id, 它将设置为 true。) ##
+    flags: [ ]
+    ## 这是用于特殊纹理的。将其设置为-1以避免使用。 ##
+    model-data: 0
+    display-name: "&f做人呢, 要有底线!"
+    lore: [ ]
+
+  base-block-item:
+    slot: 0
+    material: "DIAMOND_BLOCK"
+    durability: 0
+    amount: 1
+    price: 0
+    ## 附魔使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html ##
+    ## (注意: 使用格式"<id>:<从0开始的等级>") ##
+    enchantments: [ ]
+    ## 标记与附魔类似, 使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemFlag.html ##
+    ## (注意: 如果标记在列表中, 则只需要添加id, 它将设置为 true。) ##
+    flags: [ ]
+    ## 这是用于特殊纹理的。将其设置为-1以避免使用。 ##
+    model-data: 0
+    display-name: "&f\u269B 基座方块 \u269B"
+    ## 如果'use-vault'被禁用, 占位符 {no-vault} 将删除整行。 ##
+    lore:
+      - "&a鼠标点击 &7为方块商店设置一个新的基座方块"
+      - ""
+    
+
+  balance-manage-item:
+    slot: 1
+    material: "GOLD_INGOT"
+    durability: 0
+    amount: 1
+    price: 0
+    ## 附魔使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html ##
+    ## (注意: 使用格式"<id>:<从0开始的等级>") ##
+    enchantments: [ ]
+    ## 标记与附魔类似, 使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemFlag.html ##
+    ## (注意: 如果标记在列表中, 则只需要添加id, 它将设置为 true。) ##
+    flags: [ ]
+    ## 这是用于特殊纹理的。将其设置为-1以避免使用。 ##
+    model-data: 0
+    display-name: "&e\uD83C\uDF52 余额管理 \uD83C\uDF52"
+    ## 如果'use-vault'被禁用, 占位符 {no-vault} 将删除整行。 ##
+    lore:
+      - "&7当前余额: &e{balance}硬币"
+      - "&a鼠标左键点击 &7为方块商店存入金额"
+      - "&a鼠标右键点击 &7从方块商店取出金额"
+      - ""
+     
+
+  stock-manage-item:
+    slot: 2
+    material: "CHEST"
+    durability: 0
+    amount: 1
+    price: 0
+    ## 附魔使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html ##
+    ## (注意: 使用格式"<id>:<从0开始的等级>") ##
+    enchantments: [ ]
+    ## 标记与附魔类似, 使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemFlag.html ##
+    ## (注意: 如果标记在列表中, 则只需要添加id, 它将设置为 true。) ##
+    flags: [ ]
+    ## 这是用于特殊纹理的。将其设置为-1以避免使用。 ##
+    model-data: 0
+    display-name: "&6\u23F9 库存管理 \u23F9"
+    ## 如果'use-vault'被禁用, 占位符 {no-vault} 将删除整行。 ##
+    lore:
+      - "&a鼠标左键点击 &7补充货物"
+      - "&a鼠标右键点击 &7取出货物"
+      - ""
+  
+
+  limits:
+    slot: 3
+    material: "BARRIER"
+    durability: 0
+    amount: 1
+    price: 25
+    ## 附魔使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html ##
+    ## (注意: 使用格式"<id>:<从0开始的等级>") ##
+    enchantments: [ ]
+    ## 标记与附魔类似, 使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemFlag.html ##
+    ## (注意: 如果标记在列表中, 则只需要添加id, 它将设置为 true。) ##
+    flags: [ ]
+    ## 这是用于特殊纹理的。将其设置为-1以避免使用。 ##
+    model-data: 0
+    display-name: "&d\uD83D\uDEAB 买卖限制 \uD83D\uDEAB"
+    lore:
+      - "&a鼠标左键点击 &7设置销售数量限制"
+      - "&a鼠标右键点击 &7设置收购数量限制"
+      - "&aShift键+鼠标点击 &7重设限制计数"
+      - "&7编辑成本: &e{price}硬币/次"
+      - ""
+
+  change-item:
+    slot: 4
+    material: "DIAMOND"
+    durability: 0
+    amount: 1
+    price: 100
+    ## 附魔使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html ##
+    ## (注意: 使用格式"<id>:<从0开始的等级>") ##
+    enchantments: [ ]
+    ## 标记与附魔类似, 使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemFlag.html ##
+    ## (注意: 如果标记在列表中, 则只需要添加id, 它将设置为 true。) ##
+    flags: [ ]
+    ## 这是用于特殊纹理的。将其设置为-1以避免使用。 ##
+    model-data: 0
+    display-name: "&b\u2B50 商品设置 \u2B50"
+    lore:
+      - "&a鼠标左键点击 &7更改方块商店的商品"
+      - "&a鼠标右键点击 &7更改商品的单次购买量"
+      - "&aShift键+鼠标点击 &7更改方块商店的交易商品"
+      - "&7编辑成本: &e{price}硬币/次"
+      - ""
+
+  change-price-item:
+    slot: 5
+    material: "EMERALD"
+    durability: 0
+    amount: 1
+    price: 25
+    ## 附魔使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html ##
+    ## (注意: 使用格式"<id>:<从0开始的等级>") ##
+    enchantments: [ ]
+    ## 标记与附魔类似, 使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemFlag.html ##
+    ## (注意: 如果标记在列表中, 则只需要添加id, 它将设置为 true。) ##
+    flags: [ ]
+    ## 这是用于特殊纹理的。将其设置为-1以避免使用。 ##
+    model-data: 0
+    display-name: "&a\u2726 更改价格 \u2726"
+    lore:
+      - "&a鼠标左键点击 &7更改标价"
+      - "&a鼠标右键点击 &7更改收购价"
+      - "&aShift键+鼠标点击 &7切换动态价格模式"
+      - "&7编辑成本: &e{price}硬币/次"
+      - ""
+
+  description-item:
+    slot: 6
+    material: "BOOK"
+    durability: 0
+    amount: 1
+    price: 65
+    ## 附魔使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html ##
+    ## (注意: 使用格式"<id>:<从0开始的等级>") ##
+    enchantments: [ ]
+    ## 标记与附魔类似, 使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemFlag.html ##
+    ## (注意: 如果标记在列表中, 则只需要添加id, 它将设置为 true。) ##
+    flags: [ ]
+    ## 这是用于特殊纹理的。将其设置为-1以避免使用。 ##
+    model-data: 0
+    display-name: "&3\uD83D\uDD0A 方块商店描述设置 \uD83D\uDD0A"
+    lore:
+      - "&a鼠标左键点击 &7更改方块商店的描述"
+      - "&a鼠标右键点击 &7重置方块商店描述"
+      - "&7编辑成本: &e{price}硬币/次"
+      - ""
+
+  assistants-item:
+    slot: 7
+    material: "COMPASS"
+    durability: 0
+    amount: 1
+    price: 0
+    ## 附魔使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html ##
+    ## (注意: 使用格式"<id>:<从0开始的等级>") ##
+    enchantments: [ ]
+    ## 标记与附魔类似, 使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemFlag.html ##
+    ## (注意: 如果标记在列表中, 则只需要添加id, 它将设置为 true。) ##
+    flags: [ ]
+    ## 这是用于特殊纹理的。将其设置为-1以避免使用。 ##
+    model-data: 0
+    display-name: "&7\uD83D\uDD17 设置店员 \uD83D\uDD17"
+    lore:
+      - "&a鼠标左键点击 &7雇佣一名新的店员帮助你管理方块商店"
+      - "&a鼠标右键点击 &7解雇一名店员"
+      - "&aShift键+鼠标点击 &7查看所有店员"
+      - ""
+
+  destroy-item:
+    slot: 8
+    material: "CREEPER_HEAD"
+    durability: 0
+    amount: 1
+    price: 0
+    ## 附魔使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html ##
+    ## (注意: 使用格式"<id>:<从0开始的等级>") ##
+    enchantments: [ ]
+    ## 标记与附魔类似, 使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemFlag.html ##
+    ## (注意: 如果标记在列表中, 则只需要添加id, 它将设置为 true。) ##
+    flags: [ ]
+    ## 这是用于特殊纹理的。将其设置为-1以避免使用。 ##
+    model-data: 0
+    display-name: "&c\u2716 删除方块商店 \u2716"
+    lore:
+      - "&b注意: &7所有货品将被返还"
+      - "&a鼠标点击 &7删除本商店"
+      - ""
+
+
+## 这些都很容易理解, 您无法添加新商品, 但请确保所有材料等与您的《Minecraft》版本匹配。 ##
+shop-transaction-menu:
+
+  ## 菜单的标题 ##
+  title: "&8交易界面"
+
+  ## 如果此大小大于9, 菜单将显示为箱子容器。否则, 它将显示为漏斗容器。 ##
+  ## (注意: 这个值必须是9的倍数, 大于9, 并且小于或等于54)  ##
+  size: 45
+
+  ## 这是用来复制商店商品作为玩家预览的插槽。 ##
+  preview-slot: 13
+
+  ## T这是添加到预览商品描述底部的文本, 基本上告诉玩家点击查看交易商品（货币商品）。 ##
+  preview-trade-item-lore: ## 不知道什么用 ##
+    - "&e&m-----------------------------"
+    - ""
+    - "&a鼠标点击 &7货币/交易模式。"
+
+  ## 这是添加到货币/交易商品描述底部的文本, 基本上告诉玩家需要多少数量。 ##
+  trade-item-lore:
+    - "&e&m-----------------------------"
+    - ""
+    - "&7出售价: &e{buy}"
+    - "&7收购价: &e{sell}"
+    - ""
+    - "&a鼠标点击 &7查看方块商店商品"
+   
+
+  ## 以下内容都很简单易懂, 但这是可以自定义交易菜单按钮的地方。 ##
+  background-item:
+    material: "LIGHT_GRAY_STAINED_GLASS_PANE"
+    durability: 15
+    amount: 1
+    display-name: "&f请大家理性消费! "
+    lore: [ ]
+
+  buy-item:
+    slot: 11
+    material: "CHEST_MINECART"
+    durability: 0
+    amount: 1
+    ## 附魔使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html ##
+    ## (注意: 使用格式"<id>:<从0开始的等级>") ##
+    enchantments: [ ]
+    ## 标记与附魔类似, 使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemFlag.html ##
+    ## (注意: 如果标记在列表中, 则只需要添加id, 它将设置为 true。) ##
+    flags: [ ]
+    ## 这是用于特殊纹理的。将其设置为-1以避免使用。 ##
+    model-data: 0
+    display-name: "&e\uD83D\uDCB0 购买 \uD83D\uDCB0"
+    lore:
+      - "&a鼠标点击 &7购买 &e{unit-count}份 商品"
+      - "&7总价: &e{buy-price}硬币"
+      - "&aShift+鼠标点击 &7购买全部存货"
+      - ""
+
+  sell-item:
+    slot: 15
+    material: "HOPPER_MINECART"
+    durability: 0
+    amount: 1
+    ## 附魔使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html ##
+    ## (注意: 使用格式"<id>:<从0开始的等级>") ##
+    enchantments: [ ]
+    ## 标记与附魔类似, 使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemFlag.html ##
+    ## (注意: 如果标记在列表中, 则只需要添加id, 它将设置为 true。) ##
+    flags: [ ]
+    ## 这是用于特殊纹理的。将其设置为-1以避免使用。 ##
+    model-data: 0
+    display-name: "&e\uD83D\uDCB0 收购 \uD83D\uDCB0"
+    lore:
+      - "&a鼠标点击 &7出售 &e{unit-count}份 货物"
+      - "&7总价: &e{sell-price}硬币"
+      - "&aShift+鼠标点击 &7出售身上全部货物"
+      - ""
+
+  unit-item:
+    slot: 31
+    ## It is recommended that this material can have a stack of 64.
+    material: "PAPER"
+    durability: 0
+    ## 附魔使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html ##
+    ## (注意: 使用格式"<id>:<从0开始的等级>") ##
+    enchantments: [ ]
+    ## 标记与附魔类似, 使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemFlag.html ##
+    ## (注意: 如果标记在列表中, 则只需要添加id, 它将设置为 true。) ##
+    flags: [ ]
+    ## 这是用于特殊纹理的。将其设置为-1以避免使用。 ##
+    model-data: 0
+    display-name: "&a\u221A 交易份数 \u221A"
+    lore:
+      - "&7本此交易的商品份数由本图标右下角数字所示"
+      - "&b总数量 &c= &e份数 &d\u0078 &a每份商品的个数"
+      - "&c注意商品的捆绑数量! "
+      - ""
+
+
+  unit-increase-item:
+    slot: 29
+    material: "GREEN_WOOL"
+    durability: 0
+    amount: 1
+    ## 附魔使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html ##
+    ## (注意: 使用格式"<id>:<从0开始的等级>") ##
+    enchantments: [ ]
+    ## 标记与附魔类似, 使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemFlag.html ##
+    ## (注意: 如果标记在列表中, 则只需要添加id, 它将设置为 true。) ##
+    flags: [ ]
+    ## 这是用于特殊纹理的。将其设置为-1以避免使用。 ##
+    model-data: 0
+    display-name: "&a\u2795 &e增加份数 &a\u2795"
+    lore:
+      - "&a左键点击 &7增加 &e1 &7份商品"
+      - "&a右键点击 &7增加 &e{unit-increment} &7份商品"
+      - ""
+
+  unit-decrease-item:
+    slot: 33
+    material: "RED_WOOL"
+    durability: 0
+    amount: 1
+    ## 附魔使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html ##
+    ## (注意: 使用格式"<id>:<从0开始的等级>") ##
+    enchantments: [ ]
+    ## 标记与附魔类似, 使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemFlag.html ##
+    ## (注意: 如果标记在列表中, 则只需要添加id, 它将设置为 true。) ##
+    flags: [ ]
+    ## 这是用于特殊纹理的。将其设置为-1以避免使用。 ##
+    model-data: 0
+    display-name: "&c\u2796 &e减少份数 &c\u2796"
+    lore:
+      - "&a左键点击 &7减少 &e1 &7份商品"
+      - "&a右键点击 &7减少 &e{unit-increment} &7份商品"
+      - ""
+      
+  blocked-item:
+    material: "BARRIER"
+    durability: 0
+    amount: 1
+    ## 附魔使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html ##
+    ## (注意: 使用格式"<id>:<从0开始的等级>") ##
+    enchantments: [ ]
+    ## 标记与附魔类似, 使用来自以下网址的id: ##
+    ## https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemFlag.html ##
+    ## (注意: 如果标记在列表中, 则只需要添加id, 它将设置为 true。) ##
+    flags: [ ]
+    ## 这是用于特殊纹理的。将其设置为-1以避免使用。 ##
+    model-data: 0
+    display-name: "&c\u2716 无法操作 \u2716"
+    lore:
+      - "{reason}"
+      - "&7请联系方块商店管理员"
+      - ""

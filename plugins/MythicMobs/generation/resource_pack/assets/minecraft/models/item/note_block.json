@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:block/note_block",
+  "textures": {},
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 1
+      },
+      "model": "mythic:block/noteblock_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 2
+      },
+      "model": "mythic:block/noteblock_2"
+    }
+  ]
+}

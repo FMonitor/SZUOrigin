@@ -1,0 +1,37 @@
+info:
+  namespace: _server
+categories:
+  server_furniture:
+    enabled: true
+    skip_if_already: false
+    icon: "_server:quest_board"
+    name: "服务器模型"
+    permission: ia.menu.quest_board
+    items:
+      # 功能家具
+      - "_server:quest_board"
+      - "_server:quest_board_2"
+      - "_server:clothing_station"
+      - "_server:cooking_station"
+      - "_server:enchanting_station"
+      - "_server:fishing_station"
+      - "_server:forge_station"
+      - "_server:jewelcrafting_station"
+      # 装饰家具
+      - "_server:koi_pond"
+      # 石碑
+      - "_server:waystone_def"
+      - "_server:waystone_top_def_noactive"
+      - "_server:waystone_bottom_def_noactive"
+      - "_server:waystone_top_def_active"
+      - "_server:waystone_bottom_def_active"
+      - "_server:waystone_nether"
+      - "_server:waystone_top_nether_noactive"
+      - "_server:waystone_bottom_nether_noactive"
+      - "_server:waystone_top_nether_active"
+      - "_server:waystone_bottom_nether_active"
+      - "_server:waystone_end"
+      - "_server:waystone_top_end_noactive"
+      - "_server:waystone_bottom_end_noactive"
+      - "_server:waystone_top_end_active"
+      - "_server:waystone_bottom_end_active"

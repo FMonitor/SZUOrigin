@@ -1,0 +1,21 @@
+conditions:
+  break64wheats_done: "tag break64wheats_done"
+  break64wheats_started: "tag break64wheats_started"
+  break64wheats_paid: "tag break64wheats_paid"
+  
+  break128carrots_done: "tag break128carrots_done"
+  break128carrots_started: "tag break128carrots_started"
+  break128carrots_paid: "tag break128carrots_paid"
+
+  break128potatoes_done: "tag break128potatoes_done"
+  break128potatoes_started: "tag break128potatoes_started"
+  break128potatoes_paid: "tag break128potatoes_paid"
+
+  break128beetroots_done: "tag break128beetroots_done"
+  break128beetroots_started: "tag break128beetroots_started"
+  break128beetroots_paid: "tag break128beetroots_paid"
+
+  farmerguild: "permission farmer.guild"
+
+
+

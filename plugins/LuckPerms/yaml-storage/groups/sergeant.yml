@@ -1,0 +1,23 @@
+name: sergeant
+permissions:
+- angelchest.use
+- chatmanager.ping
+- chatmanager.toggle.pm
+- cosmetics.backpack
+- cosmetics.hat1
+- displayshops.limit.100
+- essentials.anvil
+- essentials.cartographytable
+- essentials.depth
+- essentials.disposal
+- essentials.kits.vip
+- essentials.tptoggle
+- essentials.workbench
+- pa.limit.6
+- unlock.sergeant.group
+- weight.60
+parents:
+- default
+prefixes:
+- §f§r:
+    priority: 60

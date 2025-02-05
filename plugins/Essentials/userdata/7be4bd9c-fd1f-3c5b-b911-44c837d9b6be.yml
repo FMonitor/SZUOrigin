@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 192.168.1.15
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1737905099062
+  login: 1737904704856
+money: '0'
+last-account-name: Junhao
+lastlocation:
+  world: 877e483a-8c3b-40fa-9738-40239679b77e
+  world-name: isla
+  x: 47.63217659079406
+  y: 83.0
+  z: 128.00694527965666
+  yaw: -126.48015594482422
+  pitch: 23.850019454956055
+logoutlocation:
+  world: 04c00a4f-fe5c-47c6-8998-babf81130ba2
+  world-name: world
+  x: 192.7523561394578
+  y: 78.0
+  z: -188.18430336499978
+  yaw: -100.0784912109375
+  pitch: 18.749971389770508

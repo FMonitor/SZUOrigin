@@ -1,0 +1,1344 @@
+ShopName: shop_lucas 
+DisplayName: "§f" 
+InventorySize: 54 
+Command: farmer
+shop: 
+  background_0_00: 
+    MenuItem: 
+    - "name:#bc8f1dLucas" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    InventoryLocation: 7 
+  background_1_00: 
+    MenuItem: 
+    - "name:#bc8f1dLucas" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    InventoryLocation: 8 
+  background_2_00: 
+    MenuItem: 
+    - "name:#bc8f1dLucas" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    InventoryLocation: 16 
+  background_3_00: 
+    MenuItem: 
+    - "name:#bc8f1dLucas" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    InventoryLocation: 17 
+  background_4_00: 
+    MenuItem: 
+    - "name:#bc8f1dLucas" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    InventoryLocation: 25 
+  background_5_00: 
+    MenuItem: 
+    - "name:#bc8f1dLucas" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    InventoryLocation: 26 
+  background_6_00: 
+    MenuItem: 
+    - "name:#bc8f1dLucas" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    InventoryLocation: 34 
+  background_7_00: 
+    MenuItem: 
+    - "name:#bc8f1dLucas" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    InventoryLocation: 35 
+  background_8_00: 
+    MenuItem: 
+    - "name:#bc8f1dLucas" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    InventoryLocation: 43 
+  background_9_00: 
+    MenuItem: 
+    - "name:#bc8f1dLucas" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    InventoryLocation: 44 
+  background_10_00: 
+    MenuItem: 
+    - "name:#bc8f1dLucas" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    InventoryLocation: 52 
+  background_11_00: 
+    MenuItem: 
+    - "name:#bc8f1dLucas" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    InventoryLocation: 53 
+  daytime_1: 
+    MenuItem: 
+    - "name:#bc8f1dLucas"
+    - type:PAPER 
+    - amount:1 
+    - custommodeldata:100141
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    InventoryLocation: 9 
+  nighttime_1: 
+    MenuItem: 
+    - "name:#bc8f1dLucas"
+    - type:PAPER 
+    - amount:1 
+    - custommodeldata:100142
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    InventoryLocation: 9 
+
+
+  1_1_1_1_1: 
+    MenuItem: 
+    - "name:§f 南瓜"
+    - type:PUMPKIN 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f24" 
+    - "lore3:§f " 
+    - "lore4:§f §a→ 点击以售卖"
+    RewardType: MONEY 
+    Reward: 8 
+    PriceType: ITEM 
+    Price: 
+    - - type:PUMPKIN 
+      - amount:8 
+    RewardType_shift_left: MONEY 
+    Reward_shift_left: 192 
+    PriceType_shift_left: ITEM 
+    Price_shift_left:
+    - - type:PUMPKIN 
+      - amount:64 
+    RewardType_shift_right: MONEY 
+    Reward_shift_right: 192
+    PriceType_shift_right: ITEM 
+    Price_shift_right:
+    - - type:PUMPKIN 
+      - amount:64
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    - type:placeholdernumber 
+    - "%checkitem_amount_mat[colon]pumpkin%:over:7" 
+    InventoryLocation: 2 
+
+  1_1_1_1_2: 
+    MenuItem: 
+    - "name:§f 南瓜"
+    - type:PUMPKIN 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f24"
+    - "lore3:§f "
+    - "lore4:§f §4❌ 无法支付交易"
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    InventoryLocation: 2 
+
+  1_1_1_1_3: 
+    MenuItem: 
+    - "name:§f 南瓜"
+    - type:PUMPKIN 
+    - amount:4 
+    - "lore1:§f "
+    - "lore2:§f §7购买价格： §f300 "
+    - "lore3:§f "
+    - "lore4:§f §a→ 点击以购买 "
+    RewardType: ITEM 
+    Reward:
+    - - type:PUMPKIN 
+      - amount:4 
+    PriceType: MONEY
+    Price: 300
+    RewardType_shift_left: ITEM 
+    Reward_shift_left:
+    - - type:PUMPKIN 
+      - amount:64 
+    PriceType_shift_left: MONEY
+    Price_shift_left: 4800
+    RewardType_shift_right: ITEM 
+    Reward_shift_right:
+    - - type:PUMPKIN 
+      - amount:64 
+    PriceType_shift_right: MONEY 
+    Price_shift_right: 4800
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    - type:money 
+    - over:299
+    InventoryLocation: 2 
+
+  1_1_1_1_4: 
+    MenuItem: 
+    - "name:§f 南瓜"
+    - type:PUMPKIN 
+    - amount:4 
+    - "lore1:§f " 
+    - "lore2:§f §7购买价格： §f300" 
+    - "lore3:§f " 
+    - "lore4:§f §4❌ 无法支付交易"
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    InventoryLocation: 2 
+
+##
+  1_1_1_2_1: 
+    MenuItem: 
+    - "name:§f 西瓜"
+    - type:MELON 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f24" 
+    - "lore3:§f " 
+    - "lore4:§f §a→ 点击以售卖"
+    RewardType: MONEY 
+    Reward: 8 
+    PriceType: ITEM 
+    Price: 
+    - - type:MELON 
+      - amount:8
+    RewardType_shift_left: MONEY 
+    Reward_shift_left: 192 
+    PriceType_shift_left: ITEM 
+    Price_shift_left:
+    - - type:MELON 
+      - amount:64 
+    RewardType_shift_right: MONEY 
+    Reward_shift_right: 192
+    PriceType_shift_right: ITEM 
+    Price_shift_right:
+    - - type:MELON 
+      - amount:64
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    - type:placeholdernumber 
+    - "%checkitem_amount_mat[colon]melon%:over:7" 
+    InventoryLocation: 3 
+
+  1_1_1_2_2: 
+    MenuItem: 
+    - "name:§f 西瓜"
+    - type:MELON 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f24"
+    - "lore3:§f "
+    - "lore4:§f §4❌ 无法支付交易"
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    InventoryLocation: 3 
+
+  1_1_1_2_3: 
+    MenuItem: 
+    - "name:§f 西瓜"
+    - type:MELON 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7购买价格： §f400 "
+    - "lore3:§f "
+    - "lore4:§f §a→ 点击以购买 "
+    RewardType: ITEM 
+    Reward:
+    - - type:MELON 
+      - amount:8 
+    PriceType: MONEY
+    Price: 400
+    RewardType_shift_left: ITEM 
+    Reward_shift_left:
+    - - type:MELON 
+      - amount:64 
+    PriceType_shift_left: MONEY
+    Price_shift_left: 3200
+    RewardType_shift_right: ITEM 
+    Reward_shift_right:
+    - - type:MELON 
+      - amount:64 
+    PriceType_shift_right: MONEY 
+    Price_shift_right: 3200
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    - type:money 
+    - over:399 
+    InventoryLocation: 3 
+
+  1_1_1_2_4: 
+    MenuItem: 
+    - "name:§f 西瓜"
+    - type:MELON 
+    - amount:8 
+    - "lore1:§f " 
+    - "lore2:§f §7购买价格： §f400" 
+    - "lore3:§f " 
+    - "lore4:§f §4❌ 无法支付交易"
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    InventoryLocation: 3 
+
+
+
+##
+  1_1_2_1_1: 
+    MenuItem: 
+    - "name:§f 小麦"
+    - type:WHEAT 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f12" 
+    - "lore3:§f " 
+    - "lore4:§f §a→ 点击以售卖"
+    RewardType: MONEY 
+    Reward: 12 
+    PriceType: ITEM 
+    Price: 
+    - - type:WHEAT 
+      - amount:8 
+    RewardType_shift_left: MONEY 
+    Reward_shift_left: 64 
+    PriceType_shift_left: ITEM 
+    Price_shift_left:
+    - - type:WHEAT 
+      - amount:64 
+    RewardType_shift_right: MONEY 
+    Reward_shift_right: 64
+    PriceType_shift_right: ITEM 
+    Price_shift_right:
+    - - type:WHEAT 
+      - amount:64
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    - type:placeholdernumber 
+    - "%checkitem_amount_mat[colon]Wheat%:over:7" 
+    InventoryLocation: 11
+
+  1_1_2_1_2: 
+    MenuItem: 
+    - "name:§f 小麦"
+    - type:WHEAT 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f12"
+    - "lore3:§f "
+    - "lore4:§f §4❌ 无法支付交易"
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    InventoryLocation: 11 
+
+  1_1_2_1_3: 
+    MenuItem: 
+    - "name:§f 小麦"
+    - type:WHEAT 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7购买价格： §f156 "
+    - "lore3:§f "
+    - "lore4:§f §a→ 点击以购买 "
+    RewardType: ITEM 
+    Reward:
+    - - type:WHEAT 
+      - amount:8 
+    PriceType: MONEY
+    Price: 80
+    RewardType_shift_left: ITEM 
+    Reward_shift_left:
+    - - type:WHEAT 
+      - amount:64 
+    PriceType_shift_left: MONEY
+    Price_shift_left: 1248
+    RewardType_shift_right: ITEM 
+    Reward_shift_right:
+    - - type:WHEAT 
+      - amount:64 
+    PriceType_shift_right: MONEY 
+    Price_shift_right: 1248
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    - type:money 
+    - over:155 
+    InventoryLocation: 11 
+
+  1_1_2_1_4: 
+    MenuItem: 
+    - "name:§f 小麦"
+    - type:WHEAT 
+    - amount:8 
+    - "lore1:§f " 
+    - "lore2:§f §7购买价格： §f156" 
+    - "lore3:§f " 
+    - "lore4:§f §4❌ 无法支付交易"
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    InventoryLocation: 11 
+
+
+##
+  1_1_2_2_1: 
+    MenuItem: 
+    - "name:§f 甜浆果"
+    - type:SWEET_BERRIES 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f14" 
+    - "lore3:§f " 
+    - "lore4:§f §a→ 点击以售卖" 
+    RewardType: MONEY 
+    Reward: 14 
+    PriceType: ITEM 
+    Price: 
+    - - type:SWEET_BERRIES 
+      - amount:8 
+    RewardType_shift_left: MONEY 
+    Reward_shift_left: 112 
+    PriceType_shift_left: ITEM 
+    Price_shift_left:
+    - - type:SWEET_BERRIES 
+      - amount:64 
+    RewardType_shift_right: MONEY 
+    Reward_shift_right: 112
+    PriceType_shift_right: ITEM 
+    Price_shift_right:
+    - - type:SWEET_BERRIES 
+      - amount:64
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    - type:placeholdernumber 
+    - "%checkitem_amount_mat[colon]sweet_berries%:over:7" 
+    InventoryLocation: 12
+
+  1_1_2_2_2: 
+    MenuItem: 
+    - "name:§f 甜浆果"
+    - type:SWEET_BERRIES 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f14"
+    - "lore3:§f "
+    - "lore4:§f §4❌ 无法支付交易"
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    InventoryLocation: 12 
+
+  1_1_2_2_3: 
+    MenuItem: 
+    - "name:§f 甜浆果"
+    - type:SWEET_BERRIES 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7购买价格： §f320"
+    - "lore3:§f "
+    - "lore4:§f §a→ 点击以购买 "
+    RewardType: ITEM 
+    Reward:
+    - - type:SWEET_BERRIES 
+      - amount:8 
+    PriceType: MONEY
+    Price: 320
+    RewardType_shift_left: ITEM 
+    Reward_shift_left:
+    - - type:SWEET_BERRIES 
+      - amount:64 
+    PriceType_shift_left: MONEY
+    Price_shift_left: 2560
+    RewardType_shift_right: ITEM 
+    Reward_shift_right:
+    - - type:SWEET_BERRIES 
+      - amount:64 
+    PriceType_shift_right: MONEY 
+    Price_shift_right: 2560
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    - type:money 
+    - over:319 
+    InventoryLocation: 12 
+
+  1_1_2_2_4: 
+    MenuItem: 
+    - "name:§f 甜浆果"
+    - type:SWEET_BERRIES 
+    - amount:8 
+    - "lore1:§f " 
+    - "lore2:§f §7购买价格： §f320" 
+    - "lore3:§f " 
+    - "lore4:§f §4❌ 无法支付交易"
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    InventoryLocation: 12 
+
+
+##
+  1_1_2_3_1: 
+    MenuItem: 
+    - "name:§f 甜菜汤"
+    - type:BEETROOT 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f12" 
+    - "lore3:§f " 
+    - "lore4:§f §a→ 点击以售卖"
+    RewardType: MONEY 
+    Reward: 12
+    PriceType: ITEM 
+    Price: 
+    - - type:BEETROOT 
+      - amount:8 
+    RewardType_shift_left: MONEY 
+    Reward_shift_left: 96 
+    PriceType_shift_left: ITEM 
+    Price_shift_left:
+    - - type:BEETROOT 
+      - amount:64 
+    RewardType_shift_right: MONEY 
+    Reward_shift_right: 96
+    PriceType_shift_right: ITEM 
+    Price_shift_right:
+    - - type:BEETROOT 
+      - amount:64
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    - type:placeholdernumber 
+    - "%checkitem_amount_mat[colon]beetroot%:over:7" 
+    InventoryLocation: 13
+
+  1_1_2_3_2: 
+    MenuItem: 
+    - "name:§f 甜菜汤"
+    - type:BEETROOT 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f12"
+    - "lore3:§f "
+    - "lore4:§f §4❌ 无法支付交易"
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    InventoryLocation: 13 
+
+  1_1_2_3_3: 
+    MenuItem: 
+    - "name:§f 甜菜汤"
+    - type:BEETROOT 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7购买价格： §f280"
+    - "lore3:§f "
+    - "lore4:§f §a→ 点击以购买 "
+    RewardType: ITEM 
+    Reward:
+    - - type:BEETROOT 
+      - amount:8 
+    PriceType: MONEY
+    Price: 280
+    RewardType_shift_left: ITEM 
+    Reward_shift_left:
+    - - type:BEETROOT 
+      - amount:64 
+    PriceType_shift_left: MONEY
+    Price_shift_left: 2240
+    RewardType_shift_right: ITEM 
+    Reward_shift_right:
+    - - type:BEETROOT 
+      - amount:64 
+    PriceType_shift_right: MONEY 
+    Price_shift_right: 2240
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    - type:money 
+    - over:279 
+    InventoryLocation: 13 
+
+  1_1_2_3_4: 
+    MenuItem: 
+    - "name:§f 甜菜汤"
+    - type:BEETROOT 
+    - amount:8 
+    - "lore1:§f " 
+    - "lore2:§f §7购买价格： §f280" 
+    - "lore3:§f " 
+    - "lore4:§f §4❌ 无法支付交易"
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    InventoryLocation: 13 
+
+
+
+##
+  1_1_3_1_1: 
+    MenuItem: 
+    - "name:§f 胡萝卜"
+    - type:CARROT  
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f12" 
+    - "lore3:§f " 
+    - "lore4:§f §a→ 点击以售卖"
+    RewardType: MONEY 
+    Reward: 12 
+    PriceType: ITEM 
+    Price: 
+    - - type:CARROT 
+      - amount:8 
+    RewardType_shift_left: MONEY 
+    Reward_shift_left: 96 
+    PriceType_shift_left: ITEM 
+    Price_shift_left:
+    - - type:CARROT 
+      - amount:64 
+    RewardType_shift_right: MONEY 
+    Reward_shift_right: 96
+    PriceType_shift_right: ITEM 
+    Price_shift_right:
+    - - type:CARROT 
+      - amount:64
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    - type:placeholdernumber 
+    - "%checkitem_amount_mat[colon]carrot%:over:7" 
+    InventoryLocation: 20
+
+  1_1_3_1_2: 
+    MenuItem: 
+    - "name:§f 胡萝卜"
+    - type:CARROT  
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f12"
+    - "lore3:§f "
+    - "lore4:§f §4❌ 无法支付交易"
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    InventoryLocation: 20 
+
+  1_1_3_1_3: 
+    MenuItem: 
+    - "name:§f 胡萝卜"
+    - type:CARROT  
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7购买价格： §f320"
+    - "lore3:§f "
+    - "lore4:§f §a→ 点击以购买 "
+    RewardType: ITEM 
+    Reward:
+    - - type:CARROT 
+      - amount:8 
+    PriceType: MONEY
+    Price: 320
+    RewardType_shift_left: ITEM 
+    Reward_shift_left:
+    - - type:CARROT 
+      - amount:64 
+    PriceType_shift_left: MONEY
+    Price_shift_left: 2560
+    RewardType_shift_right: ITEM 
+    Reward_shift_right:
+    - - type:CARROT 
+      - amount:64 
+    PriceType_shift_right: MONEY 
+    Price_shift_right: 2560
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    - type:money 
+    - over:319
+    InventoryLocation: 20 
+
+  1_1_3_1_4: 
+    MenuItem: 
+    - "name:§f 胡萝卜"
+    - type:CARROT  
+    - amount:8 
+    - "lore1:§f " 
+    - "lore2:§f §7购买价格： §f320" 
+    - "lore3:§f " 
+    - "lore4:§f §4❌ 无法支付交易"
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    InventoryLocation: 20
+
+
+##
+  1_1_3_2_1: 
+    MenuItem: 
+    - "name:§f 土豆"
+    - type:POTATO 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f12" 
+    - "lore3:§f " 
+    - "lore4:§f §a→ 点击以售卖"
+    RewardType: MONEY 
+    Reward: 12 
+    PriceType: ITEM 
+    Price: 
+    - - type:POTATO 
+      - amount:8 
+    RewardType_shift_left: MONEY 
+    Reward_shift_left: 96 
+    PriceType_shift_left: ITEM 
+    Price_shift_left:
+    - - type:POTATO 
+      - amount:64 
+    RewardType_shift_right: MONEY 
+    Reward_shift_right: 96
+    PriceType_shift_right: ITEM 
+    Price_shift_right:
+    - - type:POTATO 
+      - amount:64
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    - type:placeholdernumber 
+    - "%checkitem_amount_mat[colon]potato%:over:7" 
+    InventoryLocation: 21
+
+  1_1_3_2_2: 
+    MenuItem: 
+    - "name:§f 土豆"
+    - type:POTATO 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f12"
+    - "lore3:§f "
+    - "lore4:§f §4❌ 无法支付交易"
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    InventoryLocation: 21
+
+  1_1_3_2_3: 
+    MenuItem: 
+    - "name:§f 土豆"
+    - type:POTATO 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7购买价格： §f320"
+    - "lore3:§f "
+    - "lore4:§f §a→ 点击以购买 "
+    RewardType: ITEM 
+    Reward:
+    - - type:POTATO 
+      - amount:8 
+    PriceType: MONEY
+    Price: 320
+    RewardType_shift_left: ITEM 
+    Reward_shift_left:
+    - - type:POTATO 
+      - amount:64 
+    PriceType_shift_left: MONEY
+    Price_shift_left: 2560
+    RewardType_shift_right: ITEM 
+    Reward_shift_right:
+    - - type:POTATO 
+      - amount:64 
+    PriceType_shift_right: MONEY 
+    Price_shift_right: 2560
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    - type:money 
+    - over:319
+    InventoryLocation: 21 
+
+  1_1_3_2_4: 
+    MenuItem: 
+    - "name:§f 土豆"
+    - type:POTATO 
+    - amount:8 
+    - "lore1:§f " 
+    - "lore2:§f §7购买价格： §f320" 
+    - "lore3:§f " 
+    - "lore4:§f §4❌ 无法支付交易"
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    InventoryLocation: 21
+
+
+##
+  1_1_4_1_1: 
+    MenuItem: 
+    - "name:§f 甘蔗"
+    - type:SUGAR_CANE 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f20" 
+    - "lore3:§f " 
+    - "lore4:§f §a→ 点击以售卖" 
+    RewardType: MONEY 
+    Reward: 20 
+    PriceType: ITEM 
+    Price: 
+    - - type:SUGAR_CANE 
+      - amount:8 
+    RewardType_shift_left: MONEY 
+    Reward_shift_left: 160 
+    PriceType_shift_left: ITEM 
+    Price_shift_left:
+    - - type:SUGAR_CANE 
+      - amount:64 
+    RewardType_shift_right: MONEY 
+    Reward_shift_right: 160
+    PriceType_shift_right: ITEM 
+    Price_shift_right:
+    - - type:SUGAR_CANE 
+      - amount:64
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    - type:placeholdernumber 
+    - "%checkitem_amount_mat[colon]sugar_cane%:over:7" 
+    InventoryLocation: 29
+
+  1_1_4_1_2: 
+    MenuItem: 
+    - "name:§f 甘蔗"
+    - type:SUGAR_CANE 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f20"
+    - "lore3:§f "
+    - "lore4:§f §4❌ 无法支付交易"
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    InventoryLocation: 29 
+
+  1_1_4_1_3: 
+    MenuItem: 
+    - "name:§f 甘蔗"
+    - type:SUGAR_CANE 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7购买价格： §f200"
+    - "lore3:§f "
+    - "lore4:§f §a→ 点击以购买 "
+    RewardType: ITEM 
+    Reward:
+    - - type:SUGAR_CANE 
+      - amount:8 
+    PriceType: MONEY
+    Price: 200
+    RewardType_shift_left: ITEM 
+    Reward_shift_left:
+    - - type:sugar_cane 
+      - amount:64 
+    PriceType_shift_left: MONEY
+    Price_shift_left: 1280
+    RewardType_shift_right: ITEM 
+    Reward_shift_right:
+    - - type:SUGAR_CANE 
+      - amount:64 
+    PriceType_shift_right: MONEY 
+    Price_shift_right: 1280
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    - type:money 
+    - over:199 
+    InventoryLocation: 29 
+
+  1_1_4_1_4: 
+    MenuItem: 
+    - "name:§f 甘蔗"
+    - type:SUGAR_CANE 
+    - amount:8 
+    - "lore1:§f " 
+    - "lore2:§f §7购买价格： §f200" 
+    - "lore3:§f " 
+    - "lore4:§f §4❌ 无法支付交易"
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    InventoryLocation: 29
+
+
+
+##
+  1_1_5_1_1: 
+    MenuItem: 
+    - "name:§f 可可豆"
+    - type:COCOA_BEANS 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f8" 
+    - "lore3:§f " 
+    - "lore4:§f §a→ 点击以售卖"
+    RewardType: MONEY 
+    Reward: 8 
+    PriceType: ITEM 
+    Price: 
+    - - type:COCOA_BEANS 
+      - amount:8 
+    RewardType_shift_left: MONEY 
+    Reward_shift_left: 64 
+    PriceType_shift_left: ITEM 
+    Price_shift_left:
+    - - type:COCOA_BEANS 
+      - amount:64 
+    RewardType_shift_right: MONEY 
+    Reward_shift_right: 64
+    PriceType_shift_right: ITEM 
+    Price_shift_right:
+    - - type:COCOA_BEANS 
+      - amount:64
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    - type:placeholdernumber 
+    - "%checkitem_amount_mat[colon]cocoa_beans%:over:7" 
+    InventoryLocation: 38
+
+  1_1_5_1_2: 
+    MenuItem: 
+    - "name:§f 可可豆"
+    - type:COCOA_BEANS 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f8"
+    - "lore3:§f "
+    - "lore4:§f §4❌ 无法支付交易"
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    InventoryLocation: 38 
+
+  1_1_5_1_3: 
+    MenuItem: 
+    - "name:§f 可可豆"
+    - type:COCOA_BEANS 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7购买价格： §f96"
+    - "lore3:§f "
+    - "lore4:§f §a→ 点击以购买 "
+    RewardType: ITEM 
+    Reward:
+    - - type:COCOA_BEANS 
+      - amount:8 
+    PriceType: MONEY
+    Price: 96
+    RewardType_shift_left: ITEM 
+    Reward_shift_left:
+    - - type:COCOA_BEANS 
+      - amount:64 
+    PriceType_shift_left: MONEY
+    Price_shift_left: 768
+    RewardType_shift_right: ITEM 
+    Reward_shift_right:
+    - - type:COCOA_BEANS 
+      - amount:64 
+    PriceType_shift_right: MONEY 
+    Price_shift_right: 768
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    - type:money 
+    - over:95 
+    InventoryLocation: 38 
+
+  1_1_5_1_4: 
+    MenuItem: 
+    - "name:§f 可可豆"
+    - type:COCOA_BEANS 
+    - amount:8 
+    - "lore1:§f " 
+    - "lore2:§f §7购买价格： §f96" 
+    - "lore3:§f " 
+    - "lore4:§f §4❌ 无法支付交易"
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    InventoryLocation: 38
+
+
+
+
+##
+  1_1_5_2_1: 
+    MenuItem: 
+    - "name:§f 仙人掌"
+    - type:CACTUS 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f12" 
+    - "lore3:§f " 
+    - "lore4:§f §a→ 点击以售卖"
+    RewardType: MONEY 
+    Reward: 12 
+    PriceType: ITEM 
+    Price: 
+    - - type:CACTUS 
+      - amount:8 
+    RewardType_shift_left: MONEY 
+    Reward_shift_left: 96 
+    PriceType_shift_left: ITEM 
+    Price_shift_left:
+    - - type:CACTUS 
+      - amount:64 
+    RewardType_shift_right: MONEY 
+    Reward_shift_right: 96
+    PriceType_shift_right: ITEM 
+    Price_shift_right:
+    - - type:CACTUS 
+      - amount:64
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    - type:placeholdernumber 
+    - "%checkitem_amount_mat[colon]cactus%:over:7" 
+    InventoryLocation: 39
+
+  1_1_5_2_2: 
+    MenuItem: 
+    - "name:§f 仙人掌"
+    - type:CACTUS 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f12"
+    - "lore3:§f "
+    - "lore4:§f §4❌ 无法支付交易"
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    InventoryLocation: 39 
+
+  1_1_5_2_3: 
+    MenuItem: 
+    - "name:§f 仙人掌"
+    - type:CACTUS 
+    - amount:4 
+    - "lore1:§f "
+    - "lore2:§f §7购买价格： §f100"
+    - "lore3:§f "
+    - "lore4:§f §a→ 点击以购买 "
+    RewardType: ITEM 
+    Reward:
+    - - type:CACTUS 
+      - amount:8 
+    PriceType: MONEY
+    Price: 100
+    RewardType_shift_left: ITEM 
+    Reward_shift_left:
+    - - type:CACTUS 
+      - amount:64 
+    PriceType_shift_left: MONEY
+    Price_shift_left: 1600
+    RewardType_shift_right: ITEM 
+    Reward_shift_right:
+    - - type:CACTUS 
+      - amount:64 
+    PriceType_shift_right: MONEY 
+    Price_shift_right: 1600
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    - type:money 
+    - over:99
+    InventoryLocation: 39
+
+  1_1_5_2_4: 
+    MenuItem: 
+    - "name:§f 仙人掌"
+    - type:CACTUS 
+    - amount:4 
+    - "lore1:§f " 
+    - "lore2:§f §7购买价格： §f100" 
+    - "lore3:§f " 
+    - "lore4:§f §4❌ 无法支付交易"
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    InventoryLocation: 39
+
+
+
+
+  1_1_6_1_3: 
+    MenuItem: 
+    - "name:§f 骨粉"
+    - type:BONE_MEAL 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7购买价格： §f96"
+    - "lore3:§f "
+    - "lore4:§f §a→ 点击以购买 "
+    RewardType: ITEM 
+    Reward:
+    - - type:BONE_MEAL 
+      - amount:8 
+    PriceType: MONEY
+    Price: 96
+    RewardType_shift_left: ITEM 
+    Reward_shift_left:
+    - - type:BONE_MEAL 
+      - amount:64 
+    PriceType_shift_left: MONEY
+    Price_shift_left: 768
+    RewardType_shift_right: ITEM 
+    Reward_shift_right:
+    - - type:BONE_MEAL 
+      - amount:64 
+    PriceType_shift_right: MONEY 
+    Price_shift_right: 768
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    - type:money 
+    - over:95 
+    InventoryLocation: 47 
+
+  1_1_6_1_4: 
+    MenuItem: 
+    - "name:§f 骨粉"
+    - type:BONE_MEAL 
+    - amount:8 
+    - "lore1:§f " 
+    - "lore2:§f §7购买价格： §f96" 
+    - "lore3:§f " 
+    - "lore4:§f §4❌ 无法支付交易"
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    InventoryLocation: 47
+
+
+
+##
+  1_1_6_2_1: 
+    MenuItem: 
+    - "name:§f 红色蘑菇"
+    - type:RED_MUSHROOM 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f8" 
+    - "lore3:§f " 
+    - "lore4:§f §a→ 点击以售卖"
+    RewardType: MONEY 
+    Reward: 8 
+    PriceType: ITEM 
+    Price: 
+    - - type:RED_MUSHROOM 
+      - amount:8 
+    RewardType_shift_left: MONEY 
+    Reward_shift_left: 64 
+    PriceType_shift_left: ITEM 
+    Price_shift_left:
+    - - type:RED_MUSHROOM 
+      - amount:64 
+    RewardType_shift_right: MONEY 
+    Reward_shift_right: 64
+    PriceType_shift_right: ITEM 
+    Price_shift_right:
+    - - type:RED_MUSHROOM 
+      - amount:64
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    - type:placeholdernumber 
+    - "%checkitem_amount_mat[colon]red_mushroom%:over:7" 
+    InventoryLocation: 48
+
+  1_1_6_2_2: 
+    MenuItem: 
+    - "name:§f 红色蘑菇"
+    - type:RED_MUSHROOM 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f8"
+    - "lore3:§f "
+    - "lore4:§f §4❌ 无法支付交易"
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    InventoryLocation: 48 
+
+  1_1_6_2_3: 
+    MenuItem: 
+    - "name:§f 红色蘑菇"
+    - type:RED_MUSHROOM 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7购买价格： §f96"
+    - "lore3:§f "
+    - "lore4:§f §a→ 点击以购买 "
+    RewardType: ITEM 
+    Reward:
+    - - type:RED_MUSHROOM 
+      - amount:8 
+    PriceType: MONEY
+    Price: 96
+    RewardType_shift_left: ITEM 
+    Reward_shift_left:
+    - - type:RED_MUSHROOM 
+      - amount:64 
+    PriceType_shift_left: MONEY
+    Price_shift_left: 768
+    RewardType_shift_right: ITEM 
+    Reward_shift_right:
+    - - type:RED_MUSHROOM 
+      - amount:64 
+    PriceType_shift_right: MONEY 
+    Price_shift_right: 768
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    - type:money 
+    - over:95 
+    InventoryLocation: 48 
+
+  1_1_6_2_4: 
+    MenuItem: 
+    - "name:§f 红色蘑菇"
+    - type:RED_MUSHROOM 
+    - amount:8 
+    - "lore1:§f " 
+    - "lore2:§f §7购买价格： §f96" 
+    - "lore3:§f " 
+    - "lore4:§f §4❌ 无法支付交易"
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    InventoryLocation: 48
+
+##
+  1_1_6_3_1: 
+    MenuItem: 
+    - "name:§f 棕色蘑菇"
+    - type:BROWN_MUSHROOM 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f8" 
+    - "lore3:§f " 
+    - "lore4:§f §a→ 点击以售卖"
+    RewardType: MONEY 
+    Reward: 8 
+    PriceType: ITEM 
+    Price: 
+    - - type:BROWN_MUSHROOM 
+      - amount:8 
+    RewardType_shift_left: MONEY 
+    Reward_shift_left: 64 
+    PriceType_shift_left: ITEM 
+    Price_shift_left:
+    - - type:BROWN_MUSHROOM 
+      - amount:64 
+    RewardType_shift_right: MONEY 
+    Reward_shift_right: 64
+    PriceType_shift_right: ITEM 
+    Price_shift_right:
+    - - type:BROWN_MUSHROOM 
+      - amount:64
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    - type:placeholdernumber 
+    - "%checkitem_amount_mat[colon]brown_mushroom%:over:7" 
+    InventoryLocation: 49
+
+  1_1_6_3_2: 
+    MenuItem: 
+    - "name:§f 棕色蘑菇"
+    - type:BROWN_MUSHROOM 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7售卖价格： §f8"
+    - "lore3:§f "
+    - "lore4:§f §4❌ 无法支付交易"
+    Condition: 
+    - type:time 
+    - "between:12000:23999" 
+    InventoryLocation: 49 
+
+  1_1_6_3_3: 
+    MenuItem: 
+    - "name:§f 棕色蘑菇"
+    - type:BROWN_MUSHROOM 
+    - amount:8 
+    - "lore1:§f "
+    - "lore2:§f §7购买价格： §f96"
+    - "lore3:§f "
+    - "lore4:§f §a→ 点击以购买 "
+    RewardType: ITEM 
+    Reward:
+    - - type:BROWN_MUSHROOM 
+      - amount:8 
+    PriceType: MONEY
+    Price: 96
+    RewardType_shift_left: ITEM 
+    Reward_shift_left:
+    - - type:BROWN_MUSHROOM 
+      - amount:64 
+    PriceType_shift_left: MONEY
+    Price_shift_left: 768
+    RewardType_shift_right: ITEM 
+    Reward_shift_right:
+    - - type:BROWN_MUSHROOM 
+      - amount:64 
+    PriceType_shift_right: MONEY 
+    Price_shift_right: 768
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    - type:money 
+    - over:95 
+    InventoryLocation: 49 
+
+  1_1_6_3_4: 
+    MenuItem: 
+    - "name:§f 棕色蘑菇"
+    - type:BROWN_MUSHROOM 
+    - amount:8 
+    - "lore1:§f " 
+    - "lore2:§f §7购买价格： §f96" 
+    - "lore3:§f " 
+    - "lore4:§f §4❌ 无法支付交易"
+    Condition: 
+    - type:time 
+    - "between:0:11999" 
+    InventoryLocation: 49
+
+
+
+
+

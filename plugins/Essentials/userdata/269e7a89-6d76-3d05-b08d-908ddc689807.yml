@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 120.231.182.183
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1738329227062
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1738331159735
+  login: 1738328484477
+money: '16.0'
+last-account-name: StarAcheron
+lastlocation:
+  world: 877e483a-8c3b-40fa-9738-40239679b77e
+  world-name: isla
+  x: 58.678468574378876
+  y: 82.0
+  z: 142.34848308719336
+  yaw: -122.99429321289062
+  pitch: 9.385448455810547
+logoutlocation:
+  world: 877e483a-8c3b-40fa-9738-40239679b77e
+  world-name: isla
+  x: 59.47652986479693
+  y: 82.0
+  z: 142.57088468003113
+  yaw: -148.08944702148438
+  pitch: 6.964686393737793

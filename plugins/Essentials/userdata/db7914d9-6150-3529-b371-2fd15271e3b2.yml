@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 182.123.101.74
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1738326390238
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1738326744987
+  login: 1738325637627
+money: '0'
+last-account-name: jia_light
+lastlocation:
+  world: 877e483a-8c3b-40fa-9738-40239679b77e
+  world-name: isla
+  x: 55.759615799922926
+  y: 84.0
+  z: 151.97646228196004
+  yaw: -148.94337463378906
+  pitch: 19.878253936767578
+logoutlocation:
+  world: 04c00a4f-fe5c-47c6-8998-babf81130ba2
+  world-name: world
+  x: -422.69999998807907
+  y: 69.0
+  z: -122.8096384437739
+  yaw: 64.9564208984375
+  pitch: -1.6500098705291748

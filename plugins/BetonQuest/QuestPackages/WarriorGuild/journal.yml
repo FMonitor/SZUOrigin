@@ -1,0 +1,30 @@
+journal:
+  monsterhunter1_started:
+    en: 'Kill 16 monsters'
+  monsterhunter1_done:
+    en: 'You Killed 16 monsters'
+  monsterhunter1_paid:
+    en: 'Rewards for slaying 48 monsters'
+    
+  monsterhunter2_started:
+    en: 'Kill 32 monsters'
+  monsterhunter2_done:
+    en: 'You Killed 32 monsters'
+  monsterhunter2_paid:
+    en: 'Rewards for slaying 32 monsters'
+
+  monsterhunter3_started:
+    en: 'Kill 48 monsters'
+  monsterhunter3_done:
+    en: 'You Killed 48 monsters'
+  monsterhunter3_paid:
+    en: 'Rewards for slaying 48 monsters'
+
+  monsterhunter4_started:
+    en: 'Kill 64 monsters'
+  monsterhunter4_done:
+    en: 'You Killed 64 monsters'
+  monsterhunter4_paid:
+    en: 'Rewards for slaying 64 monsters'
+
+

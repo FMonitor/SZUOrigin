@@ -1,0 +1,81 @@
+
+little_pouch:
+  Id: gold_nugget
+  Display: '<#21ebbf>Little Pouch'
+  Model: 1503
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=littlePouch} @Self ~onUse
+  - consumeHeldItem{amount=1} ~onUse
+  Lore:
+  - '&7&l+++++++++++++'
+  - '&7'  
+  - '&e右键 以'
+  - '&7领取金币'
+  - '&7'
+  - '<#21ebbf>Amount&7: &a20 &7- &a100'
+  - '&7'
+  - '&7&l+++++++++++++'
+
+small_pouch:
+  Id: gold_nugget
+  Display: '<#bceb21>Small Pouch'
+  Model: 1504
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=SmallPouch} @Self ~onUse
+  - consumeHeldItem{amount=1} ~onUse
+  Lore:
+  - '&7&l+++++++++++++'
+  - '&7'  
+  - '&e右键 以'
+  - '&7领取金币'
+  - '&7'
+  - '<#bceb21>Amount&7: &a100 &7- &a200'
+  - '&7'
+  - '&7&l+++++++++++++'
+
+medium_pouch:
+  Id: gold_nugget
+  Display: '<#e01aeb>Medium Pouch'
+  Model: 1505
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=MediumPouch} @Self ~onUse
+  - consumeHeldItem{amount=1} ~onUse
+  Lore:
+  - '&7&l+++++++++++++'
+  - '&7'  
+  - '&e右键 以'
+  - '&7领取金币'
+  - '&7'
+  - '<#e01aeb>Amount&7: &a200 &7- &a350'
+  - '&7'
+  - '&7&l+++++++++++++'
+
+silver_key:
+  Id: stick
+  Display: '<#8d97a7>Silver Key'
+  Model: 101
+  Hide:
+  - ATTRIBUTES
+
+gold_key:
+  Id: stick
+  Display: '<#ffa42d>Gold Key'
+  Model: 102
+  Hide:
+  - ATTRIBUTES
+
+diamond_key:
+  Id: stick
+  Display: '<#4aedd9>Diamond Key'
+  Model: 103
+  Hide:
+  - ATTRIBUTES
+
+
+

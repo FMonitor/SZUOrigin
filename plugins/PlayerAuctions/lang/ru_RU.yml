@@ -1,0 +1,163 @@
+# PlayerAuctions by Olzie-12
+# https://www.spigotmc.org/resources/83073
+# У нас есть дискорд сервер, где вы можете попросить помощи: https://olziedev.com/discord или посмотрите документацию https://docs.olziedev.com/projects/playerauctions
+# Так же если найдете какие-нибудь баги, сообщите о них, я с радостью их исправлю :)
+# Сделано с любовью
+
+# Если вам нужно отключить какое-либо сообщение, оставьте его пустым. Пример:
+# list: "" <- Это сообщение больше не будет отправляться.
+
+
+# Каждое сообщение плагина можно настроить здесь..
+# убедитесь, что вы используете "" в конце каждой строки
+# Так же можно использовать цветовые коды <3
+
+# Чтобы использовать HEX цвета, используйте:
+# '{#HEX} текст"
+
+lang:
+  cancel-chat-wait: "отмена"
+  chat-wait-cancelled: "&c袨褌屑械薪褟械屑 胁邪褕 蟹邪锌褉芯褋!"
+  friendly-max-auctions: "Неограниченно"
+  prefix: "&b&lPA &7»"
+  auction-confirmation: "%prefix% &aСоздание аукциона будет стоить &e%price%&a, повторите команду для подтверждения."
+  auction-sell: "%prefix% &aНачата продажа &e%item%&a за &e%price%&a на аукционе!"
+  auction-added: "%prefix% &aВы добавили &e%amount%&a предметов к существующему лоту, общая цена теперь составляет &e%price%&a, цена за один предмет &e$%priceper%&a."
+  auction-bid: "%prefix% &aНачат аукцион с начальной ценой в &e%price%&a!"
+  reloaded: "%prefix% &aКонфигурация перезагружена!"
+  reloading: "%prefix% &a袩械褉械蟹邪谐褉褍卸邪械屑 泻芯薪褎懈谐褍褉邪褑懈褞..."
+  money-taken: "%prefix% &a%price% было взято с вашего аккаунта."
+  auctions-cancelled: "%prefix% &aВаши аукционы были отменены!"
+  auctions-collected: "%prefix% &aПолучено &e%items%&a просроченных предметов!"
+  bought-item: "%prefix% &aУспешно приобретено &e%item%&a за &e%price%&a!"
+  someone-purchased: "%prefix% &e%player%&a только что купил &e%item% x%amount%&a за &e%price%&a!"
+  offline-title: "%prefix% &bПока вы были оффлайн..."
+  bidder: "%prefix% &e%player%&a только что сделал ставку на &e%item%&a в размере &e%price%"
+  bidded: "%prefix% &aВы сделали ставку на &e%item%&a в размере &e%price%"
+  bid-success: "%prefix% &e%player%&a победил в аукционе &e%item%&a, заплатив &e%price%"
+  bidder-success: "%prefix% &aВы выиграли в аукционе на &e%item%&a, заплатив &e%price%&a. Проверьте свои просроченные аукционы."
+  earned-offline: "%prefix% &aВ сумме вы заработали &e$%total%&a!"
+  given-more-auctions-success: "%prefix% &aИгроку &e%player%&a успешно выдано &e%extra%&a дополнительных аукционов, что в итоге дает &e%total%&a!"
+  dbexec-successful: "%prefix% &aУспешно обновлено &d%count%&a строк. &aВыполните команду &d/%cmd% reload&a чтобы загрузить изменения."
+  current-amount-of-auctions:
+  - "%prefix% &7&l&m----------&7&l[ &b&lPlayer Auctions &7&l]&m----------"
+  - "%prefix% &bМожно иметь до &e%auctionsmax%&b (&e%staticauctions% стат.&b) аукционов(а)."
+  - "%prefix% &bВы используете &e%auctionsused%&b аукционов(а)."
+  - "%prefix% &7&l&m----------&7&l[ &b&lPlayer Auctions &7&l]&m----------"
+  current-amount-of-auctions-other:
+  - "%prefix% &7&l&m----------&7&l[ &b&lPlayer Auctions &7&l]&m----------"
+  - "%prefix% &d%player%&b может иметь до &e%auctionsmax%&b (&e%staticauctions% стат.&b) аукционов."
+  - "%prefix% &d%player%&b имеет &e%auctionsused%&b аукционов."
+  - "%prefix% &7&l&m----------&7&l[ &b&lPlayer Auctions &7&l]&m----------"
+  amount-auctions-others-alert: "&c%player% сейчас оффлайн, максимальное число аукционов отображается как статическое значение."
+  successfully-blacklisted-player: "%prefix% &aSuccessfully blacklisted %player% from purchasing your auctions!"
+  successfully-unblacklisted-player: "%prefix% &aSuccessfully removed %player% from the blacklist"
+  blacklist-list:
+  - "&7&m----------------------------------------"
+  - "&b&lBlacklisted Players"
+  - "%blacklisted%"
+  - "&7&m----------------------------------------"
+  blacklist-entry: "&b%position%. &e%name%"
+  items-added-to-backpack: "%prefix% &e%amount%&a items have been added to your backpack (you have &e%total%&a in your backpack). Execute &e/ah open backpack&a to view it."
+  
+  # Меню помощи для игроков
+  # Переменная %cmd% - любая команда, которую вы укажете в config.yml :)
+  help-player:
+  - "%prefix% &7&l&m----------&7&l[ &b&lPlayer Auctions &7&l]&m----------"
+  - "%prefix% &e/%cmd% help &7&l- &bОтобразить это меню."
+  - "%prefix% &e/%cmd% sell <цена> [валюта] [кол-во] &7&l- &bПродать предмет."
+  - "%prefix% &e/%cmd% bid <цена> &7&l- &bСделать ставку."
+  - "%prefix% &e/%cmd% auction &7&l- &bИнтерфейс аукционов."
+  - "%prefix% &e/%cmd% cancel [id] [игрок] &7&l- &bОтменить аукцион."
+  - "%prefix% &e/%cmd% collect &7&l- &bПолучить предметы."
+  - "%prefix% &e/%cmd% open [меню] [опция] &7&l- &bОткрыть меню."
+  - "%prefix% &e/%cmd% amount &7&l- &bПроверить число аукционов."
+  - "%prefix% &e/%cmd% reload &7&l- &bПерезагрузить конфигурацию."
+  - "%prefix% &7&l&m----------&7&l[ &b&lPlayer Auctions &7&l]&m----------"
+
+  # Меню помощи для консоли
+  # Переменная %cmd% - любая команда, которую вы укажете в config.yml :)
+  help-console:
+  - "%prefix% &7&l&m----------&7&l[ &b&lPlayer Auctions &7&l]&m----------"
+  - "%prefix% &e/%cmd% help &7&l- &bОтобразить это меню."
+  - "%prefix% &e/%cmd% open [меню] [опция] &7&l- &bОткрыть интерфейс аукционов."
+  - "%prefix% &e/%cmd% reload &7&l- &bПерезагрузить конфигурацию."
+  - "%prefix% &e/%cmd% dbexec <query> &7&l- &bВыполнить запрос."
+  - "%prefix% &7&l&m----------&7&l[ &b&lPlayer Auctions &7&l]&m----------"
+
+  # сообщения об ошибках.
+  errors:
+    command-syntax: "%prefix% &cНеверная команда, используйте:\n%syntax%"
+    player-only: "%prefix%&c Вы должны быть игроком!"
+    console-only: "%prefix% &CЭту команду можно выполнить только через консоль!"
+    not-a-number: "%prefix%&c Это не число!"
+    no-permission: "%prefix%&c У вас нет разрешения &4%permission%&c для этого! %reason%"
+    auction-dont-exist: "%prefix% &cЭтот аукцион не существует!"
+    too-many-auctions: "%prefix%&c Вы не можете иметь так много аукционов. Вы можете иметь до &4%amount%&c!"
+    money-not-enough-sell: "%prefix%&c У вас нету %price%, чтобы продать этот предмет!"
+    money-not-enough-buy: "%prefix%&c У вас нету have %price%, чтобы купить этот предмет!"
+    money-not-enough-bid: "%prefix%&c У вас нету have %price%, чтобы сделать ставку!"
+    disabled-world-sell: "%prefix%&c Вы не можете продавать предметы в этом мире!"
+    invalid-item: "%prefix%&c Этот предмет нельзя продавать!"
+    damaged-item: "%prefix%&c You cannot sell a damaged item!"
+    invalid-gamemode: "%prefix%&c Нельзя продавать в этом игровом режиме (гейм моде)!"
+    invalid-category: "%prefix%&c Неверная категория"
+    min-price: "%prefix%&c Цена должна быть больше минимальной цены: %min%!"
+    max-price: "%prefix%&c Цена должна быть меньше максимальной: %max%!"
+    no-auctions: "%prefix%&c У вас сейчас нет аукционов!"
+    no-expired-auctions: "%prefix%&c У вас сейчас нет просроченных аукционов для получения предметов!"
+    purchase-own: "%prefix%&c Вы не можете купить свой лот!"
+    bid-own: "%prefix%&c Вы не можете делать ставки на свой лот!"
+    sell-cooldown: "%prefix%&c На продажу предметов действует кулдаун! (осталось %cooldown%)"
+    bid-cooldown: "%prefix%&c На выставление предметов на аукцион действует кулдаун ! (осталось %cooldown%)"
+    offer-cooldown: "%prefix%&c На предложение ставок действует кулдаун! (осталось %cooldown%)"
+    purchase-cooldown: "%prefix%&c На покупку предметов действует кулдаун! (осталось %cooldown%)"
+    no-player-joined: "%prefix% &cЭтот игрок не существует!"
+    bidder-no-money: "%prefix% &c%player% более не имеет достаточного количества денег для покупки &e%item%, его предложение было аннулировано."
+    bid-no-money: "%prefix% &cУ вас более недостаточно денег для ставки на &e%item%, ваше предложение было аннулировано."
+    min-bid: "%prefix% &cВы не можете предложить такую ставку! Минимальная ставка: $1,000"
+    gui-cooldown: "%prefix% &cВам нужно подождать несколько секунд."
+    not-enough-add-bid: "%prefix% &cУ вас не хватает денег, чтобы добавить $%amount% к ставке в $%bid%"
+    cancel-bid: "%prefix% &cВы не можете отменить аукцион, когда на него сделали ставку!"
+    auction-doesnt-exist: "%prefix% &c协褌芯褌 邪褍泻褑懈芯薪 斜芯谢褜褕械 薪械 褋褍褖械褋褌胁褍械褌!"
+    dbexec-failed: "%prefix% &cПри выполнении запроса произошла ошибка. %error%"
+    sign-editor-out-of-bounds: "%prefix% &c袣 褋芯卸邪谢械薪懈褞, 胁褘 薪械 屑芯卸械褌械 懈褋锌芯谢褜蟹芯胁邪褌褜 褉械写邪泻褌芯褉 蟹写械褋褜 (蟹邪 锌褉械写械谢邪屑懈 懈谐褉芯胁芯谐芯 屑懈褉邪)!"
+    already-blacklisted-player: "%prefix% &cYou have already blacklisted this player!"
+    not-blacklisted-player: "%prefix% &cYou haven't blacklisted this player!"
+    player-blacklisted: "%prefix% &cYou cannot purchase this auction due to the sellers' settings!"
+    page-not-found: "%prefix% &cPage not found!"
+    no-blacklisted-players: "%prefix% &cYou've not got anyone blacklisted!"
+    inventory-is-full: "%prefix% &cYour inventory is full! Please make some space before collecting your items."
+
+  restapi:
+    help:
+    - "%prefix% &7&l&m----------&7&l[ &b&lPlayer Auctions &7&l]&m----------"
+    - "%prefix% &e/%cmd% apikeys &7&l- &bDisplays this menu."
+    - "%prefix% &e/%cmd% apikeys generate &7&l- &bGenerates a new API key."
+    - "%prefix% &e/%cmd% apikeys delete <key> &7&l- &bDeletes your current API key."
+    - "%prefix% &7&l&m----------&7&l[ &b&lPlayer Auctions &7&l]&m----------"
+    no-api-key: "%prefix% &cYou do not have an API key, generate one with /%cmd% apikeys generate"
+    no-api-key-other: "%prefix% &cThat player does not have an API key."
+    no-confirmation: "%prefix% &cYou cannot confirm this action, it might of expired"
+    confirmation-expired: "%prefix% &cYour confirmation action has expired."
+    deleted-api-key: "%prefix% &aSuccessfully deleted your API key!"
+    confirm-delete: "%prefix% <green>Are you sure you want to delete your API key? Click <red><hover:show_text:'<red>Confirm</red>'><click:run_command:'/%cmd% apikeys delete confirm'>here</click></hover></red> to confirm.</green>"
+    confirm-delete-other: "%prefix% <green>Are you sure you want to delete <red>%player%'s</red> api key? Click <red><hover:show_text:'<red>Confirm</red>'><click:run_command:'/%cmd% apikeys delete %player% confirm'>here</click></hover></red> to confirm.</green>"
+    confirm-generate: "%prefix% <green>Are you sure you want to generate a new API key? This will delete your current key. Click <red><hover:show_text:'<red>Confirm</red>'><click:run_command:'/%cmd% apikeys generate %player% confirm'>here</click></hover></red> to confirm.</green>"
+    generated-api-key: "%prefix% <green>Successfully generated an API key! Click <click:copy_to_clipboard:'%key%'><hover:show_text:'<red>Copy API key</red>'><red>here </red></hover></click>to copy your API key!"
+
+# Здесь вы можете указать различные типы сообщений для каждого сообщения без разрешения, используя конкретные разрешения.
+# Или вы можете установить его пустым, чтобы вообще не отправлять сообщения.
+# без разрешения:
+# pa.purchase: "У вас нет разрешения на покупку на аукционах!"
+
+n/a:
+  no-seller: "нет"
+  no-expire: "нет"
+  no-category: "нет"
+  no-displayname: "%player%"
+
+# Здесь вы можете настроить отображаемые названия предметов. Пожалуйста, обратите внимание, что вам нужно будет добавить элементы ниже, которые вы хотите изменить
+# Здесь вы можете посмотреть список предметов: https://javadocs.olziedev.com/spigot/latest/org/bukkit/Material.html
+item-names:
+  ARMOR_STAND: "Стойка для брони"

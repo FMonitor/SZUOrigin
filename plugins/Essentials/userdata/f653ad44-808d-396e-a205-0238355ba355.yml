@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 139.210.14.255
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1738407251486
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1738407343786
+  login: 1738406512877
+money: '0'
+last-account-name: Kiralive
+lastlocation:
+  world: 877e483a-8c3b-40fa-9738-40239679b77e
+  world-name: isla
+  x: 58.43914213924924
+  y: 82.0
+  z: 141.25181701720945
+  yaw: -90.89422607421875
+  pitch: 7.128218650817871
+logoutlocation:
+  world: 877e483a-8c3b-40fa-9738-40239679b77e
+  world-name: isla
+  x: 55.07484973606145
+  y: 82.0
+  z: 138.93459436296558
+  yaw: -13.19223403930664
+  pitch: 36.07829666137695

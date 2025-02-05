@@ -1,0 +1,29 @@
+name: vip
+permissions:
+- uspawners.mob.*
+- angelchest.use
+- battlepass.premium
+- chatmanager.ping
+- cosmetics.backpack
+- cosmetics.hat1
+- displayshops.limit.85
+- essentials.anvil
+- essentials.cartographytable
+- essentials.depth
+- essentials.disposal
+- essentials.kits.vip
+- essentials.tptoggle
+- essentials.workbench
+- pa.limit.5
+- unlock.vip.group
+- uspawners.command.get
+- uspawners.command.list
+- uspawners.drop-item
+- uspawners.spawners.10
+- uspawners.upgrade
+- weight.50
+parents:
+- default
+prefixes:
+- §f§r:
+    priority: 50

@@ -1,0 +1,335 @@
+windmill_west:
+  Type: ARMOR_STAND
+  Display: '风车'
+  Options:
+    Marker: true
+    Persistent: false
+    Despawn: true
+  Skills:
+  - skill{s=windmill_face_west} @self ~onSpawn
+  - skill{s=windmill_face_west} @self ~onLoad
+  - model{mid=windmill_02;n=false;d=false;i=true} @self ~onSpawn
+  - model{mid=windmill_02;n=false;d=false;i=true} @self ~onLoad
+  - BodyClamp{mh=0;mb=0;rde=0;rdu=0} @self ~onSpawn
+  - BodyClamp{mh=0;mb=0;rde=0;rdu=0} @self ~onLoad
+
+windmill_north:
+  Type: ARMOR_STAND
+  Display: '风车'
+  Options:
+    Marker: true
+    Persistent: false
+    Despawn: true
+  Skills:
+  - skill{s=windmill_face_north} @self ~onSpawn
+  - skill{s=windmill_face_north} @self ~onLoad
+  - model{mid=windmill_02;n=false;d=false;i=true} @self ~onSpawn
+  - model{mid=windmill_02;n=false;d=false;i=true} @self ~onLoad
+  - BodyClamp{mh=0;mb=0;rde=0;rdu=0} @self ~onSpawn
+  - BodyClamp{mh=0;mb=0;rde=0;rdu=0} @self ~onLoad
+
+windmill_east:
+  Type: ARMOR_STAND
+  Display: '风车'
+  Options:
+    Marker: true
+    Persistent: false
+    Despawn: true
+  Skills:
+  - skill{s=windmill_face_east} @self ~onSpawn
+  - skill{s=windmill_face_east} @self ~onLoad
+  - model{mid=windmill_02;n=false;d=false;i=true} @self ~onSpawn
+  - model{mid=windmill_02;n=false;d=false;i=true} @self ~onLoad
+  - BodyClamp{mh=0;mb=0;rde=0;rdu=0} @self ~onSpawn
+  - BodyClamp{mh=0;mb=0;rde=0;rdu=0} @self ~onLoad
+
+windmill_south:
+  Type: ARMOR_STAND
+  Display: '风车'
+  Options:
+    Marker: true
+    Persistent: false
+    Despawn: true
+  Skills:
+  - skill{s=windmill_face_south} @self ~onSpawn
+  - skill{s=windmill_face_south} @self ~onLoad
+  - model{mid=windmill_02;n=false;d=false;i=true} @self ~onSpawn
+  - model{mid=windmill_02;n=false;d=false;i=true} @self ~onLoad
+  - BodyClamp{mh=0;mb=0;rde=0;rdu=0} @self ~onSpawn
+  - BodyClamp{mh=0;mb=0;rde=0;rdu=0} @self ~onLoad
+
+
+#################################
+
+air_balloon_yellow_south:
+  Type: ARMOR_STAND
+  Display: 气球
+  Options:
+    Marker: true
+    Persistent: false
+    Despawn: true
+  Skills:
+  - model{mid=air_balloon;n=false} @self ~onSpawn
+  - skill{s=balloon_face_south} @self ~onSpawn
+  - skill{s=balloon_face_south} @self ~onLoad
+  - skill{s=air_balloon_yellow} @self ~onSpawn
+  - skill{s=air_balloon_yellow} @self ~onLoad
+  - skill{s=air_balloon_flame_south_stay} @self ~onTimer:20
+  - skill{s=air_balloon_flame_south} @self ~onTimer:80
+
+air_balloon_yellow_west:
+  Type: ARMOR_STAND
+  Display: 气球
+  Options:
+    Marker: true
+    Persistent: false
+    Despawn: true
+  Skills:
+  - model{mid=air_balloon;n=false} @self ~onSpawn
+  - skill{s=balloon_face_west} @self ~onSpawn
+  - skill{s=balloon_face_west} @self ~onLoad
+  - skill{s=air_balloon_yellow} @self ~onSpawn
+  - skill{s=air_balloon_yellow} @self ~onLoad
+  - skill{s=air_balloon_flame_west_stay} @self ~onTimer:20
+  - skill{s=air_balloon_flame_west} @self ~onTimer:80
+
+
+air_balloon_yellow_north:
+  Type: ARMOR_STAND
+  Display: 气球
+  Options:
+    Marker: true
+    Persistent: false
+    Despawn: true
+  Skills:
+  - model{mid=air_balloon;n=false} @self ~onSpawn
+  - skill{s=balloon_face_north} @self ~onSpawn
+  - skill{s=balloon_face_north} @self ~onLoad
+  - skill{s=air_balloon_yellow} @self ~onSpawn
+  - skill{s=air_balloon_yellow} @self ~onLoad
+  - skill{s=air_balloon_flame_north_stay} @self ~onTimer:20
+  - skill{s=air_balloon_flame_north} @self ~onTimer:80
+
+air_balloon_yellow_east:
+  Type: ARMOR_STAND
+  Display: 气球
+  Options:
+    Marker: true
+    Persistent: false
+    Despawn: true
+  Skills:
+  - model{mid=air_balloon;n=false} @self ~onSpawn
+  - skill{s=balloon_face_east} @self ~onSpawn
+  - skill{s=balloon_face_east} @self ~onLoad
+  - skill{s=air_balloon_yellow} @self ~onSpawn
+  - skill{s=air_balloon_yellow} @self ~onLoad
+  - skill{s=air_balloon_flame_east_stay} @self ~onTimer:20
+  - skill{s=air_balloon_flame_east} @self ~onTimer:80
+
+#############################################################
+
+air_balloon_red_south:
+  Type: ARMOR_STAND
+  Display: 气球
+  Options:
+    Marker: true
+    Persistent: false
+    Despawn: true
+  Skills:
+  - model{mid=air_balloon;n=false} @self ~onSpawn
+  - skill{s=balloon_face_south} @self ~onSpawn
+  - skill{s=balloon_face_south} @self ~onLoad
+  - skill{s=air_balloon_red} @self ~onSpawn
+  - skill{s=air_balloon_red} @self ~onLoad
+  - skill{s=air_balloon_flame_south_stay} @self ~onTimer:20
+  - skill{s=air_balloon_flame_south} @self ~onTimer:80
+
+air_balloon_red_west:
+  Type: ARMOR_STAND
+  Display: 气球
+  Options:
+    Marker: true
+    Persistent: false
+    Despawn: true
+  Skills:
+  - model{mid=air_balloon;n=false} @self ~onSpawn
+  - skill{s=balloon_face_west} @self ~onSpawn
+  - skill{s=balloon_face_west} @self ~onLoad
+  - skill{s=air_balloon_red} @self ~onSpawn
+  - skill{s=air_balloon_red} @self ~onLoad
+  - skill{s=air_balloon_flame_west_stay} @self ~onTimer:20
+  - skill{s=air_balloon_flame_west} @self ~onTimer:80
+
+
+air_balloon_red_north:
+  Type: ARMOR_STAND
+  Display: 气球
+  Options:
+    Marker: true
+    Persistent: false
+    Despawn: true
+  Skills:
+  - model{mid=air_balloon;n=false} @self ~onSpawn
+  - skill{s=balloon_face_north} @self ~onSpawn
+  - skill{s=balloon_face_north} @self ~onLoad
+  - skill{s=air_balloon_red} @self ~onSpawn
+  - skill{s=air_balloon_red} @self ~onLoad
+  - skill{s=air_balloon_flame_north_stay} @self ~onTimer:20
+  - skill{s=air_balloon_flame_north} @self ~onTimer:80
+
+
+air_balloon_red_east:
+  Type: ARMOR_STAND
+  Display: 气球
+  Options:
+    Marker: true
+    Persistent: false
+    Despawn: true
+  Skills:
+  - model{mid=air_balloon;n=false} @self ~onSpawn
+  - skill{s=balloon_face_east} @self ~onSpawn
+  - skill{s=balloon_face_east} @self ~onLoad
+  - skill{s=air_balloon_red} @self ~onSpawn
+  - skill{s=air_balloon_red} @self ~onLoad
+  - skill{s=air_balloon_flame_east_stay} @self ~onTimer:20
+  - skill{s=air_balloon_flame_east} @self ~onTimer:80
+  
+#############################################################
+
+air_balloon_green_south:
+  Type: ARMOR_STAND
+  Display: 气球
+  Options:
+    Marker: true
+    Persistent: false
+    Despawn: true
+  Skills:
+  - model{mid=air_balloon;n=false} @self ~onSpawn
+  - skill{s=balloon_face_south} @self ~onSpawn
+  - skill{s=balloon_face_south} @self ~onLoad
+  - skill{s=air_balloon_green} @self ~onSpawn
+  - skill{s=air_balloon_green} @self ~onLoad
+  - skill{s=air_balloon_flame_south_stay} @self ~onTimer:20
+  - skill{s=air_balloon_flame_south} @self ~onTimer:80
+
+air_balloon_green_west:
+  Type: ARMOR_STAND
+  Display: 气球
+  Options:
+    Marker: true
+    Persistent: false
+    Despawn: true
+  Skills:
+  - model{mid=air_balloon;n=false} @self ~onSpawn
+  - skill{s=balloon_face_west} @self ~onSpawn
+  - skill{s=balloon_face_west} @self ~onLoad
+  - skill{s=air_balloon_green} @self ~onSpawn
+  - skill{s=air_balloon_green} @self ~onLoad
+  - skill{s=air_balloon_flame_west_stay} @self ~onTimer:20
+  - skill{s=air_balloon_flame_west} @self ~onTimer:80
+
+
+air_balloon_green_north:
+  Type: ARMOR_STAND
+  Display: 气球
+  Options:
+    Marker: true
+    Persistent: false
+    Despawn: true
+  Skills:
+  - model{mid=air_balloon;n=false} @self ~onSpawn
+  - skill{s=balloon_face_north} @self ~onSpawn
+  - skill{s=balloon_face_north} @self ~onLoad
+  - skill{s=air_balloon_green} @self ~onSpawn
+  - skill{s=air_balloon_green} @self ~onLoad
+  - skill{s=air_balloon_flame_north_stay} @self ~onTimer:20
+  - skill{s=air_balloon_flame_north} @self ~onTimer:80
+
+
+air_balloon_green_east:
+  Type: ARMOR_STAND
+  Display: 气球
+  Options:
+    Marker: true
+    Persistent: false
+    Despawn: true
+  Skills:
+  - model{mid=air_balloon;n=false} @self ~onSpawn
+  - skill{s=balloon_face_east} @self ~onSpawn
+  - skill{s=balloon_face_east} @self ~onLoad
+  - skill{s=air_balloon_green} @self ~onSpawn
+  - skill{s=air_balloon_green} @self ~onLoad
+  - skill{s=air_balloon_flame_east_stay} @self ~onTimer:20
+  - skill{s=air_balloon_flame_east} @self ~onTimer:80
+
+
+#############################################################
+
+air_balloon_blue_south:
+  Type: ARMOR_STAND
+  Display: 气球
+  Options:
+    Marker: true
+    Persistent: false
+    Despawn: true
+  Skills:
+  - model{mid=air_balloon;n=false} @self ~onSpawn
+  - skill{s=balloon_face_south} @self ~onSpawn
+  - skill{s=balloon_face_south} @self ~onLoad
+  - skill{s=air_balloon_blue} @self ~onSpawn
+  - skill{s=air_balloon_blue} @self ~onLoad
+  - skill{s=air_balloon_flame_south_stay} @self ~onTimer:20
+  - skill{s=air_balloon_flame_south} @self ~onTimer:80
+
+air_balloon_blue_west:
+  Type: ARMOR_STAND
+  Display: 气球
+  Options:
+    Marker: true
+    Persistent: false
+    Despawn: true
+  Skills:
+  - model{mid=air_balloon;n=false} @self ~onSpawn
+  - skill{s=balloon_face_west} @self ~onSpawn
+  - skill{s=balloon_face_west} @self ~onLoad
+  - skill{s=air_balloon_blue} @self ~onSpawn
+  - skill{s=air_balloon_blue} @self ~onLoad
+  - skill{s=air_balloon_flame_west_stay} @self ~onTimer:20
+  - skill{s=air_balloon_flame_west} @self ~onTimer:80
+
+
+air_balloon_blue_north:
+  Type: ARMOR_STAND
+  Display: 气球
+  Options:
+    Marker: true
+    Persistent: false
+    Despawn: true
+  Skills:
+  - model{mid=air_balloon;n=false} @self ~onSpawn
+  - skill{s=balloon_face_north} @self ~onSpawn
+  - skill{s=balloon_face_north} @self ~onLoad
+  - skill{s=air_balloon_blue} @self ~onSpawn
+  - skill{s=air_balloon_blue} @self ~onLoad
+  - skill{s=air_balloon_flame_north_stay} @self ~onTimer:20
+  - skill{s=air_balloon_flame_north} @self ~onTimer:80
+
+
+air_balloon_blue_east:
+  Type: ARMOR_STAND
+  Display: 气球
+  Options:
+    Marker: true
+    Persistent: false
+    Despawn: true
+  Skills:
+  - model{mid=air_balloon;n=false} @self ~onSpawn
+  - skill{s=balloon_face_east} @self ~onSpawn
+  - skill{s=balloon_face_east} @self ~onLoad
+  - skill{s=air_balloon_blue} @self ~onSpawn
+  - skill{s=air_balloon_blue} @self ~onLoad
+  - skill{s=air_balloon_flame_east_stay} @self ~onTimer:20
+  - skill{s=air_balloon_flame_east} @self ~onTimer:80
+
+
+

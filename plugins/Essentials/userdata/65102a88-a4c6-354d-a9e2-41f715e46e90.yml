@@ -1,0 +1,47 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 120.229.85.146
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1738586673201
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1738588386018
+  login: 1738586819066
+money: '16.0'
+last-account-name: CX009
+lastlocation:
+  world: 04c00a4f-fe5c-47c6-8998-babf81130ba2
+  world-name: world
+  x: 504.78870800707
+  y: 64.0
+  z: -223.64808566317606
+  yaw: -128.1287384033203
+  pitch: 6.993096828460693
+logoutlocation:
+  world: 16c0d5de-e05c-437b-bfdb-3422519e8bd3
+  world-name: mine
+  x: 1019.8548535020208
+  y: 18.0
+  z: 233.89180761000364
+  yaw: -72.86441040039062
+  pitch: 34.12544250488281
+homes:
+  home:
+    world: 04c00a4f-fe5c-47c6-8998-babf81130ba2
+    world-name: world
+    x: 371.41446226495384
+    y: 63.0
+    z: -313.69837563964785
+    yaw: 132.51824951171875
+    pitch: 20.96243667602539

@@ -1,0 +1,1075 @@
+ShopName: guide
+DisplayName: "§f" 
+InventorySize: 54 
+Command: guide
+shop: 
+  scroll_down:
+    MenuItem:
+    - "name:#27e5f2SCROLL DOWN" 
+    - type:PAPER 
+    - amount:1 
+    - custommodeldata:100089
+    RewardType: SHOP
+    Reward: 'guide_2'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 45
+#######################################GRAVE    
+  grave1:
+    MenuItem:
+    - "name:&f &l坟墓" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63当你死亡时，'
+    - 'lore3:&f #5c5e63可以将物品存入保护箱。'
+    - 'lore4:&f '
+    - 'lore5:&f #5c5e63然而，只有在达到 &eVIP #5c5e63等级时，'
+    - 'lore6:&f #5c5e63才能开始使用坟墓功能。'
+    - 'lore7:&f #5c5e63如果你提升到更高的等级，'
+    - 'lore8:&f #5c5e63可以解锁更多功能。'
+    - 'lore9:&f '
+    - 'lore10:&f         &f&l更多详情'
+    - 'lore13:&f '
+    - 'lore14:&f &f #5c5e63查看#FF6E41等级菜单'
+    - 'lore15:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 1
+  grave2:
+    MenuItem:
+    - "name:&f &l坟墓" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63当你死亡时，'
+    - 'lore3:&f #5c5e63可以将物品存入保护箱。'
+    - 'lore4:&f '
+    - 'lore5:&f #5c5e63然而，只有在达到 &eVIP #5c5e63等级时，'
+    - 'lore6:&f #5c5e63才能开始使用坟墓功能。'
+    - 'lore7:&f #5c5e63如果你提升到更高的等级，'
+    - 'lore8:&f #5c5e63可以解锁更多功能。'
+    - 'lore9:&f '
+    - 'lore10:&f         &f&l更多详情'
+    - 'lore13:&f '
+    - 'lore14:&f &f #5c5e63查看#FF6E41等级菜单'
+    - 'lore15:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 2
+  grave3:
+    MenuItem:
+    - "name:&f &l坟墓" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63当你死亡时，'
+    - 'lore3:&f #5c5e63可以将物品存入保护箱。'
+    - 'lore4:&f '
+    - 'lore5:&f #5c5e63然而，只有在达到 &eVIP #5c5e63等级时，'
+    - 'lore6:&f #5c5e63才能开始使用坟墓功能。'
+    - 'lore7:&f #5c5e63如果你提升到更高的等级，'
+    - 'lore8:&f #5c5e63可以解锁更多功能。'
+    - 'lore9:&f '
+    - 'lore10:&f         &f&l更多详情'
+    - 'lore13:&f '
+    - 'lore14:&f &f #5c5e63查看#FF6E41等级菜单'
+    - 'lore15:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 3
+  grave4:
+    MenuItem:
+    - "name:&f &l坟墓" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63当你死亡时，'
+    - 'lore3:&f #5c5e63可以将物品存入保护箱。'
+    - 'lore4:&f '
+    - 'lore5:&f #5c5e63然而，只有在达到 &eVIP #5c5e63等级时，'
+    - 'lore6:&f #5c5e63才能开始使用坟墓功能。'
+    - 'lore7:&f #5c5e63如果你提升到更高的等级，'
+    - 'lore8:&f #5c5e63可以解锁更多功能。'
+    - 'lore9:&f '
+    - 'lore10:&f         &f&l更多详情'
+    - 'lore13:&f '
+    - 'lore14:&f &f #5c5e63查看#FF6E41等级菜单'
+    - 'lore15:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 4
+  grave5:
+    MenuItem:
+    - "name:&f &l坟墓" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63当你死亡时，'
+    - 'lore3:&f #5c5e63可以将物品存入保护箱。'
+    - 'lore4:&f '
+    - 'lore5:&f #5c5e63然而，只有在达到 &eVIP #5c5e63等级时，'
+    - 'lore6:&f #5c5e63才能开始使用坟墓功能。'
+    - 'lore7:&f #5c5e63如果你提升到更高的等级，'
+    - 'lore8:&f #5c5e63可以解锁更多功能。'
+    - 'lore9:&f '
+    - 'lore10:&f         &f&l更多详情'
+    - 'lore13:&f '
+    - 'lore14:&f &f #5c5e63查看#FF6E41等级菜单'
+    - 'lore15:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 5
+  grave6:
+    MenuItem:
+    - "name:&f &l坟墓" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63当你死亡时，'
+    - 'lore3:&f #5c5e63可以将物品存入保护箱。'
+    - 'lore4:&f '
+    - 'lore5:&f #5c5e63然而，只有在达到 &eVIP #5c5e63等级时，'
+    - 'lore6:&f #5c5e63才能开始使用坟墓功能。'
+    - 'lore7:&f #5c5e63如果你提升到更高的等级，'
+    - 'lore8:&f #5c5e63可以解锁更多功能。'
+    - 'lore9:&f '
+    - 'lore10:&f         &f&l更多详情'
+    - 'lore13:&f '
+    - 'lore14:&f &f #5c5e63查看#FF6E41等级菜单'
+    - 'lore15:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 6
+  grave7:
+    MenuItem:
+    - "name:&f &l坟墓" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63当你死亡时，'
+    - 'lore3:&f #5c5e63可以将物品存入保护箱。'
+    - 'lore4:&f '
+    - 'lore5:&f #5c5e63然而，只有在达到 &eVIP #5c5e63等级时，'
+    - 'lore6:&f #5c5e63才能开始使用坟墓功能。'
+    - 'lore7:&f #5c5e63如果你提升到更高的等级，'
+    - 'lore8:&f #5c5e63可以解锁更多功能。'
+    - 'lore9:&f '
+    - 'lore10:&f         &f&l更多详情'
+    - 'lore13:&f '
+    - 'lore14:&f &f #5c5e63查看#FF6E41等级菜单'
+    - 'lore15:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 7
+  grave8:
+    MenuItem:
+    - "name:&f &l坟墓" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63当你死亡时，'
+    - 'lore3:&f #5c5e63可以将物品存入保护箱。'
+    - 'lore4:&f '
+    - 'lore5:&f #5c5e63然而，只有在达到 &eVIP #5c5e63等级时，'
+    - 'lore6:&f #5c5e63才能开始使用坟墓功能。'
+    - 'lore7:&f #5c5e63如果你提升到更高的等级，'
+    - 'lore8:&f #5c5e63可以解锁更多功能。'
+    - 'lore9:&f '
+    - 'lore10:&f         &f&l更多详情'
+    - 'lore13:&f '
+    - 'lore14:&f &f #5c5e63查看#FF6E41等级菜单'
+    - 'lore15:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 8
+
+    ###########################Grief Prevention
+
+  griefprevention1:
+    MenuItem:
+    - "name:&f &l领土保护" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63领土保护将解决破坏问题'
+    - 'lore3:&f '
+    - 'lore4:&f #5c5e63开始时，只需要在你想保护的地方，'
+    - 'lore5:&f #5c5e63放置一个箱子，'
+    - 'lore6:&f #5c5e63或者输入命令'
+    - 'lore7:&f #5c5e63&a/Claim#5c5e63.'
+    - 'lore8:&f '
+    - 'lore9:&f #5c5e63使用&e金铲子来调整领土。'
+    - 'lore10:&f '
+    - 'lore11:&f         &f&l更多详情'
+    - 'lore12:&f '
+    - 'lore13:&f &f #FF6E41http://bit.ly/mcgpuser'
+    - 'lore14:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 10
+  griefprevention2:
+    MenuItem:
+    - "name:&f &l领土保护" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63领土保护将解决破坏问题'
+    - 'lore3:&f '
+    - 'lore4:&f #5c5e63开始时，只需要在你想保护的地方，'
+    - 'lore5:&f #5c5e63放置一个箱子，'
+    - 'lore6:&f #5c5e63或者输入命令'
+    - 'lore7:&f #5c5e63&a/Claim#5c5e63.'
+    - 'lore8:&f '
+    - 'lore9:&f #5c5e63使用&e金铲子来调整领土。'
+    - 'lore10:&f '
+    - 'lore11:&f         &f&l更多详情'
+    - 'lore12:&f '
+    - 'lore13:&f &f #FF6E41http://bit.ly/mcgpuser'
+    - 'lore14:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 11
+  griefprevention3:
+    MenuItem:
+    - "name:&f &l领土保护" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63领土保护将解决破坏问题'
+    - 'lore3:&f '
+    - 'lore4:&f #5c5e63开始时，只需要在你想保护的地方，'
+    - 'lore5:&f #5c5e63放置一个箱子，'
+    - 'lore6:&f #5c5e63或者输入命令'
+    - 'lore7:&f #5c5e63&a/Claim#5c5e63.'
+    - 'lore8:&f '
+    - 'lore9:&f #5c5e63使用&e金铲子来调整领土。'
+    - 'lore10:&f '
+    - 'lore11:&f         &f&l更多详情'
+    - 'lore12:&f '
+    - 'lore13:&f &f #FF6E41http://bit.ly/mcgpuser'
+    - 'lore14:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 12
+  griefprevention4:
+    MenuItem:
+    - "name:&f &l领土保护" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63领土保护将解决破坏问题'
+    - 'lore3:&f '
+    - 'lore4:&f #5c5e63开始时，只需要在你想保护的地方，'
+    - 'lore5:&f #5c5e63放置一个箱子，'
+    - 'lore6:&f #5c5e63或者输入命令'
+    - 'lore7:&f #5c5e63&a/Claim#5c5e63.'
+    - 'lore8:&f '
+    - 'lore9:&f #5c5e63使用&e金铲子来调整领土。'
+    - 'lore10:&f '
+    - 'lore11:&f         &f&l更多详情'
+    - 'lore12:&f '
+    - 'lore13:&f &f #FF6E41http://bit.ly/mcgpuser'
+    - 'lore14:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 13
+  griefprevention5:
+    MenuItem:
+    - "name:&f &l领土保护" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63领土保护将解决破坏问题'
+    - 'lore3:&f '
+    - 'lore4:&f #5c5e63开始时，只需要在你想保护的地方，'
+    - 'lore5:&f #5c5e63放置一个箱子，'
+    - 'lore6:&f #5c5e63或者输入命令'
+    - 'lore7:&f #5c5e63&a/Claim#5c5e63.'
+    - 'lore8:&f '
+    - 'lore9:&f #5c5e63使用&e金铲子来调整领土。'
+    - 'lore10:&f '
+    - 'lore11:&f         &f&l更多详情'
+    - 'lore12:&f '
+    - 'lore13:&f &f #FF6E41http://bit.ly/mcgpuser'
+    - 'lore14:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 14
+  griefprevention6:
+    MenuItem:
+    - "name:&f &l领土保护" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63领土保护将解决破坏问题'
+    - 'lore3:&f '
+    - 'lore4:&f #5c5e63开始时，只需要在你想保护的地方，'
+    - 'lore5:&f #5c5e63放置一个箱子，'
+    - 'lore6:&f #5c5e63或者输入命令'
+    - 'lore7:&f #5c5e63&a/Claim#5c5e63.'
+    - 'lore8:&f '
+    - 'lore9:&f #5c5e63使用&e金铲子来调整领土。'
+    - 'lore10:&f '
+    - 'lore11:&f         &f&l更多详情'
+    - 'lore12:&f '
+    - 'lore13:&f &f #FF6E41http://bit.ly/mcgpuser'
+    - 'lore14:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 15
+  griefprevention7:
+    MenuItem:
+    - "name:&f &l领土保护" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63领土保护将解决破坏问题'
+    - 'lore3:&f '
+    - 'lore4:&f #5c5e63开始时，只需要在你想保护的地方，'
+    - 'lore5:&f #5c5e63放置一个箱子，'
+    - 'lore6:&f #5c5e63或者输入命令'
+    - 'lore7:&f #5c5e63&a/Claim#5c5e63.'
+    - 'lore8:&f '
+    - 'lore9:&f #5c5e63使用&e金铲子来调整领土。'
+    - 'lore10:&f '
+    - 'lore11:&f         &f&l更多详情'
+    - 'lore12:&f '
+    - 'lore13:&f &f #FF6E41http://bit.ly/mcgpuser'
+    - 'lore14:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 16
+  griefprevention8:
+    MenuItem:
+    - "name:&f &l领土保护" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63领土保护将解决破坏问题'
+    - 'lore3:&f '
+    - 'lore4:&f #5c5e63开始时，只需要在你想保护的地方，'
+    - 'lore5:&f #5c5e63放置一个箱子，'
+    - 'lore6:&f #5c5e63或者输入命令'
+    - 'lore7:&f #5c5e63&a/Claim#5c5e63.'
+    - 'lore8:&f '
+    - 'lore9:&f #5c5e63使用&e金铲子来调整领土。'
+    - 'lore10:&f '
+    - 'lore11:&f         &f&l更多详情'
+    - 'lore12:&f '
+    - 'lore13:&f &f #FF6E41http://bit.ly/mcgpuser'
+    - 'lore14:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 17
+#######################################SCOREBOARD
+
+  scoreboard1:
+    MenuItem:
+    - "name:&f &l积分榜" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63显示或隐藏你的'
+    - 'lore3:&f #5c5e63侧边栏统计'
+    - 'lore4:&f '
+    - 'lore5:&f #5c5e63要切换你的积分榜'
+    - 'lore6:&f #5c5e63输入命令'
+    - 'lore7:&f &a&l/sidebar#5c5e63.'
+    - 'lore8:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 19
+  scoreboard2:
+    MenuItem:
+    - "name:&f &l积分榜" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63显示或隐藏你的'
+    - 'lore3:&f #5c5e63侧边栏统计'
+    - 'lore4:&f '
+    - 'lore5:&f #5c5e63要切换你的积分榜'
+    - 'lore6:&f #5c5e63输入命令'
+    - 'lore7:&f &a&l/sidebar#5c5e63.'
+    - 'lore8:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 20
+  scoreboard3:
+    MenuItem:
+    - "name:&f &l积分榜" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63显示或隐藏你的'
+    - 'lore3:&f #5c5e63侧边栏统计'
+    - 'lore4:&f '
+    - 'lore5:&f #5c5e63要切换你的积分榜'
+    - 'lore6:&f #5c5e63输入命令'
+    - 'lore7:&f &a&l/sidebar#5c5e63.'
+    - 'lore8:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 21
+  scoreboard4:
+    MenuItem:
+    - "name:&f &l积分榜" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63显示或隐藏你的'
+    - 'lore3:&f #5c5e63侧边栏统计'
+    - 'lore4:&f '
+    - 'lore5:&f #5c5e63要切换你的积分榜'
+    - 'lore6:&f #5c5e63输入命令'
+    - 'lore7:&f &a&l/sidebar#5c5e63.'
+    - 'lore8:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 22
+  scoreboard5:
+    MenuItem:
+    - "name:&f &l积分榜" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63显示或隐藏你的'
+    - 'lore3:&f #5c5e63侧边栏统计'
+    - 'lore4:&f '
+    - 'lore5:&f #5c5e63要切换你的积分榜'
+    - 'lore6:&f #5c5e63输入命令'
+    - 'lore7:&f &a&l/sidebar#5c5e63.'
+    - 'lore8:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 23
+  scoreboard6:
+    MenuItem:
+    - "name:&f &l积分榜" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63显示或隐藏你的'
+    - 'lore3:&f #5c5e63侧边栏统计'
+    - 'lore4:&f '
+    - 'lore5:&f #5c5e63要切换你的积分榜'
+    - 'lore6:&f #5c5e63输入命令'
+    - 'lore7:&f &a&l/sidebar#5c5e63.'
+    - 'lore8:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 24
+  scoreboard7:
+    MenuItem:
+    - "name:&f &l积分榜" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63显示或隐藏你的'
+    - 'lore3:&f #5c5e63侧边栏统计'
+    - 'lore4:&f '
+    - 'lore5:&f #5c5e63要切换你的积分榜'
+    - 'lore6:&f #5c5e63输入命令'
+    - 'lore7:&f &a&l/sidebar#5c5e63.'
+    - 'lore8:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 25
+  scoreboard8:
+    MenuItem:
+    - "name:&f &l积分榜" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63显示或隐藏你的'
+    - 'lore3:&f #5c5e63侧边栏统计'
+    - 'lore4:&f '
+    - 'lore5:&f #5c5e63要切换你的积分榜'
+    - 'lore6:&f #5c5e63输入命令'
+    - 'lore7:&f &a&l/sidebar#5c5e63.'
+    - 'lore8:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 26
+###################################################################COSMETICS
+  cosmetics1:
+    MenuItem:
+    - "name:&f &l饰品" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63饰品为玩家提供'
+    - 'lore3:&f #5c5e63各种视觉增强'
+    - 'lore4:&f #5c5e63和自定义选项'
+    - 'lore5:&f #5c5e63供他们的角色使用。'
+    - 'lore6:&f '
+    - 'lore7:&f #5c5e63这些可以通过'
+    - 'lore8:&f #5c5e63#dd5912任务&7、#dd5912探险&7、'
+    - 'lore9:&f #5c5e63#dd5912等级&7、#dd5912战斗通行证&7等来解锁'
+    - 'lore10:&f '
+    - 'lore11:&f #5c5e63总共有#0fecfb4种#92cbdf饰品，'
+    - 'lore12:&f #5c5e63包括以下内容：'
+    - 'lore13:&f  #34FD6C✔ 帽子'
+    - 'lore14:&f  #34FD6C✔ 背包'
+    - 'lore15:&f  #34FD6C✔ 手杖'
+    - 'lore16:&f  #34FD6C✔ 气球'
+    - 'lore17:&f '
+    - 'lore18:&f #5c5e63通过&a传送点&7'
+    - 'lore19:&f &f #5c5e63访问饰品商店.'
+    - 'lore20:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 28
+  cosmetics2:
+    MenuItem:
+    - "name:&f &l饰品" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63饰品为玩家提供'
+    - 'lore3:&f #5c5e63各种视觉增强'
+    - 'lore4:&f #5c5e63和自定义选项'
+    - 'lore5:&f #5c5e63供他们的角色使用。'
+    - 'lore6:&f '
+    - 'lore7:&f #5c5e63这些可以通过'
+    - 'lore8:&f #5c5e63#dd5912任务&7、#dd5912探险&7、'
+    - 'lore9:&f #5c5e63#dd5912等级&7、#dd5912战斗通行证&7等来解锁'
+    - 'lore10:&f '
+    - 'lore11:&f #5c5e63总共有#0fecfb4种#92cbdf饰品，'
+    - 'lore12:&f #5c5e63包括以下内容：'
+    - 'lore13:&f  #34FD6C✔ 帽子'
+    - 'lore14:&f  #34FD6C✔ 背包'
+    - 'lore15:&f  #34FD6C✔ 手杖'
+    - 'lore16:&f  #34FD6C✔ 气球'
+    - 'lore17:&f '
+    - 'lore18:&f #5c5e63通过&a传送点&7'
+    - 'lore19:&f &f #5c5e63访问饰品商店.'
+    - 'lore20:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 29
+  cosmetics3:
+    MenuItem:
+    - "name:&f &l饰品" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63饰品为玩家提供'
+    - 'lore3:&f #5c5e63各种视觉增强'
+    - 'lore4:&f #5c5e63和自定义选项'
+    - 'lore5:&f #5c5e63供他们的角色使用。'
+    - 'lore6:&f '
+    - 'lore7:&f #5c5e63这些可以通过'
+    - 'lore8:&f #5c5e63#dd5912任务&7、#dd5912探险&7、'
+    - 'lore9:&f #5c5e63#dd5912等级&7、#dd5912战斗通行证&7等来解锁'
+    - 'lore10:&f '
+    - 'lore11:&f #5c5e63总共有#0fecfb4种#92cbdf饰品，'
+    - 'lore12:&f #5c5e63包括以下内容：'
+    - 'lore13:&f  #34FD6C✔ 帽子'
+    - 'lore14:&f  #34FD6C✔ 背包'
+    - 'lore15:&f  #34FD6C✔ 手杖'
+    - 'lore16:&f  #34FD6C✔ 气球'
+    - 'lore17:&f '
+    - 'lore18:&f #5c5e63通过&a传送点&7'
+    - 'lore19:&f &f #5c5e63访问饰品商店.'
+    - 'lore20:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 30
+  cosmetics4:
+    MenuItem:
+    - "name:&f &l饰品" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63饰品为玩家提供'
+    - 'lore3:&f #5c5e63各种视觉增强'
+    - 'lore4:&f #5c5e63和自定义选项'
+    - 'lore5:&f #5c5e63供他们的角色使用。'
+    - 'lore6:&f '
+    - 'lore7:&f #5c5e63这些可以通过'
+    - 'lore8:&f #5c5e63#dd5912任务&7、#dd5912探险&7、'
+    - 'lore9:&f #5c5e63#dd5912等级&7、#dd5912战斗通行证&7等来解锁'
+    - 'lore10:&f '
+    - 'lore11:&f #5c5e63总共有#0fecfb4种#92cbdf饰品，'
+    - 'lore12:&f #5c5e63包括以下内容：'
+    - 'lore13:&f  #34FD6C✔ 帽子'
+    - 'lore14:&f  #34FD6C✔ 背包'
+    - 'lore15:&f  #34FD6C✔ 手杖'
+    - 'lore16:&f  #34FD6C✔ 气球'
+    - 'lore17:&f '
+    - 'lore18:&f #5c5e63通过&a传送点&7'
+    - 'lore19:&f &f #5c5e63访问饰品商店.'
+    - 'lore20:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 31
+  cosmetics5:
+    MenuItem:
+    - "name:&f &l饰品" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63饰品为玩家提供'
+    - 'lore3:&f #5c5e63各种视觉增强'
+    - 'lore4:&f #5c5e63和自定义选项'
+    - 'lore5:&f #5c5e63供他们的角色使用。'
+    - 'lore6:&f '
+    - 'lore7:&f #5c5e63这些可以通过'
+    - 'lore8:&f #5c5e63#dd5912任务&7、#dd5912探险&7、'
+    - 'lore9:&f #5c5e63#dd5912等级&7、#dd5912战斗通行证&7等来解锁'
+    - 'lore10:&f '
+    - 'lore11:&f #5c5e63总共有#0fecfb4种#92cbdf饰品，'
+    - 'lore12:&f #5c5e63包括以下内容：'
+    - 'lore13:&f  #34FD6C✔ 帽子'
+    - 'lore14:&f  #34FD6C✔ 背包'
+    - 'lore15:&f  #34FD6C✔ 手杖'
+    - 'lore16:&f  #34FD6C✔ 气球'
+    - 'lore17:&f '
+    - 'lore18:&f #5c5e63通过&a传送点&7'
+    - 'lore19:&f &f #5c5e63访问饰品商店.'
+    - 'lore20:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 32
+  cosmetics6:
+    MenuItem:
+    - "name:&f &l饰品" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63饰品为玩家提供'
+    - 'lore3:&f #5c5e63各种视觉增强'
+    - 'lore4:&f #5c5e63和自定义选项'
+    - 'lore5:&f #5c5e63供他们的角色使用。'
+    - 'lore6:&f '
+    - 'lore7:&f #5c5e63这些可以通过'
+    - 'lore8:&f #5c5e63#dd5912任务&7、#dd5912探险&7、'
+    - 'lore9:&f #5c5e63#dd5912等级&7、#dd5912战斗通行证&7等来解锁'
+    - 'lore10:&f '
+    - 'lore11:&f #5c5e63总共有#0fecfb4种#92cbdf饰品，'
+    - 'lore12:&f #5c5e63包括以下内容：'
+    - 'lore13:&f  #34FD6C✔ 帽子'
+    - 'lore14:&f  #34FD6C✔ 背包'
+    - 'lore15:&f  #34FD6C✔ 手杖'
+    - 'lore16:&f  #34FD6C✔ 气球'
+    - 'lore17:&f '
+    - 'lore18:&f #5c5e63通过&a传送点&7'
+    - 'lore19:&f &f #5c5e63访问饰品商店.'
+    - 'lore20:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 33
+  cosmetics7:
+    MenuItem:
+    - "name:&f &l饰品" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63饰品为玩家提供'
+    - 'lore3:&f #5c5e63各种视觉增强'
+    - 'lore4:&f #5c5e63和自定义选项'
+    - 'lore5:&f #5c5e63供他们的角色使用。'
+    - 'lore6:&f '
+    - 'lore7:&f #5c5e63这些可以通过'
+    - 'lore8:&f #5c5e63#dd5912任务&7、#dd5912探险&7、'
+    - 'lore9:&f #5c5e63#dd5912等级&7、#dd5912战斗通行证&7等来解锁'
+    - 'lore10:&f '
+    - 'lore11:&f #5c5e63总共有#0fecfb4种#92cbdf饰品，'
+    - 'lore12:&f #5c5e63包括以下内容：'
+    - 'lore13:&f  #34FD6C✔ 帽子'
+    - 'lore14:&f  #34FD6C✔ 背包'
+    - 'lore15:&f  #34FD6C✔ 手杖'
+    - 'lore16:&f  #34FD6C✔ 气球'
+    - 'lore17:&f '
+    - 'lore18:&f #5c5e63通过&a传送点&7'
+    - 'lore19:&f &f #5c5e63访问饰品商店.'
+    - 'lore20:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 34
+  cosmetics8:
+    MenuItem:
+    - "name:&f &l饰品" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63饰品为玩家提供'
+    - 'lore3:&f #5c5e63各种视觉增强'
+    - 'lore4:&f #5c5e63和自定义选项'
+    - 'lore5:&f #5c5e63供他们的角色使用。'
+    - 'lore6:&f '
+    - 'lore7:&f #5c5e63这些可以通过'
+    - 'lore8:&f #5c5e63#dd5912任务&7、#dd5912探险&7、'
+    - 'lore9:&f #5c5e63#dd5912等级&7、#dd5912战斗通行证&7等来解锁'
+    - 'lore10:&f '
+    - 'lore11:&f #5c5e63总共有#0fecfb4种#92cbdf饰品，'
+    - 'lore12:&f #5c5e63包括以下内容：'
+    - 'lore13:&f  #34FD6C✔ 帽子'
+    - 'lore14:&f  #34FD6C✔ 背包'
+    - 'lore15:&f  #34FD6C✔ 手杖'
+    - 'lore16:&f  #34FD6C✔ 气球'
+    - 'lore17:&f '
+    - 'lore18:&f #5c5e63通过&a传送点&7'
+    - 'lore19:&f &f #5c5e63访问饰品商店.'
+    - 'lore20:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 35
+#################################################TRADE SYSTEMS
+  trade1:
+    MenuItem:
+    - "name:&f &l交易系统" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63与其他玩家交易的方式'
+    - 'lore3:&f #5c5e63不再需要将物品丢到'
+    - 'lore4:&f #5c5e63地上进行交易。'
+    - 'lore5:&f #5c5e63要与其他玩家交易，'
+    - 'lore6:&f #5c5e63你至少需要靠近他们。然后'
+    - 'lore7:&f #5c5e63按#2fcd60Shift#5c5e63+#2fcd60右键'
+    - 'lore8:&f #5c5e63可以接受或拒绝交易请求'
+    - 'lore9:&f #5c5e63/displayshop buy，25硬币商店方块'
+    - 'lore10:&f '
+    - 'lore11:&f      &f&l可用的命令：'
+    - 'lore12:&f '
+    - 'lore13:&f #34FD6C /trade accept'
+    - 'lore14:&f #34FD6C /trade deny'
+    - 'lore15:&f #34FD6C /trade toggle'
+    - 'lore16:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 37
+  trade2:
+    MenuItem:
+    - "name:&f &l交易系统" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63与其他玩家交易的方式'
+    - 'lore3:&f #5c5e63不再需要将物品丢到'
+    - 'lore4:&f #5c5e63地上进行交易。'
+    - 'lore5:&f #5c5e63要与其他玩家交易，'
+    - 'lore6:&f #5c5e63你至少需要靠近他们。然后'
+    - 'lore7:&f #5c5e63按#2fcd60Shift#5c5e63+#2fcd60右键'
+    - 'lore8:&f #5c5e63可以接受或拒绝交易请求'
+    - 'lore9:&f #5c5e63/displayshop buy，25硬币商店方块'
+    - 'lore10:&f '
+    - 'lore11:&f      &f&l可用的命令：'
+    - 'lore12:&f '
+    - 'lore13:&f #34FD6C /trade accept'
+    - 'lore14:&f #34FD6C /trade deny'
+    - 'lore15:&f #34FD6C /trade toggle'
+    - 'lore16:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 38
+  trade3:
+    MenuItem:
+    - "name:&f &l交易系统" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63与其他玩家交易的方式'
+    - 'lore3:&f #5c5e63不再需要将物品丢到'
+    - 'lore4:&f #5c5e63地上进行交易。'
+    - 'lore5:&f #5c5e63要与其他玩家交易，'
+    - 'lore6:&f #5c5e63你至少需要靠近他们。然后'
+    - 'lore7:&f #5c5e63按#2fcd60Shift#5c5e63+#2fcd60右键'
+    - 'lore8:&f #5c5e63可以接受或拒绝交易请求'
+    - 'lore9:&f #5c5e63/displayshop buy，25硬币商店方块'
+    - 'lore10:&f '
+    - 'lore11:&f      &f&l可用的命令：'
+    - 'lore12:&f '
+    - 'lore13:&f #34FD6C /trade accept'
+    - 'lore14:&f #34FD6C /trade deny'
+    - 'lore15:&f #34FD6C /trade toggle'
+    - 'lore16:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 39
+  trade4:
+    MenuItem:
+    - "name:&f &l交易系统" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63与其他玩家交易的方式'
+    - 'lore3:&f #5c5e63不再需要将物品丢到'
+    - 'lore4:&f #5c5e63地上进行交易。'
+    - 'lore5:&f #5c5e63要与其他玩家交易，'
+    - 'lore6:&f #5c5e63你至少需要靠近他们。然后'
+    - 'lore7:&f #5c5e63按#2fcd60Shift#5c5e63+#2fcd60右键'
+    - 'lore8:&f #5c5e63可以接受或拒绝交易请求'
+    - 'lore9:&f #5c5e63/displayshop buy，25硬币商店方块'
+    - 'lore10:&f '
+    - 'lore11:&f      &f&l可用的命令：'
+    - 'lore12:&f '
+    - 'lore13:&f #34FD6C /trade accept'
+    - 'lore14:&f #34FD6C /trade deny'
+    - 'lore15:&f #34FD6C /trade toggle'
+    - 'lore16:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 40
+  trade5:
+    MenuItem:
+    - "name:&f &l交易系统" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63与其他玩家交易的方式'
+    - 'lore3:&f #5c5e63不再需要将物品丢到'
+    - 'lore4:&f #5c5e63地上进行交易。'
+    - 'lore5:&f #5c5e63要与其他玩家交易，'
+    - 'lore6:&f #5c5e63你至少需要靠近他们。然后'
+    - 'lore7:&f #5c5e63按#2fcd60Shift#5c5e63+#2fcd60右键'
+    - 'lore8:&f #5c5e63可以接受或拒绝交易请求'
+    - 'lore9:&f #5c5e63/displayshop buy，25硬币商店方块'
+    - 'lore10:&f '
+    - 'lore11:&f      &f&l可用的命令：'
+    - 'lore12:&f '
+    - 'lore13:&f #34FD6C /trade accept'
+    - 'lore14:&f #34FD6C /trade deny'
+    - 'lore15:&f #34FD6C /trade toggle'
+    - 'lore16:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 41
+  trade6:
+    MenuItem:
+    - "name:&f &l交易系统" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63与其他玩家交易的方式'
+    - 'lore3:&f #5c5e63不再需要将物品丢到'
+    - 'lore4:&f #5c5e63地上进行交易。'
+    - 'lore5:&f #5c5e63要与其他玩家交易，'
+    - 'lore6:&f #5c5e63你至少需要靠近他们。然后'
+    - 'lore7:&f #5c5e63按#2fcd60Shift#5c5e63+#2fcd60右键'
+    - 'lore8:&f #5c5e63可以接受或拒绝交易请求'
+    - 'lore9:&f #5c5e63/displayshop buy，25硬币商店方块'
+    - 'lore10:&f '
+    - 'lore11:&f      &f&l可用的命令：'
+    - 'lore12:&f '
+    - 'lore13:&f #34FD6C /trade accept'
+    - 'lore14:&f #34FD6C /trade deny'
+    - 'lore15:&f #34FD6C /trade toggle'
+    - 'lore16:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 42
+  trade7:
+    MenuItem:
+    - "name:&f &l交易系统" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63与其他玩家交易的方式'
+    - 'lore3:&f #5c5e63不再需要将物品丢到'
+    - 'lore4:&f #5c5e63地上进行交易。'
+    - 'lore5:&f #5c5e63要与其他玩家交易，'
+    - 'lore6:&f #5c5e63你至少需要靠近他们。然后'
+    - 'lore7:&f #5c5e63按#2fcd60Shift#5c5e63+#2fcd60右键'
+    - 'lore8:&f #5c5e63可以接受或拒绝交易请求'
+    - 'lore9:&f #5c5e63/displayshop buy，25硬币商店方块'
+    - 'lore10:&f '
+    - 'lore11:&f      &f&l可用的命令：'
+    - 'lore12:&f '
+    - 'lore13:&f #34FD6C /trade accept'
+    - 'lore14:&f #34FD6C /trade deny'
+    - 'lore15:&f #34FD6C /trade toggle'
+    - 'lore16:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 43
+  trade8:
+    MenuItem:
+    - "name:&f &l交易系统" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63与其他玩家交易的方式'
+    - 'lore3:&f #5c5e63不再需要将物品丢到'
+    - 'lore4:&f #5c5e63地上进行交易。'
+    - 'lore5:&f #5c5e63要与其他玩家交易，'
+    - 'lore6:&f #5c5e63你至少需要靠近他们。然后'
+    - 'lore7:&f #5c5e63按#2fcd60Shift#5c5e63+#2fcd60右键'
+    - 'lore8:&f #5c5e63可以接受或拒绝交易请求'
+    - 'lore9:&f #5c5e63/displayshop buy，25硬币商店方块'
+    - 'lore10:&f '
+    - 'lore11:&f      &f&l可用的命令：'
+    - 'lore12:&f '
+    - 'lore13:&f #34FD6C /trade accept'
+    - 'lore14:&f #34FD6C /trade deny'
+    - 'lore15:&f #34FD6C /trade toggle'
+    - 'lore16:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 44
+
+

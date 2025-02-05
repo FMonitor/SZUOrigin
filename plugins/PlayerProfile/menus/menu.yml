@@ -1,0 +1,163 @@
+title: &f쌏
+default: true
+permission: playerprofile.menus.menu
+rows: 5
+layout:
+- X h   H x
+- '  c K B  '
+- '  l   C  '
+- '  b S g  '
+- '  aGGTO  '
+icons:
+  T:
+    display: '&e&l交易'
+    amount: 1
+    material: FEATHER
+    lore: []
+    unbreakable: false
+    glow: false
+    hide-attributes: true
+    custom-model-data: 10041
+    actions:
+    - 'player: trade %playerprofile_viewer%'
+  G:
+    display: '&e&lHome'
+    amount: 1
+    material: FEATHER
+    lore:
+    - '&7传送回你设置的home点.'
+    unbreakable: false
+    glow: false
+    hide-attributes: true
+    custom-model-data: 10041
+    actions:
+    - 'player: home'
+  a:
+    display: '&5&l货币： &6%vault_eco_balance%'
+    amount: 1
+    material: FEATHER
+    lore: []
+    unbreakable: false
+    glow: false
+    hide-attributes: true
+    custom-model-data: 10041
+  x:
+    display: '&f'
+    amount: 1
+    material: PAPER
+    lore: []
+    unbreakable: false
+    glow: false
+    hide-attributes: true
+    custom-model-data: 100143
+  X:
+    display: '&f'
+    amount: 1
+    material: PAPER
+    lore: []
+    unbreakable: false
+    glow: false
+    hide-attributes: true
+    custom-model-data: 100144
+  K:
+    display: '&6%player_name%'
+    amount: 1
+    material: PLAYER_HEAD
+    lore: []
+    unbreakable: false
+    glow: false
+    hide-attributes: true
+    custom-model-data: 10000
+  H: # Hat Cosmetic
+    display: '&f'
+    lore: []
+    unbreakable: false
+    glow: false
+    hide-attributes: true
+    custom-model-data: 0
+    type: HAT
+  B: # BackPack/Bag Cosmetic
+    display: '&f'
+    lore: []
+    unbreakable: false
+    glow: false
+    hide-attributes: true
+    custom-model-data: 0
+    type: BACKPACK
+  C: # Off_Hand/Cane Cosmetic
+    display: '&f'
+    lore: []
+    unbreakable: false
+    glow: false
+    hide-attributes: true
+    custom-model-data: 0
+    type: OFF_HAND
+  g: # Balloon Cosmetic
+    display: '&f'
+    lore: []
+    unbreakable: false
+    glow: false
+    hide-attributes: true
+    custom-model-data: 0
+    type: BALLOON
+  S: # Spray Cosmetic
+    display: '&f'
+    lore: []
+    unbreakable: false
+    glow: false
+    hide-attributes: true
+    custom-model-data: 0
+    type: SPRAY
+  h: # helmet Equipment
+    display: '&f'
+    lore: []
+    unbreakable: false
+    glow: false
+    hide-attributes: true
+    custom-model-data: 0
+    type: HELMET
+  c: # chestplate Equipment
+    display: '&f'
+    lore: []
+    unbreakable: false
+    glow: false
+    hide-attributes: true
+    custom-model-data: 0
+    type: CHEST_PLATE
+  l: # leggings Equipment
+    display: '&f'
+    lore: []
+    unbreakable: false
+    glow: false
+    hide-attributes: true
+    custom-model-data: 0
+    type: LEGGINGS
+  b: # boots Equipment
+    display: '&f'
+    lore: []
+    unbreakable: false
+    glow: false
+    hide-attributes: true
+    custom-model-data: 0
+    type: BOOTS
+  O: # Online/Offline Status
+    online:
+      display: '&a在线'
+      material: PAPER
+      lore: []
+      unbreakable: false
+      glow: true
+      hide-attributes: true
+      custom-model-data: 10011
+    offline:
+      display: '&c不在线'
+      material: PAPER
+      lore: []
+      unbreakable: false
+      glow: false
+      hide-attributes: true
+      custom-model-data: 10010
+    type: STATUS
+
+
+

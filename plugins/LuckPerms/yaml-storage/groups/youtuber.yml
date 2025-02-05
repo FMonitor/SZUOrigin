@@ -1,0 +1,11 @@
+name: youtuber
+permissions:
+- weight.250
+parents:
+- default
+prefixes:
+- §f§r:
+    priority: 250
+
+
+

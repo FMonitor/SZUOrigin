@@ -1,0 +1,7 @@
+objectives:
+  monsterhunter1: "mobkill ZOMBIE,SKELETON,SPIDER,CREEPER 16 events:monsterhunter1_done,entry_monsterhunter1_done"
+  monsterhunter2: "mobkill ZOMBIE,SKELETON,SPIDER,CREEPER 32 events:monsterhunter2_done,entry_monsterhunter2_done"
+  monsterhunter3: "mobkill ZOMBIE,SKELETON,SPIDER,CREEPER 48 events:monsterhunter3_done,entry_monsterhunter3_done"
+  monsterhunter4: "mobkill ZOMBIE,SKELETON,SPIDER,CREEPER 64 events:monsterhunter4_done,entry_monsterhunter4_done"
+
+

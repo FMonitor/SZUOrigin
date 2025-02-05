@@ -1,0 +1,9 @@
+uuid: fad630af-3dd7-35e0-a419-6c92a927a2d8
+name: VulCaN9
+primary-group: default
+parents:
+- default
+- fighter
+- knight
+- vip
+- warrior

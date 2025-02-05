@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 183.198.11.103
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1738517995304
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1738518066895
+  login: 1738517951884
+money: '0'
+last-account-name: _mu_re
+lastlocation:
+  world: 877e483a-8c3b-40fa-9738-40239679b77e
+  world-name: isla
+  x: 36.004252476416866
+  y: 104.65760122451016
+  z: 58.394787007650436
+  yaw: -74.41442108154297
+  pitch: 43.724647521972656
+logoutlocation:
+  world: 877e483a-8c3b-40fa-9738-40239679b77e
+  world-name: isla
+  x: 54.70109925402194
+  y: 88.0
+  z: 58.3820178264005
+  yaw: -179.35235595703125
+  pitch: 25.52589988708496

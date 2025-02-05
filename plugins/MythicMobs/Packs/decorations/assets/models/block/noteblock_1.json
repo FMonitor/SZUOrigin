@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "block/noteblock_1",
+    "particles": "block/noteblock_1"
+  }
+}

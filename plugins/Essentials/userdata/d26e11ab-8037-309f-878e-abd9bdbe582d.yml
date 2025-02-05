@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 111.197.68.51
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1738493158630
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1738493251995
+  login: 1738493134379
+money: '0'
+last-account-name: FvAurora
+lastlocation:
+  world: 877e483a-8c3b-40fa-9738-40239679b77e
+  world-name: isla
+  x: 55.75635531008027
+  y: 86.47485910362091
+  z: 126.87790940276507
+  yaw: 178.6568145751953
+  pitch: -4.721765518188477
+logoutlocation:
+  world: 877e483a-8c3b-40fa-9738-40239679b77e
+  world-name: isla
+  x: 38.69999998807907
+  y: 84.55401728198905
+  z: 94.46173038653181
+  yaw: 89.63026428222656
+  pitch: 3.3494584560394287

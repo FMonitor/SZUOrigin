@@ -1,0 +1,47 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 183.253.229.48
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1738590575768
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1738593107177
+  login: 1738592990316
+money: '0'
+last-account-name: Frieren1217
+lastlocation:
+  world: 16c0d5de-e05c-437b-bfdb-3422519e8bd3
+  world-name: mine
+  x: -367.69999998807907
+  y: -41.0
+  z: 314.69999998807907
+  yaw: 6.670226097106934
+  pitch: 48.74924850463867
+logoutlocation:
+  world: 04c00a4f-fe5c-47c6-8998-babf81130ba2
+  world-name: world
+  x: -388.840103845607
+  y: 64.0
+  z: 409.2614413536279
+  yaw: 45.8980712890625
+  pitch: 17.514543533325195
+homes:
+  home:
+    world: 04c00a4f-fe5c-47c6-8998-babf81130ba2
+    world-name: world
+    x: -384.6929230847868
+    y: 63.0
+    z: 406.7599449055175
+    yaw: 18.962249755859375
+    pitch: 7.882884979248047

@@ -1,0 +1,1144 @@
+ShopName: guide_2
+DisplayName: "§f" 
+InventorySize: 54 
+Command: guide 2
+shop: 
+  scroll_down:
+    MenuItem:
+    - "name:#27e5f2SCROLL UP" 
+    - type:PAPER 
+    - amount:1 
+    - custommodeldata:100092
+    RewardType: SHOP
+    Reward: 'guide'
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 9
+
+#################################################RANKS
+
+
+  ranks1:
+    MenuItem:
+    - "name:&f &l排名系统"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63排名（或等级）是用于展示'
+    - 'lore3:&f #5c5e63身份、成就或'
+    - 'lore4:&f #5c5e63贡献的系统。'
+    - 'lore5:&f '
+    - 'lore6:&f #5c5e63总共有'
+    - 'lore7:&f #2fcd6013个排名，'
+    - 'lore8:&f #5c5e63&7成员排名是起点。'
+    - 'lore9:&f '
+    - 'lore10:&f #5c5e63每个排名都有'
+    - 'lore11:&f #5c5e63独特的奖励，'
+    - 'lore12:&f #5c5e63包括指令、外观、'
+    - 'lore13:&f #5c5e63包裹，且只能'
+    - 'lore14:&f #5c5e63通过&e货币解锁。'
+    - 'lore15:&f '
+    - 'lore16:&f         &f&l更多详情'
+    - 'lore17:&f '
+    - 'lore18:&f &f #5c5e63访问 #d5bb51排名菜单(ranks_mune)'
+    - 'lore19:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 1
+  ranks2:
+    MenuItem:
+    - "name:&f &l排名系统"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63排名（或等级）是用于展示'
+    - 'lore3:&f #5c5e63身份、成就或'
+    - 'lore4:&f #5c5e63贡献的系统。'
+    - 'lore5:&f '
+    - 'lore6:&f #5c5e63总共有'
+    - 'lore7:&f #2fcd6013个排名，'
+    - 'lore8:&f #5c5e63&7成员排名是起点。'
+    - 'lore9:&f '
+    - 'lore10:&f #5c5e63每个排名都有'
+    - 'lore11:&f #5c5e63独特的奖励，'
+    - 'lore12:&f #5c5e63包括指令、外观、'
+    - 'lore13:&f #5c5e63包裹，且只能'
+    - 'lore14:&f #5c5e63通过&e货币解锁。'
+    - 'lore15:&f '
+    - 'lore16:&f         &f&l更多详情'
+    - 'lore17:&f '
+    - 'lore18:&f &f #5c5e63访问 #d5bb51排名菜单(ranks_mune)'
+    - 'lore19:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 2
+  ranks3:
+    MenuItem:
+    - "name:&f &l排名系统"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63排名（或等级）是用于展示'
+    - 'lore3:&f #5c5e63身份、成就或'
+    - 'lore4:&f #5c5e63贡献的系统。'
+    - 'lore5:&f '
+    - 'lore6:&f #5c5e63总共有'
+    - 'lore7:&f #2fcd6013个排名，'
+    - 'lore8:&f #5c5e63&7成员排名是起点。'
+    - 'lore9:&f '
+    - 'lore10:&f #5c5e63每个排名都有'
+    - 'lore11:&f #5c5e63独特的奖励，'
+    - 'lore12:&f #5c5e63包括指令、外观、'
+    - 'lore13:&f #5c5e63包裹，且只能'
+    - 'lore14:&f #5c5e63通过&e货币解锁。'
+    - 'lore15:&f '
+    - 'lore16:&f         &f&l更多详情'
+    - 'lore17:&f '
+    - 'lore18:&f &f #5c5e63访问 #d5bb51排名菜单(ranks_mune)'
+    - 'lore19:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 3
+  ranks4:
+    MenuItem:
+    - "name:&f &l排名系统"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63排名（或等级）是用于展示'
+    - 'lore3:&f #5c5e63身份、成就或'
+    - 'lore4:&f #5c5e63贡献的系统。'
+    - 'lore5:&f '
+    - 'lore6:&f #5c5e63总共有'
+    - 'lore7:&f #2fcd6013个排名，'
+    - 'lore8:&f #5c5e63&7成员排名是起点。'
+    - 'lore9:&f '
+    - 'lore10:&f #5c5e63每个排名都有'
+    - 'lore11:&f #5c5e63独特的奖励，'
+    - 'lore12:&f #5c5e63包括指令、外观、'
+    - 'lore13:&f #5c5e63包裹，且只能'
+    - 'lore14:&f #5c5e63通过&e货币解锁。'
+    - 'lore15:&f '
+    - 'lore16:&f         &f&l更多详情'
+    - 'lore17:&f '
+    - 'lore18:&f &f #5c5e63访问 #d5bb51排名菜单(ranks_mune)'
+    - 'lore19:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 4
+  ranks5:
+    MenuItem:
+    - "name:&f &l排名系统"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63排名（或等级）是用于展示'
+    - 'lore3:&f #5c5e63身份、成就或'
+    - 'lore4:&f #5c5e63贡献的系统。'
+    - 'lore5:&f '
+    - 'lore6:&f #5c5e63总共有'
+    - 'lore7:&f #2fcd6013个排名，'
+    - 'lore8:&f #5c5e63&7成员排名是起点。'
+    - 'lore9:&f '
+    - 'lore10:&f #5c5e63每个排名都有'
+    - 'lore11:&f #5c5e63独特的奖励，'
+    - 'lore12:&f #5c5e63包括指令、外观、'
+    - 'lore13:&f #5c5e63包裹，且只能'
+    - 'lore14:&f #5c5e63通过&e货币解锁。'
+    - 'lore15:&f '
+    - 'lore16:&f         &f&l更多详情'
+    - 'lore17:&f '
+    - 'lore18:&f &f #5c5e63访问 #d5bb51排名菜单(ranks_mune)'
+    - 'lore19:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 5
+  ranks6:
+    MenuItem:
+    - "name:&f &l排名系统"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63排名（或等级）是用于展示'
+    - 'lore3:&f #5c5e63身份、成就或'
+    - 'lore4:&f #5c5e63贡献的系统。'
+    - 'lore5:&f '
+    - 'lore6:&f #5c5e63总共有'
+    - 'lore7:&f #2fcd6013个排名，'
+    - 'lore8:&f #5c5e63&7成员排名是起点。'
+    - 'lore9:&f '
+    - 'lore10:&f #5c5e63每个排名都有'
+    - 'lore11:&f #5c5e63独特的奖励，'
+    - 'lore12:&f #5c5e63包括指令、外观、'
+    - 'lore13:&f #5c5e63包裹，且只能'
+    - 'lore14:&f #5c5e63通过&e货币解锁。'
+    - 'lore15:&f '
+    - 'lore16:&f         &f&l更多详情'
+    - 'lore17:&f '
+    - 'lore18:&f &f #5c5e63访问 #d5bb51排名菜单(ranks_mune)'
+    - 'lore19:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 6
+  ranks7:
+    MenuItem:
+    - "name:&f &l排名系统"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63排名（或等级）是用于展示'
+    - 'lore3:&f #5c5e63身份、成就或'
+    - 'lore4:&f #5c5e63贡献的系统。'
+    - 'lore5:&f '
+    - 'lore6:&f #5c5e63总共有'
+    - 'lore7:&f #2fcd6013个排名，'
+    - 'lore8:&f #5c5e63&7成员排名是起点。'
+    - 'lore9:&f '
+    - 'lore10:&f #5c5e63每个排名都有'
+    - 'lore11:&f #5c5e63独特的奖励，'
+    - 'lore12:&f #5c5e63包括指令、外观、'
+    - 'lore13:&f #5c5e63包裹，且只能'
+    - 'lore14:&f #5c5e63通过&e货币解锁。'
+    - 'lore15:&f '
+    - 'lore16:&f         &f&l更多详情'
+    - 'lore17:&f '
+    - 'lore18:&f &f #5c5e63访问 #d5bb51排名菜单(ranks_mune)'
+    - 'lore19:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 7
+  ranks8:
+    MenuItem:
+    - "name:&f &l排名系统"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63排名（或等级）是用于展示'
+    - 'lore3:&f #5c5e63身份、成就或'
+    - 'lore4:&f #5c5e63贡献的系统。'
+    - 'lore5:&f '
+    - 'lore6:&f #5c5e63总共有'
+    - 'lore7:&f #2fcd6013个排名，'
+    - 'lore8:&f #5c5e63&7成员排名是起点。'
+    - 'lore9:&f '
+    - 'lore10:&f #5c5e63每个排名都有'
+    - 'lore11:&f #5c5e63独特的奖励，'
+    - 'lore12:&f #5c5e63包括指令、外观、'
+    - 'lore13:&f #5c5e63包裹，且只能'
+    - 'lore14:&f #5c5e63通过&e货币解锁。'
+    - 'lore15:&f '
+    - 'lore16:&f         &f&l更多详情'
+    - 'lore17:&f '
+    - 'lore18:&f &f #5c5e63访问 #d5bb51排名菜单(ranks_mune)'
+    - 'lore19:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 8
+
+    ###########################GUILD
+
+  guide1:
+    MenuItem:
+    - "name:&f &l公会"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63公会是一个有组织的'
+    - 'lore3:&f #5c5e63协会或团体，'
+    - 'lore4:&f #5c5e63由一群人组成，'
+    - 'lore5:&f #5c5e63他们基于共同的'
+    - 'lore6:&f #5c5e63兴趣、职业、技能或目标'
+    - 'lore7:&f #5c5e63而聚集在一起。'
+    - 'lore8:&f '
+    - 'lore9:&f #5c5e63目前共有#0fecfb4种类型的公会，'
+    - 'lore10:&f  #5c5e63分别是：'
+    - 'lore11:&f  #34FD6C ✔ 农民公会'
+    - 'lore12:&f  #34FD6C ✔ 采矿公会'
+    - 'lore13:&f  #34FD6C ✔ 战士公会'
+    - 'lore14:&f  #34FD6C ✔ 木材公会#'
+    - 'lore15:&f '
+    - 'lore16:&f #5c5e63完成日常公会'
+    - 'lore17:&f #5c5e63任务将获得'
+    - 'lore18:&f #5c5e63金币奖励。'
+    - 'lore19:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 10
+  guide2:
+    MenuItem:
+    - "name:&f &l公会"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63公会是一个有组织的'
+    - 'lore3:&f #5c5e63协会或团体，'
+    - 'lore4:&f #5c5e63由一群人组成，'
+    - 'lore5:&f #5c5e63他们基于共同的'
+    - 'lore6:&f #5c5e63兴趣、职业、技能或目标'
+    - 'lore7:&f #5c5e63而聚集在一起。'
+    - 'lore8:&f '
+    - 'lore9:&f #5c5e63目前共有#0fecfb4种类型的公会，'
+    - 'lore10:&f  #5c5e63分别是：'
+    - 'lore11:&f  #34FD6C ✔ 农民公会'
+    - 'lore12:&f  #34FD6C ✔ 采矿公会'
+    - 'lore13:&f  #34FD6C ✔ 战士公会'
+    - 'lore14:&f  #34FD6C ✔ 木材公会#'
+    - 'lore15:&f '
+    - 'lore16:&f #5c5e63完成日常公会'
+    - 'lore17:&f #5c5e63任务将获得'
+    - 'lore18:&f #5c5e63金币奖励。'
+    - 'lore19:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 11
+  guide3:
+    MenuItem:
+    - "name:&f &l公会"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63公会是一个有组织的'
+    - 'lore3:&f #5c5e63协会或团体，'
+    - 'lore4:&f #5c5e63由一群人组成，'
+    - 'lore5:&f #5c5e63他们基于共同的'
+    - 'lore6:&f #5c5e63兴趣、职业、技能或目标'
+    - 'lore7:&f #5c5e63而聚集在一起。'
+    - 'lore8:&f '
+    - 'lore9:&f #5c5e63目前共有#0fecfb4种类型的公会，'
+    - 'lore10:&f  #5c5e63分别是：'
+    - 'lore11:&f  #34FD6C ✔ 农民公会'
+    - 'lore12:&f  #34FD6C ✔ 采矿公会'
+    - 'lore13:&f  #34FD6C ✔ 战士公会'
+    - 'lore14:&f  #34FD6C ✔ 木材公会#'
+    - 'lore15:&f '
+    - 'lore16:&f #5c5e63完成日常公会'
+    - 'lore17:&f #5c5e63任务将获得'
+    - 'lore18:&f #5c5e63金币奖励。'
+    - 'lore19:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 12
+  guide4:
+    MenuItem:
+    - "name:&f &l公会"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63公会是一个有组织的'
+    - 'lore3:&f #5c5e63协会或团体，'
+    - 'lore4:&f #5c5e63由一群人组成，'
+    - 'lore5:&f #5c5e63他们基于共同的'
+    - 'lore6:&f #5c5e63兴趣、职业、技能或目标'
+    - 'lore7:&f #5c5e63而聚集在一起。'
+    - 'lore8:&f '
+    - 'lore9:&f #5c5e63目前共有#0fecfb4种类型的公会，'
+    - 'lore10:&f  #5c5e63分别是：'
+    - 'lore11:&f  #34FD6C ✔ 农民公会'
+    - 'lore12:&f  #34FD6C ✔ 采矿公会'
+    - 'lore13:&f  #34FD6C ✔ 战士公会'
+    - 'lore14:&f  #34FD6C ✔ 木材公会#'
+    - 'lore15:&f '
+    - 'lore16:&f #5c5e63完成日常公会'
+    - 'lore17:&f #5c5e63任务将获得'
+    - 'lore18:&f #5c5e63金币奖励。'
+    - 'lore19:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 13
+  guide5:
+    MenuItem:
+    - "name:&f &l公会"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63公会是一个有组织的'
+    - 'lore3:&f #5c5e63协会或团体，'
+    - 'lore4:&f #5c5e63由一群人组成，'
+    - 'lore5:&f #5c5e63他们基于共同的'
+    - 'lore6:&f #5c5e63兴趣、职业、技能或目标'
+    - 'lore7:&f #5c5e63而聚集在一起。'
+    - 'lore8:&f '
+    - 'lore9:&f #5c5e63目前共有#0fecfb4种类型的公会，'
+    - 'lore10:&f  #5c5e63分别是：'
+    - 'lore11:&f  #34FD6C ✔ 农民公会'
+    - 'lore12:&f  #34FD6C ✔ 采矿公会'
+    - 'lore13:&f  #34FD6C ✔ 战士公会'
+    - 'lore14:&f  #34FD6C ✔ 木材公会#'
+    - 'lore15:&f '
+    - 'lore16:&f #5c5e63完成日常公会'
+    - 'lore17:&f #5c5e63任务将获得'
+    - 'lore18:&f #5c5e63金币奖励。'
+    - 'lore19:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 14
+  guide6:
+    MenuItem:
+    - "name:&f &l公会"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63公会是一个有组织的'
+    - 'lore3:&f #5c5e63协会或团体，'
+    - 'lore4:&f #5c5e63由一群人组成，'
+    - 'lore5:&f #5c5e63他们基于共同的'
+    - 'lore6:&f #5c5e63兴趣、职业、技能或目标'
+    - 'lore7:&f #5c5e63而聚集在一起。'
+    - 'lore8:&f '
+    - 'lore9:&f #5c5e63目前共有#0fecfb4种类型的公会，'
+    - 'lore10:&f  #5c5e63分别是：'
+    - 'lore11:&f  #34FD6C ✔ 农民公会'
+    - 'lore12:&f  #34FD6C ✔ 采矿公会'
+    - 'lore13:&f  #34FD6C ✔ 战士公会'
+    - 'lore14:&f  #34FD6C ✔ 木材公会#'
+    - 'lore15:&f '
+    - 'lore16:&f #5c5e63完成日常公会'
+    - 'lore17:&f #5c5e63任务将获得'
+    - 'lore18:&f #5c5e63金币奖励。'
+    - 'lore19:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 15
+  guide7:
+    MenuItem:
+    - "name:&f &l公会"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63公会是一个有组织的'
+    - 'lore3:&f #5c5e63协会或团体，'
+    - 'lore4:&f #5c5e63由一群人组成，'
+    - 'lore5:&f #5c5e63他们基于共同的'
+    - 'lore6:&f #5c5e63兴趣、职业、技能或目标'
+    - 'lore7:&f #5c5e63而聚集在一起。'
+    - 'lore8:&f '
+    - 'lore9:&f #5c5e63目前共有#0fecfb4种类型的公会，'
+    - 'lore10:&f  #5c5e63分别是：'
+    - 'lore11:&f  #34FD6C ✔ 农民公会'
+    - 'lore12:&f  #34FD6C ✔ 采矿公会'
+    - 'lore13:&f  #34FD6C ✔ 战士公会'
+    - 'lore14:&f  #34FD6C ✔ 木材公会#'
+    - 'lore15:&f '
+    - 'lore16:&f #5c5e63完成日常公会'
+    - 'lore17:&f #5c5e63任务将获得'
+    - 'lore18:&f #5c5e63金币奖励。'
+    - 'lore19:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 16
+  guide8:
+    MenuItem:
+    - "name:&f &l公会"
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63公会是一个有组织的'
+    - 'lore3:&f #5c5e63协会或团体，'
+    - 'lore4:&f #5c5e63由一群人组成，'
+    - 'lore5:&f #5c5e63他们基于共同的'
+    - 'lore6:&f #5c5e63兴趣、职业、技能或目标'
+    - 'lore7:&f #5c5e63而聚集在一起。'
+    - 'lore8:&f '
+    - 'lore9:&f #5c5e63目前共有#0fecfb4种类型的公会，'
+    - 'lore10:&f  #5c5e63分别是：'
+    - 'lore11:&f  #34FD6C ✔ 农民公会'
+    - 'lore12:&f  #34FD6C ✔ 采矿公会'
+    - 'lore13:&f  #34FD6C ✔ 战士公会'
+    - 'lore14:&f  #34FD6C ✔ 木材公会#'
+    - 'lore15:&f '
+    - 'lore16:&f #5c5e63完成日常公会'
+    - 'lore17:&f #5c5e63任务将获得'
+    - 'lore18:&f #5c5e63金币奖励。'
+    - 'lore19:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 17
+#######################################QUEST
+
+  quest1:
+    MenuItem:
+    - "name:&f &l任务" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63任务通常包含'
+    - 'lore3:&f #5c5e63各种挑战和障碍，'
+    - 'lore4:&f #5c5e63角色必须克服这些'
+    - 'lore5:&f #5c5e63障碍才能达成'
+    - 'lore6:&f #5c5e63他们的目标。'
+    - 'lore7:&f '
+    - 'lore8:&f #5c5e63完成某个任务后，'
+    - 'lore9:&f #5c5e63玩家将获得'
+    - 'lore10:&f #5c5e63根据挑战的不同，'
+    - 'lore11:&f #5c5e63获得不同的奖励。'
+    - 'lore12:&f #5c5e63这些奖励与挑战相关。'
+    - 'lore13:&f '
+    - 'lore14:&f         &f&l更多详情'
+    - 'lore15:&f '
+    - 'lore16:&f &f #5c5e63访问任务菜单 &a/menu'
+    - 'lore17:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 19
+  quest2:
+    MenuItem:
+    - "name:&f &l任务" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63任务通常包含'
+    - 'lore3:&f #5c5e63各种挑战和障碍，'
+    - 'lore4:&f #5c5e63角色必须克服这些'
+    - 'lore5:&f #5c5e63障碍才能达成'
+    - 'lore6:&f #5c5e63他们的目标。'
+    - 'lore7:&f '
+    - 'lore8:&f #5c5e63完成某个任务后，'
+    - 'lore9:&f #5c5e63玩家将获得'
+    - 'lore10:&f #5c5e63根据挑战的不同，'
+    - 'lore11:&f #5c5e63获得不同的奖励。'
+    - 'lore12:&f #5c5e63这些奖励与挑战相关。'
+    - 'lore13:&f '
+    - 'lore14:&f         &f&l更多详情'
+    - 'lore15:&f '
+    - 'lore16:&f &f #5c5e63访问任务菜单 &a/menu'
+    - 'lore17:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 20
+  quest3:
+    MenuItem:
+    - "name:&f &l任务" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63任务通常包含'
+    - 'lore3:&f #5c5e63各种挑战和障碍，'
+    - 'lore4:&f #5c5e63角色必须克服这些'
+    - 'lore5:&f #5c5e63障碍才能达成'
+    - 'lore6:&f #5c5e63他们的目标。'
+    - 'lore7:&f '
+    - 'lore8:&f #5c5e63完成某个任务后，'
+    - 'lore9:&f #5c5e63玩家将获得'
+    - 'lore10:&f #5c5e63根据挑战的不同，'
+    - 'lore11:&f #5c5e63获得不同的奖励。'
+    - 'lore12:&f #5c5e63这些奖励与挑战相关。'
+    - 'lore13:&f '
+    - 'lore14:&f         &f&l更多详情'
+    - 'lore15:&f '
+    - 'lore16:&f &f #5c5e63访问任务菜单 &a/menu'
+    - 'lore17:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 21
+  quest4:
+    MenuItem:
+    - "name:&f &l任务" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63任务通常包含'
+    - 'lore3:&f #5c5e63各种挑战和障碍，'
+    - 'lore4:&f #5c5e63角色必须克服这些'
+    - 'lore5:&f #5c5e63障碍才能达成'
+    - 'lore6:&f #5c5e63他们的目标。'
+    - 'lore7:&f '
+    - 'lore8:&f #5c5e63完成某个任务后，'
+    - 'lore9:&f #5c5e63玩家将获得'
+    - 'lore10:&f #5c5e63根据挑战的不同，'
+    - 'lore11:&f #5c5e63获得不同的奖励。'
+    - 'lore12:&f #5c5e63这些奖励与挑战相关。'
+    - 'lore13:&f '
+    - 'lore14:&f         &f&l更多详情'
+    - 'lore15:&f '
+    - 'lore16:&f &f #5c5e63访问任务菜单 &a/menu'
+    - 'lore17:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 22
+  quest5:
+    MenuItem:
+    - "name:&f &l任务" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63任务通常包含'
+    - 'lore3:&f #5c5e63各种挑战和障碍，'
+    - 'lore4:&f #5c5e63角色必须克服这些'
+    - 'lore5:&f #5c5e63障碍才能达成'
+    - 'lore6:&f #5c5e63他们的目标。'
+    - 'lore7:&f '
+    - 'lore8:&f #5c5e63完成某个任务后，'
+    - 'lore9:&f #5c5e63玩家将获得'
+    - 'lore10:&f #5c5e63根据挑战的不同，'
+    - 'lore11:&f #5c5e63获得不同的奖励。'
+    - 'lore12:&f #5c5e63这些奖励与挑战相关。'
+    - 'lore13:&f '
+    - 'lore14:&f         &f&l更多详情'
+    - 'lore15:&f '
+    - 'lore16:&f &f #5c5e63访问任务菜单 &a/menu'
+    - 'lore17:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 23
+  quest6:
+    MenuItem:
+    - "name:&f &l任务" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63任务通常包含'
+    - 'lore3:&f #5c5e63各种挑战和障碍，'
+    - 'lore4:&f #5c5e63角色必须克服这些'
+    - 'lore5:&f #5c5e63障碍才能达成'
+    - 'lore6:&f #5c5e63他们的目标。'
+    - 'lore7:&f '
+    - 'lore8:&f #5c5e63完成某个任务后，'
+    - 'lore9:&f #5c5e63玩家将获得'
+    - 'lore10:&f #5c5e63根据挑战的不同，'
+    - 'lore11:&f #5c5e63获得不同的奖励。'
+    - 'lore12:&f #5c5e63这些奖励与挑战相关。'
+    - 'lore13:&f '
+    - 'lore14:&f         &f&l更多详情'
+    - 'lore15:&f '
+    - 'lore16:&f &f #5c5e63访问任务菜单 &a/menu'
+    - 'lore17:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 24
+  quest7:
+    MenuItem:
+    - "name:&f &l任务" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63任务通常包含'
+    - 'lore3:&f #5c5e63各种挑战和障碍，'
+    - 'lore4:&f #5c5e63角色必须克服这些'
+    - 'lore5:&f #5c5e63障碍才能达成'
+    - 'lore6:&f #5c5e63他们的目标。'
+    - 'lore7:&f '
+    - 'lore8:&f #5c5e63完成某个任务后，'
+    - 'lore9:&f #5c5e63玩家将获得'
+    - 'lore10:&f #5c5e63根据挑战的不同，'
+    - 'lore11:&f #5c5e63获得不同的奖励。'
+    - 'lore12:&f #5c5e63这些奖励与挑战相关。'
+    - 'lore13:&f '
+    - 'lore14:&f         &f&l更多详情'
+    - 'lore15:&f '
+    - 'lore16:&f &f #5c5e63访问任务菜单 &a/menu'
+    - 'lore17:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 25
+  quest8:
+    MenuItem:
+    - "name:&f &l任务" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63任务通常包含'
+    - 'lore3:&f #5c5e63各种挑战和障碍，'
+    - 'lore4:&f #5c5e63角色必须克服这些'
+    - 'lore5:&f #5c5e63障碍才能达成'
+    - 'lore6:&f #5c5e63他们的目标。'
+    - 'lore7:&f '
+    - 'lore8:&f #5c5e63完成某个任务后，'
+    - 'lore9:&f #5c5e63玩家将获得'
+    - 'lore10:&f #5c5e63根据挑战的不同，'
+    - 'lore11:&f #5c5e63获得不同的奖励。'
+    - 'lore12:&f #5c5e63这些奖励与挑战相关。'
+    - 'lore13:&f '
+    - 'lore14:&f         &f&l更多详情'
+    - 'lore15:&f '
+    - 'lore16:&f &f #5c5e63访问任务菜单 &a/menu'
+    - 'lore17:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 26
+###################################################################BATTLEPASS
+  battlepass1:
+    MenuItem:
+    - "name:&f &l战斗通行证" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63战斗通行证是一个进度系统，'
+    - 'lore3:&f #5c5e63提供了一种方式来'
+    - 'lore4:&f #5c5e63通过完成各种挑战'
+    - 'lore5:&f #5c5e63获得奖励、外观物品、'
+    - 'lore6:&f #5c5e63游戏内货币和其他独占内容。'
+    - 'lore7:&f #5c5e63战斗通行证有两个等级：'
+    - 'lore8:&f '
+    - 'lore9:&f  &f'
+    - 'lore10:&f  &f'
+    - 'lore11:&f '
+    - 'lore12:&f #5c5e63所有玩家都有'
+    - 'lore13:&f #5c5e63免费等级的访问权，'
+    - 'lore14:&f #5c5e63该等级提供一些基本奖励。'
+    - 'lore15:&f '
+    - 'lore16:&f #5c5e63要访问高级等级并'
+    - 'lore17:&f #5c5e63解锁额外的奖励.'
+    - 'lore18:&f &f #5c5e63请将等级提升至VIP。'
+    - 'lore19:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 28
+  battlepass2:
+    MenuItem:
+    - "name:&f &l战斗通行证" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63战斗通行证是一个进度系统，'
+    - 'lore3:&f #5c5e63提供了一种方式来'
+    - 'lore4:&f #5c5e63通过完成各种挑战'
+    - 'lore5:&f #5c5e63获得奖励、外观物品、'
+    - 'lore6:&f #5c5e63游戏内货币和其他独占内容。'
+    - 'lore7:&f #5c5e63战斗通行证有两个等级：'
+    - 'lore8:&f '
+    - 'lore9:&f  &f'
+    - 'lore10:&f  &f'
+    - 'lore11:&f '
+    - 'lore12:&f #5c5e63所有玩家都有'
+    - 'lore13:&f #5c5e63免费等级的访问权，'
+    - 'lore14:&f #5c5e63该等级提供一些基本奖励。'
+    - 'lore15:&f '
+    - 'lore16:&f #5c5e63要访问高级等级并'
+    - 'lore17:&f #5c5e63解锁额外的奖励.'
+    - 'lore18:&f &f #5c5e63请将等级提升至VIP。'
+    - 'lore19:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 29
+  battlepass3:
+    MenuItem:
+    - "name:&f &l战斗通行证" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63战斗通行证是一个进度系统，'
+    - 'lore3:&f #5c5e63提供了一种方式来'
+    - 'lore4:&f #5c5e63通过完成各种挑战'
+    - 'lore5:&f #5c5e63获得奖励、外观物品、'
+    - 'lore6:&f #5c5e63游戏内货币和其他独占内容。'
+    - 'lore7:&f #5c5e63战斗通行证有两个等级：'
+    - 'lore8:&f '
+    - 'lore9:&f  &f'
+    - 'lore10:&f  &f'
+    - 'lore11:&f '
+    - 'lore12:&f #5c5e63所有玩家都有'
+    - 'lore13:&f #5c5e63免费等级的访问权，'
+    - 'lore14:&f #5c5e63该等级提供一些基本奖励。'
+    - 'lore15:&f '
+    - 'lore16:&f #5c5e63要访问高级等级并'
+    - 'lore17:&f #5c5e63解锁额外的奖励.'
+    - 'lore18:&f &f #5c5e63请将等级提升至VIP。'
+    - 'lore19:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 30
+  battlepass4:
+    MenuItem:
+    - "name:&f &l战斗通行证" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63战斗通行证是一个进度系统，'
+    - 'lore3:&f #5c5e63提供了一种方式来'
+    - 'lore4:&f #5c5e63通过完成各种挑战'
+    - 'lore5:&f #5c5e63获得奖励、外观物品、'
+    - 'lore6:&f #5c5e63游戏内货币和其他独占内容。'
+    - 'lore7:&f #5c5e63战斗通行证有两个等级：'
+    - 'lore8:&f '
+    - 'lore9:&f  &f'
+    - 'lore10:&f  &f'
+    - 'lore11:&f '
+    - 'lore12:&f #5c5e63所有玩家都有'
+    - 'lore13:&f #5c5e63免费等级的访问权，'
+    - 'lore14:&f #5c5e63该等级提供一些基本奖励。'
+    - 'lore15:&f '
+    - 'lore16:&f #5c5e63要访问高级等级并'
+    - 'lore17:&f #5c5e63解锁额外的奖励.'
+    - 'lore18:&f &f #5c5e63请将等级提升至VIP。'
+    - 'lore19:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 31
+  battlepass5:
+    MenuItem:
+    - "name:&f &l战斗通行证" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63战斗通行证是一个进度系统，'
+    - 'lore3:&f #5c5e63提供了一种方式来'
+    - 'lore4:&f #5c5e63通过完成各种挑战'
+    - 'lore5:&f #5c5e63获得奖励、外观物品、'
+    - 'lore6:&f #5c5e63游戏内货币和其他独占内容。'
+    - 'lore7:&f #5c5e63战斗通行证有两个等级：'
+    - 'lore8:&f '
+    - 'lore9:&f  &f'
+    - 'lore10:&f  &f'
+    - 'lore11:&f '
+    - 'lore12:&f #5c5e63所有玩家都有'
+    - 'lore13:&f #5c5e63免费等级的访问权，'
+    - 'lore14:&f #5c5e63该等级提供一些基本奖励。'
+    - 'lore15:&f '
+    - 'lore16:&f #5c5e63要访问高级等级并'
+    - 'lore17:&f #5c5e63解锁额外的奖励.'
+    - 'lore18:&f &f #5c5e63请将等级提升至VIP。'
+    - 'lore19:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 32
+  battlepass6:
+    MenuItem:
+    - "name:&f &l战斗通行证" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63战斗通行证是一个进度系统，'
+    - 'lore3:&f #5c5e63提供了一种方式来'
+    - 'lore4:&f #5c5e63通过完成各种挑战'
+    - 'lore5:&f #5c5e63获得奖励、外观物品、'
+    - 'lore6:&f #5c5e63游戏内货币和其他独占内容。'
+    - 'lore7:&f #5c5e63战斗通行证有两个等级：'
+    - 'lore8:&f '
+    - 'lore9:&f  &f'
+    - 'lore10:&f  &f'
+    - 'lore11:&f '
+    - 'lore12:&f #5c5e63所有玩家都有'
+    - 'lore13:&f #5c5e63免费等级的访问权，'
+    - 'lore14:&f #5c5e63该等级提供一些基本奖励。'
+    - 'lore15:&f '
+    - 'lore16:&f #5c5e63要访问高级等级并'
+    - 'lore17:&f #5c5e63解锁额外的奖励.'
+    - 'lore18:&f &f #5c5e63请将等级提升至VIP。'
+    - 'lore19:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 33
+  battlepass7:
+    MenuItem:
+    - "name:&f &l战斗通行证" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63战斗通行证是一个进度系统，'
+    - 'lore3:&f #5c5e63提供了一种方式来'
+    - 'lore4:&f #5c5e63通过完成各种挑战'
+    - 'lore5:&f #5c5e63获得奖励、外观物品、'
+    - 'lore6:&f #5c5e63游戏内货币和其他独占内容。'
+    - 'lore7:&f #5c5e63战斗通行证有两个等级：'
+    - 'lore8:&f '
+    - 'lore9:&f  &f'
+    - 'lore10:&f  &f'
+    - 'lore11:&f '
+    - 'lore12:&f #5c5e63所有玩家都有'
+    - 'lore13:&f #5c5e63免费等级的访问权，'
+    - 'lore14:&f #5c5e63该等级提供一些基本奖励。'
+    - 'lore15:&f '
+    - 'lore16:&f #5c5e63要访问高级等级并'
+    - 'lore17:&f #5c5e63解锁额外的奖励.'
+    - 'lore18:&f &f #5c5e63请将等级提升至VIP。'
+    - 'lore19:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 34
+  battlepass8:
+    MenuItem:
+    - "name:&f &l战斗通行证" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63战斗通行证是一个进度系统，'
+    - 'lore3:&f #5c5e63提供了一种方式来'
+    - 'lore4:&f #5c5e63通过完成各种挑战'
+    - 'lore5:&f #5c5e63获得奖励、外观物品、'
+    - 'lore6:&f #5c5e63游戏内货币和其他独占内容。'
+    - 'lore7:&f #5c5e63战斗通行证有两个等级：'
+    - 'lore8:&f '
+    - 'lore9:&f  &f'
+    - 'lore10:&f  &f'
+    - 'lore11:&f '
+    - 'lore12:&f #5c5e63所有玩家都有'
+    - 'lore13:&f #5c5e63免费等级的访问权，'
+    - 'lore14:&f #5c5e63该等级提供一些基本奖励。'
+    - 'lore15:&f '
+    - 'lore16:&f #5c5e63要访问高级等级并'
+    - 'lore17:&f #5c5e63解锁额外的奖励.'
+    - 'lore18:&f &f #5c5e63请将等级提升至VIP。'
+    - 'lore19:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 35
+
+
+#######################################COINS 
+  coin1:
+    MenuItem:
+    - "name:&f &l货币" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63硬币（货币Coins）是 #2fcd60游戏中的货币'
+    - 'lore3:&f #5c5e63#5c5e63作为商品和服务的标准价值'
+    - 'lore4:&f #5c5e63广泛接受的交换品。'
+    - 'lore5:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 37
+  coin2:
+    MenuItem:
+    - "name:&f &l货币" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63硬币（货币Coins）是 #2fcd60游戏中的货币'
+    - 'lore3:&f #5c5e63#5c5e63作为商品和服务的标准价值'
+    - 'lore4:&f #5c5e63广泛接受的交换品。'
+    - 'lore5:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 38
+  coin3:
+    MenuItem:
+    - "name:&f &l货币" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63硬币（货币Coins）是 #2fcd60游戏中的货币'
+    - 'lore3:&f #5c5e63#5c5e63作为商品和服务的标准价值'
+    - 'lore4:&f #5c5e63广泛接受的交换品。'
+    - 'lore5:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 38
+  coin4:
+    MenuItem:
+    - "name:&f &l货币" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63硬币（货币Coins）是 #2fcd60游戏中的货币'
+    - 'lore3:&f #5c5e63#5c5e63作为商品和服务的标准价值'
+    - 'lore4:&f #5c5e63广泛接受的交换品。'
+    - 'lore5:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 39
+  coin5:
+    MenuItem:
+    - "name:&f &l货币" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63硬币（货币Coins）是 #2fcd60游戏中的货币'
+    - 'lore3:&f #5c5e63#5c5e63作为商品和服务的标准价值'
+    - 'lore4:&f #5c5e63广泛接受的交换品。'
+    - 'lore5:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 40
+  coin6:
+    MenuItem:
+    - "name:&f &l货币" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63硬币（货币Coins）是 #2fcd60游戏中的货币'
+    - 'lore3:&f #5c5e63#5c5e63作为商品和服务的标准价值'
+    - 'lore4:&f #5c5e63广泛接受的交换品。'
+    - 'lore5:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 41
+  coin7:
+    MenuItem:
+    - "name:&f &l货币" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63硬币（货币Coins）是 #2fcd60游戏中的货币'
+    - 'lore3:&f #5c5e63#5c5e63作为商品和服务的标准价值'
+    - 'lore4:&f #5c5e63广泛接受的交换品。'
+    - 'lore5:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 42
+  coin8:
+    MenuItem:
+    - "name:&f &l货币" 
+    - type:FEATHER 
+    - amount:1 
+    - custommodeldata:10041
+    - 'lore1:&f '
+    - 'lore2:&f #5c5e63硬币（货币Coins）是 #2fcd60游戏中的货币'
+    - 'lore3:&f #5c5e63#5c5e63作为商品和服务的标准价值'
+    - 'lore4:&f #5c5e63广泛接受的交换品。'
+    - 'lore5:&f '
+    RewardType: NOTHING
+    Reward: ''
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 43
+
+

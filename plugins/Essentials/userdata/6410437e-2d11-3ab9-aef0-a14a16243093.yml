@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 120.235.203.251
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1738414819459
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1738414956637
+  login: 1738414468777
+money: '0'
+last-account-name: Tanghulu_Sweet
+lastlocation:
+  world: 877e483a-8c3b-40fa-9738-40239679b77e
+  world-name: isla
+  x: 180.00224616638948
+  y: 65.0
+  z: -57.48121649087547
+  yaw: -22.693256378173828
+  pitch: 12.822569847106934
+logoutlocation:
+  world: 16c0d5de-e05c-437b-bfdb-3422519e8bd3
+  world-name: mine
+  x: 267.8088011270577
+  y: 58.0
+  z: 476.7499556309766
+  yaw: -164.593505859375
+  pitch: 17.399972915649414

@@ -1,0 +1,7 @@
+uuid: cc5fe817-1471-3f89-9c7a-10df7daf86ec
+name: LCMonitor
+primary-group: default
+parents:
+- default
+- fighter
+- warrior

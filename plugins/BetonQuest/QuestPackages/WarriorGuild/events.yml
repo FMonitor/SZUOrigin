@@ -1,0 +1,55 @@
+events:
+  monsterhunter1: "objective start monsterhunter1"
+  monsterhunter1_started: 'tag add monsterhunter1_started'
+  monsterhunter1_done: 'tag add monsterhunter1_done'
+  monsterhunter1_paid: 'tag add monsterhunter1_paid'
+
+  entry_monsterhunter1_started: 'journal add monsterhunter1_started'
+  entry_monsterhunter1_done: 'journal add monsterhunter1_done'
+  entry_monsterhunter1_paid: 'journal add monsterhunter1_paid'
+
+  monsterhunter2: "objective start monsterhunter2"
+  monsterhunter2_started: 'tag add monsterhunter2_started'
+  monsterhunter2_done: 'tag add monsterhunter2_done'
+  monsterhunter2_paid: 'tag add monsterhunter2_paid'
+  
+  entry_monsterhunter2_started: 'journal add monsterhunter2_started'
+  entry_monsterhunter2_done: 'journal add monsterhunter2_done'
+  entry_monsterhunter2_paid: 'journal add monsterhunter2_paid'
+
+
+  monsterhunter3: "objective start monsterhunter3"
+  monsterhunter3_started: 'tag add monsterhunter3_started'
+  monsterhunter3_done: 'tag add monsterhunter3_done'
+  monsterhunter3_paid: 'tag add monsterhunter3_paid'
+  
+  entry_monsterhunter3_started: 'journal add monsterhunter3_started'
+  entry_monsterhunter3_done: 'journal add monsterhunter3_done'
+  entry_monsterhunter3_paid: 'journal add monsterhunter3_paid'
+
+
+  monsterhunter4: "objective start monsterhunter4"
+  monsterhunter4_started: 'tag add monsterhunter4_started'
+  monsterhunter4_done: 'tag add monsterhunter4_done'
+  monsterhunter4_paid: 'tag add monsterhunter4_paid'
+  
+  entry_monsterhunter4_started: 'journal add monsterhunter4_started'
+  entry_monsterhunter4_done: 'journal add monsterhunter4_done'
+  entry_monsterhunter4_paid: 'journal add monsterhunter4_paid'
+
+
+  monsterhunter1_reset: 'tag del monsterhunter1_started,monsterhunter1_done,monsterhunter1_paid'
+  monsterhunter2_reset: 'tag del monsterhunter2_started,monsterhunter2_done,monsterhunter2_paid'
+  monsterhunter3_reset: 'tag del monsterhunter3_started,monsterhunter3_done,monsterhunter3_paid'
+  monsterhunter4_reset: 'tag del monsterhunter4_started,monsterhunter4_done,monsterhunter4_paid'
+  
+  warrior_reset: 'folder monsterhunter1_reset,monsterhunter2_reset,monsterhunter3_reset,monsterhunter4_reset'
+
+#############################  
+
+  money_64_rewards: command eco give %player% 250
+  money_128_rewards: command eco give %player% 500
+  money_192_rewards: command eco give %player% 750
+  money_256_rewards: command eco give %player% 1000
+
+

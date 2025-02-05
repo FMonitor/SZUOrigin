@@ -1,0 +1,44 @@
+Generation:
+
+  Namespace: mythic                 # Namespace to save everything under
+  GenerateOnStartup: true           # If the pack should auto-generate on server startup
+  MergeModelEngine: true            # Whether to merge ModelEngine files if available
+  MergeHappyHUD: true               # Whether to merge HappyHUD files if available
+  MergeMythicHUD: true
+  ZipPack: true                     # Whether to zip the pack after completion. Required for deployment.
+  LegacyNoteblocksSupport: true     # Supports noteblocks id from Oraxen. Disabling it will allow to use the harp instrument and increasing the limit of 800 maximum blocks to 1150
+
+  Deployment:
+    Enabled: false                  # Whether to enable automatic deployment
+    Type: SELFHOST                  # Can currently be SELFHOST or S3
+    SelfHosting:
+      Port: 8080
+    S3:
+      Storage:
+        Key: pack
+        Bucket: packs
+      Authentication:
+        Endpoint: ''
+        AccessKey: ''
+        SecretKey: ''
+    AutoSend:                       # Automatically sending the pack to players
+      Enabled: false
+      SendOnUpdate: false
+      PublicURL: https://s3.yourcoolwebsite.com
+      Force: false                #Force players to accept the pack or be kicked
+      Prompt: "This server requires a resource pack to play!"         #Prompt to send to players when being sent resource pack
+
+  CustomArmor:
+    DefaultMethod: TRIMS
+    GenerateOptifineFiles: true
+    Trims:
+      Enabled: false
+      GenerateDataPack: true
+      HideBaseArmor: []
+      ConvertBaseArmor: false
+    Shaders:
+      Enabled: false
+      Shader: lessfancypants
+
+  FontImages:
+    StartingCharacter: "\u5001"

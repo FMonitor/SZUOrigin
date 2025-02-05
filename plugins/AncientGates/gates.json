@@ -1,0 +1,38 @@
+{
+  "mine": {
+    "froms": [
+      {
+        "world": "isla",
+        "x": -3.0,
+        "y": 83.0,
+        "z": -28.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "entities": true,
+    "vehicles": false,
+    "inventory": "TRUE",
+    "material": "PORTAL",
+    "command": "rtp world mine",
+    "commandtype": "PLAYER",
+    "cost": 0.0
+  },
+  "shop_spawner": {
+    "froms": [
+      {
+        "world": "isla",
+        "x": 10.0,
+        "y": 85.0,
+        "z": 47.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    ],
+    "entities": true,
+    "vehicles": false,
+    "inventory": "TRUE",
+    "material": "PORTAL",
+    "cost": 0.0
+  }
+}

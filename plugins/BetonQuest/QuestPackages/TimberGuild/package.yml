@@ -1,0 +1,46 @@
+
+variables:
+  logs: '.*_LOG'
+
+journal_main_page:
+  64logs:
+    priority: 1
+    text: 64 logs quest completed!
+    conditions: break64Logs_paid
+  128logs:
+    priority: 1
+    text: 128 logs quest completed!
+    conditions: break128Logs_paid
+  192logs:
+    priority: 1
+    text: 192 logs quest completed!
+    conditions: break192Logs_paid
+  256logs:
+    priority: 1
+    text: 256 logs quest completed!
+    conditions: break256Logs_paid
+
+
+schedules:
+  dailyTask:
+    type: realtime-daily
+    time: '15:10'
+    events: timber_reset
+    catchup: one
+
+
+items:
+  reward: 'DIAMOND_SWORD' 
+  emerald: 'EMERALD'
+  openMenuItem: "BOOK title:Quests"
+  xpBottle: "EXPERIENCE_BOTTLE"
+  filler: "GRAY_STAINED_GLASS_PANE"
+  QuestActiveItem: "PAPER custom-model-data:100080"
+  QuestInactiveItem: "PAPER custom-model-data:100081"
+  QuestCompleted: "PAPER custom-model-data:100082"
+  QuestCompletedUnclaim: "PAPER custom-model-data:100083"
+  questlocked: "PAPER custom-model-data:100084"
+
+
+
+

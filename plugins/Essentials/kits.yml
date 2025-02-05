@@ -1,0 +1,214 @@
+
+# If you don't have any kits defined in this file, the plugin will try to copy them from the config.yml
+
+# Note: All items MUST be followed by a quantity!
+# All kit names should be lower case, and will be treated as lower in permissions/costs.
+# Syntax: - name[:durability] amount [enchantment:level]... [itemmeta:value]...
+# For Item Meta information visit http://wiki.ess3.net/wiki/Item_Meta
+# To make the kit execute a command, add /<command> to the items list. Use {USERNAME} to specify the player receiving the kit.
+# {PLAYER} will show the player's displayname instead of username.
+# 'delay' refers to the cooldown between how often you can use each kit, measured in seconds.
+# Set delay to -1 for a one time kit.
+#
+# In addition, you can also organize your kits into separate files under the `kits` subdirectory.
+# Essentials will treat all .yml files in the `kits` subdirectory as kits files, and will add any kits from those files along with the kits in `kits.yml`.
+# Any file in the `kits` subdirectory must be formatted in the same way as this file. This allows you to define multiple kits in each file.
+# For more information, visit http://wiki.ess3.net/wiki/Kits
+kits:
+  member:
+    delay: 604800
+    items:
+    - STONE_SWORD 1 
+      name:&#57739dS&#59769dt&#5a799co&#5c7c9cn&#5e7f9be&#60839b_&#61869aS&#63899aw&#658c99o&#668f99r&#689298d
+      damage_all:1
+
+    - STONE_PICKAXE 1 name:&#57739dS&#58769dt&#5a789co&#5b7b9cn&#5d7d9be&#5e809b_&#60839bP&#61859ai&#62889ac&#648a99k&#658d99A&#678f98x&#689298e
+      loot_bonus_blocks:1
+
+    - STONE_AXE 1 name:&#57739dS&#59779ct&#5b7b9co&#5d7f9bn&#60839be&#62869a_&#648a99A&#668e99x&#689298e
+      silk_touch:1 durability:1
+
+    - STONE_SHOVEL 1 name:&#57739dS&#59769dt&#5a799co&#5c7b9cn&#5d7e9be&#5f819b_&#60849aS&#62879ah&#638a99o&#658c99v&#668f98e&#689298l
+
+    - TURTLE_HELMET 1 name:&#57739dT&#58769du&#5a789cr&#5b7b9ct&#5d7d9bl&#5e809be&#60839b_&#61859ah&#62889ae&#648a99l&#658d99m&#678f98e&#689298t
+      protection_environmental:1
+
+    - IRON_CHESTPLATE 1 name:&#57739dI&#58759dr&#59779co&#5b7a9cn&#5c7c9c_&#5d7e9bC&#5e809bh&#60839be&#61859as&#62879at&#638999p&#648b99l&#668e99a&#679098t&#689298e
+      protection_environmental:1
+
+    - LEATHER_LEGGINGS 1 name:&#57739dL&#58759de&#59779ca&#5a799ct&#5c7b9ch&#5d7d9be&#5e7f9br&#5f819b_&#60849al&#61869ae&#62889ag&#638a99g&#658c99i&#668e99n&#679098g&#689298s
+      protection_environmental:1
+
+    - IRON_BOOTS 1 name:&#57739dI&#59769cr&#5b7a9co&#5d7d9bn&#5f819b_&#60849ab&#62889ao&#648b99o&#668f99t&#689298s
+      protection_environmental:1 color:7315738
+
+    - RED_BED
+    - BREAD 12
+    - OAK_LOG 12
+    - SHIELD 1
+    
+ 
+    
+    
+  vip:
+    delay: 1296000
+    items:
+    - iron_sword 1 fire_aspect:1 damage_all:4 sweeping_edge:2 durability:3 
+      name:&#fbac13I&#fbb214r&#fbb915o&#fcbf15n&#fcc616_&#fccc17s&#fcd318w&#fdd918o&#fde019r&#fde61ad
+      lore:&#995bd7Owner&7:|_&#A7A342{PLAYER}&#A7A342_🗡
+      
+    - shield 1 durability:3  
+      name:&#fbac13S&#fbb814h&#fcc316i&#fccf17e&#fdda19l&#fde61ad
+      lore:&#995bd7Owner&7:|_&#A7A342{PLAYER}
+      
+    - crossbow 1 multishot:1 piercing:3 quick_charge:2 durability:3 
+      name:&#fbac13C&#fbb414r&#fcbd15o&#fcc516s&#fccd17s&#fcd518B&#fdde19o&#fde61aw
+      lore:&#995bd7Owner&7:|_&#A7A342{PLAYER}_🏹
+      
+    - diamond_axe 1 dig_speed:4 durability:3 
+      name:&#fbac13D&#fbb214i&#fbb814a&#fcbd15m&#fcc316o&#fcc917n&#fccf17d&#fcd518_&#fdda19A&#fde019x&#fde61ae
+      lore:&#995bd7Owner&7:|_&#A7A342{PLAYER}&#A7A342_🪓
+      
+    - diamond_pickaxe 1 dig_speed:4 silk_touch:1 durability:3 
+      name:&#fbac13D&#fbb014i&#fbb414a&#fbb815m&#fcbd15o&#fcc116n&#fcc516d&#fcc917_&#fccd17p&#fcd118i&#fcd518c&#fdda19k&#fdde19a&#fde21ax&#fde61ae
+      lore:&#995bd7Owner&7:|_&#A7A342{PLAYER}&#A7A342_⛏
+      
+    - diamond_shovel 1 dig_speed:4 durability:3 
+      name:&#fbac13D&#fbb014i&#fbb514a&#fbb915m&#fcbe15o&#fcc216n&#fcc716d&#fccb17_&#fcd017S&#fcd418h&#fdd918o&#fddd19v&#fde219e&#fde61al
+      lore:&#995bd7Owner&7:|_&#A7A342{PLAYER}&#A7A342_
+
+    - diamond_helmet 1 water_worker:1 protection_environmental:4 durability:3
+      name:&#fbac13D&#fbb014i&#fbb514a&#fbb915m&#fcbe15o&#fcc216n&#fcc716d&#fccb17_&#fcd017H&#fcd418e&#fdd918l&#fddd19m&#fde219e&#fde61at
+      lore:&#995bd7Owner&7:|_&#A7A342{PLAYER}
+      
+    - diamond_chestplate 1 protection_environmental:4 durability:3 
+      name:&#fbac13D&#fbaf13i&#fbb314a&#fbb614m&#fbba15o&#fcbd15n&#fcc015d&#fcc416_&#fcc716C&#fccb17h&#fcce17e&#fcd218s&#fcd518t&#fdd818p&#fddc19l&#fddf19a&#fde31at&#fde61ae
+      lore:&#995bd7Owner&7:|_&#A7A342{PLAYER}
+      
+    - diamond_leggings 1 protection_environmental:4 durability:3 
+      name:&#fbac13D&#fbb013i&#fbb414a&#fbb814m&#fcbb15o&#fcbf15n&#fcc316d&#fcc716_&#fccb17L&#fccf17e&#fcd318g&#fcd718g&#fdda19i&#fdde19n&#fde21ag&#fde61as
+      lore:&#995bd7Owner&7:|_&#A7A342{PLAYER}
+      
+    - diamond_boots 1 depth_strider:2 protection_fall:2 protection_environmental:4 durability:3 
+      name:&#fbac13D&#fbb114i&#fbb614a&#fcbb15m&#fcbf15o&#fcc416n&#fcc917d&#fcce17_&#fcd318B&#fdd818o&#fddc19o&#fde119t&#fde61as
+      lore:&#995bd7Owner&7:|_&#A7A342{PLAYER}
+
+    - experience_bottle 32
+    - cooked_cod 16
+    - golden_apple 3
+    - gold_ingot 16
+    - cobblestone 64
+    - oak_log 32
+    
+  mvp:
+    delay: 1296000
+    items:
+    - diamond_sword 1 fire_aspect:2 loot_bonus_mobs:2 damage_all:5 sweeping_edge:2 durability:3 
+      name:&#386ffbD&#3975fbi&#397bfba&#3a82fcm&#3b88fco&#3b8efcn&#3c94fcd&#3d9afc_&#3da0fcS&#3ea7fdw&#3fadfdo&#3fb3fdr&#40b9fdd
+      lore:&#995bd7Owner&7:|_&#A7A342{PLAYER}&#A7A342_🗡
+      
+    - bow 1 arrow_fire:2 arrow_infinite:1 arrow_damage:4 arrow_knockback:1 durability:3
+      name:&#386ffbB&#3c94fco&#40b9fdw
+      lore:&#995bd7Owner&7:|_&#A7A342{PLAYER}_🏹
+      
+    - shield 1 name:&#386ffbS&#3a7efbh&#3b8dfci&#3d9bfce&#3eaafdl&#40b9fdd
+      lore:&#995bd7Owner&7:|_&#A7A342{PLAYER} durability:3 basecolor:3847130
+      
+    - diamond_shovel 1 dig_speed:5 silk_touch:1 durability:3 
+      name:&#386ffbD&#3975fbi&#397afba&#3a80fbm&#3a86fco&#3b8bfcn&#3c91fcd&#3c97fc_&#3d9dfcS&#3ea2fch&#3ea8fdo&#3faefdv&#3fb3fde&#40b9fdl
+      lore:&#995bd7Owner&7:|_&#A7A342{PLAYER}
+      
+    - diamond_axe 1 dig_speed:5 durability:3 
+      name:&#386ffbD&#3974fbi&#397afba&#3a7ffbm&#3a84fco&#3b89fcn&#3b8ffcd&#3c94fc_&#88cefda&#9be0fdx&#adf3fde
+      lore:&#995bd7Owner&7:|_&#A7A342{PLAYER}&#A7A342_🪓
+
+    - diamond_pickaxe 1 dig_speed:5 silk_touch:1 durability:3 
+      name:&#386ffbD&#3974fbi&#397afba&#3a7ffbm&#3a84fco&#3b89fcn&#3b8ffcd&#3c94fc_&#3d99fcP&#3d9ffci&#3ea4fcc&#3ea9fdk&#3faefda&#3fb4fdx&#40b9fde
+      lore:&#995bd7Owner&7:|_&#A7A342{PLAYER}&#A7A342_⛏
+      
+    - diamond_helmet 1 mending:1 protection_environmental:4 oxygen:2 durability:3water_worker:2
+      name:&#386ffbD&#3975fbi&#397afba&#3a80fbm&#3a86fco&#3b8bfcn&#3c91fcd&#3c97fc_&#3d9dfcH&#3ea2fce&#3ea8fdl&#3faefdm&#3fb3fde&#40b9fdt
+      lore:&#995bd7Owner&7:|_&#A7A342{PLAYER}
+      
+    - diamond_chestplate 1 mending:1 protection_environmental:4 durability:3 
+      name:&#386ffbD&#3873fbi&#3978fba&#397cfbm&#3a80fbo&#3a85fcn&#3b89fcd&#3b8dfc_&#3c92fcC&#3c96fch&#3d9bfce&#3d9ffcs&#3ea3fct&#3ea8fdp&#3facfdl&#3fb0fda&#40b5fdt&#40b9fde
+      lore:&#995bd7Owner&7:|_&#A7A342{PLAYER}
+      
+    - diamond_leggings 1 mending:1 protection_environmental:4 durability:3 
+      name:&#386ffbD&#3974fbi&#3979fba&#3a7efbm&#3a83fco&#3b88fcn&#3b8dfcd&#3c92fc_&#3c96fcL&#3d9bfce&#3da0fcg&#3ea5fcg&#3eaafdi&#3faffdn&#3fb4fdg&#40b9fds
+      lore:&#995bd7Owner&7:|_&#A7A342{PLAYER}
+      
+    - diamond_boots 1 depth_strider:3 protection_fall:3 mending:1 protection_environmental:4 durability:3
+      name:&#386ffbD&#3975fbi&#397bfba&#3a82fcm&#3b88fco&#3b8efcn&#3c94fcd&#3d9afc_&#3da0fcB&#3ea7fdo&#3fadfdo&#3fb3fdt&#40b9fds
+      lore:&#995bd7Owner&7:|_&#A7A342{PLAYER}
+
+    - experience_bottle 48
+    - emerald 16
+    - diamond 4
+    - COOKED_PORKCHOP 16
+    - golden_apple 4
+    - arrow 1
+    - cobblestone 64
+    - oak_log 32
+    - acacia_log 32
+    - raw_iron 8
+    
+  elite:
+    delay: 1296000
+    items:
+    - diamond_sword 1 loot_bonus_mobs:3 mending:1 damage_all:5 damage_undead:2 sweeping_edge:3 durability:3
+      name:&#ff3489D&#ff3392i&#ff329ba&#ff31a4m&#fe30ado&#fe2fb6n&#fe2ebfd&#fe2cc7_&#fe2bd0S&#fe2ad9w&#fd29e2o&#fd28ebr&#fd27f4d
+      lore:&#995bd7Owner&7:|_&#A7A342{PLAYER}&#A7A342_🗡
+      
+    - shield 1 durability:3 basecolor:8991416
+      name:&#ff3489S&#ff319eh&#fe2fb4i&#fe2cc9e&#fd2adfl&#fd27f4d
+      lore:&#995bd7Owner&7:|_&#A7A342{PLAYER} 
+      
+    - trident 1 impaling:3 loyalty:3 mending:1 durability:3 
+      name:&#ff3489T&#ff329br&#fe30adi&#fe2ebfd&#fe2bd0e&#fd29e2n&#fd27f4t
+      lore:&#995bd7Owner&7:|_&#A7A342{PLAYER}
+      
+    - diamond_pickaxe 1 dig_speed:5 loot_bonus_blocks:3 mending:1 durability:3
+      name:&#ff3489D&#ff3391i&#ff3298a&#ff31a0m&#fe30a8o&#fe2fafn&#fe2eb7d&#fe2ebf_&#fe2dc6P&#fe2ccei&#fe2bd5c&#fd2addk&#fd29e5a&#fd28ecx&#fd27f4e
+      lore:&#995bd7Owner&7:|_&#A7A342{PLAYER}&#A7A342_⛏
+      
+    - diamond_axe 1 dig_speed:5 mending:1 silk_touch:1 durability:3
+      name:&#ff3489D&#ff3394i&#ff319ea&#fe30a9m&#fe2fb4o&#fe2ebfn&#fe2cc9d&#fe2bd4_&#fd2adfA&#fd28e9x&#fd27f4e
+      lore:&#995bd7Owner&7:|_&#A7A342{PLAYER}&#A7A342_🪓
+      
+    - diamond_shovel 1 dig_speed:5 mending:1 silk_touch:1 durability:3
+      name:&#ff3489D&#ff3391i&#ff3299a&#ff31a2m&#fe30aao&#fe2fb2n&#fe2ebad&#fe2dc3_&#fe2ccbS&#fe2bd3h&#fd2adbo&#fd29e4v&#fd28ece&#fd27f4l
+      lore:&#995bd7Owner&7:|_&#A7A342{PLAYER}
+
+    - bow 1 arrow_fire:2 arrow_infinite:1 arrow_damage:5 arrow_knockback:2 durability:3
+      name:&#2f33a0E&#3237acl&#363bb8i&#393fc4t&#3d42cfe&#4046db_&#444ae7b&#474ef3o&#4b52ffw 
+      lore:&#995bd7Owner&7:|_&#A7A342{PLAYER}_🏹
+      
+    - diamond_helmet 1 water_worker:3 mending:1 protection_environmental:4 oxygen:3 durability:3 
+      name:&#ff3489D&#ff3391i&#ff3299a&#ff31a2m&#fe30aao&#fe2fb2n&#fe2ebad&#fe2dc3_&#fe2ccbH&#fe2bd3e&#fd2adbl&#fd29e4m&#fd28ece&#fd27f4t
+      lore:&#995bd7Owner&7:|_&#A7A342{PLAYER}
+      
+    - diamond_chestplate 1 mending:1 protection_environmental:4 durability:3
+      name:&#ff3489D&#ff338fi&#ff3296a&#ff329cm&#ff31a2o&#fe30a8n&#fe2fafd&#fe2fb5_&#fe2ebbC&#fe2dc2h&#fe2cc8e&#fe2cces&#fe2bd5t&#fd2adbp&#fd29e1l&#fd29e7a&#fd28eet&#fd27f4e
+      lore:&#995bd7Owner&7:|_&#A7A342{PLAYER}
+      
+    - diamond_leggings 1 mending:1 protection_environmental:4 durability:3
+      name:&#ff3489D&#ff3390i&#ff3297a&#ff319em&#fe31a6o&#fe30adn&#fe2fb4d&#fe2ebb_&#fe2dc2L&#fe2cc9e&#fe2bd0g&#fe2ad7g&#fd2adfi&#fd29e6n&#fd28edg&#fd27f4s
+      lore:&#995bd7Owner&7:|_&#A7A342{PLAYER}
+      
+    - diamond_boots 1 depth_strider:3 protection_fall:3 frost_walker:1 mending:1 protection_environmental:4 durability:3
+      name:&#ff3489D&#ff3392i&#ff329ba&#ff31a4m&#fe30ado&#fe2fb6n&#fe2ebfd&#fe2cc7_&#fe2bd0B&#fe2ad9o&#fd29e2o&#fd28ebt&#fd27f4s
+      lore:&#995bd7Owner&7:|_&#A7A342{PLAYER}
+
+    - totem_of_undying 1
+    - golden_apple 5
+    - COOKED_PORKCHOP 32
+    - diamond 8
+    - gold_ingot 16
+    - arrow 1
+    - cobblestone 64
+    - oak_log 64
+    - acacia_log 32
+    - raw_iron 16
+
+

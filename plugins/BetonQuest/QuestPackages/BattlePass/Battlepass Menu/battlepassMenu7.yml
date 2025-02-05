@@ -1,0 +1,426 @@
+menus:
+  battlepass7:
+    title: '&f'
+    height: 6
+    open_events: openBattlepassSound
+    items:
+      close:
+        item: close
+        amount: 1
+        text:
+         - '&c关闭'
+        close: true
+      green7:
+        item: green7
+        amount: 1
+        text:
+         - '&f'
+      task:
+        item: task
+        amount: 1
+        text:
+         - '&e打开任务菜单'
+        close: true
+        click: openTask
+      Informations:
+        item: Informations
+        amount: 1
+        text:
+         - '&a你的点数为%point.BattlePass.amount%'
+        close: false
+      battlepass6:
+        item: ScrollLeft
+        amount: 1
+        text:
+         - '&a上一页'
+        close: true
+        click: battlepass6
+      battlepass7:
+        item: ScrollRight
+        amount: 1
+        text:
+         - '&a下一页'
+        close: true
+        click: battlepass7
+#################progress spam#####
+
+      ProgressBarBlank:
+        item: ProgressBarBlank
+        amount: 1
+        close: false
+        text:
+         - '&7进度'
+      progress31:
+        item: ProgressBar
+        amount: 1
+        conditions: progress31
+        close: false
+        text:
+         - '&7Progress'
+      
+      progress32:
+        item: ProgressBar1
+        amount: 1
+        conditions: progress32
+        close: false
+        text:
+         - '&7进度'
+      
+      progress33:
+        item: ProgressBar2
+        amount: 1
+        conditions: progress33
+        close: false
+        text:
+         - '&7进度'
+      
+      progress34:
+        item: ProgressBar3
+        amount: 1
+        conditions: progress34
+        close: false
+        text:
+         - '&7进度'
+      
+      progress35:
+        item: ProgressBar
+        amount: 1
+        conditions: progress35
+        close: false
+        text:
+         - '&7进度'
+#################Rewards#####
+########################PREMIUM
+      p19-1:
+        item: KeyLocked
+        amount: 1
+        close: false
+        text:
+         - '&f &f&lʙᴀᴛᴛʟᴇᴘᴀꜱꜱ ʀᴇᴡᴀʀᴅꜱ'
+         - '&f '
+         - '&f &7Money: 300'
+         - '&f &7Experience: 250'
+         - '&f &7Iron ingot: 4'
+         - '&f &7Gold ingot: 4'
+         - '&f &7Netherite Scrap: 4'
+         - '&f '
+         - '&f  ' 
+      p19-2:
+        item: ChestUnclaim
+        amount: 1
+        conditions: progress31,battlepassPermission
+        close: false
+        text:
+         - '&f &f&lʙᴀᴛᴛʟᴇᴘᴀꜱꜱ ʀᴇᴡᴀʀᴅꜱ'
+         - '&f '
+         - '&f &7Money: 300'
+         - '&f &7Experience: 250'
+         - '&f &7Iron ingot: 4'
+         - '&f &7Gold ingot: 4'
+         - '&f &7Netherite Scrap: 4'
+         - '&f '
+         - '&f  ' 
+        click: pbp19Rewards
+      p19-3:
+        item: ChestClaim
+        amount: 1
+        conditions: pbp19Paid,battlepassPermission
+        close: false
+        text:
+         - '&f &f&lʙᴀᴛᴛʟᴇᴘᴀꜱꜱ ʀᴇᴡᴀʀᴅꜱ'
+         - '&f '
+         - '&f &7Money: 300'
+         - '&f &7Experience: 250'
+         - '&f &7Iron ingot: 4'
+         - '&f &7Gold ingot: 4'
+         - '&f &7Netherite Scrap: 4'
+         - '&f '
+         - '&f &a&lCLAIMED'
+         - '&f  ' 
+
+
+      p20-1:
+        item: KeyLocked
+        amount: 1
+        close: false
+        text:
+         - '&f &f&lʙᴀᴛᴛʟᴇᴘᴀꜱꜱ ʀᴇᴡᴀʀᴅꜱ'
+         - '&f '
+         - '&f &7Money: 350'
+         - '&f &7Experience: 250'
+         - '&f &7Iron ingot: 4'
+         - '&f &7Gold ingot: 4'
+         - '&f &7Netherite Scrap: 4'
+         - '&f '
+         - '&f  ' 
+      p20-2:
+        item: ChestUnclaim
+        amount: 1
+        conditions: progress33,battlepassPermission
+        close: false
+        text:
+         - '&f &f&lʙᴀᴛᴛʟᴇᴘᴀꜱꜱ ʀᴇᴡᴀʀᴅꜱ'
+         - '&f '
+         - '&f &7Money: 350'
+         - '&f &7Experience: 250'
+         - '&f &7Iron ingot: 4'
+         - '&f &7Gold ingot: 4'
+         - '&f &7Netherite Scrap: 4'
+         - '&f '
+         - '&f  '
+        click: pbp20Rewards
+      p20-3:
+        item: ChestClaim
+        amount: 1
+        conditions: pbp20Paid,battlepassPermission
+        close: false
+        text:
+         - '&f &f&lʙᴀᴛᴛʟᴇᴘᴀꜱꜱ ʀᴇᴡᴀʀᴅꜱ'
+         - '&f '
+         - '&f &7Money: 350'
+         - '&f &7Experience: 250'
+         - '&f &7Iron ingot: 4'
+         - '&f &7Gold ingot: 4'
+         - '&f &7Netherite Scrap: 4'
+         - '&f '
+         - '&f &a&lCLAIMED'
+         - '&f  '
+
+      p21-1:
+        item: KeyLocked
+        amount: 1
+        close: false
+        text:
+         - '&f &f&lʙᴀᴛᴛʟᴇᴘᴀꜱꜱ ʀᴇᴡᴀʀᴅꜱ'
+         - '&f '
+         - '&f &7Money: 350'
+         - '&f &7Experience: 250'
+         - '&f &7Iron ingot: 4'
+         - '&f &7Netherite Scrap: 4'
+         - '&f &7Diamond: 4'
+         - '&f '
+         - '&f &fᴄᴏꜱᴍᴇᴛɪᴄꜱ'
+         - '&f '
+         - '&f &bBig balloon'
+         - '&f  ' 
+      p21-2:
+        item: ChestUnclaim
+        amount: 1
+        conditions: progress35,battlepassPermission
+        close: false
+        text:
+         - '&f &f&lʙᴀᴛᴛʟᴇᴘᴀꜱꜱ ʀᴇᴡᴀʀᴅꜱ'
+         - '&f '
+         - '&f &7Money: 350'
+         - '&f &7Experience: 250'
+         - '&f &7Iron ingot: 4'
+         - '&f &7Netherite Scrap: 4'
+         - '&f &7Diamond: 4'
+         - '&f '
+         - '&f &fᴄᴏꜱᴍᴇᴛɪᴄꜱ'
+         - '&f '
+         - '&f &bBig balloon'
+         - '&f  ' 
+        click: pbp21Rewards
+      p21-3:
+        item: ChestClaim
+        amount: 1
+        conditions: pbp21Paid,battlepassPermission
+        close: false
+        text:
+         - '&f &f&lʙᴀᴛᴛʟᴇᴘᴀꜱꜱ ʀᴇᴡᴀʀᴅꜱ'
+         - '&f '
+         - '&f &7Money: 350'
+         - '&f &7Experience: 250'
+         - '&f &7Iron ingot: 4'
+         - '&f &7Netherite Scrap: 4'
+         - '&f &7Diamond: 4'
+         - '&f '
+         - '&f &fᴄᴏꜱᴍᴇᴛɪᴄꜱ'
+         - '&f '
+         - '&f &bBig balloon'
+         - '&f &a&lCLAIMED'
+         - '&f  ' 
+
+
+
+###############FREE
+      f19-1:
+        item: KeyLocked
+        amount: 1
+        close: false
+        text:
+         - '&f &f&lʙᴀᴛᴛʟᴇᴘᴀꜱꜱ ʀᴇᴡᴀʀᴅꜱ'
+         - '&f '
+         - '&f &7Money: 300'
+         - '&f &7Experience: 195'
+         - '&f &7Gold Ingot: 8'
+         - '&f &7Gold Ingot: 4'
+         - '&f &7Diamond: 2'
+         - '&f '
+         - '&f  ' 
+      f19-2:
+        item: ChestUnclaim
+        amount: 1
+        conditions: progress31
+        close: false
+        text:
+         - '&f &f&lʙᴀᴛᴛʟᴇᴘᴀꜱꜱ ʀᴇᴡᴀʀᴅꜱ'
+         - '&f '
+         - '&f &7Money: 300'
+         - '&f &7Experience: 195'
+         - '&f &7Gold Ingot: 8'
+         - '&f &7Gold Ingot: 4'
+         - '&f &7Diamond: 2'
+         - '&f '
+         - '&f  ' 
+        click: fbp19Rewards
+      f19-3:
+        item: ChestClaim
+        amount: 1
+        conditions: fbp19Paid
+        close: false
+        text:
+         - '&f &f&lʙᴀᴛᴛʟᴇᴘᴀꜱꜱ ʀᴇᴡᴀʀᴅꜱ'
+         - '&f '
+         - '&f &7Money: 300'
+         - '&f &7Experience: 195'
+         - '&f &7Gold Ingot: 8'
+         - '&f &7Gold Ingot: 4'
+         - '&f &7Diamond: 2'
+         - '&f '
+         - '&f &a&lCLAIMED'
+         - '&f  ' 
+
+
+      f20-1:
+        item: KeyLocked
+        amount: 1
+        close: false
+        text:
+         - '&f &f&lʙᴀᴛᴛʟᴇᴘᴀꜱꜱ ʀᴇᴡᴀʀᴅꜱ'
+         - '&f '
+         - '&f &7Money: 350'
+         - '&f &7Experience: 195'
+         - '&f &7Iron Ingot: 8'
+         - '&f &7Gold Ingot: 4'
+         - '&f &7Diamond: 2'
+         - '&f '
+         - '&f  ' 
+      f20-2:
+        item: ChestUnclaim
+        amount: 1
+        conditions: progress33
+        close: false
+        text:
+         - '&f &f&lʙᴀᴛᴛʟᴇᴘᴀꜱꜱ ʀᴇᴡᴀʀᴅꜱ'
+         - '&f '
+         - '&f &7Money: 350'
+         - '&f &7Experience: 195'
+         - '&f &7Iron Ingot: 8'
+         - '&f &7Gold Ingot: 4'
+         - '&f &7Diamond: 2'
+         - '&f '
+         - '&f  ' 
+        click: fbp20Rewards
+      f20-3:
+        item: ChestClaim
+        amount: 1
+        conditions: fbp20Paid
+        close: false
+        text:
+         - '&f &f&lʙᴀᴛᴛʟᴇᴘᴀꜱꜱ ʀᴇᴡᴀʀᴅꜱ'
+         - '&f '
+         - '&f &7Money: 350'
+         - '&f &7Experience: 195'
+         - '&f &7Iron Ingot: 8'
+         - '&f &7Gold Ingot: 4'
+         - '&f &7Diamond: 2'
+         - '&f '
+         - '&f &a&lCLAIMED'
+         - '&f  ' 
+
+      f21-1:
+        item: KeyLocked
+        amount: 1
+        close: false
+        text:
+         - '&f &f&lʙᴀᴛᴛʟᴇᴘᴀꜱꜱ ʀᴇᴡᴀʀᴅꜱ'
+         - '&f '
+         - '&f &7Money: 400'
+         - '&f &7Experience: 200'
+         - '&f &7Iron Ingot: 8'
+         - '&f &7Gold Ingot: 8'
+         - '&f &7Diamond: 2'
+         - '&f '
+         - '&f &fᴄᴏꜱᴍᴇᴛɪᴄꜱ'
+         - '&f '
+         - '&f &bHotair Balloon'
+         - '&f  ' 
+      f21-2:
+        item: ChestUnclaim
+        amount: 1
+        conditions: progress35
+        close: false
+        text:
+         - '&f &f&lʙᴀᴛᴛʟᴇᴘᴀꜱꜱ ʀᴇᴡᴀʀᴅꜱ'
+         - '&f '
+         - '&f &7Money: 400'
+         - '&f &7Experience: 200'
+         - '&f &7Iron Ingot: 8'
+         - '&f &7Gold Ingot: 8'
+         - '&f &7Diamond: 2'
+         - '&f '
+         - '&f &fᴄᴏꜱᴍᴇᴛɪᴄꜱ'
+         - '&f '
+         - '&f &bHotair Balloon'
+         - '&f  ' 
+        click: fbp21Rewards
+      f21-3:
+        item: ChestClaim
+        amount: 1
+        conditions: fbp21Paid
+        close: false
+        text:
+         - '&f &f&lʙᴀᴛᴛʟᴇᴘᴀꜱꜱ ʀᴇᴡᴀʀᴅꜱ'
+         - '&f '
+         - '&f &7Money: 400'
+         - '&f &7Experience: 200'
+         - '&f &7Iron Ingot: 8'
+         - '&f &7Gold Ingot: 8'
+         - '&f &7Diamond: 2'
+         - '&f '
+         - '&f &fᴄᴏꜱᴍᴇᴛɪᴄꜱ'
+         - '&f '
+         - '&f &bHotair Balloon'
+         - '&f &a&lCLAIMED'
+         - '&f  ' 
+
+    slots:
+      8: Informations
+      18: green7
+      20: p19-3,p19-2,p19-1
+      22: p20-3,p20-2,p20-1
+      24: p21-3,p21-2,p21-1
+      29: f19-3,f19-2,f19-1
+      31: f20-3,f20-2,f20-1
+      33: f21-3,f21-2,f21-1
+      11: progress31,ProgressBarBlank
+      12: progress32,ProgressBarBlank
+      13: progress33,ProgressBarBlank
+      14: progress34,ProgressBarBlank
+      15: progress35,ProgressBarBlank
+      10: battlepass6
+      38: task
+      42: close
+
+conditions:
+  progress31: point battlepass 620
+  progress32: point battlepass 640
+  progress33: point battlepass 660
+  progress34: point battlepass 680
+  progress35: point battlepass 700
+
+
+
+

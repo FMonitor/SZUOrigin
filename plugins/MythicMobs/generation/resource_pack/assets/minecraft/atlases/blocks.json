@@ -1,0 +1,19 @@
+{
+  "sources": [
+    {
+      "source": "entity",
+      "prefix": "entity/",
+      "type": "directory"
+    },
+    {
+      "source": "entity",
+      "prefix": "entity/",
+      "type": "directory"
+    },
+    {
+      "source": "armor",
+      "prefix": "armor/",
+      "type": "directory"
+    }
+  ]
+}

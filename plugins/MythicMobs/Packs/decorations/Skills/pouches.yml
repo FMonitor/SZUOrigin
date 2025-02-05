@@ -1,0 +1,27 @@
+
+
+
+littlePouch:
+  Skills:
+  - currencygive{amount=20-100} @Self
+  - sound{s=minecraft:add_coin;v=0.5;sc=HOSTILE} @self
+
+
+SmallPouch:
+  Skills:
+  - currencygive{amount=100-200} @Self
+  - sound{s=minecraft:add_coin;v=0.5;sc=HOSTILE} @self
+
+
+  
+MediumPouch:
+  Skills:
+  - currencygive{amount=200-350} @Self
+  - sound{s=minecraft:add_coin;v=0.5;sc=HOSTILE} @self
+
+
+
+
+
+
+

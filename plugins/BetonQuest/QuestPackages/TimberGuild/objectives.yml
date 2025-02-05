@@ -1,0 +1,7 @@
+objectives:
+  break64Logs: "block $logs$ -64 events:break64Logs_done,entry_break64Logs_done"
+  break128Logs: "block $logs$ -128 events:break128Logs_done,entry_break128Logs_done"
+  break192Logs: "block $logs$ -192 events:break192Logs_done,entry_break192Logs_done"
+  break256Logs: "block $logs$ -256 events:break256Logs_done,entry_break256Logs_done"
+
+

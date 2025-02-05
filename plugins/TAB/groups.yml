@@ -1,0 +1,76 @@
+admin:
+  tagprefix: "&f #e00000"
+  tabprefix: "&f #e00000"
+mods:
+  tabprefix: "&f #4800ff"
+  tagprefix: "&f #4800ff"
+helper:
+  tabprefix: "&f #67de00"
+  tagprefix: "&f #67de00"
+youtuber:
+  tabprefix: "&f #d80757"
+  tagprefix: "&f #d80757"
+streamer:
+  tabprefix: "&f #a600ff"
+  tagprefix: "&f #a600ff"
+elite:
+  tabprefix: "&f #e500ff"
+  tagprefix: "&f #e500ff"
+duke:
+  tabprefix: "&f #D323B6"
+  tagprefix: "&f #D323B6"
+earl:
+  tabprefix: "&f #D323B6"
+  tagprefix: "&f #D323B6"
+viscount:
+  tabprefix: "&f #D323B6"
+  tagprefix: "&f #D323B6"
+mvp:
+  tabprefix: "&f #0080ff"
+  tagprefix: "&f #0080ff"
+captain:
+  tabprefix: "&f #51E7FB"
+  tagprefix: "&f #51E7FB"
+lieutenant:
+  tagprefix: "&f #51E7FB"
+  tabprefix: "&f #51E7FB"
+sergeant:
+  tabprefix: "&f #51E7FB"
+  tagprefix: "&f #51E7FB"
+vip:
+  tabprefix: "&f #ffc000"
+  tagprefix: "&f #ffc000"
+knight:
+  tabprefix: "&f #C5D4FB"
+  tagprefix: "&f #C5D4FB"
+warrior:
+  tabprefix: "&f #C5D4FB"
+  tagprefix: "&f #C5D4FB"
+fighter:
+  tabprefix: "&f #C5D4FB"
+  tagprefix: "&f #C5D4FB"
+default:
+  tabprefix: "&f #bcbcbc"
+  tagprefix: "&f #bcbcbc"
+  
+  
+  
+example_group:
+  header:
+    - "This is an example of per-group header/footer"
+  footer:
+    - "applied to a group"
+
+ # default settings for all groups, all groups will take properties from this section unless player's primary group overrides a specific setting
+_DEFAULT_:
+  tabprefix: "%vault-prefix%"
+  tagprefix: "%vault-prefix%"
+
+per-world:
+  world1:
+    Owner:
+      tabprefix: "&0&l[&a&lOwner&0&l] &a"
+      tagprefix: "&2&lOwner &a"
+
+
+

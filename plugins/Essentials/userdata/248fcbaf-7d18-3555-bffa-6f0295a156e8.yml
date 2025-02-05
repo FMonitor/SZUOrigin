@@ -1,0 +1,65 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 14.154.110.199
+afk: true
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1738639941584
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1738620060071
+  login: 1738638851752
+  kits:
+    vip: 1738392441986
+money: '8344.0'
+last-account-name: neckProtecter
+lastlocation:
+  world: df98b32a-bc52-4842-b330-337c173247bd
+  world-name: world_nether
+  x: 60.79228033673822
+  y: 132.0
+  z: -15.177016239238938
+  yaw: -176.0985870361328
+  pitch: 30.89990234375
+logoutlocation:
+  world: 04c00a4f-fe5c-47c6-8998-babf81130ba2
+  world-name: world
+  x: 489.3256569081999
+  y: 30.0
+  z: -341.30000001192093
+  yaw: -157.34669494628906
+  pitch: 26.0998477935791
+homes:
+  jia:
+    world: 04c00a4f-fe5c-47c6-8998-babf81130ba2
+    world-name: world
+    x: 511.7294217477433
+    y: 64.0
+    z: -317.13499994058583
+    yaw: 18.15374755859375
+    pitch: 24.450170516967773
+  zhaoze:
+    world: 04c00a4f-fe5c-47c6-8998-babf81130ba2
+    world-name: world
+    x: -3337.0916908993986
+    y: 64.0
+    z: -705.2122810816936
+    yaw: 54.70013427734375
+    pitch: 11.1003999710083
+  modi:
+    world: 0ffa7ed0-7ff7-4b4b-8836-301dd9fec5f8
+    world-name: world_the_end
+    x: -41.79232997617924
+    y: 63.0
+    z: -6162.408155386976
+    yaw: 146.09957885742188
+    pitch: 19.499902725219727

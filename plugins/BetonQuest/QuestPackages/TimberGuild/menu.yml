@@ -1,0 +1,360 @@
+menus:
+  questMenu:
+    height: 5
+    title: "&f"
+    command: "/timberguild"
+    slots:
+#      0-3: "filler,filler,filler,filler"
+      1: "TimberTidings,TimberTidingsActive,TimberTidingsQuestCompleted,TimberTidingsQuestpaid"
+      31: "TimberTidings_128_locked,TimberTidings_128_inactive,TimberTidings_128_active,TimberTidings_128_QuestCompleted,TimberTidings_128_Questpaid"
+      21: "TimberTidings_192_locked,TimberTidings_192_inactive,TimberTidings_192_active,TimberTidings_192_QuestCompleted,TimberTidings_192_Questpaid"
+      15: "TimberTidings_256_locked,TimberTidings_256_inactive,TimberTidings_256_active,TimberTidings_256_QuestCompleted,TimberTidings_256_Questpaid"
+
+
+
+    items:
+      TimberTidings:
+        item: "QuestInactiveItem"
+        amount: 1
+        conditions: "!break64Logs_done,!break64Logs_started"
+        text:
+            - '&f &f&l 悬赏'
+            - '&f '
+            - "&f &4&l森林趣闻 &6Level I"
+            - "&f "
+            - "&f &7砍伐 64 参天大树"
+            - "&f &7获得它们珍贵木材"
+            - "&f &7来证明你的技巧"
+            - "&f &7能征服这片森林."
+            - '&f '
+            - "&f &e左键认领此悬赏."
+            - '&f ' 
+        click:
+          left: "break64Logs,break64Logs_started,entry_break64Logs_started"
+        close: true
+
+      TimberTidingsActive:
+        item: "QuestActiveItem"
+        amount: 1
+        conditions: "break64Logs_started,!break64Logs_done,!break64Logs_paid"
+        text:
+            - '&f &f&l 悬赏'
+            - '&f '
+            - "&f &4&l森林趣闻 &6Level I"
+            - "&f "
+            - "&f &7砍伐 &4&3%objective.break64Logs.left% 参天大树"
+            - "&f &7获得它们珍贵木材"
+            - "&f &7来证明你的技巧"
+            - "&f &7能征服这片森林."
+            - '&f ' 
+        close: false
+
+      TimberTidingsQuestCompleted:
+        item: "QuestCompletedUnclaim"
+        amount: 1
+        conditions: "break64Logs_done,!break64Logs_paid"
+        text:
+            - '&f &f&l 悬赏'
+            - '&f '
+            - "&f &4&l森林趣闻 &6Level I"
+            - "&f "
+            - "&f &7你的砍伐数已完成"
+            - "&f &7你证明了你的伐木技巧"
+            - "&f &7能征服这片森林."
+            - "&f "
+            - "&f &e左键以领取奖励"
+            - "&f  &a&l任务到此结束~!"
+        click:
+          left: "money_64_rewards,break64Logs_paid"
+        close: true
+
+      TimberTidingsQuestpaid:
+        item: "QuestCompleted"
+        amount: 1
+        conditions: "break64Logs_paid,break64Logs_done"
+        text:
+            - '&f &f&l 悬赏'
+            - '&f '
+            - "&f &4&l森林趣闻 &6Level I"
+            - "&f "
+            - "&f &7你的砍伐数已完成"
+            - "&f &7你证明了你的伐木技巧"
+            - "&f &7能征服这片森林."
+            - "&f "
+            - '&f &a&l   已认领'
+            - "&f  &a&l任务到此结束~!"
+        close: false
+#################################
+      TimberTidings_128_locked:
+        item: "questlocked"
+        amount: 1
+        conditions: "!break64Logs_paid"
+        text:
+            - '&f &f&l 悬赏'
+            - '&f '
+            - "&f &7需要先完成其他"
+            - "&f &7任务来完成解锁此任务."
+            - '&f '
+            - "&f &f   要求"
+            - "&f "
+            - "&f &5森林趣闻 Level I"
+            - '&f &f &4&l已上锁&f' 
+        close: false
+
+      TimberTidings_128_inactive:
+        item: "QuestInactiveItem"
+        amount: 1
+        conditions: "!break128Logs_done,!break128Logs_started"
+        text:
+            - '&f &f&l 悬赏'
+            - '&f '
+            - "&f &4&l森林趣闻 &6Level II"
+            - "&f "
+            - "&f &7砍伐 128 参天大树"
+            - "&f &7获得它们珍贵木材"
+            - "&f &7来证明你的技巧"
+            - "&f &7能征服这片森林."
+            - '&f '
+            - "&f &e左键认领此悬赏."
+            - '&f ' 
+        click:
+          left: "break128Logs,break128Logs_started,entry_break128Logs_started"
+        close: true
+
+
+      TimberTidings_128_active:
+        item: "QuestActiveItem"
+        amount: 1
+        conditions: "break128Logs_started,!break128Logs_done,!break128Logs_paid"
+        text:
+            - '&f &f&l 悬赏'
+            - '&f '
+            - "&f &4&l森林趣闻 &6Level II"
+            - "&f "
+            - "&f &7砍伐 &4&3%objective.break128Logs.left% 参天大树"
+            - "&f &7获得它们珍贵木材"
+            - "&f &7来证明你的技巧"
+            - "&f &7能征服这片森林."
+            - '&f ' 
+        close: false
+
+      TimberTidings_128_QuestCompleted:
+        item: "QuestCompletedUnclaim"
+        amount: 1
+        conditions: "break128Logs_done,!break128Logs_paid"
+        text:
+            - '&f &f&l 悬赏'
+            - '&f '
+            - "&f &4&l森林趣闻 &6Level II"
+            - "&f "
+            - "&f &7你的砍伐数已完成"
+            - "&f &7你证明了你的伐木技巧"
+            - "&f &7能征服这片森林."
+            - "&f "
+            - "&f &e左键以领取奖励"
+            - "&f  &a&l任务到此结束~!"
+        click:
+          left: "money_128_rewards,break128Logs_paid"
+        close: true
+
+      TimberTidings_128_Questpaid:
+        item: "QuestCompleted"
+        amount: 1
+        conditions: "break128Logs_paid,break128Logs_done"
+        text:
+            - '&f &f&l 悬赏'
+            - '&f '
+            - "&f &4&l森林趣闻 &6Level II"
+            - "&f "
+            - "&f &7你的砍伐数已完成"
+            - "&f &7你证明了你的伐木技巧"
+            - "&f &7能征服这片森林."
+            - "&f "
+            - '&f &a&l   已认领'
+            - "&f  &a&l任务到此结束~!"
+        close: false
+
+#################################
+      TimberTidings_192_locked:
+        item: "questlocked"
+        amount: 1
+        conditions: "!break128Logs_paid"
+        text:
+            - '&f &f&l 悬赏'
+            - '&f '
+            - "&f &7需要先完成其他"
+            - "&f &7任务来完成解锁此任务."
+            - '&f '
+            - "&f &f   要求"
+            - "&f "
+            - "&f &5森林趣闻 Level II"
+            - '&f &f &4&l已上锁&f' 
+        close: false
+
+
+      TimberTidings_192_inactive:
+        item: "QuestInactiveItem"
+        amount: 1
+        conditions: "!break192Logs_done,!break192Logs_started"
+        text:
+            - '&f &f&l 悬赏'
+            - '&f '
+            - "&f &4&l森林趣闻 &6Level III"
+            - "&f "
+            - "&f &7砍伐 192 参天大树"
+            - "&f &7获得它们珍贵木材"
+            - "&f &7来证明你的技巧"
+            - "&f &7能征服这片森林."
+            - '&f '
+            - "&f &e左键认领此悬赏."
+            - '&f ' 
+        click:
+          left: "break192Logs,break192Logs_started,entry_break192Logs_started"
+        close: true
+
+
+      TimberTidings_192_active:
+        item: "QuestActiveItem"
+        amount: 1
+        conditions: "break192Logs_started,!break192Logs_done,!break192Logs_paid"
+        text:
+            - '&f &f&l 悬赏'
+            - '&f '
+            - "&f &4&l森林趣闻 &6Level III"
+            - "&f "
+            - "&f &7砍伐 &4&3%objective.break192Logs.left% 参天大树"
+            - "&f &7获得它们珍贵木材"
+            - "&f &7来证明你的技巧"
+            - "&f &7能征服这片森林."
+            - '&f ' 
+        close: false
+
+      TimberTidings_192_QuestCompleted:
+        item: "QuestCompletedUnclaim"
+        amount: 1
+        conditions: "break192Logs_done,!break192Logs_paid"
+        text:
+            - '&f &f&l 悬赏'
+            - '&f '
+            - "&f &4&l森林趣闻 &6Level III"
+            - "&f "
+            - "&f &7你的砍伐数已完成"
+            - "&f &7你证明了你的伐木技巧"
+            - "&f &7能征服这片森林."
+            - "&f "
+            - "&f &e左键以领取奖励"
+            - "&f  &a&l任务到此结束~!"
+        click:
+          left: "money_192_rewards,break192Logs_paid"
+        close: true
+
+      TimberTidings_192_Questpaid:
+        item: "QuestCompleted"
+        amount: 1
+        conditions: "break192Logs_paid,break192Logs_done"
+        text:
+            - '&f &f&l 悬赏'
+            - '&f '
+            - "&f &4&l森林趣闻 &6Level III"
+            - "&f "
+            - "&f &7你的砍伐数已完成"
+            - "&f &7你证明了你的伐木技巧"
+            - "&f &7能征服这片森林."
+            - "&f "
+            - '&f &a&l   已认领'
+            - "&f  &a&l任务到此结束~!"
+        close: false
+
+#################################
+      TimberTidings_256_locked:
+        item: "questlocked"
+        amount: 1
+        conditions: "!break192Logs_paid"
+        text:
+            - '&f &f&l 悬赏'
+            - '&f '
+            - "&f &7需要先完成其他"
+            - "&f &7任务来完成解锁此任务."
+            - '&f '
+            - "&f &f   要求"
+            - "&f "
+            - "&f &5森林趣闻 Level III"
+            - '&f &f &4&l已上锁&f' 
+        close: false
+
+
+      TimberTidings_256_inactive:
+        item: "QuestInactiveItem"
+        amount: 1
+        conditions: "!break256Logs_done,!break256Logs_started"
+        text:
+            - '&f &f&l 悬赏'
+            - '&f '
+            - "&f &4&l森林趣闻 &6Level IV"
+            - "&f "
+            - "&f &7砍伐 256 参天大树"
+            - "&f &7获得它们珍贵木材"
+            - "&f &7来证明你的技巧"
+            - "&f &7能征服这片森林."
+            - '&f '
+            - "&f &e左键认领此悬赏."
+            - '&f ' 
+        click:
+          left: "break256Logs,break256Logs_started,entry_break256Logs_started"
+        close: true
+
+
+      TimberTidings_256_active:
+        item: "QuestActiveItem"
+        amount: 1
+        conditions: "break256Logs_started,!break256Logs_done,!break256Logs_paid"
+        text:
+            - '&f &f&l 悬赏'
+            - '&f '
+            - "&f &4&l森林趣闻 &6Level IV"
+            - "&f "
+            - "&f &7砍伐 &4&3%objective.break256Logs.left% 参天大树"
+            - "&f &7获得它们珍贵木材"
+            - "&f &7来证明你的技巧"
+            - "&f &7能征服这片森林."
+            - '&f ' 
+        close: false
+
+      TimberTidings_256_QuestCompleted:
+        item: "QuestCompletedUnclaim"
+        amount: 1
+        conditions: "break256Logs_done,!break256Logs_paid"
+        text:
+            - '&f &f&l 悬赏'
+            - '&f '
+            - "&f &4&l森林趣闻 &6Level IV"
+            - "&f "
+            - "&f &7你的砍伐数已完成"
+            - "&f &7你证明了你的伐木技巧"
+            - "&f &7能征服这片森林."
+            - "&f "
+            - "&f &e左键以领取奖励"
+            - "&f  &a&l任务到此结束~!"
+        click:
+          left: "money_256_rewards,break256Logs_paid"
+        close: true
+
+      TimberTidings_256_Questpaid:
+        item: "QuestCompleted"
+        amount: 1
+        conditions: "break256Logs_paid,break256Logs_done"
+        text:
+            - '&f &f&l 悬赏'
+            - '&f '
+            - "&f &4&l森林趣闻 &6Level IV"
+            - "&f "
+            - "&f &7你的砍伐数已完成"
+            - "&f &7你证明了你的伐木技巧"
+            - "&f &7能征服这片森林."
+            - "&f "
+            - '&f &a&l   已认领'
+            - "&f  &a&l任务到此结束~!"
+        close: false
+
+
+
