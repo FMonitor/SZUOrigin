@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "block/custom/noteblock_1",
-    "particles": "block/custom/noteblock_1"
-  }
-}

@@ -1,1 +1,0 @@
-{"textures":{"0":"modelengine:entity/windmill_02"},"elements":[{"from":[-14.846226,9.474118,5.9915814],"to":[6.653775,9.974118,5.9915814],"faces":{"south":{"uv":[0.875,6.3125,0.75,12.0],"tintindex":0,"rotation":90,"texture":"#0"},"north":{"uv":[0.625,11.6875,0.75,6.3125],"tintindex":0,"rotation":270,"texture":"#0"}}}],"display":{"gui":{"rotation":[30,225,0]}}}

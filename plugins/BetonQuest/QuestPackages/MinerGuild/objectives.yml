@@ -1,7 +1,0 @@
-objectives:
-  break64stones: "block STONE -64 events:break64stones_done,entry_break64stones_done"
-  break128stones: "block STONE -128 events:break128stones_done,entry_break128stones_done"
-  break192stones: "block STONE -192 events:break192stones_done,entry_break192stones_done"
-  break256stones: "block STONE -256 events:break256stones_done,entry_break256stones_done"
-
-

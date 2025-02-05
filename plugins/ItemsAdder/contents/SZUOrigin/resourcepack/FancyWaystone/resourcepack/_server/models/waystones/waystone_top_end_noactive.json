@@ -1,7 +1,0 @@
-{
-	"parent": "_server:waystones/base_waystone_top",
-	"textures": {
-		"body": "_server:waystones/end_stone_brick_waystone_inactive",
-		"particle": "block/end_stone_bricks"
-	}
-}
