@@ -1,0 +1,35 @@
+info:
+  namespace: hyronic_friend
+items:
+  empty:
+    display_name: 'Empty Item'
+    resource:
+      material: FLINT
+      generate: true
+      model_id: 9999
+      textures:
+      - empty
+  next_button:
+    display_name: 'Next Button'
+    resource:
+      material: FLINT
+      generate: true
+      model_id: 9998
+      textures:
+      - button/next_button
+  previous_button:
+    display_name: 'Previous Button'
+    resource:
+      material: FLINT
+      generate: true
+      model_id: 9997
+      textures:
+      - button/previous_button
+  setting_active:
+    display_name: 'Previous Button'
+    resource:
+      material: FLINT
+      generate: true
+      model_id: 9996
+      textures:
+      - button/setting_active

@@ -1,0 +1,1 @@
+{"parent":"item/generated","textures":{"layer0":"item/gold_nugget"},"overrides":[{"predicate":{"custom_model_data":1503},"model":"misc:currency/little_pouch"},{"predicate":{"custom_model_data":1504},"model":"misc:currency/small_pouch"},{"predicate":{"custom_model_data":1505},"model":"misc:currency/medium_pouch"}]}

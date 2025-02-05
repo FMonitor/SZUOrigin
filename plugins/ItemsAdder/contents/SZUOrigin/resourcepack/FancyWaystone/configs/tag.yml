@@ -1,0 +1,46 @@
+info:
+  namespace: tag
+font_images:
+# UI
+  interact_tag:
+    permission: 0
+    show_in_gui: true
+    path: "ui/interact_tag.png"
+    scale_ratio: 7
+    y_position: 7
+  info_tag:
+    permission: 0
+    show_in_gui: true
+    path: "ui/info_tag.png"
+    scale_ratio: 7
+    y_position: 7
+  eco_tag:
+    permission: 0
+    show_in_gui: true
+    path: "ui/eco_tag.png"
+    scale_ratio: 7
+    y_position: 7
+  permission_tag:
+    permission: 0
+    show_in_gui: true
+    path: "ui/permission_tag.png"
+    scale_ratio: 7
+    y_position: 7
+  limit_tag:
+    permission: 0
+    show_in_gui: true
+    path: "ui/limit_tag.png"
+    scale_ratio: 7
+    y_position: 7
+  requirement_tag:
+    permission: 0
+    show_in_gui: true
+    path: "ui/requirement_tag.png"
+    scale_ratio: 7
+    y_position: 7
+  reward_tag:
+    permission: 0
+    show_in_gui: true
+    path: "ui/reward_tag.png"
+    scale_ratio: 7
+    y_position: 7

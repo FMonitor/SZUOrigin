@@ -1,0 +1,45 @@
+info:
+  namespace: interact
+font_images:
+  click_l:
+    permission: 0
+    show_in_gui: true
+    path: "click_l.png"
+    scale_ratio: 9
+    y_position: 8
+  click_r:
+    permission: 0
+    show_in_gui: true
+    path: "click_r.png"
+    scale_ratio: 9
+    y_position: 8
+  click_shift:
+    permission: 0
+    show_in_gui: true
+    path: "click_shift.png"
+    scale_ratio: 9
+    y_position: 8
+  click_f:
+    permission: 0
+    show_in_gui: true
+    path: "click_f.png"
+    scale_ratio: 9
+    y_position: 8
+  exc_green:
+    permission: 0
+    show_in_gui: true
+    path: "exc_green.png"
+    scale_ratio: 9
+    y_position: 8
+  exc_red:
+    permission: 0
+    show_in_gui: true
+    path: "exc_red.png"
+    scale_ratio: 9
+    y_position: 8
+  exc_normal:
+    permission: 0
+    show_in_gui: true
+    path: "exc_normal.png"
+    scale_ratio: 9
+    y_position: 8
