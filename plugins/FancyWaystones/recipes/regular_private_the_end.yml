@@ -1,0 +1,24 @@
+Result:
+  type: WAYSTONE
+  meta:
+    model: 'regular'
+    id: 'private_the_end'
+Shape:
+  - "XYX"
+  - "BAB"
+  - "AZA"
+Auto Give:
+  On Join: false
+  First Join Only: false
+  On Pickup Ingredient: true
+Materials:
+  X:
+    type: PURPUR_SLAB;SANDSTONE_SLAB
+  Y:
+    type: PURPUR_BLOCK;END_STONE
+  Z:
+    type: ENDER_CHEST
+  A:
+    type: EMERALD_BLOCK
+  B:
+    type: NAME_TAG

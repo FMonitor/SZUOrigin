@@ -1,0 +1,124 @@
+# 配置版本，不要更改！
+Configuration Version: "1.0.10"
+
+Default Waystone Name: "新石碑"
+
+Default Give Command Type: "regular"
+
+Default Language: "en_us"
+
+# 如果您正在使用BungeeCord服务器，请将此设置为true
+# 不要忘记使用MySQL存储类型来使其正常工作
+Proxy Mode: false
+
+# 此选项是为了解决一些服务器的问题，这些服务器
+# 无法由于过度的CPU使用而创建更多的线程
+# 使用NativeScheduler表示java调度器的行为
+# 使用BukkitScheduler表示带有可重入锁同步的bukkit异步调度器
+# 使用AsyncBukkitScheduler表示无同步的bukkit异步调度器
+# 使用SyncBukkitScheduler表示bukkit同步调度器
+Service Scheduler: "NativeScheduler"
+IO Service Scheduler: "NativeScheduler"
+Structure Service Scheduler: "NativeScheduler"
+
+# 指定玩家必须离传送石多近
+# 才能看到全息图（以方块为单位）[使用-1表示服务器视距]
+Waystone Hologram View Distance: 6
+
+# 如果传送石只有一个支付方式选项，将删除支付菜单
+Disable Paywall Menu For One Option Cost: true
+
+# 死亡后，重生到最近的传送石碑，但如果床的位置比传送石更近，那么玩家将被传送到床上。
+Respawn To The Closest Waystone or Bed: false
+
+# 传送石像磁石一样，当用指南针点击它时，它将你的指南针方向设置为传送石的位置。
+Lodestone Waystone: true
+
+# 阻止在传送石名称中使用不当的词语
+Blacklisted Names:
+  - fuck
+  - ass
+  - shit
+  - nigga
+  - vagina
+  - dick
+  - penis
+  - bitch
+  - bastard
+  - piss
+  - damn
+  - cunt
+  - bollocks
+  - bugger
+
+# 不再使用，请查看传送石类型配置中的 "Economy Bypass Condition"
+Permissions:
+  # 如果玩家有这个权限，那么他们使用传送石时不会被收费
+  Charge Pass: "fancywaystones.use.waystones.free.{environment}.{type}.{model}"
+
+Waystone Inactivity:
+  # 如果启用，所有不活跃的传送石将从服务器中移除
+  Enable: false
+  Duration: 40d
+  # 如果这设置为ONLINE_TIME_OWNER，传送石的不活跃度将由传送石主的最后在线时间决定
+  # 如果这设置为LAST_USED，传送石的不活跃度将由玩家最后一次打开传送石的时间决定
+  # 如果这设置为LAST_VISITED，传送石的不活跃度将由玩家最后一次访问传送石的时间决定
+  # 如果这设置为LAST_VISIT，传送石的不活跃度将由玩家最后一次使用传送石访问其他传送石的时间决定
+  # 如果设置为其他，此清除系统将被禁用
+  Mode: LAST_VISITED
+  # 检查间隔，它将只检查已加载的数据
+  Check Interval: 1m
+
+Safe Teleport:
+  Force If Fail: false
+  # 在玩家传送时增加保护
+  No Damage Time: 10s
+  Check Radius: 4
+  Check Height: 5
+
+Preferred TP Location:
+  Wand Item:
+    type: BEDROCK
+    meta:
+      display-name: "&e&l{language.tp-offset}"
+      lore:
+        - "&7{language.tp-offset1}"
+        - "&7{language.tp-offset2}"
+        - "&7{language.tp-offset3}"
+
+Economy:
+  Stellium:
+    Enable: true
+    Currency Format: "{amount} stellium"
+  Level:
+    Enable: true
+    Currency Format: "{amount} levels"
+  Vault:
+    Enable: true
+    Currency Format: "${amount}"
+  Item:
+    Enable: true
+    Currency Format: "{amount}x {type}"
+    Items:
+      EnderPearl:
+        type: ENDER_PEARL
+      Emerald:
+        type: EMERALD
+
+ItemsAdder Hook Reload: false
+
+Model:
+  # 由标准传送石模型使用，对于更多模型定制，请查看waystone_models文件夹。
+  Active:
+    server: DIAMOND_BLOCK
+    public: GOLD_BLOCK
+    region: IRON_BLOCK
+    private: EMERALD_BLOCK
+
+Patches:
+  Teleport Cause: UNKNOWN
+
+Integrations:
+  Lands:
+    Enable: true
+    Bind Activation: true

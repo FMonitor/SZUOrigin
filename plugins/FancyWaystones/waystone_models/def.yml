@@ -1,0 +1,43 @@
+name: "默认"
+components:
+  - type: items-adder
+    offset:
+      x: 0
+      y: 0
+      z: 0
+    data:
+      '*':
+        custom-block: 'waystone_bottom_def_active'
+        break-time-tick: 10
+  - type: items-adder
+    offset:
+      x: 0
+      y: 1
+      z: 0
+    data:
+      '*':
+        custom-block: 'waystone_top_def_active'
+        break-time-tick: 10
+  - type: hologram
+    offset:
+      x: 0.5
+      y: 1.5
+      z: 0.5
+  - type: items-adder
+    offset:
+      x: 0
+      y: 0
+      z: 0
+    data:
+      'state:inactive *':
+        custom-block: 'waystone_bottom_def_noactive'
+        break-time-tick: 10
+  - type: items-adder
+    offset:
+      x: 0
+      y: 1
+      z: 0
+    data:
+      'state:inactive *':
+        custom-block: 'waystone_top_def_noactive'
+        break-time-tick: 10

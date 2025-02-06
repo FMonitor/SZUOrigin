@@ -3,7 +3,7 @@ teleportauto: false
 godmode: false
 muted: false
 jailed: false
-ip-address: 223.73.211.42
+ip-address: 127.0.0.1
 afk: false
 socialspy: false
 npc: false
@@ -16,8 +16,8 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1738598838380
-  login: 1738586528966
+  logout: 1738828051546
+  login: 1738828356958
   kits:
     elite: 1738052371401
 money: '8780.0'
@@ -33,11 +33,11 @@ lastlocation:
 logoutlocation:
   world: 04c00a4f-fe5c-47c6-8998-babf81130ba2
   world-name: world
-  x: 981.7136679375938
-  y: 109.0
-  z: 655.5730620315776
-  yaw: -65.55382537841797
-  pitch: 28.65011215209961
+  x: 976.7552438010327
+  y: 110.0
+  z: 655.77396187682
+  yaw: 122.24638366699219
+  pitch: 25.2000732421875
 homes:
   mine:
     world: 16c0d5de-e05c-437b-bfdb-3422519e8bd3

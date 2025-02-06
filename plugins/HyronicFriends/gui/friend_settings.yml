@@ -1,0 +1,93 @@
+Settings:
+  #Rows on GUI:
+  # * The value can only be from 1 to 6.
+  Rows: 3
+
+  #Plays a sound when the player interacts on GUI:
+  #Empty the string (like below) will disable this feature.
+  #Sound: ''
+  Sound: ui_button_click
+
+RepresentItems:
+  #Position for 2 below items:
+  Slot: 11
+
+  OnlinePlayer:
+    #For those who prefer to use custom models from ItemsAdder (or Oraxen),
+    #use this option to specify a model.
+    #Format: 'Oraxen:<id>' or 'IA:<namespaceId>'
+    # * If this option is used, it means that: Material and Data cannot be used.
+    # * Remember to remove the 'CustomModelData' option first.
+    # * Leave it blank will disable this feature.
+    Model: '' #May not need to configure.
+    Material: 'PAPER' #May not need to configure.
+    Amount: 1 #May not need to configure.
+    Data: 0 #May not need to configure.
+    #Using 'Texture' option if you want to display the head texture:
+    #Texture: '<value>' #Can be found at: https://minecraft-heads.com/ (Value field).
+    #Texture: 'hdb-<id>' #Using for HeadDatabase plugin.
+    #Texture: '%player%' #Display the friend's head.
+    Texture: '%player%' #May not need to configure.
+    CustomModelData: 2 #May not need to configure.
+    Enchantments: [] #May not need to configure.
+    #- 'durability:10'
+    HideFlags: [] #May not need to configure.
+    #- 'HIDE_ENCHANTS'
+  OfflinePlayer:
+    Texture: '%player%'
+    CustomModelData: 2
+
+ControlItems:
+  Back:
+    Material: 'FLINT'
+    CustomModelData: 9999
+    Slot: 20
+  MailList:
+    Material: FLINT
+    CustomModelData: 9999
+    Slots: [6,7]
+  Unfriend:
+    Material: FLINT
+    CustomModelData: 9999
+    Slots: [8,9]
+  CanTeleport:
+    Material: FLINT
+    CustomModelData: 9999
+    Slots: [5,4]
+  CannotTeleport:
+    Material: FLINT
+    CustomModelData: 9999
+    Slots: [5,4]
+  AllowReceivingMessage:
+    Material: FLINT
+    CustomModelData: 9999
+    # Slot: 5
+  DisallowReceivingMessage:
+    Material: FLINT
+    CustomModelData: 9999
+    # Slot: 5
+  ToggleTeleportAllowed:
+    Material: FLINT
+    CustomModelData: 9996
+    Slot: 13
+  ToggleTeleportDisallowed:
+    Material: FLINT
+    CustomModelData: 9999
+    Slot: 13
+  ToggleMailingAllowed:
+    Material: FLINT
+    CustomModelData: 9996
+    Slot: 22
+  ToggleMailingDisallowed:
+    Material: FLINT
+    CustomModelData: 9999
+    Slot: 22
+#These are decorative items, which will make your GUI more beautiful!
+#You can add/delete items in this section.
+# * You can add the "Commands" option to these item.
+# * Use %player% to get the executor's name.
+# * You can also use placeholder from PlaceholderAPI in this section.
+#- '<command>' - Execute the command as normal player.
+#- 'OP: <command>' - Execute the command as an administrator.
+#- 'CONSOLE: <command>' - Execute the command on Console.
+DecorateItems: {}

@@ -1,0 +1,727 @@
+PREFIX: ''
+RAW_PREFIX: ''
+
+STATUS:
+  enabled: '#4cd137已开启'
+  disabled: '&c已关闭'
+  allowed: '#4cd137已允许'
+  disallowed: '&c已禁止'
+  online: '&f#2ed573'
+  offline: '&f#e74c3c'
+  expired: '&c已过期'
+  waiting: '&6等待中'
+  accepted: '#4cd137已同意'
+  declined: '&c已拒绝'
+  cancelled: '&c已取消'
+  received: '&6已收到'
+  sent: '&6已发送'
+  read: '#4cd137已阅读'
+  unlimited: '∞'
+
+FORMAT:
+  years: '年'
+  months: '月'
+  weeks: '周'
+  days: '日'
+  hours: '小时'
+  minutes: '分钟'
+  seconds: '秒'
+
+HELP:
+  header: '&8&l------=====[ &eHʏʀᴏɴɪᴄFʀɪᴇɴᴅs v{version} &8&l]=====------'
+  help: '&8 > &c/{label} <help|?> [page] &f: &7展示帮助界面.'
+  footer: '&8&l---------------------------------------'
+  Page_1:
+    main: '&8 > &c/{label} &f: &7打开主菜单.'
+    toggle: '&8 > &c/{label} toggle &f: &7选择是否接受好友申请.'
+    add: '&8 > &c/{label} add <player> &f: &7发送好友申请.'
+    accept: '&8 > &c/{label} accept <player> &f: &7同意好友申请.'
+    decline: '&8 > &c/{label} decline <player> &f: &7拒绝好友申请.'
+    cancel: '&8 > &c/{label} cancel <player> &f: &7撤回发送的好友申请.'
+    list: '&8 > &c/{label} list &f: &7打开你的好友列表.'
+  Page_2:
+    unfriend: '&8 > &c/unfriend <player> &f: &7忘记一个好友.'
+    notify: '&8 > &c/{label} notify &f: &7开关好友在线提醒功能.'
+    blockedlist: '&8 > &c/blockedlist &f: &7列出被你拉黑的玩家.'
+    block: '&8 > &c/block <player> &f: &7拉黑一个玩家.'
+    unblock: '&8 > &c/unblock <player> &f: &7取消拉黑一个玩家.'
+    mail: '&8 > &c/fmail help &f: &7展示好友邮箱相关的命令.'
+    reload: '&8 > &c/{label} reload &f: &7重载插件.'
+  Page_3:
+    teleport: '&8 > &c/ftp <player> &f: &7传送到你的好友.'
+    toggletp: '&8 > &c/toggletp <player> &f: &7选择是否允许你的好友传送到你的位置.'
+    togglemail: '&8 > &c/togglemail <player> &f: &7选择是否接收来自好友的邮件.'
+    togglemsg: '&8 > &c/togglemsg <player> &f: &7选择是否接收来自好友的私聊.'
+    message: '&8 > &c/fmsg <player> <message> &f: &7与你的好友私聊.'
+    reply: '&8 > &c/freply <message> &f: &7回复最近的一次好友私聊.'
+  MAIL:
+    help: '&8 > &c/{label} [help|?] &f: &7展示这个帮助界面.'
+    mailbox: '&8 > &c/mailbox &f: &7打开邮箱.'
+    list: '&8 > &c/{label} <player> &f: &7展示从这个好友收到的所有邮件.'
+    send: '&8 > &c/{label} send <player> <content> &f: &7向你的好友发送邮件.'
+    read: '&8 > &c/{label} read <player> &f: &7阅读最近的邮件.'
+
+BROADCAST:
+  friend-online: '{prefix}&6→ 你的好友, #4cd137{display} &6上线了!' #Use {player} to display the player's real name.
+  friend-offline: '{prefix}&c→ 你的好友, &e{display} &c下线了!' #Use {player} to display the player's real name.
+
+  no-mail-received: '{prefix}&6→ 你没有新邮件.'
+
+#Available color tags: black, dark_blue, dark_green, dark_aqua, dark_red, dark_purple, gold, gray, dark_gray, blue, green, aqua, red, light_purple, yellow, or white.
+#Please take a look at (https://docs.advntr.dev/minimessage/format.html#click) once before editing this section.
+RAW:
+  friend-request-accept: '<hover:show_text:''<green>同意好友申请''><click:run_command:/friend accept {player}><green>同意</green></click></hover>'
+  friend-request-decline: '<hover:show_text:''<red>拒绝好友申请''><click:run_command:/friend decline {player}><red>拒绝</red></click></hover>'
+  friend-request-cancel: '<hover:show_text:''<gold>撤回好友申请''><click:run_command:/friend cancel {player}><gold>撤回</gold></click></hover>'
+
+  request-sent: '{raw_prefix}<green>→ 你向 <yellow>{player}</yellow> 发送了好友申请.</green> <dark_gray>[{fr_cancel_raw}]</dark_gray>'
+  request-friend: '{raw_prefix}<gold>→ 玩家 <yellow>{player}</yellow> 申请成为你的好友.</gold> <dark_gray>[{fr_accept_raw} | {fr_decline_raw}]</dark_gray>'
+
+  read-mail: '<hover:show_text:''<green>阅读邮件''><click:run_command:/mail read {player}><green>现在阅读</green></click></hover>'
+  mailbox: '<hover:show_text:''<green>打开邮箱''><click:run_command:/mailbox><green>邮箱</green></click></hover>'
+  quick-reply: '<hover:show_text:''<green>快速回复这条好友私信.''><click:suggest_command:''/fmessage {player} ''><green>回复</green></click></hover>'
+
+  unread-mails: '{raw_prefix}<gold>→ 你收到了新邮件!</gold> <dark_gray>[{mailbox}]</dark_gray>'
+  new-mail: '{raw_prefix}<#fbc531>→ 你从 <yellow>{player}</yellow> 收到了新邮件!</#fbc531> <dark_gray><bold>[{read_mail}]</dark_gray>'
+  mail-sent: '{raw_prefix}<green>→ 邮件已发送给 <yellow>{player}</yellow>.</green> <dark_gray>[{mailbox}]</dark_gray>'
+  received-message: '<dark_gray>[<yellow>{player}</yellow> <gray>-></gray> <yellow>我</yellow>]</dark_gray> <white>{message}</white> {quick_reply}'
+
+SUCCESS:
+  config-reload: '{prefix}#4cd137→ 成功重载插件!'
+
+  friend-request-toggled: '{prefix}&7→ 你现在 &r{status} &7新的好友申请.'
+  online-notifications-toggled: '{prefix}&7→ 你现在 &r{status} &7好友在线情况通知.'
+
+  unfriend: '{prefix}&7→ 你忘记了好友 &e{player}&7.'
+  now-friends: '{prefix}#4cd137→ 你和 &e{player} #4cd137现在是好友了.'
+  declined-friend-request: '{prefix}&7→ 你拒绝了 &e{player}&7 的好友申请.'
+  friend-request-declined: '{prefix}&e→ {player} &7拒绝了你的好友申请.'
+  friend-request-cancelled: '{prefix}&7→ 你撤回了发送给 &e{player}&7 的好友申请.'
+
+  blocked-player: '{prefix}&7→ 你拉黑了 &e{player}&7.'
+  unblocked-player: '{prefix}&7→ 你取消拉黑了 &e{player}&7.'
+
+  toggled-private-message: '{prefix}&7→ 你现在 &r{status} &7来自好友 &e{player}&7 的私信.'
+  private-message-sent: '&8[&e我 &7-> &e{player}&8] &f{message}'
+
+  toggled-teleport: '{prefix}&7→ 你现在 &r{status} &e{player} &7传送到你的位置.'
+  teleported: '{prefix}#4cd137→ 你传送到了 &e{player}#4cd137 的位置.'
+  player-teleported: '{prefix}&e→ {player} &7传送到了你的位置.'
+
+  cancelled-mail: '{prefix}&7→ 你撤回了发送给好友 &e{player}&7 的邮件.'
+  toggled-sending-mail: '{prefix}&7→ 你现在 &r{status} 好友 &e{player} &7向你发送的新邮件.'
+
+  friend-online-toast: '{prefix}'
+  friend-offline-toast: '{prefix}'
+  friend-request-toast: '{prefix}'
+  now-friend-toast: '{prefix}'
+  friend-request-declined-toast: '{prefix}'
+  new-mail-toast: '{prefix}'
+
+FAIL:
+  no-permission: '{prefix}&c→ 你没有这么做的的权限!'
+  wrong-syntax: '{prefix}&c→ 你输入了错误的语法! 请检查并重试!'
+  missing-args: '{prefix}&c→ 缺少参数! 写法: &e{usage}&c.'
+  only-players: '{prefix}&c→ 只有玩家可以使用这个命令!'
+  only-console: '{prefix}&c→ 只有控制台可以使用这个命令!'
+
+  player-not-found: '{prefix}&c→ 没有找到这个玩家!'
+  not-yourself: '{prefix}&c→ 你不能对自己这么做!'
+  cannot-accept-offline: '{prefix}&c→ 你只能在 &e{player} &c在线时接收这些好友申请!'
+  player-already-friend: '{prefix}&c→ 这个玩家已经是你的好友了!'
+  cannot-send-request: '{prefix}&e→ {player} &c无法接收好友申请!'
+  reached-max-friends: '{prefix}&c→ 你达到了最大好友数 &e{max_friends}个&c!'
+  player-reached-max-friends: '{prefix}&e→ {player} &c已经达到了最大好友数量!'
+  request-existed: '{prefix}&c→ 请先回复玩家 &e{player}&c 之前的申请!'
+  request-already-sent: '{prefix}&c→ 请等待 &e{player} &c回复你之前的申请.'
+  request-not-found: '{prefix}&c→ 没有找到来自 &e{player}&c 的好友申请!'
+  request-not-sent: '{prefix}&c→ 没有发送给 &e{player}&c 的好友申请!'
+  not-friend: '{prefix}&e→ {player} &c不是你的好友!'
+  blocked-private-message: '{prefix}&c→ 你不能向 &e{player}&c 发送私信!'
+  blocked-teleport: '{prefix}&c→ 你不能传送到 &e{player}&c!'
+  blocked-mail: '{prefix}&c→ 你不能向 &e{player}&c 发送邮件!'
+  teleport-delay: '{prefix}&c→ 请等待 &b{time}秒 &c以再次传送!'
+  player-already-blocked: '{prefix}&c→ 你已经拉黑了这个玩家了!'
+  have-not-blocked: '{prefix}&c→ 你没有拉黑过这个玩家!'
+  blocked-player: '{prefix}&c→ 这个玩家被你拉黑了!'
+  player-blocked: '{prefix}&c→ 你被拉黑了!'
+  inventory-is-full: '{prefix}&c→ 你的背包已满!'
+  item-not-found: '{prefix}&c→ 这个物品不存在!'
+
+  request-expired: '{prefix}&c→ 这个申请已经过期了!'
+  request-already-responded: '{prefix}&c→ 这个申请已经被回复过了!'
+
+  message-delay: '{prefix}&c→ 请等待 &b{time}秒 &c以继续私聊!'
+  no-new-message: '{prefix}&c→ 你没有新的私聊消息!'
+
+  item-blacklisted: '{prefix}&c→ 这个物品不能被装入邮件!'
+  mail-delay: '{prefix}&c→ 请等待 &b{time}秒 &c以发送下一封邮件!'
+  mail-read: '{prefix}&c→ 你已经阅读过这个邮件了!'
+  cannot-read-mail: '{prefix}&c→ 你不能阅读这个邮件 (它可能被发送者撤回了)!'
+  mail-not-found: '{prefix}&c→ 你没有收到过来自 &e{player}&c 的邮件!'
+  reached-max-slots: '{prefix}&c→ 你已经达到了最大物品附件数量 &e{max_slots}&c!'
+
+#You can use any placeholder from PlaceholderAPI in this section.
+GUI:
+  #Main menu:
+  main:
+    Title: '&f'
+    RepresentItems:
+      FriendGui:
+        Name: '#c7ecee你的好友列表'
+        Lore:
+        - ''
+        - '&8• &7你的好友: #c7ecee{amount}&8/#c7ecee{max}'
+        - ''
+        - '#6ab04c→ 点击打开'
+      Mailbox:
+        Name: '#badc58你的个人邮箱'
+        Lore:
+        - ''
+        - '&8• &7发送的邮件: #badc58{total_sent}'
+        - '&8• &7收到的邮件: #badc58{total_received}'
+        # - '&8• &7Total mail: #badc58{total}'
+        - ""
+        - "&8• #ced6e0如果你不想收到邮件"
+        - "  #ced6e0你可以使用以下命令"
+        - "  #ced6e0拒收所有邮件: #badc58/mail toggle"
+        - ''
+        - '#6ab04c→ 点击打开'
+      BlockedGui:
+        Name: '#ff6b81你的小黑屋'
+        Lore:
+        - ''
+        - '&8• &7你拉黑了: #ff6b81{amount}'
+        - ''
+        - '#6ab04c→ 点击打开 '
+      FriendRequestGui:
+        Name: '#1e90ff好友申请列表'
+        Lore:
+        - ''
+        - '&8• &7发送的申请: #1e90ff{total_sent}'
+        - '&8• &7收到的申请: #1e90ff{total_received}'
+        # - '&8 • &7ᴛᴏᴛᴀʟ: &e{total}'
+        - ""
+        - "&8• #ced6e0如果你不想收到申请"
+        - "  #ced6e0你可以使用以下命令"
+        - "  #ced6e0拒收新的申请: #1e90ff/friend toggle"
+        - ''
+        - '#6ab04c→ 点击打开'
+      FriendRequestToggle:
+        Name: '&6接受好友申请'
+        Lore:
+        - ''
+        - '&8 • &7当前: &e{status}'
+        - ''
+        - '&f如果你想接收来自'
+        - '&f其它玩家的好友申请,'
+        - '&f你需要启用这个选项.'
+        - ''
+        - '&8[&6点击&8] &7更改设置'
+      ToggleNotification:
+        Name: '&6接收在线提醒'
+        Lore:
+        - ''
+        - '&8 • &7当前: &e{status}'
+        - ''
+        - '&f如果你想接收好友的'
+        - '&f在线和离线消息通知,'
+        - '&f你需要启用这个选项.'
+        - ''
+        - '&8[&6点击&8] &7更改设置'
+    ControlItems:
+      Close:
+        Name: '&c&l✗ &c关闭菜单'
+        Lore: []
+  #Friend settings:
+  friend_settings:
+    Title: '&f'
+    RepresentItems:
+      OnlinePlayer:
+        Name: '{status} {player}'
+        Lore:
+        - ''
+        - '&8• &7结缘日期:'
+        - '  &f{time}'
+      OfflinePlayer:
+        Name: '{status} {player}'
+        Lore:
+        - ''
+        - '&8•&7 结缘日期:'
+        - '  &f{time}'
+        - '&8•&7 最后在线:'
+        - '  &f{last_online} 前.'
+
+    ControlItems:
+      MailList:
+        Name: '&7→ 查看相关邮件'
+        Lore: []
+      Back:
+        Name: '#e74c3c← 返回好友列表'
+        Lore: []
+      Unfriend:
+        Name: '&c→ 忘记好友'
+        Lore: []
+      CanTeleport:
+        Name: '&7→ 点击传送.'
+        Lore: []
+      CannotTeleport:
+        Name: "&c→ 无法传送"
+        Lore: []
+      AllowReceivingMessage:
+        Name: '&7接收好友私聊'
+        Lore:
+        - ''
+        - '&8● &7当前: &e{status}'
+      DisallowReceivingMessage:
+        Name: '&7接收好友私聊'
+        Lore:
+        - ''
+        - '&8● &7当前: &e{status}'
+      ToggleTeleportAllowed:
+        Name: '&7接受快捷传送'
+        Lore:
+        - ''
+        - '&8• &7当前: &f{status}'
+      ToggleTeleportDisallowed:
+        Name: '&7接受快捷传送'
+        Lore:
+        - ''
+        - '&8• &7当前: &f{status}'
+      ToggleMailingAllowed:
+        Name: '&7接收好友邮件'
+        Lore:
+        - ''
+        - '&8• &7当前: &e{status}'
+      ToggleMailingDisallowed:
+        Name: '&7接收好友邮件'
+        Lore:
+        - ''
+        - '&8• &7当前: &e{status}'
+  #The list of friend requests:
+  request_list:
+    Title: '&f'
+    RepresentItems:
+      SentRequest:
+        Name: '&7你发送给: &f{player}'
+        Lore:
+        - ''
+        - '&8• &7时间: &f{time}'
+        - '&8• &7当前: &f{status}'
+        - ''
+        - '#6ab04c→ 点击撤回'
+      ReceivedRequest:
+        Name: '&7来自 &f{player}'
+        Lore:
+        - ''
+        - '&8• &7时间: &f{time}'
+        - '&8• &7当前: &e{status}'
+        - ''
+        - '#6ab04c→ 左键接受'
+        - '#e74c3c→ 右键拒绝'
+    ControlItems:
+      PreviousPage:
+        Name: '&2<< #4cd137上一页'
+        Lore:
+        - '&8(#4cd137{page} &7/ &c{max_pages}&8)'
+      NextPage:
+        Name: '#4cd137下一页 &2>>'
+        Lore:
+        - '&8(#4cd137{page} &7/ &c{max_pages}&8)'
+      Back:
+        Name: '#e74c3c← 返回主菜单'
+        Lore: []
+      SwitchToFriendListGui:
+        Name: '&7好友列表'
+        Lore: []
+      SwitchToMailboxGui:
+        Name: '&7邮箱'
+        Lore: []
+      SwitchToBlockedGui:
+        Name: '&7小黑屋'
+        Lore: []
+      SwitchToFriendRequestGui:
+        Name: '&7好友申请'
+        Lore: []
+      FilterAll:
+        Name: '&7列表过滤:'
+        Lore:
+        - ''
+        - '&2→ #4cd137所有申请'
+        - '&8 • &7发送的申请'
+        - '&8 • &7收到的申请'
+        - '&8 • &7最近发送的申请'
+        - '&8 • &7最近收到的申请'
+      FilterRequestsSent:
+        Name: '&7列表过滤:'
+        Lore:
+        - ''
+        - '&8 • &7所有申请'
+        - '&2→ #4cd137发送的申请'
+        - '&8 • &7收到的申请'
+        - '&8 • &7最近发送的申请'
+        - '&8 • &7最近收到的申请'
+      FilterRequestsReceived:
+        Name: '&7列表过滤:'
+        Lore:
+        - ''
+        - '&8 • &7所有申请'
+        - '&8 • &7发送的申请'
+        - '&2→ #4cd137收到的申请'
+        - '&8 • &7最近发送的申请'
+        - '&8 • &7最近收到的申请'
+      FilterRecentlySentRequests:
+        Name: '&7列表过滤:'
+        Lore:
+        - ''
+        - '&8 • &7所有申请'
+        - '&8 • &7发送的申请'
+        - '&8 • &7收到的申请'
+        - '&2→ #4cd137最近发送的申请'
+        - '&8 • &7最近收到的申请'
+      FilterRecentlyReceivedRequests:
+        Name: '&7列表过滤:'
+        Lore:
+        - ''
+        - '&8 • &7所有申请'
+        - '&8 • &7发送的申请'
+        - '&8 • &7收到的申请'
+        - '&8 • &7最近发送的申请'
+        - '&2→ #4cd137最近收到的申请'
+  #The list of friends:
+  friend_list:
+    Title: '&f:offset_-8:薿'
+    RepresentItems:
+      OnlinePlayers:
+        Name: '{status} {player}'
+        Lore:
+        - ''
+        - '&8• &7结缘时间:'
+        - '  &f{time}'
+        - ''
+        - '#6ab04c→ 点击管理'
+      OfflinePlayers:
+        Name: '{status} {player}'
+        Lore:
+        - ''
+        - '&8•&7 结缘时间:'
+        - '  &f{time}'
+        - '&8•&7 最后在线:'
+        - '  &f{last_online} 前.'
+        - ''
+        - '#6ab04c→ 点击管理'
+    ControlItems:
+      PreviousPage:
+        Name: '&2<< #4cd137上一页'
+        Lore:
+        - '&8(#4cd137{page} &7/ &c{max_pages}&8)'
+      NextPage:
+        Name: '#4cd137下一页 &2>>'
+        Lore:
+        - '&8(#4cd137{page} &7/ &c{max_pages}&8)'
+      Back:
+        Name: '#e74c3c← 返回主菜单'
+        Lore: []
+      SwitchToFriendListGui:
+        Name: '&7好友列表'
+        Lore: []
+      SwitchToMailboxGui:
+        Name: '&7邮箱'
+        Lore: []
+      SwitchToBlockedGui:
+        Name: '&7小黑屋'
+        Lore: []
+      SwitchToFriendRequestGui:
+        Name: '&7好友申请'
+        Lore: []
+      FilterDefault:
+        Name: '&7列表过滤:'
+        Lore:
+        - ''
+        - '&2→ #4cd137默认'
+        - '&8 • &7在线状态'
+        - '&8 • &7玩家名 ↑'
+        - '&8 • &7玩家名 ↓'
+        - '&8 • &7最近添加'
+      FilterPlayerOnline:
+        Name: '&7列表过滤:'
+        Lore:
+        - ''
+        - '&8 • &7默认'
+        - '&2→ #4cd137在线状态'
+        - '&8 • &7玩家名 ↑'
+        - '&8 • &7玩家名 ↓'
+        - '&8 • &7最近添加'
+      FilterNameAscending:
+        Name: '&7列表过滤:'
+        Lore:
+        - ''
+        - '&8 • &7默认'
+        - '&8 • &7在线状态'
+        - '&2→ #4cd137玩家名 ↑'
+        - '&8 • &7玩家名 ↓'
+        - '&8 • &7最近添加'
+      FilterNameDescending:
+        Name: '&7列表过滤:'
+        Lore:
+        - ''
+        - '&8 • &7默认'
+        - '&8 • &7在线状态'
+        - '&8 • &7玩家名 ↑'
+        - '&2→ #4cd137玩家名 ↓'
+        - '&8 • &7最近添加'
+      FilterRecentlyAdded:
+        Name: '&7列表过滤:'
+        Lore:
+        - ''
+        - '&8 • &7默认'
+        - '&8 • &7在线状态'
+        - '&8 • &7玩家名 ↑'
+        - '&8 • &7玩家名 ↓'
+        - '&2→ #4cd137最近添加'
+  #The list of blocked players:
+  blocked_list:
+    Title: '&f'
+    RepresentItem:
+      Name: '&2玩家信息'
+      Lore:
+      - ''
+      - '&8• &f名称: &e{player}'
+      - ''
+      - '&8[&6点击&8] &7将他取消拉黑'
+    ControlItems:
+      PreviousPage:
+        Name: '&2<< #4cd137上一页'
+        Lore:
+        - '&8(#4cd137{page} &7/ &c{max_pages}&8)'
+      NextPage:
+        Name: '#4cd137下一页 &2>>'
+        Lore:
+        - '&8(#4cd137{page} &7/ &c{max_pages}&8)'
+      Back:
+        Name: '#e74c3c← 返回主菜单'
+        Lore: []
+      SwitchToFriendListGui:
+        Name: '&7好友列表'
+        Lore: []
+      SwitchToMailboxGui:
+        Name: '&7邮箱'
+        Lore: []
+      SwitchToBlockedGui:
+        Name: '&7小黑屋'
+        Lore: []
+      SwitchToFriendRequestGui:
+        Name: '&7好友申请'
+        Lore: []
+      FilterDefault:
+        Name: '&7列表过滤:'
+        Lore:
+        - ''
+        - '&2→ #4cd137默认'
+        - '&8 • &7玩家名 ↑'
+        - '&8 • &7玩家名 ↓'
+      FilterNameAscending:
+        Name: '&7列表过滤:'
+        Lore:
+        - ''
+        - '&8 • &7默认'
+        - '&2→ #4cd137玩家名 ↑'
+        - '&8 • &7玩家名 ↓'
+      FilterNameDescending:
+        Name: '&7列表过滤:'
+        Lore:
+        - ''
+        - '&8 • &7默认'
+        - '&8 • &7玩家名 ↑'
+        - '&2→ #4cd137玩家名 ↓'
+  #邮箱:
+  mailbox:
+    Title: '&f'
+    RepresentItems:
+      MailsSent:
+        Name: '&7你发送给: &f{player}'
+        Lore:
+        - ''
+        - '&8• &7时间: &f{time}'
+        - '&8• &7当前: &e{status}'
+        - ''
+        - '&8• &7邮件内容:'
+        - ''
+        - '{content}'
+        - ''
+        - '#6ab04c→ 左键查看细节'
+        - '#e74c3c→ 右键撤回'
+      MailsReceived:
+        Name: '&7来自 &f{player}'
+        Lore:
+        - ''
+        - '&8• &7时间: &f{time}'
+        - '&8• &7当前: &e{status}'
+        - ''
+        - '&8• &7邮件内容:'
+        - ''
+        - '{content}'
+        - ''
+        - '#6ab04c→ 左键阅读邮件'
+    ControlItems:
+      PreviousPage:
+        Name: '&2<< #4cd137上一页'
+        Lore:
+        - '&8(#4cd137{page} &7/ &c{max_pages}&8)'
+      NextPage:
+        Name: '#4cd137下一页 &2>>'
+        Lore:
+        - '&8(#4cd137{page} &7/ &c{max_pages}&8)'
+      Back:
+        Name: '#e74c3c← 返回主菜单'
+        Lore: []
+      SwitchToFriendListGui:
+        Name: '&7好友列表'
+        Lore: []
+      SwitchToMailboxGui:
+        Name: '&7邮箱'
+        Lore: []
+      SwitchToBlockedGui:
+        Name: '&7小黑屋'
+        Lore: []
+      SwitchToFriendRequestGui:
+        Name: '&7好友申请'
+        Lore: []
+      FilterAll:
+        Name: '&7邮件过滤'
+        Lore:
+        - ''
+        - '&2→ #4cd137所有邮件'
+        - '&8 • &7发送的邮件'
+        - '&8 • &7收到的邮件'
+        - '&8 • &7撤回的邮件'
+        - '&8 • &7阅读过的邮件'
+      FilterMailsSent:
+        Name: '&7邮件过滤'
+        Lore:
+        - ''
+        - '&8 • &7所有邮件'
+        - '&2→ #4cd137发送的邮件'
+        - '&8 • &7收到的邮件'
+        - '&8 • &7撤回的邮件'
+        - '&8 • &7阅读过的邮件'
+      FilterMailsReceived:
+        Name: '&7邮件过滤'
+        Lore:
+        - ''
+        - '&8 • &7所有邮件'
+        - '&8 • &7发送的邮件'
+        - '&2→ #4cd137收到的邮件'
+        - '&8 • &7撤回的邮件'
+        - '&8 • &7阅读过的邮件'
+      FilterMailsCancelled:
+        Name: '&7邮件过滤'
+        Lore:
+        - ''
+        - '&8 • &7所有邮件'
+        - '&8 • &7发送的邮件'
+        - '&8 • &7收到的邮件'
+        - '&2→ #4cd137撤回的邮件'
+        - '&8 • &7阅读过的邮件'
+      FilterMailsRead:
+        Name: '&7邮件过滤'
+        Lore:
+        - ''
+        - '&8 • &7所有邮件'
+        - '&8 • &7发送的邮件'
+        - '&8 • &7收到的邮件'
+        - '&8 • &7撤回的邮件'
+        - '&2→ #4cd137阅读过的邮件'
+  #Envelopes (when sending, used to store mailed items):
+  send_mail:
+    Title: '&f'
+    RepresentItems:
+      AttachedItem:
+        Lore:
+        - ''
+        - '#6ab04c→ 点击取回物品'
+        - '#e74c3c→ Shift + 点击取回'
+        - '       #e74c3c所有类似物品'
+      LockedSlot:
+        Name: '&c未解锁槽位'
+        Lore: []
+    ControlItems:
+      Receiver:
+        Name: '&e收信人: &f{player}'
+        Lore: []
+      Confirm:
+        Name: '&7发送给 &f{player}'
+        Lore:
+        - ''
+        - '&8• &f附件物品: &ex{amount}'
+        - ''
+        - '&8• &f内容:'
+        - '{content}'
+      TakeAll:
+        Name: '#4cd137收取所有物品'
+        Lore: []
+  #Envelopes (for reader):
+  read_mail:
+    Title: '&f'
+    RepresentItems:
+      Lore:
+      - ''
+      - '#44bd32→ 点击收取这个物品'
+    ControlItems:
+      Information:
+        Name: '&7来自 &f{player}'
+        Lore:
+        - ''
+        - '&8• &7附近物品: &8x&f{amount}'
+        - ''
+        - '&8• &7邮件内容:'
+        - '{content}'
+      Sender:
+        Name: '&7寄件人: &f{player}'
+        Lore: []
+      Receiver:
+        Name: '&7你: &f{player}'
+        Lore: []
+      TakeAll:
+        Name: '#6ab04c收取所有附件物品'
+        Lore: []
+      Back:
+        Name: '#e74c3c← 返回邮箱'
+        Lore: []
+  #Mail details:
+  mail_details:
+    Title: '&f'
+    Information:
+      Name: '&a邮件信息'
+      Lore:
+      - ''
+      - '&8• &f来自: &e{player}'
+      - '&8• &f附件物品数: &ex{amount}'
+      - ''
+      - '&8• &f内容:'
+      - '{content}'
+    RepresentItems:
+      Lore:
+      - ''
+      - '#44bd32→ 点击拒收这个物品'
+    ControlItems:
+      Information:
+        Name: '&7来自 &f{player}'
+        Lore:
+        - ''
+        - '&8• &7附件物品数: &8x&f{amount}'
+        - ''
+        - '&8• &7邮件内容:'
+        - '{content}'
+      Sender:
+        Name: '&7寄件人: &f{player}'
+        Lore: []
+      Receiver:
+        Name: '&7你: &f{player}'
+        Lore: []
+      RevokeAll:
+        Name: '#6ab04c拒收所有附件物品'
+        Lore: []
+      Back:
+        Name: '#e74c3c← 返回邮箱'
+        Lore: []

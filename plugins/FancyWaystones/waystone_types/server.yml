@@ -1,0 +1,159 @@
+Name: Server
+Password Protection:
+    Ask Password Condition:
+        Criteria: ALWAYS
+    # Values:
+    # ACTIVATION - Password will be asked only when activating the waystone
+    # PRE_TELEPORT - Password will be asked every time before teleportation
+    # NEVER - Password will never be asked
+    When: PRE_TELEPORT
+# When enabled, the player will be teleported directly to the target waystone.
+# this disables the waystone menu.
+# values are RANDOM, FIRST, LAST, CLOSEST, FURTHEST, DISABLED
+Direct Teleportation: DISABLED
+Block Place Sound: BLOCK_BEACON_ACTIVATE
+Block Break Sound: BLOCK_BEACON_DEACTIVATE
+Block Activate Sound: BLOCK_NOTE_BLOCK_PLING
+Direct Teleportation Condition:
+    Criteria: NEVER
+Listing Condition:
+    Criteria: ALWAYS
+Always Active Condition:
+    Criteria: ALWAYS
+Purge Inactive:
+    Criteria: NEVER
+Warpstone Listing Condition:
+    Criteria: ALWAYS
+Dynmap Render Condition:
+    Criteria: ALWAYS
+Custom Icon:
+    Enable: false
+    Allow Custom Icon: true
+    Pre-Made Icons:
+        -   type: DIAMOND
+        -   type: CAKE
+        -   type: IRON_INGOT
+        -   type: GOLD_INGOT
+        -   type: STRING
+    Change Condition:
+        Criteria: LOGIC_OR
+        Conditions:
+        -   Criteria: IS_OWNER
+        -   Criteria: HAS_PERMISSION
+            Permission: fancywaystones.admin
+Rename Condition:
+    Criteria: LOGIC_OR
+    Conditions:
+    -   Criteria: IS_OWNER
+    -   Criteria: HAS_PERMISSION
+        Permission: fancywaystones.admin
+Economy Bypass Condition:
+    Criteria: HAS_PERMISSION
+    Permission: fancywaystones.admin
+Color Rename Condition:
+    Criteria: ALWAYS
+Purge Drops Condition:
+    Criteria: NEVER
+Visit Condition:
+    Criteria: ALWAYS
+Compass Redirection Condition:
+    Criteria: ALWAYS
+Access Condition:
+    Criteria: ALWAYS
+Activation Condition:
+    Criteria: ALWAYS
+Proximity Discover:
+    Enable: false
+    Message: '{language.proximity-discover}'
+    Check Radius: 10
+    Condition:
+        Criteria: ALWAYS
+Waystone Effect:
+    Idle: null
+    Activated: null
+    Warm Up: wuExample
+    Post Teleport: ptExample
+Break Condition:
+    Criteria: LOGIC_OR
+    Conditions:
+    -   Criteria: IS_OWNER
+    -   Criteria: HAS_PERMISSION
+        Permission: fancywaystones.admin
+Can Set TP Offset:
+    Criteria: IS_OWNER
+Should Accept TP Offset:
+    Criteria: OFFSET_DISTANCE
+    Min Distance: 0
+    Max Distance: 1.75
+Drops:
+    Criteria: ALWAYS
+Item Drops:
+    loot_drop_1:
+        Condition:
+            Criteria: ALWAYS
+        Items:
+        -   type: WAYSTONE
+            meta:
+                id: '{type}'
+                model: '{model}'
+        Conflicting: []
+Entity Teleport:
+    Criteria: IS_SAME_SERVER
+Unique Names: PUBLIC NAMES
+Placing Group: 'server'
+Placing Limitations: {}
+Amount Group: 'server'
+Amount Limitations:
+    '20':
+        Criteria: HAS_PERMISSION
+        Permission: fancywaystones.activate.20
+    '10':
+        Criteria: HAS_PERMISSION
+        Permission: fancywaystones.activate.10
+    '5':
+        Criteria: HAS_PERMISSION
+        Permission: fancywaystones.activate.5
+Price:
+    Entity:
+        Enable: false
+        Cost:
+            '*':
+                Level: 1
+                EnderPearl: 1
+            VILLAGER:
+                Level: 10
+                EnderPearl: 10
+            WITHER:
+                Level: 1000
+                EnderPearl: 1000
+    Multiworld:
+        Enable: false
+        Cost:
+            Level: 1
+            EnderPearl: 1
+    Multidimensional:
+        Enable: false
+        Cost:
+            Level: 1
+            EnderPearl: 1
+    Multiserver:
+        Enable: false
+        Cost:
+            Level: 1
+            EnderPearl: 1
+    Distance:
+        Enable: false
+        Divide: 100
+        Floor Divide: true
+        Cost:
+            Level: 3
+            EnderPearl: 3
+    Basic Fee:
+        Enable: false
+        Cost:
+            Level:
+                default: 1
+                fancywaystones.vip: 0
+            EnderPearl:
+                default: 0
+                fancywaystones.vip: 0

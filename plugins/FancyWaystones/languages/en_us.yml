@@ -1,0 +1,350 @@
+name: English (US)
+time-format:
+- optional_dd:
+    trail: 'd '
+- optional_hh:
+    trail: ':'
+    minimum-digits: 2
+- mm:
+    trail: ':'
+    minimum-digits: 2
+- ss:
+    minimum-digits: 2
+gui-tp-offset-change: 更改传送偏移
+gui-reset-tp-offset: 重置传送偏移
+gui-warpstone: 传送石
+gui-waypoint: 路径点
+gui-blacklist: 黑名单
+gui-member: 成员
+gui-whitelist: 白名单
+gui-waystone: 传送石
+gui-tp-offset: 传送偏移
+gui-select-icon: 选择图标
+gui-change-icon: 更改图标
+gui-change-icon-1: '&7此石碑暂不支持更改图标'
+gui-change-icon-2: none
+gui-change-icon-3: 点击这里进行更改
+gui-change-icon-4: 此传送石的显示
+gui-icon-display: 点击使用这个图标
+gui-remove-discovery: 从成员名单中移除
+gui-remove-discovery-1: '&7 '
+gui-remove-discovery-2: 玩家将无法传送至此传送石，
+gui-remove-discovery-3: 需要他们重新激活此传送石。
+gui-remove-discovery-4: '&7 '
+gui-remove-whitelist: 从白名单中移除
+gui-remove-blacklist: 从黑名单中移除
+gui-forget-waystone: 遗忘
+gui-forget-waystone-1: '&7 '
+gui-forget-waystone-2: '&7从已发现的石碑列表中移除。'
+gui-teleport: 传送
+gui-teleport-1: 传送至传送石。
+gui-teleport-2: '&7传送消耗: '
+gui-remove-waypoint: 移除
+gui-rename-waypoint: 重命名
+gui-color-waypoint: 更改颜色
+gui-color-waypoint-1: '当前颜色:'
+gui-visibility-waypoint: 更改可见性
+gui-visibility-waypoint-1: '目前: &a可见'
+gui-visibility-waypoint-2: '目前: &f不可见'
+settings-title: '&7石碑设置'
+language-command-usage: '&c设置语言。当前语言：{language.name}。用法：&f/waystonelanguage <language>'
+language-command-invalid: '&c无效语言！可用语言：{language_list}'
+language-command-set: '&a语言已更改为 {language.name}'
+confirm-title: 你确定吗？
+confirm-confirm: 是
+confirm-cancel: 否
+waypoints-title: 路径点
+no-access-rename: '&c您必须是此传送石的所有者才能重命名此传送石！'
+proximity-discover: '&6您发现了 {waystone_name}！'
+waypoints-waystones: 传送石路径点
+waypoints-death: 死亡路径点
+waypoints-server: 服务器路径点
+waypoints-player: 您的路径点
+waypoints-add: 添加新路径点
+waypoints-add-info: 基于您的位置
+gui-sort-order: '&e排序方式'
+gui-sort: '&e排序依据'
+gui-close: 关闭
+gui-back: 返回
+sort-name: 石碑名称
+sort-date-created: 创建日期
+sort-distance: 距离
+sort-world: 世界
+sort-visibility: 可见性
+sort-users: 创建玩家
+sort-visits: 访问次数
+sort-visitors: 访客数量
+sort-used-time: 使用时间
+info-world: 世界
+info-x: X
+info-y: Y
+info-z: Z
+info-visible: 可见
+info-click-waypoints-edit: 点击编辑
+waypoint-disabled: '&c路径点功能已禁用'
+waypoint-chat: '&6路径点坐标 &f{waypoint_name} &6位于世界:&e{waypoint_worldName} &6x:&e{waypoint_x}
+  &6y:&e{waypoint_y} &6z:&e{waypoint_z}'
+waypoint-add: '&1添加新路径点'
+waypoint-usage-add: '&r&f%img_exc_red% &c命令用法：/waypoint add <world> <x> <y> <z> <name>'
+waypoint-added: '&r&f%img_exc_green% &c已添加路径点 &f{waypoint_name} &a！'
+waypoint-failed-to-add: '&r&f%img_exc_red% &c未添加路径点 &f{waypoint_name} &c！'
+waypoint-invalid-coordinate: '&r&f%img_exc_red% &c无效坐标！'
+paywall-title: 选择支付方式
+paywall-with-stellium: 用 Stellium 支付
+paywall-with-money: 用金币支付
+paywall-with-level: 用等级支付
+paywall-levels: 等级
+paywall-cost: 费用
+paywall-balance: 余额
+paywall-item-pay: 用此物品支付
+paywall-item: 物品
+members-title: 编辑成员 - {member_category}
+members-click: 点击管理这名玩家
+members-info-discovered: 此玩家已发现传送石
+members-blacklist: 已加入黑名单的玩家
+members-whitelist: 已加入白名单的玩家
+members-add: 添加成员
+waystone-title: 传送石
+waystone-settings: '&e石碑设置'
+waystone-settings-info: 传送石控制面板
+waystone-inactive1: 右键点击激活此
+waystone-inactive2: 传送石以使用
+waystone-inactive3: 此传送石。
+waystone-info-cost: 传送费用：
+waystone-info-total-visitors: 访客总数：
+waystone-info-date-created: 创建日期：
+waystone-button: 点击&d以查看更多选项
+waystone-deactivate: '&e停用当前传送石'
+waystone-deactivate-info: 点击此处停用传送石
+waystone-category-disabled: 此类别已停用
+waystone-category-disabled2: 在此传送石上
+waystone-category-server: 世界
+waystone-category-public: 公共
+waystone-category-regional: 区域石碑
+waystone-category-private: 私人
+waystone-edit-members: 编辑成员
+waystone-edit-members-info: 管理能够访问该石碑的玩家
+waystone-edit-members-info2: 以访问此传送石
+waystone-edit-members-no-access: 您无权访问
+waystone-edit-members-no-access2: 编辑传送石成员
+waystone-rename: 重命名
+waystone-rename-info: 点击此处重命名此
+waystone-rename-info2: 传送石
+waystone-rename-info3: 当前名称：
+waystone-rename-info4: '&c无权限'
+waystone-rename-info5: 可以重命名此传送石
+search: '&e搜索'
+search-info: 点击此处更改
+search-info2: 当前搜索关键字：
+search-info3: 点击更改
+waystone-offset: 传送偏移
+waystone-offset-info: 当前传送偏移：
+waystone-offset-info2: 点击更改
+waystone-offset-info4: 指定玩家访问此传
+waystone-offset-info5: 送石碑时应传送到
+waystone-offset-info6: 哪里。
+waystone-stats: 统计信息
+waystone-stats-info1: 名称：
+waystone-stats-info2: 所有者：
+waystone-stats-info3: 访问次数：
+waystone-stats-info4: 访客：
+waystone-stats-info5: 用户：
+waystone-stats-info6: 创建日期：
+waystone-stats-info7: 年龄：
+prefix: '&8[传送石]'
+distance: 距离
+block: █
+same-world: '&r&f%img_exc_red% &c您必须在与传送石相同的维度世界。'
+tp-offset-set: '&r&f%img_exc_green% &a已为 {waystone_name} 设置了新的 TP 偏移！'
+death-book-no-death: '&r&f%img_exc_red% &c您的死亡位置未知或已过期。'
+and: 和
+cost-not-enough: '&r&f%img_exc_red% &c您没有足够的 &6{cost} &c。'
+destroyed: '&r&f%img_exc_normal% &7传送石 &e{waystone_name} &7被 &a{reason} &7摧毁。'
+reason-creeper-explosion: 苦力怕爆炸
+reason-tnt-explosion: TNT爆炸
+reason-unknown-explosion: 未知爆炸
+reason-unknown: 未知
+maxed-activation: '&r&f%img_exc_red% &c您已激活的传送石 {waystone_type_display_name} 已到达上限！'
+not-enough-space-place: '&r&f%img_exc_red% &c无法将传送石放置在那里，空间不足！'
+unsafe-waystone: '&r&f%img_exc_red% &c由于传送石位置不安全，无法传送至 &6{waystone_name} &c！'
+unsafe-destination: '&r&f%img_exc_red% &c由于目标位置不安全，无法传送至目的地！'
+invalid-waystone: '&r&f%img_exc_red% &c无法传送至 &6{waystone_name}&c，传送石已不可用或已被玩家破坏！'
+invalid-unknown-waystone: '&r&f%img_exc_red% &c目标传送石不可用！'
+invalid-environment: '&r&f%img_exc_red% &c此传送石不能在此世界维度使用！'
+player-not-found: '&r&f%img_exc_red% &c找不到名为 {target} 的玩家！'
+not-owner: '&r&f%img_exc_red% &c您不能将传送石所有者添加到列表中！'
+rename-gui-title: '&1重命名'
+no-death: '&r&f%img_exc_red% &c没有检测到可使用的死亡位置。'
+no-access-target: '&r&f%img_exc_red% &c您无法进入放置 {waystone_name} 的区域！'
+teleport-cancelled-moved: '&r&f%img_exc_red% &c由于您的移动，传送被取消！'
+teleported: '&r&f%img_exc_normal% &7传送至 &e{waystone_name}&7！'
+teleported-death: '&r&f%img_exc_normal% &7传送至您上次死亡位置！'
+death-location: 死亡位置
+date-format: '{yyyy}/{MM}/{dd}'
+cannot-break-not-owner: '&r&f%img_exc_red% &c您无法破坏此传送石！只有 {waystone_owner_name} 可以破坏这个传送石！'
+remove-member: 移除
+add-member: 添加成员
+edit-members-gui-title: '&1添加成员 - 输入名字'
+member-already-added: '&c该玩家已添加到列表中'
+blacklisted: '&r&f%img_exc_red% &c抱歉，您被列入黑名单，无法访问此传送石！'
+search-filter-title: '&1搜索过滤器'
+illegal-waystone-name: '&r&f%img_exc_red% &c传送石名称包含黑名单词汇！'
+illegal-waypoint-name: '&r&f%img_exc_red% &c路径点名称包含黑名单词汇！'
+duplicate-waystone-name: '&r&f%img_exc_red% &c已存在名为 &f{waystone_type}&c 的传送石！'
+waystone-inactivity-reason: 未激活的传送石
+warm-up-subtitle: 请勿移动！
+warm-up-cancelled-title: 已取消
+warm-up-cancelled-subtitle: 您移动了！
+post-teleport-title: 已传送
+tp-offset: 设置传送位置
+tp-offset1: 将此方块放在地面上
+tp-offset2: 以设置传送位置。
+tp-offset3: 您可以丢弃它以取消此操作。
+member-categories:
+  whitelist: 白名单
+  blacklist: 黑名单
+time:
+  days: 天
+  hours: 小时
+  minutes: 分钟
+  seconds: 秒
+day-name:
+  monday: 周一
+  tuesday: 周二
+  wednesday: 周三
+  thursday: 周四
+  friday: 周五
+  saturday: 周六
+  sunday: 周日
+order:
+  ascend:
+    date-created: 最近创建
+    name: 按字母顺序
+    visits: 访问次数最多
+    visitors: 访客最多
+    users: 用户最多
+    used-time: 最近使用
+    distance: 最远
+    world: 世界顺序
+    visibility: 首先可见
+  descend:
+    date-created: 最早创建
+    name: 按字母逆序
+    visits: 访问次数最少
+    visitors: 访客最少
+    users: 用户最少
+    used-time: 很久以前使用
+    distance: 最近
+    world: 反向世界顺序
+    visibility: 最后可见
+dimensions:
+  normal: 主世界
+  nether: 下界
+  the_end: 末地
+  custom: 自定义
+free: 免费
+economy-names:
+  level: 等级
+  vault: 金钱
+  stellium: Stellium
+hologram:
+  active: '&a已激活'
+  inactive: '&7未激活'
+  no-access: ' &c无权限'
+  tip-click: '&7右键激活'
+  name: '{waystone_name}'
+condition:
+  format: '&c{reason}'
+  active-waystone: '&r&f%img_exc_red% &c传送石必须激活。'
+  not-active-waystone: '&r&f%img_exc_red% &c传送石不能处于激活状态。'
+  never: '&r&f%img_exc_red% &c您不能执行此操作。'
+  always: '&r&f%img_exc_green% &c您可以执行此操作。'
+  effect: 您必须拥有 {potion-type} {amplifier}
+  not-effect: 您不能拥有 {potion-type} {amplifier}
+  enchantment: 您的手中物品必须附魔 {enchantment} 等级 {enchantment-level}
+  not-enchantment: 您的手中物品不能附魔 {enchantment} 等级 {enchantment-level}
+  explosion: 必须由爆炸引起
+  not-explosion: 不能由爆炸引起
+  land-access: 您必须拥有土地访问权限
+  not-land-access: 您不能拥有土地访问权限
+  member: '&r&f%img_exc_red% &c只有传送石的成员才能这么做。'
+  not-member: 您不能是此传送石的成员
+  owner: '&r&f%img_exc_red% &c无权限，只有传送石的所有者才能这么做。'
+  not-owner: '&r&f%img_exc_red% &c您不能是此传送石的所有者'
+  permission: '&r&f%img_exc_red% &c您必须拥有权限 {permission}'
+  not-permission: '&r&f%img_exc_red% &c您不能拥有权限 {permission}'
+  random: 您运气不好
+  not-random: 您运气不好
+  same-dimension: '&r&f%img_exc_red% &c必须在 &e{dimension} &c维度才能激活使用此传送石。'
+  not-same-dimension: 必须在与 {dimension} 不同的维度
+  same-server: 必须在同一服务器内
+  not-same-server: 必须在不同的服务器内
+  same-type: 必须是 {type} 类型
+  not-same-type: 不能是 {type} 类型
+  same-world: 必须在 {world} 世界
+  not-same-world: 不能在 {world} 世界
+  types: 必须是以下类型之一： {types}
+  not-types: 不能是以下类型： {types}
+  worlds: 必须在以下世界之一： {worlds}
+  not-worlds: 不能在以下世界： {worlds}
+  natural-waystone: 不能是自然传送石
+  not-natural-waystone: 必须是自然传送石
+  holding: 必须拿着 {item}
+  not-holding: 不能拿着 {item}
+  offset-distance-range: 必须在 {min_distance} 至 {max_distance} 方块范围内
+  offset-distance-max: 必须小于 {max_distance} 方块距离
+  offset-distance-min: 必须大于 {min_distance} 方块距离
+  offset-distance-out-range: 必须小于 {min_distance} 方块距离或大于 {max_distance} 方块距离
+  context: 必须在 {context} 场景下
+  not-context: 不能在 {context} 场景下
+  waystone-environment: 必须在 {dimension} 维度
+  not-waystone-environment: 不能在 {dimension} 维度
+  favourite: You must have this waystone as your favourite
+  not-favourite: You must not have this waystone as your favourite
+warpstone-command-cooldown: '&cYou must wait {cooldown} before using this command
+  again!'
+gui-toggle-favorite-a: '&e加入收藏'
+gui-toggle-favorite-b: '&e移除收藏'
+gui-toggle-favorite-1: Click here to mark
+gui-toggle-favorite-2: this waystone as favorite.
+gui-toggle-favorite-3: Click here to unmark
+gui-toggle-favorite-4: this waystone as favorite.
+waystone-category-favorite: 已收藏的石碑
+waypoint-visibility:
+  visible: Visible
+  hidden: Hidden
+password-prompt-title: Enter Password
+password-set-title: Set Password
+gui-change-password: CHANGE PASSWORD
+gui-change-password-1: Click here to change
+gui-change-password-2: the password of this waystone
+gui-change-password-3: Right click to remove password
+gui-change-password-4: 'Password: &d{waystone_password}'
+password-wrong: '&cWrong Password!'
+password-set: '&aPassword set!'
+set-source-link-group: '&aSource link group set!'
+set-target-link-group: '&aTarget link group set!'
+gui-set-source-link-group: SET SOURCE LINK GROUP
+gui-set-target-link-group: SET TARGET LINK GROUP
+gui-set-source-link-group-1: Click here to set
+gui-set-source-link-group-2: the source link group of this waystone
+gui-set-target-link-group-1: Click here to set
+gui-set-target-link-group-2: the target link group of this waystone
+gui-set-source-link-group-3: Right click to remove source link group
+gui-set-target-link-group-3: Right click to remove target link group
+gui-set-source-link-group-4: 'Source Link Group: &d{waystone_source_link_group}'
+gui-set-target-link-group-4: 'Target Link Group: &d{waystone_target_link_group}'
+set-source-link-group-title: Set Source Link Group
+set-target-link-group-title: Set Target Link Group
+teleport-no-destination: '&cNo destination found!'
+gui-select-waystone-type: SELECT WAYSTONE TYPE
+waystone-type-info: Click here to change
+waystone-type-info2: the type of this waystone
+waystone-type-info3: 'Current Type:'
+waystone-type-private: PRIVATE
+waystone-type-public: PUBLIC
+gui-change-waystone-type: CHANGE WAYSTONE TYPE
+gui-change-waystone-type-1: Click here to change
+gui-change-waystone-type-2: the type of this waystone
+gui-change-waystone-type-3: 'Current Type:'
+gui-change-waystone-type-4: Cannot change type of this waystone

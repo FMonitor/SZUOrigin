@@ -1,0 +1,89 @@
+Configuration Version: "1.0.2"
+
+Books:
+  Teleportation Books:
+    regular:
+      Charge Back On Invalid Waystone: true
+      Can Be Used:
+        Criteria: ALWAYS
+      Can Be Activated:
+        Criteria: LOGIC_AND
+        Conditions:
+          - Criteria: TYPE_WHITELIST
+            Types:
+              - public
+              - private
+              - public_normal
+              - public_the_end
+              - public_nether
+              - private_normal
+              - private_nether
+              - private_the_end
+          - Criteria: IS_MEMBER
+      Empty Item:
+        type: ENCHANTED_BOOK
+        meta:
+          display-name: "&eEmpty Teleportation Book"
+          lore:
+            - "&7 * Right Click with this item"
+            - "&7   on a waystone to specify"
+            - "&7   the target waystone."
+      Item:
+        type: ENCHANTED_BOOK
+        meta:
+          display-name: "&eTeleport to &d{waystone_name}"
+          lore:
+            - "&7 * Right Click with this item"
+            - "&7   to teleport instantly to the"
+            - "&7   targeted waystone."
+            - "&6 * This does not cost anything."
+    my_tp_book:
+      Charge Back On Invalid Waystone: true
+      Can Be Used:
+        Criteria: ALWAYS
+      Can Be Activated:
+        Criteria: TYPE_WHITELIST
+        Types:
+          - server
+      Empty Item:
+        type: ENCHANTED_BOOK
+        meta:
+          display-name: "&eEmpty Custom Teleportation Book"
+          lore:
+            - "&7 * Right Click with this item"
+            - "&7   on a waystone to specify"
+            - "&7   the target waystone."
+      Item:
+        type: ENCHANTED_BOOK
+        meta:
+          display-name: "&eTeleport to &d{waystone_name}"
+          lore:
+            - "&7 * Right Click with this item"
+            - "&7   to teleport instantly to the"
+            - "&7   targeted waystone."
+            - "&6 * This does not cost anything."
+
+  Death Books:
+    regular:
+      Extra No Damage Time: 20s
+      Ignore Unsafe Destination: true
+      Unsafe Refund: true
+      Can Be Used:
+        Criteria: ALWAYS
+      Check Height: 10
+      Check Radius: 10
+      # Use "-1" or "unlimited" to disable location time out
+      Location Time Out: 10m
+      # Empty world whitelist will allow all world except if blacklisted is not empty
+      World Whitelist: [ ]
+      # Empty world blacklist will allow all world except if whitelisted is not empty
+      World Blacklist: [ ]
+      Item:
+        type: ENCHANTED_BOOK
+        meta:
+          display-name: "&eTeleport to Your Death Location"
+          lore:
+            - "&7 * Right Click with this item"
+            - "&7   to teleport instantly to your"
+            - "&7   last death location."
+            - "&6 * This does not cost anything."

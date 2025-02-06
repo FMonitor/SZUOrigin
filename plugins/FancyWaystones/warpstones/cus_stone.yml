@@ -1,0 +1,16 @@
+Item:
+  type: ITEMSADDER
+  meta:
+    display-name: '&e魔镜'
+    id: "warpstone"
+    lore:
+      - '&7使用它传送到任意其他石碑。'
+      - '&e  不限次数 '
+      - '&e            30秒冷却 '
+Warm Up Effect: wuExample
+Post Teleport Effect: ptExample
+Use Condition:
+  Criteria: ALWAYS
+Behavior:
+  One Time Item: false
+  Cooldown: 30s

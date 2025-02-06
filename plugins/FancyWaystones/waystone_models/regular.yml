@@ -1,0 +1,219 @@
+name: "Regular"
+components:
+  # Component Types
+  # block
+  # > type (the type of the block for the specific style rule)
+  #
+  # blockdata
+  # > data (the block data, example: minecraft:chest[facing=north,type=single] )
+  #
+  # hologram
+  #
+  # armorstand
+  # > helmet (helmet item for the armorstand, itemstack)
+  # > chestplate (chestplate item for the armorstand, itemstack)
+  # > leggings (leggings item for the armorstand, itemstack)
+  # > boots (boots item for the armorstand, itemstack)
+  # > small (set small armorstand flag, true/false by default)
+  # > marker (set marker armorstand flag, true by default/false)
+  # > no-base-plate (set no base plate armorstand flag, true/false by default)
+  # > invisible (set invisible armorstand flag, true by default/false)
+  # > arms (set arms armorstand flag, true/false by default)
+  # > head-pose
+  # > body-pose
+  # > right-arm-pose
+  # > left-arm-pose
+  # > right-leg-pose
+  # > left-leg-pose
+  #
+  # items-adder (Specialized for ItemsAdder plugin, for custom block)
+  # > custom-block (the custom block name)
+  #
+  # oraxen (Specialized for Oraxen plugin, for custom block)
+  # > item-id (the custom block id name)
+  #
+  # model-engine (Specialized for ModelEngine plugin, for spawning custom entities)
+  # > entity-type (the entity type, default to ARMOR_STAND if left empty)
+  # > disable-interaction (disable any interaction, also disables AI of the entity, default to true if left empty)
+  # > active-model-id (the model engine active model id, required*)
+  #
+  # format for itemstack can be seen at https://www.spigotmc.org/wiki/itemstack-serialization/ (replace "==" with "class")
+  # (Note: You don't need to specify "v: <data version>")
+  #
+  # format for poses
+  # <pose>:
+  #   x: <x>
+  #   y: <y>
+  #   z: <z>
+  - type: block
+    offset:
+      x: 0
+      y: 0
+      z: 0
+    data:
+      # Style Rules
+      # * - Accepts every condition
+      # state - for specific waystone state (active/inactive, does not support block/ItemsAdder's custom-block component type)
+      # waystone_type - for specific waystone type (server, public, private)
+      #
+      # you can combine multiple style rules by doing this:
+      # <rule1> <rule2> ...
+      # for example:
+      # environment:normal waystone_type:server
+      #
+      # you can have multiple style rule values by doing this
+      # <rule1>:<value1>,<value2>,...
+      # for example
+      # waystone_type:private,public,server
+      # or you can use empty value or wildcard to accept all values
+      # for example:
+      # waystone_type state:active
+      #
+      # if none of these matches, it won't be shown.
+      'waystone_type:server,private,public':
+        type: 'NOTE_BLOCK'
+        break-time-tick: 10
+      'waystone_type:server_normal,private_normal,public_normal,linked':
+        type: 'CHISELED_STONE_BRICKS'
+        break-time-tick: 10
+      'waystone_type:server_nether,private_nether,public_nether':
+        type: 'NETHER_BRICKS'
+        break-time-tick: 10
+      'waystone_type:server_the_end,public_the_end,private_the_end':
+        break-time-tick: 10
+        type:
+          - 'PURPUR_PILLAR'
+          - 'CHISELED_SANDSTONE'
+  # pillar holder
+  - type: block
+    offset:
+      x: 0
+      y: 1
+      z: 0
+    data:
+      '*':
+        type: 'BARRIER'
+        break-time-tick: 10
+  # foot
+  - type: block
+    offset:
+      x: 0
+      y: 2
+      z: 0
+    data:
+      'waystone_type:server,server_normal,private,private_normal,public,public_normal,linked':
+        break-time-tick: 10
+        type:
+          - 'SMOOTH_STONE_SLAB'
+          - 'STONE_SLAB'
+      'waystone_type:server_nether,private_nether,public_nether':
+        type: 'NETHER_BRICK_SLAB'
+        break-time-tick: 10
+      'waystone_type:server_the_end,public_the_end,private_the_end':
+        break-time-tick: 10
+        type:
+          - 'PURPUR_SLAB'
+          - 'SANDSTONE_SLAB'
+  # top
+  - type: armorstand
+    offset:
+      x: 0.5
+      y: 1.7
+      z: 0.5
+    data:
+      'waystone_type:server,server_normal,private,private_normal,public,public_normal,linked':
+        helmet:
+          type: POLISHED_ANDESITE
+        small: true
+      'waystone_type:server_nether,private_nether,public_nether':
+        helmet:
+          type: NETHER_BRICKS
+        small: true
+      'waystone_type:server_the_end,public_the_end,private_the_end':
+        helmet:
+          # You can use ; to detect which material is available on the server
+          type: PURPUR_BLOCK;END_STONE
+        small: true
+  # cap
+  - type: armorstand
+    offset:
+      x: 0.5
+      y: 0.67
+      z: 0.5
+    data:
+      'waystone_type:server,server_normal,private,private_normal,public,public_normal,linked':
+        helmet:
+          type: POLISHED_ANDESITE
+      'waystone_type:server_nether,private_nether,public_nether':
+        helmet:
+          type: NETHER_BRICKS
+      'waystone_type:server_the_end,public_the_end,private_the_end':
+        helmet:
+          type: PURPUR_BLOCK;END_STONE
+  # top pillar
+  - type: armorstand
+    offset:
+      x: 0.5
+      y: -0.48
+      z: 0.5
+    data:
+      'state:active waystone_type:server,server_normal,server_the_end,server_nether':
+        helmet:
+          type: DIAMOND_BLOCK
+      'state:active waystone_type:public,public_normal,public_the_end,public_nether':
+        helmet:
+          type: GOLD_BLOCK
+      'state:active waystone_type:private,private_normal,private_the_end,private_nether':
+        helmet:
+          type: EMERALD_BLOCK
+      'state:active waystone_type:linked':
+        helmet:
+          type: REDSTONE_BLOCK
+      'state:inactive waystone_type:server,server_normal,private,private_normal,public,public_normal':
+        helmet:
+          type: POLISHED_ANDESITE
+      'state:inactive waystone_type:server_nether,private_nether,public_nether':
+        helmet:
+          type: NETHER_BRICKS
+      'state:inactive waystone_type:server_the_end,public_the_end,private_the_end':
+        helmet:
+          type: PURPUR_PILLAR;CUT_SANDSTONE
+  # bottom pillar
+  - type: armorstand
+    offset:
+      x: 0.5
+      y: 0.14
+      z: 0.5
+    data:
+      'state:active waystone_type:server,server_normal,server_the_end,server_nether':
+        helmet:
+          type: DIAMOND_BLOCK
+          amount: 1
+      'state:active waystone_type:public,public_normal,public_the_end,public_nether':
+        helmet:
+          type: GOLD_BLOCK
+          amount: 1
+      'state:active waystone_type:private,private_normal,private_the_end,private_nether':
+        helmet:
+          type: EMERALD_BLOCK
+          amount: 1
+      'state:active waystone_type:linked':
+        helmet:
+          type: REDSTONE_BLOCK
+      'state:inactive waystone_type:server,server_normal,private,private_normal,public,public_normal':
+        helmet:
+          type: POLISHED_ANDESITE
+          amount: 1
+      'state:inactive waystone_type:server_nether,private_nether,public_nether':
+        helmet:
+          type: NETHER_BRICKS
+          amount: 1
+      'state:inactive waystone_type:server_the_end,public_the_end,private_the_end':
+        helmet:
+          type: PURPUR_PILLAR;CUT_SANDSTONE
+          amount: 1
+  - type: hologram
+    offset:
+      x: 0.5
+      y: 2.7
+      z: 0.5

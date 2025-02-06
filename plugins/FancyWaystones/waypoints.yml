@@ -1,0 +1,59 @@
+Configuration Version: "1.0.6"
+
+Enable: true
+
+# Max Waypoints of uncategorized waypoints (waypoints that are created by players)
+Max Waypoints: 50
+
+# Maximum Waypoints can be seen in-game
+Max Visible Waypoints Tracker: 6
+
+Hologram: |-
+  {waypoint_colorBlock}
+  {waypoint_name}
+  {language.distance} {waypoint_distance}m
+
+Server Waypoints:
+  Enable: true
+  Auto Visible: true
+
+Personal Waypoints:
+  Enable: true
+  Auto Visible: true
+
+Death Waypoints:
+  # If it exceeds the maximum amount, then it will delete the old death waypoint
+  Enable: true
+  Maximum Amount: 20
+  Category Name: "death"
+  Default Waypoint Name: "Death"
+  Default Waypoint Color: GRAY
+  Auto Visible: true
+
+Waystone Waypoints:
+  Enable: true
+  Category Name: "waystone"
+  Default Waypoint Color: GRAY
+  Auto Visible: true
+
+Open Menu Item:
+  type: COMPASS
+Open Menu Condition:
+  Criteria: ALWAYS
+Add Waypoint Condition:
+  Criteria: ALWAYS
+Command Open Menu Condition:
+  Criteria: IS_HOLDING
+  Display Name: "Compass"
+  Item:
+    type: COMPASS
+Command Add Waypoint Condition:
+  Criteria: IS_HOLDING
+  Display Name: "Compass"
+  Item:
+    type: COMPASS
+Show Tracker Condition:
+  Criteria: IS_HOLDING
+  Display Name: "Compass"
+  Item:
+    type: COMPASS

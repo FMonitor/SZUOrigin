@@ -1,0 +1,391 @@
+name: "Modern"
+components:
+  - type: client-blockdisplay
+    offset:
+      x: 0
+      y: 0
+      z: 0
+    data:
+      'waystone_type:server,private,public,server_normal,private_normal,public_normal,linked state:active':
+        block-data: 'minecraft:chiseled_stone_bricks'
+      'waystone_type:server,private,public,server_normal,private_normal,public_normal,linked':
+        block-data: 'minecraft:stone_bricks'
+      'waystone_type:server_nether,private_nether,public_nether':
+        block-data: 'minecraft:nether_bricks'
+      'waystone_type:server_the_end,public_the_end,private_the_end':
+        block-data: 'minecraft:purpur_pillar'
+  # pillar holder
+  - type: block
+    offset:
+      x: 0
+      y: 1
+      z: 0
+    data:
+      '*':
+        type: 'BARRIER'
+        break-time-tick: 10
+  - type: block
+    offset:
+      x: 0
+      y: 0
+      z: 0
+    data:
+      '*':
+        type: 'BARRIER'
+        break-time-tick: 10
+  # foot
+  - type: block
+    offset:
+      x: 0
+      y: 2
+      z: 0
+    data:
+      'waystone_type:server,server_normal,private,private_normal,public,public_normal,linked':
+        break-time-tick: 10
+        type:
+          - 'SMOOTH_STONE_SLAB'
+          - 'STONE_SLAB'
+      'waystone_type:server_nether,private_nether,public_nether':
+        type: 'NETHER_BRICK_SLAB'
+        break-time-tick: 10
+      'waystone_type:server_the_end,public_the_end,private_the_end':
+        break-time-tick: 10
+        type:
+          - 'PURPUR_SLAB'
+          - 'SANDSTONE_SLAB'
+  # top
+  - type: client-blockdisplay
+    offset:
+      x: 0
+      y: 2
+      z: 0
+    data:
+      'waystone_type:server,server_normal,private,private_normal,public,public_normal,linked':
+        block-data: 'minecraft:polished_andesite'
+        translation:
+          x: 0.2
+          y: 0.05
+          z: 0.2
+        scale:
+          x: 0.6
+          y: 0.6
+          z: 0.6
+      'waystone_type:server_nether,private_nether,public_nether':
+        block-data: 'minecraft:nether_bricks'
+        translation:
+          x: 0.2
+          y: 0.05
+          z: 0.2
+        scale:
+          x: 0.6
+          y: 0.6
+          z: 0.6
+      'waystone_type:server_the_end,public_the_end,private_the_end':
+        block-data: 'minecraft:purpur_block'
+        translation:
+          x: 0.2
+          y: 0.05
+          z: 0.2
+        scale:
+          x: 0.6
+          y: 0.6
+          z: 0.6
+  - type: client-blockdisplay
+    offset:
+      x: 0
+      y: 2
+      z: 0
+    data:
+      'waystone_type:server,server_normal,private,private_normal,public,public_normal,linked':
+        block-data: 'minecraft:polished_andesite'
+        translation:
+          x: 0.3
+          y: 0.4
+          z: 0.3
+        scale:
+          x: 0.4
+          y: 0.4
+          z: 0.4
+      'waystone_type:server_nether,private_nether,public_nether':
+        block-data: 'minecraft:nether_bricks'
+        translation:
+          x: 0.3
+          y: 0.4
+          z: 0.3
+        scale:
+          x: 0.4
+          y: 0.4
+          z: 0.4
+      'waystone_type:server_the_end,public_the_end,private_the_end':
+        block-data: 'minecraft:purpur_block'
+        translation:
+          x: 0.3
+          y: 0.4
+          z: 0.3
+        scale:
+          x: 0.4
+          y: 0.4
+          z: 0.4
+  - type: client-blockdisplay
+    offset:
+      x: 0
+      y: 0
+      z: 0
+    data:
+      'waystone_type:server,server_normal,private,private_normal,public,public_normal,linked':
+        block-data: 'minecraft:chiseled_stone_bricks'
+      'waystone_type:server_nether,private_nether,public_nether':
+        block-data: 'minecraft:nether_bricks'
+      'waystone_type:server_the_end,public_the_end,private_the_end':
+        block-data: 'minecraft:purpur_block'
+  # top pillar
+  - type: client-blockdisplay
+    offset:
+      x: 0
+      y: 1
+      z: 0
+    data:
+      'state:active waystone_type:server,server_normal,server_the_end,server_nether':
+        block-data: 'minecraft:diamond_block'
+        translation:
+          x: 0.15
+          y: 0
+          z: 0.15
+        scale:
+          x: 0.7
+          y: 1
+          z: 0.7
+      'state:active waystone_type:public,public_normal,public_the_end,public_nether':
+        block-data: 'minecraft:gold_block'
+        translation:
+          x: 0.15
+          y: 0
+          z: 0.15
+        scale:
+          x: 0.7
+          y: 1
+          z: 0.7
+      'state:active waystone_type:private,private_normal,private_the_end,private_nether':
+        block-data: 'minecraft:emerald_block'
+        translation:
+          x: 0.15
+          y: 0
+          z: 0.15
+        scale:
+          x: 0.7
+          y: 1
+          z: 0.7
+      'state:active waystone_type:linked':
+        block-data: 'minecraft:redstone_block'
+        translation:
+          x: 0.15
+          y: 0
+          z: 0.15
+        scale:
+          x: 0.7
+          y: 1
+          z: 0.7
+      'state:inactive waystone_type:server,server_normal,private,private_normal,public,public_normal,linked':
+        block-data: 'minecraft:polished_andesite'
+        translation:
+          x: 0.15
+          y: 0
+          z: 0.15
+        scale:
+          x: 0.7
+          y: 1
+          z: 0.7
+      'state:inactive waystone_type:server_nether,private_nether,public_nether':
+        block-data: 'minecraft:nether_bricks'
+        translation:
+          x: 0.15
+          y: 0
+          z: 0.15
+        scale:
+          x: 0.7
+          y: 1
+          z: 0.7
+      'state:inactive waystone_type:server_the_end,public_the_end,private_the_end':
+        block-data: 'minecraft:purpur_pillar'
+        translation:
+          x: 0.15
+          y: 0
+          z: 0.15
+        scale:
+          x: 0.7
+          y: 1
+          z: 0.7
+  - type: client-blockdisplay
+    offset:
+      x: 0
+      y: 0
+      z: 0
+    data:
+      'state:active waystone_type:server,server_normal,server_the_end,server_nether':
+        block-data: 'minecraft:diamond_block'
+        translation:
+          x: -0.1
+          y: 0.15
+          z: 0.15
+        scale:
+          x: 1.2
+          y: 0.7
+          z: 0.7
+      'state:active waystone_type:public,public_normal,public_the_end,public_nether':
+        block-data: 'minecraft:gold_block'
+        translation:
+          x: -0.1
+          y: 0.15
+          z: 0.15
+        scale:
+          x: 1.2
+          y: 0.7
+          z: 0.7
+      'state:active waystone_type:private,private_normal,private_the_end,private_nether':
+        block-data: 'minecraft:emerald_block'
+        translation:
+          x: -0.1
+          y: 0.15
+          z: 0.15
+        scale:
+          x: 1.2
+          y: 0.7
+          z: 0.7
+      'state:active waystone_type:linked':
+        block-data: 'minecraft:redstone_block'
+        translation:
+          x: -0.1
+          y: 0.15
+          z: 0.15
+        scale:
+          x: 1.2
+          y: 0.7
+          z: 0.7
+      'state:inactive waystone_type:server,server_normal,private,private_normal,public,public_normal,linked':
+        block-data: 'minecraft:polished_andesite'
+        translation:
+          x: -0.1
+          y: 0.15
+          z: 0.15
+        scale:
+          x: 1.2
+          y: 0.7
+          z: 0.7
+      'state:inactive waystone_type:server_nether,private_nether,public_nether':
+        block-data: 'minecraft:nether_bricks'
+        translation:
+          x: -0.1
+          y: 0.15
+          z: 0.15
+        scale:
+          x: 1.2
+          y: 0.7
+          z: 0.7
+      'state:inactive waystone_type:server_the_end,public_the_end,private_the_end':
+        block-data: 'minecraft:purpur_pillar'
+        translation:
+          x: -0.1
+          y: 0.15
+          z: 0.15
+        scale:
+          x: 1.2
+          y: 0.7
+          z: 0.7
+  - type: client-blockdisplay
+    offset:
+      x: 0
+      y: 0
+      z: 0
+    data:
+      'state:active waystone_type:server,server_normal,server_the_end,server_nether':
+        block-data: 'minecraft:diamond_block'
+        translation:
+          z: -0.1
+          y: 0.15
+          x: 0.15
+        scale:
+          z: 1.2
+          y: 0.7
+          x: 0.7
+      'state:active waystone_type:public,public_normal,public_the_end,public_nether':
+        block-data: 'minecraft:gold_block'
+        translation:
+          z: -0.1
+          y: 0.15
+          x: 0.15
+        scale:
+          z: 1.2
+          y: 0.7
+          x: 0.7
+      'state:active waystone_type:private,private_normal,private_the_end,private_nether':
+        block-data: 'minecraft:emerald_block'
+        translation:
+          z: -0.1
+          y: 0.15
+          x: 0.15
+        scale:
+          z: 1.2
+          y: 0.7
+          x: 0.7
+      'state:active waystone_type:linked':
+        block-data: 'minecraft:redstone_block'
+        translation:
+          z: -0.1
+          y: 0.15
+          x: 0.15
+        scale:
+          z: 1.2
+          y: 0.7
+          x: 0.7
+      'state:inactive waystone_type:server,server_normal,private,private_normal,public,public_normal,linked':
+        block-data: 'minecraft:polished_andesite'
+        translation:
+          z: -0.1
+          y: 0.15
+          x: 0.15
+        scale:
+          z: 1.2
+          y: 0.7
+          x: 0.7
+      'state:inactive waystone_type:server_nether,private_nether,public_nether':
+        block-data: 'minecraft:nether_bricks'
+        translation:
+          z: -0.1
+          y: 0.15
+          xz: 0.15
+        scale:
+          z: 1.2
+          y: 0.7
+          x: 0.7
+      'state:inactive waystone_type:server_the_end,public_the_end,private_the_end':
+        block-data: 'minecraft:purpur_pillar'
+        translation:
+          z: -0.1
+          y: 0.15
+          x: 0.15
+        scale:
+          z: 1.2
+          y: 0.7
+          x: 0.7
+  - type: client-textdisplay
+    offset:
+      x: 0.5
+      y: 2.9
+      z: 0.5
+    data:
+      'state:active':
+        display-billboard: CENTER
+        background-color:
+          alpha: 0
+        text: |-
+          {waystone_name}
+          {language.hologram.active}
+          &7&o[{waystone_type}]
+      'state:inactive':
+        display-billboard: CENTER
+        background-color:
+          alpha: 0
+        text: |-
+          {waystone_name}
+          {language.hologram.inactive}
+          &7&o[{waystone_type}]

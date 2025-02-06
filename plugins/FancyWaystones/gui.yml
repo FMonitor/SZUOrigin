@@ -1,0 +1,1015 @@
+Configuration Version: "1.0.10"
+
+Category:
+  Warpstone:
+    Default: favorite
+  Waystone:
+    Default: favorite
+  Waypoint:
+    # Possible Values: {personal}, {waystone}, {death}, or server category name/id
+    Default: "{personal}"
+
+Animations:
+  Transitions:
+    Slide:
+      Cover 2:
+        meta:
+          display-name: '&7  '
+          id: "filler"
+        type: ITEMSADDER
+      Cover 1:
+        meta:
+          display-name: '&7  '
+          id: "filler"
+        type: ITEMSADDER
+    Dissolve:
+      Cover 2:
+        meta:
+          display-name: '&7  '
+          id: "filler"
+        type: ITEMSADDER
+      Cover 1:
+        meta:
+          display-name: '&7  '
+          id: "filler"
+        type: ITEMSADDER
+
+Input Menu:
+  Waystone Rename Menu:
+    Title: '{language.rename-gui-title}'
+    Right Item:
+    Left Item:
+      type: PAPER
+  Waypoint Rename Menu:
+    Title: '{language.rename-gui-title}'
+    Right Item:
+    Left Item:
+      type: PAPER
+  Search Menu:
+    Title: '{language.search-filter-title}'
+    Right Item:
+    Left Item:
+      type: PAPER
+
+Menus:
+  Select Icon Menu:
+    Title: '&1{language.gui-select-icon}'
+    Transition: RANDOM
+    Layout:
+      - lllllllll
+      - lllllllll
+      - lllllllll
+      - lllllllll
+      - gLLLrLLLh
+# 传送石碑偏移菜单
+  Waystone TP Offset Menu:
+    Title: '&1{language.gui-tp-offset} - {waystone_name}'
+    Transition: RANDOM
+    Layout:
+      - LLLLLLLLL
+      - LLHLILJLL
+      - LLLLrLLLL
+# 传送石碑控制菜单
+  Waystone Control Menu:
+    Title: '&1{language.gui-waystone} - {waystone_name}'
+    Transition: RANDOM
+    Layout:
+      - LLLLLLLLL
+      - LLNLLLMLL
+      - LLLLrLLLL
+# 删除白名单成员菜单
+  Whitelist Member Control Menu:
+    Title: '&1{language.gui-whitelist} - {waystone_member_name}'
+    Transition: RANDOM
+    Layout:
+      - LLLLLLLLL
+      - LLe    LL
+      - LLLLrLLLL
+  Discovery Member Control Menu:
+    Title: '&1{language.gui-member} - {waystone_member_name}'
+    Transition: RANDOM
+    Layout:
+      - LLLLLLLLL
+      - LLS     L
+      - LLLLrLLLL
+# 删除黑名单成员菜单
+  Blacklist Member Control Menu:
+    Title: '&1{language.gui-blacklist} - {waystone_member_name}'
+    Transition: RANDOM
+    Layout:
+      - LLLLLLLLL
+      - LLQ    LL
+      - LLLLrLLLL
+  Waypoint Control Menu:
+    Title: '&1{language.gui-waypoint} - {waypoint_name}'
+    Transition: RANDOM
+    Layout:
+      - LLLLLLLLL
+      - KLAUFG LK
+      - LLLLrLLLL
+# 传送石传送卷轴菜单
+  Warpstone Menu:
+    Title: '&5{language.gui-warpstone}'
+    Transition: RANDOM
+    Layout:
+      - LLWYXLLLL
+      - KLkkkkkLK
+      - gLkkkkkLh
+      - KLkkkkkLK
+      - LLcajfLLL
+  Waypoints Menu:
+    Layout:
+      - LLDCLBELL
+      - LKbbbbbKL
+      - gKbbbbbKh
+      - LKbbbbbKL
+      - LLcajfTLL
+    Title: '&1{language.waypoints-title}'
+    Transition: RANDOM
+# 添加成员菜单
+  Members Menu:
+    Layout:
+      - mmmmmmmmm
+      - mmmmmmmmm
+      - mmmmmmmmm
+      - mmmmmmmmm
+      - mmmmmmmmm
+      - gLOPfdrLh
+    Title: '&1{language.members-title}'
+    Transition: RANDOM
+# 传送石碑打开后的菜单
+  Waystone Menu:
+    Layout:
+      - LLWYXLvLL
+      - LkkkkkkkL
+      - gkkkkkkkh
+      - LkkkkkkkL
+      - LcajfiVsL
+    Title: '&1{language.waystone-title} [{page}/{max_page}] &8- &5{waystone_name}'
+    Transition: RANDOM
+  Paywall Menu:
+    Layout:
+      - LLLLLLLLL
+      - LnnnnnnnL
+      - LLLLrLLLL
+    Title: '&1{language.paywall-title}'
+    Transition: RANDOM
+# 停用菜单确认
+  Confirm Menu:
+    Layout:
+      - oLLLLLLLp
+    Title: '&1{language.confirm-title}'
+    Transition: RANDOM
+# 设置菜单
+  Settings Menu:
+    Layout:
+      - LLLLLLLLL
+      - LqLtLuLRL
+      - LLLLrLLLL
+    Title: '&1{waystone_name} - {language.settings-title}'
+    Transition: RANDOM
+Items:
+# 收藏石碑物品
+  Toggle Mark Favorite:
+    Layout Key: s
+    Disabled:
+      type: ITEMSADDER
+      meta:
+        display-name: "&7{language.gui-toggle-favorite-a}"
+        id: "thumbs_up"
+    Enabled:
+      type: ITEMSADDER
+      meta:
+        display-name: "&a{language.gui-toggle-favorite-b}"
+        id: "thumbs_down"
+# 修改状态图标
+  Change Icon:
+    Layout Key: R
+    Disabled:
+      type: ITEMSADDER
+      meta:
+        display-name: "&7{language.gui-change-icon}"
+        lore:
+          - '&c{language.gui-change-icon-1}'
+        id: "cross"
+    Item:
+      type: ITEMSADDER
+      meta:
+        display-name: "&a{language.gui-change-icon}"
+        id: "palette"
+  Icon Display:
+    Layout Key: l
+    Item:
+      type: AIR
+      meta:
+        display-name: "&7{language.gui-icon-display}"
+        lore: []
+# 从黑白名单中移除成员
+  Remove Discovery Member:
+    Layout Key: S
+    Item:
+      type: BEDROCK
+      meta:
+        display-name: '&c{language.gui-remove-discovery}'
+        lore:
+          - '&7{language.gui-remove-discovery-1}'
+          - '&7{language.gui-remove-discovery-2}'
+          - '&7{language.gui-remove-discovery-3}'
+# 删除黑白名单成员
+  Remove Whitelist Member:
+    Layout Key: e
+    Item:
+      type: ITEMSADDER
+      meta:
+        id: "icon_cancel"
+        display-name: '&c{language.gui-remove-whitelist}'
+  Remove Blacklist Member:
+    Layout Key: Q
+    Item:
+      type: ITEMSADDER
+      meta:
+        id: "icon_cancel"
+        display-name: '&c{language.gui-remove-blacklist}'
+# 忘记传送石碑
+  Remove Waystone:
+    Layout Key: M
+    Item:
+      type: ITEMSADDER
+      meta:
+        id: "lock"
+        display-name: '&c{language.gui-forget-waystone}'
+        lore:
+          - '&7{language.gui-forget-waystone-1}'
+          - '&7{language.gui-forget-waystone-2}'
+# 传送石碑确认传送
+  Teleport Waystone:
+    Layout Key: N
+    Item:
+      type: ITEMSADDER
+      meta:
+        id: "bulb"
+        display-name: '&d{language.gui-teleport}'
+        lore:
+          - '&7'
+          - '&7{language.gui-teleport-2}&b{waystone_teleportation_cost}'
+  Remove Waypoint:
+    Layout Key: A
+    Item:
+      type: BARRIER
+      meta:
+        display-name: '&c{language.gui-remove-waypoint}'
+  Rename Waypoint:
+    Layout Key: U
+    Item:
+      type: NAME_TAG
+      meta:
+        display-name: '&d{language.gui-rename-waypoint}'
+  Change Waypoint Color:
+    Layout Key: F
+    Item:
+      type: '{waypoint_material}'
+      meta:
+        display-name: '&e{language.gui-color-waypoint}'
+        lore:
+          - '&7{language.gui-color-waypoint-1}'
+          - '{waypoint_colorText}{waypoint_colorName}'
+  Change Waypoint Visibility:
+    Layout Key: G
+    Visible:
+      type: LIME_DYE
+      meta:
+        display-name: '&b{language.gui-visibility-waypoint}'
+        lore:
+          - '&7{language.gui-visibility-waypoint-1}'
+    Invisible:
+      type: GRAY_DYE
+      meta:
+        display-name: '&b{language.gui-visibility-waypoint}'
+        lore:
+          - '&7{language.gui-visibility-waypoint-2}'
+  TP Offset Clear:
+    Layout Key: I
+    Item:
+      type: ITEMSADDER
+      meta:
+        id: "blocked"
+        display-name: '&c{language.gui-reset-tp-offset}'
+  TP Offset Change:
+    Layout Key: J
+    Item:
+      type: ITEMSADDER
+      meta:
+        id: "wrench"
+        display-name: '&e{language.gui-tp-offset-change}'
+# 传送石碑黑白名单
+  Member Category:
+    BLACKLIST:
+      Empty:
+        meta:
+          display-name: '&7{language.members-blacklist}'
+          id: "thumbs_down"
+        type: ITEMSADDER
+      Not Empty:
+        meta:
+          display-name: '&a{language.members-blacklist}'
+          id: "thumbs_down"
+        type: ITEMSADDER
+      Layout Key: O
+    WHITELIST:
+      Empty:
+        meta:
+          display-name: '&7{language.members-whitelist}'
+          id: "thumbs_up"
+        type: ITEMSADDER
+      Not Empty:
+        meta:
+          display-name: '&a{language.members-whitelist}'
+          id: "thumbs_up"
+        type: ITEMSADDER
+      Layout Key: P
+  Settings Item:
+    Item:
+      meta:
+        display-name: '&6{language.waystone-settings}'
+        id: "gear"
+      type: ITEMSADDER
+    Layout Key: V
+# 添加新成员
+  Add Member Item:
+    Layout Key: d
+    Item:
+      meta:
+        display-name: '&a{language.members-add}'
+        id: "plus"
+      type: ITEMSADDER
+  Sort Item:
+    By Used Time:
+      meta:
+        lore:
+
+          - '&7{language.sort-name}'
+          - '&7{language.sort-date-created}'
+          - '&7{language.sort-users}'
+          - '&7{language.sort-visits}'
+          - '&7{language.sort-visitors}'
+          - '&a{language.sort-used-time}'
+        display-name: '&d{language.gui-sort}'
+        id: "list"
+      type: ITEMSADDER
+    By Users:
+      meta:
+        lore:
+
+          - '&7{language.sort-name}'
+          - '&7{language.sort-date-created}'
+          - '&a{language.sort-users}'
+          - '&7{language.sort-visits}'
+          - '&7{language.sort-visitors}'
+          - '&7{language.sort-used-time}'
+        display-name: '&d{language.gui-sort}'
+        id: "list"
+      type: ITEMSADDER
+    By Waypoint Distance:
+      meta:
+        lore:
+
+          - '&7{language.sort-name}'
+          - '&7{language.sort-date-created}'
+          - '&a{language.sort-distance}'
+          - '&7{language.sort-world}'
+          - '&7{language.sort-visibility}'
+        display-name: '&d{language.gui-sort}'
+        id: "list"
+      type: ITEMSADDER
+    By Waypoint Visibility:
+      meta:
+        lore:
+
+          - '&7{language.sort-name}'
+          - '&7{language.sort-date-created}'
+          - '&7{language.sort-distance}'
+          - '&7{language.sort-world}'
+          - '&a{language.sort-visibility}'
+        display-name: '&d{language.gui-sort}'
+        id: "list"
+      type: ITEMSADDER
+    By Visitors:
+      meta:
+        lore:
+
+          - '&7{language.sort-name}'
+          - '&7{language.sort-date-created}'
+          - '&7{language.sort-users}'
+          - '&7{language.sort-visits}'
+          - '&a{language.sort-visitors}'
+          - '&7{language.sort-used-time}'
+        display-name: '&d{language.gui-sort}'
+        id: "list"
+      type: ITEMSADDER
+    By Waypoint World:
+      meta:
+        lore:
+
+          - '&7{language.sort-name}'
+          - '&7{language.sort-date-created}'
+          - '&7{language.sort-distance}'
+          - '&a{language.sort-world}'
+          - '&7{language.sort-visibility}'
+        display-name: '&d{language.gui-sort}'
+        id: "list"
+      type: ITEMSADDER
+    By Waypoint Name:
+      meta:
+        lore:
+
+          - '&a{language.sort-name}'
+          - '&7{language.sort-date-created}'
+          - '&7{language.sort-distance}'
+          - '&7{language.sort-world}'
+          - '&7{language.sort-visibility}'
+        display-name: '&d{language.gui-sort}'
+        id: "list"
+      type: ITEMSADDER
+    By Name:
+      meta:
+        lore:
+
+          - '&a{language.sort-name}'
+          - '&7{language.sort-date-created}'
+          - '&7{language.sort-users}'
+          - '&7{language.sort-visits}'
+          - '&7{language.sort-visitors}'
+          - '&7{language.sort-used-time}'
+        display-name: '&d{language.gui-sort}'
+        id: "list"
+      type: ITEMSADDER
+    By Visits:
+      meta:
+        lore:
+
+          - '&7{language.sort-name}'
+          - '&7{language.sort-date-created}'
+          - '&7{language.sort-users}'
+          - '&a{language.sort-visits}'
+          - '&7{language.sort-visitors}'
+          - '&7{language.sort-used-time}'
+        display-name: '&d{language.gui-sort}'
+        id: "list"
+      type: ITEMSADDER
+    By Waypoint Date Created:
+      meta:
+        lore:
+
+          - '&7{language.sort-name}'
+          - '&a{language.sort-date-created}'
+          - '&7{language.sort-distance}'
+          - '&7{language.sort-world}'
+          - '&7{language.sort-visibility}'
+        display-name: '&d{language.gui-sort}'
+        id: "list"
+      type: ITEMSADDER
+    By Date Created:
+      meta:
+        lore:
+
+          - '&7{language.sort-name}'
+          - '&a{language.sort-date-created}'
+          - '&7{language.sort-users}'
+          - '&7{language.sort-visits}'
+          - '&7{language.sort-visitors}'
+          - '&7{language.sort-used-time}'
+        display-name: '&d{language.gui-sort}'
+        id: "list"
+      type: ITEMSADDER
+    Layout Key: a
+  Edit Members:
+    No Access:
+      meta:
+        lore:
+          - '&7{language.waystone-edit-members-no-access}'
+          - '&7{language.waystone-edit-members-no-access2}'
+        display-name: '&c{language.waystone-edit-members}'
+        id: "cross"
+      type: ITEMSADDER
+    Enable:
+      meta:
+        lore:
+          - '&7{language.waystone-edit-members-info}'
+        display-name: '&b{language.waystone-edit-members}'
+        id: "check"
+      type: ITEMSADDER
+    Layout Key: q
+  Cancel:
+    Item:
+      meta:
+        display-name: '&c{language.confirm-cancel}'
+        id: "cross"
+      type: ITEMSADDER
+    Layout Key: o
+  Waypoint Display:
+    Categorized:
+      server:
+        meta:
+          lore:
+            - '&7{language.info-world}: &e{waypoint_worldName}'
+            - '&7{language.info-x}: &e{waypoint_x}'
+            - '&7{language.info-y}: &e{waypoint_y}'
+            - '&7{language.info-z}: &e{waypoint_z}'
+            - '&7{language.info-visible}: &e{waypoint_visible}'
+            - '&7'
+            - '&7   &b{language.info-click-waypoints-edit}'
+          display-name: '{waypoint_colorText}{waypoint_name}'
+        type: '{waypoint_material}'
+      death:
+        meta:
+          lore:
+            - '&7{language.info-world}: &e{waypoint_worldName}'
+            - '&7{language.info-x}: &e{waypoint_x}'
+            - '&7{language.info-y}: &e{waypoint_y}'
+            - '&7{language.info-z}: &e{waypoint_z}'
+            - '&7{language.info-visible}: &e{waypoint_visible}'
+            - '&7'
+            - '&7   &b{language.info-click-waypoints-edit}'
+          display-name: '{waypoint_colorText}{waypoint_name}'
+        type: '{waypoint_material}'
+      waystone:
+        Specified:
+          server:
+            meta:
+              lore:
+                - '&7{language.info-world}: &e{waypoint_worldName}'
+                - '&7{language.info-x}: &e{waypoint_x}'
+                - '&7{language.info-y}: &e{waypoint_y}'
+                - '&7{language.info-z}: &e{waypoint_z}'
+                - '&7{language.info-visible}: &e{waypoint_visible}'
+                - '&7'
+                - '&7   &b{language.info-click-waypoints-edit}'
+              display-name: '{waypoint_colorText}{waypoint_name}'
+            type: BREWING_STAND
+        Unspecified:
+          meta:
+            lore:
+              - '&7{language.info-world}: &e{waypoint_worldName}'
+              - '&7{language.info-x}: &e{waypoint_x}'
+              - '&7{language.info-y}: &e{waypoint_y}'
+              - '&7{language.info-z}: &e{waypoint_z}'
+              - '&7{language.info-visible}: &e{waypoint_visible}'
+              - '&7'
+              - '&7   &b{language.info-click-waypoints-edit}'
+            display-name: '{waypoint_colorText}{waypoint_name}'
+          type: BREWING_STAND
+    Uncategorized:
+      meta:
+        lore:
+          - '&7{language.info-world}: &e{waypoint_worldName}'
+          - '&7{language.info-x}: &e{waypoint_x}'
+          - '&7{language.info-y}: &e{waypoint_y}'
+          - '&7{language.info-z}: &e{waypoint_z}'
+          - '&7{language.info-visible}: &e{waypoint_visible}'
+          - '&7'
+          - '&7   &b{language.info-click-waypoints-edit}'
+        display-name: '{waypoint_colorText}{waypoint_name}'
+      type: '{waypoint_material}'
+    Layout Key: b
+  Confirm:
+    Item:
+      meta:
+        display-name: '&a{language.confirm-confirm}'
+        id: "check"
+      type: ITEMSADDER
+    Layout Key: p
+# 其他物品
+  Other Items:
+    H:
+      Item:
+        type: ITEMSADDER
+        meta:
+          id: "speech"
+          display-name: '&e偏移信息'
+          lore:
+            - '&7X轴偏移: &b{waystone_offset_x}'
+            - '&7Y轴偏移: &b{waystone_offset_y}'
+            - '&7Z轴偏移: &b{waystone_offset_z}'
+    K:
+      Item:
+        meta:
+          display-name: '&7  '
+          id: "pause"
+        type: ITEMSADDER
+    L:
+      Item:
+        meta:
+          display-name: '&7  '
+          id: "filler"
+        type: ITEMSADDER
+  Waystone Category:
+# 石碑选择分类5-喜欢的
+    favorite:
+      Condition:
+        Criteria: LOGIC_AND
+        Conditions:
+          - Criteria: IS_FAVORITE_WAYSTONE
+          - Criteria: LOGIC_OR
+            Conditions:
+              - Criteria: IS_WAYSTONE_ACTIVATED
+              - Criteria: TYPE_WHITELIST
+                Types:
+                  - server
+                  - server_normal
+                  - server_nether
+                  - server_the_end
+      Empty:
+        meta:
+          display-name: '&7{language.waystone-category-favorite}'
+          id: "star"
+        type: ITEMSADDER
+      Not Empty:
+        meta:
+          id: "star"
+          display-name: '&e{language.waystone-category-favorite}'
+        type: ITEMSADDER
+      Disabled:
+        meta:
+          lore:
+            - '{language.waystone-category-disabled}'
+            - '{language.waystone-category-disabled2}'
+          display-name: '&c{language.waystone-category-favorite}'
+          id: "icon_cancel"
+        type: ITEMSADDER
+      Layout Key: v
+    server:
+      Condition:
+        Criteria: TYPE_WHITELIST
+        Types:
+          - server
+          - server_normal
+          - server_nether
+          - server_the_end
+      Empty:
+        meta:
+          display-name: '&7{language.waystone-category-server}'
+          id: "waystoneicon_normal"
+        type: ITEMSADDER
+      Not Empty:
+        meta:
+          display-name: '&e{language.waystone-category-server}'
+          id: "waystoneicon_normal"
+        type: ITEMSADDER
+      Disabled:
+        meta:
+          lore:
+            - '{language.waystone-category-disabled}'
+            - '{language.waystone-category-disabled2}'
+          display-name: '&c{language.waystone-category-server}'
+          id: "waystoneicon_normal"
+        type: ITEMSADDER
+      Layout Key: W
+    private:
+      Condition:
+        Criteria: TYPE_WHITELIST
+        Types:
+          - private
+          - private_normal
+          - private_nether
+          - private_the_end
+      Empty:
+        meta:
+          display-name: '&7{language.waystone-category-private}'
+          id: "waystoneicon_end"
+        type: ITEMSADDER
+      Not Empty:
+        meta:
+          display-name: '&e{language.waystone-category-private}'
+          id: "waystoneicon_end"
+        type: ITEMSADDER
+      Disabled:
+        meta:
+          lore:
+            - '{language.waystone-category-disabled}'
+            - '{language.waystone-category-disabled2}'
+          display-name: '&c{language.waystone-category-private}'
+          id: "waystoneicon_end"
+        type: ITEMSADDER
+      Layout Key: X
+    public:
+      Condition:
+        Criteria: TYPE_WHITELIST
+        Types:
+        - public
+        - public_normal
+        - public_nether
+        - public_the_end
+      Empty:
+        meta:
+          display-name: '&7{language.waystone-category-public}'
+          id: "waystoneicon_nether"
+        type: ITEMSADDER
+      Not Empty:
+        meta:
+          display-name: '&e{language.waystone-category-public}'
+          id: "waystoneicon_nether"
+        type: ITEMSADDER
+      Disabled:
+        meta:
+          lore:
+            - '{language.waystone-category-disabled}'
+            - '{language.waystone-category-disabled2}'
+          display-name: '&c{language.waystone-category-public}'
+          id: "waystoneicon_nether"
+        type: ITEMSADDER
+      Layout Key: Y
+    # region:
+    #   Condition:
+    #     Criteria: TYPE_WHITELIST
+    #     Types:
+    #     - region
+    #     - region_normal
+    #     - region_nether
+    #     - region_the_end
+    #   Empty:
+    #     meta:
+    #       display-name: '&7{language.waystone-category-regional}'
+    #     type: BOOK
+    #   Not Empty:
+    #     meta:
+    #       display-name: '&e{language.waystone-category-regional}'
+    #     type: BOOK
+    #   Disabled:
+    #     meta:
+    #       lore:
+    #         - '{language.waystone-category-disabled}'
+    #         - '{language.waystone-category-disabled2}'
+    #       display-name: '&c{language.waystone-category-regional}'
+    #       id: "icon_cancel"
+    #     type: ITEMSADDER
+    #   Layout Key: Z
+# 重命名石碑按钮
+  Rename Item:
+    Enable:
+      meta:
+        lore:
+          - '&7{language.waystone-rename-info3} &d{waystone_name}'
+        display-name: '&b{language.waystone-rename}'
+        id: "speech"
+      type: ITEMSADDER
+    Disable:
+      meta:
+        lore:
+          - '&7{language.waystone-rename-info4}'
+        display-name: '&7{language.waystone-rename}'
+        id: "speech_blocked"
+      type: ITEMSADDER
+    Layout Key: t
+# 设置传送偏移
+  Set TP Offset:
+    Active:
+      meta:
+        lore:
+          - '&7{language.waystone-offset-info}'
+          - '&7{language.info-x}: {waystone_offset_x}'
+          - '&7{language.info-y}: {waystone_offset_y}'
+          - '&7{language.info-z}: {waystone_offset_z}'
+          - ''
+          - '&8{language.waystone-offset-info2}'
+        display-name: '&d{language.waystone-offset}'
+        id: "wrench"
+      type: ITEMSADDER
+    Inactive:
+      meta:
+        lore:
+          - '&7修改传送到此石碑的落点位置'
+        display-name: '&f{language.waystone-offset}'
+        id: "info"
+      type: ITEMSADDER
+    Disable:
+      meta:
+        display-name: '&8{language.waystone-offset}'
+        id: "info"
+      type: ITEMSADDER
+    Layout Key: u
+  Search Item:
+    Active:
+      meta:
+        lore:
+          - '&7{language.search-info2}'
+          - '&f{search_keyword}'
+          - ''
+          - '&8{language.search-info3}'
+        display-name: '&d{language.search}'
+      Flags:
+        - HIDE_POTION_EFFECTS
+      type: POTION
+    Inactive:
+      meta:
+        display-name: '&d{language.search}'
+        id: "search"
+      type: ITEMSADDER
+    Layout Key: f
+  Economy Display:
+    Item:
+      Emerald:
+        type: EMERALD
+        meta:
+          lore:
+            - ''
+            - '&a{language.paywall-item-pay}'
+            - '&7{language.paywall-cost}: &e{cost_value}x {language.paywall-item}'
+            - '&7{language.paywall-balance}: &b{player_economy_value}x {language.paywall-item}'
+      EnderPearl:
+        type: ENDER_PEARL
+        meta:
+          lore:
+            - ''
+            - '&a{language.paywall-item-pay}'
+            - '&7{language.paywall-cost}: &e{cost_value}x {language.paywall-item}'
+            - '&7{language.paywall-balance}: &b{player_economy_value}x {language.paywall-item}'
+    Level:
+      meta:
+        lore:
+          - '&7{language.paywall-cost}: &e{cost_value} {language.paywall-levels}'
+          - '&7{language.paywall-balance}: &b{player_economy_value} {language.paywall-levels}'
+        display-name: '&a{language.paywall-with-level}'
+      type: EXPERIENCE_BOTTLE
+    Vault:
+      meta:
+        lore:
+          - '&7{language.paywall-cost}: &e${cost_value}'
+          - '&7{language.paywall-balance}: &b${player_economy_value}'
+        display-name: '&a{language.paywall-with-money}'
+      type: EMERALD
+    Layout Key: n
+    Stellium:
+      meta:
+        lore:
+          - '&7{language.paywall-cost}: &e{cost_value} Stellium'
+          - '&7{language.paywall-balance}: &b{player_economy_value} Stellium'
+        display-name: '&a{language.paywall-with-stellium}'
+      type: ENDER_EYE
+  Back Item:
+    Layout Key: r
+    Item:
+      meta:
+        display-name: '&c{language.gui-back}'
+        id: "back"
+      type: ITEMSADDER
+# 上一页物品
+  Previous Page Item:
+    Enable:
+      meta:
+        display-name: '&a←'
+        id: "boxed_arrow_left"
+      type: ITEMSADDER
+    Disable:
+      meta:
+        display-name: '&7←'
+        id: "gray_boxed_arrow_left"
+      type: ITEMSADDER
+    Layout Key: g
+# 下一页物品
+  Next Page Item:
+    Enable:
+      meta:
+        display-name: '&a→'
+        id: "boxed_arrow_right"
+      type: ITEMSADDER
+    Disable:
+      meta:
+        display-name: '&7→'
+        id: "gray_boxed_arrow_right"
+      type: ITEMSADDER
+    Layout Key: h
+# 按照字母顺序逆序物品
+  Order Item:
+    Descend Order:
+      meta:
+        id: "curved_arrow_right2"
+        lore:
+
+          - '&7{order_ascend}'
+          - '&a{order_descend}'
+        display-name: '&d{language.gui-sort-order}'
+        type: ITEMSADDER
+    Layout Key: j
+    Ascend Order:
+      type: ITEMSADDER
+      meta:
+        lore:
+
+          - '&a{order_ascend}'
+          - '&7{order_descend}'
+        display-name: '&d{language.gui-sort-order}'
+        id: "curved_arrow_left2"
+# 禁用石碑物品
+  Deactivate:
+    Item:
+      type: ITEMSADDER
+      meta:
+        display-name: '&c{language.waystone-deactivate}'
+        id: "blocked"
+    Layout Key: i
+  Add Waypoint Item:
+    Item:
+      meta:
+        lore:
+          - '&7({language.waypoints-add-info})'
+        display-name: '&e{language.waypoints-add}'
+      type: SUNFLOWER
+    Layout Key: T
+  Members Display:
+    Layout Key: m
+    Discovered:
+      type: PLAYER_HEAD
+      meta:
+        meta-type: SKULL
+        display-name: "&a{waystone_member_name}"
+        lore:
+          - "&e{waystone_member_uuid}"
+          - "&7{language.members-click}"
+          - "&6&o{language.members-info-discovered}"
+        skull-owner: "{waystone_member_name}"
+    Added:
+      type: PLAYER_HEAD
+      meta:
+        meta-type: SKULL
+        display-name: "&a{waystone_member_name}"
+        lore:
+          - "&e{waystone_member_uuid}"
+          - "&7{language.members-click}"
+        skull-owner: "{player_name}"
+  Waystone Display:
+    Active Use Custom Item: true
+    Inactive Use Custom Item: true
+    ACTIVE:
+      UNSPECIFIED:
+        meta:
+          lore:
+            - '&7by &f{waystone_owner_name}'
+            - '&7'
+            - '&f%img_info_tag%'
+            - '&7{language.waystone-info-cost} &e{waystone_teleportation_cost}'
+            - '&7{language.waystone-info-total-visitors} &e{waystone_statistics_visitors}'
+            - '&7{language.waystone-info-date-created} &e{waystone_statistics_date_created}'
+            - '&7'
+            - '&f%img_interact_tag%'
+            - '  &f%img_click_l% &7查看更多信息'
+          display-name: '&a{waystone_name}'
+        type: NETHER_STAR
+    INACTIVE:
+      UNSPECIFIED:
+        meta:
+          lore:
+            - '&7{language.waystone-inactive1}'
+            - '&7{language.waystone-inactive2}'
+            - '&7{language.waystone-inactive3}.'
+          display-name: '&8{waystone_name}'
+        type: ENDER_PEARL
+    Layout Key: k
+  Waypoint Category:
+    Categorized:
+      server:
+        Empty:
+          meta:
+            display-name: '&7{language.waypoints-server}'
+          type: BEACON
+        Not Empty:
+          meta:
+            display-name: '&d{language.waypoints-server}'
+          type: BEACON
+        Layout Key: B
+      death:
+        Empty:
+          meta:
+            display-name: '&7{language.waypoints-death}'
+          type: DROPPER
+        Not Empty:
+          meta:
+            display-name: '&f{language.waypoints-death}'
+          type: DROPPER
+        Layout Key: C
+      waystone:
+        Empty:
+          meta:
+            display-name: '&7{language.waypoints-waystones}'
+          type: BREWING_STAND
+        Not Empty:
+          meta:
+            display-name: '&b{language.waypoints-waystones}'
+          type: BREWING_STAND
+        Layout Key: D
+    Uncategorized:
+      Empty:
+        meta:
+          display-name: '&7{language.waypoints-player}'
+        type: FILLED_MAP
+      Not Empty:
+        meta:
+          display-name: '&e{language.waypoints-player}'
+        type: FILLED_MAP
+      Layout Key: E
+  Close Item:
+    Item:
+      type: ITEMSADDER
+      meta:
+        display-name: '&c{language.gui-close}'
+        id: "cross"
+    Layout Key: c

@@ -1,0 +1,151 @@
+Configuration Version: "1.0.1"
+
+Enable Structure Generation: false
+# Inform on console about waystone generation
+Inform Generation: true
+# Warning: In order to keep the balance of the waystone usage
+# It is highly recommended keeping the waystone rare as if
+# making it very easy to obtain will allow players to abuse the
+# waystone system.
+Structures:
+    # The structure name can be seen on the file name
+    # Example: "demo.bin", then the name is "demo"
+  - Structure Name: "demo"
+    # Waystone Type must qualify these requirements:
+    # - must allow all players to activate and use the waystone
+    # - does not load and visible to all players at startup
+    Waystone Type: public_normal
+    Waystone Model: regular
+    # Rename the generated waystone.
+    # Will pick one of these names randomly.
+    # Make it empty to disable auto renaming.
+    Auto Rename:
+      - Generated Waystone
+      - Naturally Spawned Waystone
+    # If one of these values above are not valid / not found, then this structure will not be generated
+    Structure Adjustment:
+      # The Structure center is at 0, 0, 0 relatively to the structure schematic by default
+      # you can change it by translating the structure position using these offset options
+      X Offset: -2
+      Y Offset: 0
+      Z Offset: -2
+    Location Randomization:
+      # Random Rotate only works for version 1.13 or higher
+      Random Rotate: true
+      X Randomization Offset:
+        Min: 0
+        Max: 16
+      Y Randomization Offset:
+        Min: -255
+        Max: 255
+      Z Randomization Offset:
+        Min: 0
+        Max: 16
+    Block Placing Strategy:
+      # or BOTTOM_TO_TOP or BOTTOM_TO_TOP_TO_BOTTOM or TOP_TO_BOTTOM_TO_TOP
+      # TOP_TO_BOTTOM will check from Y to world lowest Y
+      # BOTTOM_TO_TOP will check from Y to world highest Y
+      # TOP_TO_BOTTOM_TO_TOP will check from Y to world lowest Y, if none accepted, it will check from Y to world highest Y
+      # BOTTOM_TO_TOP_TO_BOTTOM will check from Y to world highest Y, if none accepted, it will check from Y to world lowest Y
+      Checking Direction: TOP_TO_BOTTOM
+      # This will skip the structure block if the current block has leaves placed
+      Ignore Trees: true
+      # If this set to false, air blocks in structure will be placed and will replace the current block
+      Hollow Air: true
+      # Depends on the checking direction, prevent the structure to be placed in the air or void
+      Not On Void: true
+      Above Surface: true
+    Location Picking Strategy:
+      Mode: LOGIC_AND
+      Strategies:
+        - Mode: BOUNDING_BOX
+          AABB:
+            Min X: 0
+            Min Y: 50
+            Min Z: 0
+            Max X: 16
+            Max Y: 128
+            Max Z: 16
+        - Mode: NEGATE
+          Strategy:
+            Mode: SURFACE_WHITELIST
+            Surface Blocks:
+              - WATER
+              - LAVA
+        - Mode: BIOME_WHITELIST
+          Biomes:
+            - PLAINS
+            - SAVANNA
+            - MOUNTAINS
+            - DESERT
+        - Mode: DIMENSION_WHITELIST
+          Dimensions:
+            - NORMAL
+        - Mode: WORLD_WHITELIST
+          Worlds:
+            - my_example_world
+        # will spawn if any of Strategies below is true
+        - Mode: LOGIC_OR
+          Strategies:
+            # will spawn at structure center
+            - Mode: STRUCTURE_START
+              Structure Type: VILLAGE
+            # or will spawn every 30x30 chunks
+            - Mode: CHUNK_GAP
+              X Gap: 30
+              Z Gap: 30
+    Condition:
+      # Can the structure spawn on the water?
+      On Water: false
+      # Only spawn on a new generated chunks
+      Only New Chunks: true
+      # Prevents structure to generate on spawn protected areas
+      # as players will never be able to activate and use it anyway (except for Operators)
+      Not At Spawn Protection: true
+      # On what world can the structure spawn?
+      # Set it empty to enable for all world
+      Worlds:
+        - my_example_world
+      # The spawn chance percentage
+      Spawn Chance Percentage: 80
+      # Place Waystone Structures near any structures
+      # (It's very recommended to set X and Z Chunk Distance to 1 to make the plugin check every chunk passed)
+      Near Structures: []
+      # every N of X * 16 coordinate
+      # example, using value "10", will spawn the structure every 160 blocks at X axis
+      # (also depends on Z Chunk distance)
+      X Chunk Distance: 30
+      # every N of Z * 16 coordinate
+      # example, using value "10", will spawn the structure every 160 blocks at Z axis
+      Z Chunk Distance: 30
+      # The offset X coordinate range for the structure to spawn
+      X Offset Range:
+        Min: 5
+        Max: 10
+      # The offset z coordinate range for the structure to spawn
+      Z Offset Range:
+        Min: 5
+        Max: 10
+      # If true, it will find the highest block possible
+      # If false, it will find the lowest block possible
+      Spawn From Above: true
+      # If Spawn From Above is true, and this is also true,
+      # it will find the highest block, ignoring any tree leaves
+      Ignore Trees: true
+      # On what dimension can the structure spawn?
+      Dimensions:
+        - NORMAL
+      # On what biomes can the structure spawn?
+      # Set it to empty to enable for all biomes
+      # Biomes: []
+      Biomes:
+        - PLAINS
+        - SAVANNA
+        - MOUNTAINS
+        - DESERT
+      # Prevents the structure to spawn on void
+      Not On Void: true
+      # Prevents floating structure by placing the structure on the lowest ground level
+      # This is the most case for non-flat surface.
+      Place On The Lowest Block Possible: false
+  # You can use the template above to create more structures, remember that, there can only be 1 structure on a chunk.

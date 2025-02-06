@@ -1,0 +1,15 @@
+Item:
+  type: ENDER_EYE
+  meta:
+    display-name: '&d&lWARPSTONE'
+    lore:
+      - '&7Use this to teleport to any waystone'
+      - '&e* Unlimited usage *'
+      - '&e* 30 seconds cooldown *'
+Warm Up Effect: wuExample
+Post Teleport Effect: ptExample
+Use Condition:
+  Criteria: ALWAYS
+Behavior:
+  One Time Item: false
+  Cooldown: 30s

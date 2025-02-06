@@ -1,0 +1,19 @@
+uuid: 2e53cb1f-db1b-48c3-9f4f-5203ddd49b6a
+name: 新石碑
+ownerUUID: 561690c0-18f0-31a8-9ad6-dbd14463773c
+ownerName: IOxyz
+type: server
+noProximityPlayers: []
+worldUID: 9c7d0a46-ab7b-421d-8e2a-7186aa27348e
+worldName: Mainland
+x: -425
+y: 75
+z: 685
+serverName: d1dd7f85-5051-408f-b68e-106b443aa892
+environment: NORMAL
+model: def
+statistics:
+  total-visitors: 1
+  total-visits: 0
+  total-users: 0
+  date-created: 1696734965490

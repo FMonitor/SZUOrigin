@@ -1,0 +1,24 @@
+Result:
+  type: WAYSTONE
+  meta:
+    model: 'regular'
+    id: 'private_normal'
+Shape:
+  - "XYX"
+  - "BAB"
+  - "AZA"
+Auto Give:
+  On Join: false
+  First Join Only: false
+  On Pickup Ingredient: true
+Materials:
+  X:
+    type: SMOOTH_STONE_SLAB
+  Y:
+    type: POLISHED_ANDESITE
+  Z:
+    type: ENDER_CHEST
+  A:
+    type: EMERALD_BLOCK
+  B:
+    type: NAME_TAG

@@ -1,0 +1,189 @@
+# !============================! #
+#   + MADE BY: [HyronicTeam] +   #
+# !============================! #
+
+# !!! DO NOT TOUCH THIS !!!
+ConfigVersion: 1.0
+
+#If enabled, a notification and the download link will be printed on console
+#whenever an update is available.
+CheckForUpdates: false
+
+#Select the language you would like to use (write the filename without extension):
+# * Available: en_US and vi_VN.
+Locale: zh_CN
+
+#Enable this option if you want to use the plugin with BungeeCord.
+# * It requires the 'bungeecord' option in spigot.yml is true, and you have installed
+#the 'HyronicFriends-BungeeCord' plugin in your BungeeCord.
+# * Changing this option requires you to restart your server!
+# * Enabling this option requires you to use public database (MySQL).
+MultiNetworks: false
+
+#If your server is BungeeCord, set their name here:
+ServerName:
+  #ID of your server, see at /BungeeCord/config.yml
+  #<server ID>: '<display name>'
+  example: '&fYour Server Name'
+
+#Date format:
+DateFormat: 'MM/dd/yyyy HH:mm:ss'
+
+#Time (in seconds) automatically updates the player data:
+# * Cannot be disabled, default/minimum is 10 seconds.
+AutoUpdateTime: 10
+#Do you want to restart AutoUpdateTask if the above time is changed ?
+#If false, AutoUpdateTask will continue to run for the rest of the time until it finishes.
+RestartOnChange: true
+
+Database:
+  #Type of database:
+  # * Please select the type before official use.
+  # * There are two types: SQLite and MySQL.
+  Type: 'SQLite'
+  # * For SQLite, it will be the file name.
+  # * For MySQL, it will be the database name.
+  Database: 'database'
+  Host: '127.0.0.1'
+  Port: 3306
+  Username: 'root'
+  Password: ''
+  Prefix: 'hfriends_'
+
+#Time (in seconds) waiting to respond to a friend request:
+# * Set to -1 to disable this feature.
+FriendRequestTimeout: 180
+
+#Would you like to allow your player to send friend request to another player by right-click them?
+RightClickRequest:
+  #Enables this feature?
+  Enables: false
+  #You can combine your click by using this option below:
+  # * Available: NONE, SHIFT and CTRL.
+  CombineType: SHIFT
+
+#Time (in seconds) between sending private messages:
+MessageDelay: 10
+#By default, would you like the player can send message to their friends?
+# * Your players can change their own friend settings.
+CanMessageByDefault: true
+#Enabling this option will remove all color codes in private messages.
+RemoveColorInMessage: true
+#Enabling this option will show private messages on Console.
+PrivateMessageSpy: false
+
+#Time (in seconds) between teleporting:
+TeleportDelay: 30
+#By default, would you like the player can teleport to their friends?
+# * Your players can change their own friend settings.
+CanTeleportByDefault: false
+
+#Time (in seconds) between sending email:
+MailSendDelay: 60
+#By default, would you like the player can send mail to their friends?
+# * Your players can change their own friend settings.
+CanMailByDefault: true
+
+#Maximum allowed character length when sending mail:
+MaxCharacterLength: 7
+#For mailing, the content can be too long leading to overflow.
+#Use this option to wrap content to a certain length:
+WrapContentLength: 7
+#Default content color:
+ContentColor: '&e'
+
+#Using toast as notification:
+Toast:
+  #When a friend is online/offline:
+  FriendOnline: true
+  #When receiving a friend request:
+  FriendRequest: false
+  #When 2 of players are now friend:
+  NowFriend: false
+  #When a friend request has been declined:
+  RequestDeclined: false
+  #When receiving new mail:
+  NewMail: false
+
+#Playing sound when an action is performed:
+Playsound:
+  #When receiving a friend request:
+  # * Leave it empty will disable this feature.
+  FriendRequest: ENTITY_EXPERIENCE_ORB_PICKUP
+  #When a friend request has been accepted:
+  # * Leave it empty will disable this feature.
+  FriendRequestAccepted: ENTITY_PLAYER_LEVELUP
+  #When a friend request has been declined:
+  # * Leave it empty will disable this feature.
+  FriendRequestDeclined: ITEM_SHIELD_BREAK
+  #When a friend is online:
+  # * Leave it empty will disable this feature.
+  FriendOnline: ENTITY_EXPERIENCE_ORB_PICKUP
+  #When a friend is offline:
+  # * Leave it empty will disable this feature.
+  FriendOffline: ''
+  #When receiving new mail:
+  # * Leave it empty will disable this feature.
+  ReceiveMail: ENTITY_EXPERIENCE_ORB_PICKUP
+  #When receiving new message:
+  # * Leave it empty will disable this feature.
+  ReceiveMessage: ENTITY_EXPERIENCE_ORB_PICKUP
+  #When a player teleported:
+  # * Leave it empty will disable this feature.
+  Teleport: ENTITY_ENDERMAN_TELEPORT
+
+#Prevent your players from sending items you don't want.
+# * You can add your own blacklist in this section!
+Blacklist:
+  #Group name, write any name you want:
+  example:
+    #Should the plugin check that the item must match all conditions below to block it?
+    # * If it is 'true', the item have to match all conditions below to be blocked.
+    # * If it is 'false', the item just matches one of conditions below to be blocked.
+    All: false
+    #The item type:
+    # * Leave it empty to skip this check.
+    Material: 'BEDROCK'
+    #The model data of item:
+    # * If the item to be checked doesn't have custom model data, this will always false.
+    # * To skip this check, please delete this option.
+    ModelData: 0
+    #The item name matches regular expression:
+    Name: 'Bedrock Item'
+  god:
+    All: false
+    Material: ''
+    Name: '(?i)(god)' #This will block the item contains the word "God" in the name.
+  #<group>:
+  #  All: <true|false>
+  #  ModelData: <any number>
+  #  Material: '<material name in UPPERCASE>'
+  #  Name: '<name or RegEx>'
+
+#How many slots can a player attach items to before sending mail?
+# * The maximum number of slots is 45.
+# * The permission for the maximum number of slots is: hyronicfriends.mails.size.maximum
+LimitItemSlots:
+  #Default limit:
+  Default: 9
+  #These groups below will override the default limit by using the permission: hyronicfriends.mails.size.<group>
+  # * The higher number of slots, the higher priority!
+  Groups:
+    #hyronicfriends.mails.size.member
+    member: 27
+    #hyronicfriends.mails.size.vip
+    vip: 45
+
+#Limit the player's friend list:
+# * The permission for unlimited friend list is: hyronicfriends.friends.size.unlimited.
+FriendLimit:
+  #Default limit:
+  Default: 10
+  #These groups below will override the default limit by using the permission: hyronicfriends.friends.size.<group>
+  # * You can add your own groups in this section.
+  # * The higher number of friends, the higher priority!
+  Groups:
+    #hyronicfriends.friends.size.member
+    member: 20
+    #hyronicfriends.friends.size.vip
+    vip: 40

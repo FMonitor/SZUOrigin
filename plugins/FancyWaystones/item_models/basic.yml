@@ -1,0 +1,36 @@
+model:
+  - regular
+  - modern
+type:
+  - public
+  - private
+  - server
+  - public_normal
+  - public_nether
+  - public_the_end
+  - private_normal
+  - private_nether
+  - private_the_end
+  - server_normal
+  - server_nether
+  - server_the_end
+  - linked
+item:
+  type: BREWING_STAND
+  amount: 1
+  meta:
+    display-name: "&e&lWAYSTONE"
+    ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      - HIDE_ENCHANTS
+      - HIDE_PLACED_ON
+      - HIDE_DESTROYS
+      - HIDE_UNBREAKABLE
+    lore:
+      - "&7Place down the waystone              &7"
+      - "&7to create a teleportation"
+      - "&7point."
+      - "&7"
+      - "&7   Type: &d{waystone_type}"
+      - "&7   Model: &d{waystone_model}"

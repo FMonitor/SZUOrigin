@@ -1,0 +1,882 @@
+Items:
+  Change Waystone Type:
+    Layout Key: z
+    Condition:
+      Criteria: TYPE_WHITELIST
+      Types:
+          - private
+          - public
+          - private_normal
+          - private_nether
+          - private_the_end
+          - public_normal
+          - public_nether
+          - public_the_end
+    Disabled:
+      type: ENDER_CHEST
+      meta:
+        display-name: "&7&l{language.gui-change-waystone-type}"
+        lore:
+          - '&7{language.gui-change-waystone-type-4}'
+    Item:
+      type: ENDER_CHEST
+      meta:
+          display-name: "&a&l{language.gui-change-waystone-type}"
+          lore:
+          - '&7{language.gui-change-waystone-type-1}'
+          - '&7{language.gui-change-waystone-type-2}'
+          - '&7{language.gui-change-waystone-type-3}'
+          - '&7{waystone_type}'
+  Waystone Type Display:
+    Layout Key: y
+    Types:
+      private:
+        Condition:
+          Criteria: TYPE_WHITELIST
+          Types:
+            - private
+            - public
+        Item:
+          meta:
+              lore:
+              - '&7{language.waystone-type-info}'
+              - '&7{language.waystone-type-info2}'
+              - '&7'
+              - '&7  {language.waystone-type-info3}'
+              - '&d  {waystone_type}'
+              display-name: '&b&l{language.waystone-type-private}'
+          type: ENDER_CHEST
+      public:
+        Condition:
+          Criteria: TYPE_WHITELIST
+          Types:
+            - public
+            - private
+        Item:
+          meta:
+              lore:
+              - '&7{language.waystone-type-info}'
+              - '&7{language.waystone-type-info2}'
+              - '&7'
+              - '&7  {language.waystone-type-info3}'
+              - '&d  {waystone_type}'
+              display-name: '&b&l{language.waystone-type-public}'
+          type: ENDER_CHEST
+  Set Source Link Group:
+    Layout Key: w
+    Disabled:
+      type: PAPER
+      meta:
+        display-name: "&7&l{language.gui-set-source-link-group}"
+    Has Group:
+      type: MAP
+      meta:
+        display-name: "&a&l{language.gui-set-source-link-group}"
+        lore:
+          - '&7{language.gui-set-source-link-group-1}'
+          - '&7{language.gui-set-source-link-group-2}'
+          - '&7{language.gui-set-source-link-group-3}'
+          - '&7{language.gui-set-source-link-group-4}'
+    Empty:
+      type: PAPER
+      meta:
+        display-name: "&7&l{language.gui-set-source-link-group}"
+        lore:
+          - '&7{language.gui-set-source-link-group-1}'
+          - '&7{language.gui-set-source-link-group-2}'
+  Set Target Link Group:
+    Layout Key: x
+    Disabled:
+      type: PAPER
+      meta:
+        display-name: "&7&l{language.gui-set-target-link-group}"
+    Has Group:
+      type: MAP
+      meta:
+        display-name: "&a&l{language.gui-set-target-link-group}"
+        lore:
+          - '&7{language.gui-set-target-link-group-1}'
+          - '&7{language.gui-set-target-link-group-2}'
+          - '&7{language.gui-set-target-link-group-3}'
+          - '&7{language.gui-set-target-link-group-4}'
+    Empty:
+      type: PAPER
+      meta:
+        display-name: "&7&l{language.gui-set-target-link-group}"
+        lore:
+          - '&7{language.gui-set-target-link-group-1}'
+          - '&7{language.gui-set-target-link-group-2}'
+  Set Password:
+    Layout Key: Z
+    Empty:
+      type: PAPER
+      meta:
+        display-name: "&7&l{language.gui-change-password}"
+        lore:
+          - '&7{language.gui-change-password-1}'
+          - '&7{language.gui-change-password-2}'
+    Has Password:
+      type: MAP
+      meta:
+        display-name: "&a&l{language.gui-change-password}"
+        lore:
+          - '&7{language.gui-change-password-1}'
+          - '&7{language.gui-change-password-2}'
+          - '&7{language.gui-change-password-3}'
+          - '&7{language.gui-change-password-4}'
+  Toggle Mark Favorite:
+    Layout Key: s
+    Disabled:
+      type: APPLE
+      meta:
+        display-name: "&7&l{language.gui-toggle-favorite-a}"
+        lore:
+          - '&7{language.gui-toggle-favorite-1}'
+          - '&7{language.gui-toggle-favorite-2}'
+    Enabled:
+      type: GOLDEN_APPLE
+      meta:
+        display-name: "&a&l{language.gui-toggle-favorite-b}"
+        lore:
+          - '&7{language.gui-toggle-favorite-3}'
+          - '&7{language.gui-toggle-favorite-4}'
+  Change Icon:
+    Layout Key: R
+    Disabled:
+      type: ITEM_FRAME
+      meta:
+        display-name: "&7&l{language.gui-change-icon}"
+        lore:
+          - '&7{language.gui-change-icon-1}'
+          - '&7{language.gui-change-icon-2}'
+    Item:
+      type: ITEM_FRAME
+      meta:
+        display-name: "&a&l{language.gui-change-icon}"
+        lore:
+          - '&7{language.gui-change-icon-3}'
+          - '&7{language.gui-change-icon-4}'
+  Icon Display:
+    Layout Key: l
+    Item:
+      type: AIR
+      meta:
+        display-name: "&7{language.gui-icon-display}"
+        lore: []
+  Remove Discovery Member:
+    Layout Key: S
+    Item:
+      type: BEDROCK
+      meta:
+        display-name: '&c&l{language.gui-remove-discovery}'
+        lore:
+          - '&7{language.gui-remove-discovery-1}'
+          - '&7{language.gui-remove-discovery-2}'
+          - '&7{language.gui-remove-discovery-3}'
+          - '&7{language.gui-remove-discovery-4}'
+  Remove Whitelist Member:
+    Layout Key: e
+    Item:
+      type: BARRIER
+      meta:
+        display-name: '&c&l{language.gui-remove-whitelist}'
+  Remove Blacklist Member:
+    Layout Key: Q
+    Item:
+      type: BARRIER
+      meta:
+        display-name: '&c&l{language.gui-remove-blacklist}'
+  Remove Waystone:
+    Layout Key: M
+    Item:
+      type: BARRIER
+      meta:
+        display-name: '&c&l{language.gui-forget-waystone}'
+        lore:
+          - '&7{language.gui-forget-waystone-1}'
+          - '&7{language.gui-forget-waystone-2}'
+  Teleport Waystone:
+    Layout Key: N
+    Item:
+      type: ENDER_PEARL
+      meta:
+        display-name: '&d&l{language.gui-teleport}'
+        lore:
+          - '&7{language.gui-teleport-1}'
+          - '&7{language.gui-teleport-2}&b{waystone_teleportation_cost}'
+  Remove Waypoint:
+    Layout Key: A
+    Item:
+      type: BARRIER
+      meta:
+        display-name: '&c&l{language.gui-remove-waypoint}'
+  Rename Waypoint:
+    Layout Key: U
+    Item:
+      type: NAME_TAG
+      meta:
+        display-name: '&d&l{language.gui-rename-waypoint}'
+  Change Waypoint Color:
+    Layout Key: F
+    Item:
+      type: '{waypoint_material}'
+      meta:
+        display-name: '&e&l{language.gui-color-waypoint}'
+        lore:
+          - '&7{language.gui-color-waypoint-1}'
+          - '{waypoint_colorText}{waypoint_colorName}'
+  Change Waypoint Visibility:
+    Layout Key: G
+    Visible:
+      type: LIME_DYE
+      meta:
+        display-name: '&b&l{language.gui-visibility-waypoint}'
+        lore:
+          - '&7{language.gui-visibility-waypoint-1}'
+    Invisible:
+      type: GRAY_DYE
+      meta:
+        display-name: '&b&l{language.gui-visibility-waypoint}'
+        lore:
+          - '&7{language.gui-visibility-waypoint-2}'
+  TP Offset Clear:
+    Layout Key: I
+    Item:
+      type: BARRIER
+      meta:
+        display-name: '&c&l{language.gui-reset-tp-offset}'
+  TP Offset Change:
+    Layout Key: J
+    Item:
+      type: MINECART
+      meta:
+        display-name: '&e&l{language.gui-tp-offset-change}'
+  Member Category:
+    BLACKLIST:
+      Empty:
+        meta:
+          display-name: '&7{language.members-blacklist}'
+        type: LIGHT_GRAY_WOOL
+      Not Empty:
+        meta:
+          display-name: '&a{language.members-blacklist}'
+        type: RED_WOOL
+      Layout Key: O
+    WHITELIST:
+      Empty:
+        meta:
+          display-name: '&7{language.members-whitelist}'
+        type: LIGHT_GRAY_WOOL
+      Not Empty:
+        meta:
+          display-name: '&a{language.members-whitelist}'
+        type: LIME_WOOL
+      Layout Key: P
+  Settings Item:
+    Item:
+      meta:
+        lore:
+          - '&7{language.waystone-settings-info}'
+        display-name: '&6{language.waystone-settings}'
+      type: REDSTONE
+    Layout Key: V
+  Add Member Item:
+    Layout Key: d
+    Item:
+      meta:
+        display-name: '&a&l{language.members-add}'
+      type: NETHER_STAR
+  Sort Item:
+    By Used Time:
+      meta:
+        lore:
+          - '&7{language.sort-name}'
+          - '&7{language.sort-date-created}'
+          - '&7{language.sort-users}'
+          - '&7{language.sort-visits}'
+          - '&7{language.sort-visitors}'
+          - '&a{language.sort-used-time}'
+        display-name: '&d{language.gui-sort}'
+      type: MINECART
+    By Users:
+      meta:
+        lore:
+          - '&7{language.sort-name}'
+          - '&7{language.sort-date-created}'
+          - '&a{language.sort-users}'
+          - '&7{language.sort-visits}'
+          - '&7{language.sort-visitors}'
+          - '&7{language.sort-used-time}'
+        display-name: '&d{language.gui-sort}'
+      type: MINECART
+    By Waypoint Distance:
+      meta:
+        lore:
+          - '&7{language.sort-name}'
+          - '&7{language.sort-date-created}'
+          - '&a{language.sort-distance}'
+          - '&7{language.sort-world}'
+          - '&7{language.sort-visibility}'
+        display-name: '&d{language.gui-sort}'
+      type: MINECART
+    By Waypoint Visibility:
+      meta:
+        lore:
+          - '&7{language.sort-name}'
+          - '&7{language.sort-date-created}'
+          - '&7{language.sort-distance}'
+          - '&7{language.sort-world}'
+          - '&a{language.sort-visibility}'
+        display-name: '&d{language.gui-sort}'
+      type: MINECART
+    By Visitors:
+      meta:
+        lore:
+          - '&7{language.sort-name}'
+          - '&7{language.sort-date-created}'
+          - '&7{language.sort-users}'
+          - '&7{language.sort-visits}'
+          - '&a{language.sort-visitors}'
+          - '&7{language.sort-used-time}'
+        display-name: '&d{language.gui-sort}'
+      type: MINECART
+    By Waypoint World:
+      meta:
+        lore:
+          - '&7{language.sort-name}'
+          - '&7{language.sort-date-created}'
+          - '&7{language.sort-distance}'
+          - '&a{language.sort-world}'
+          - '&7{language.sort-visibility}'
+        display-name: '&d{language.gui-sort}'
+      type: MINECART
+    By Waypoint Name:
+      meta:
+        lore:
+          - '&a{language.sort-name}'
+          - '&7{language.sort-date-created}'
+          - '&7{language.sort-distance}'
+          - '&7{language.sort-world}'
+          - '&7{language.sort-visibility}'
+        display-name: '&d{language.gui-sort}'
+      type: MINECART
+    By Name:
+      meta:
+        lore:
+          - '&a{language.sort-name}'
+          - '&7{language.sort-date-created}'
+          - '&7{language.sort-users}'
+          - '&7{language.sort-visits}'
+          - '&7{language.sort-visitors}'
+          - '&7{language.sort-used-time}'
+        display-name: '&d{language.gui-sort}'
+      type: MINECART
+    By Visits:
+      meta:
+        lore:
+          - '&7{language.sort-name}'
+          - '&7{language.sort-date-created}'
+          - '&7{language.sort-users}'
+          - '&a{language.sort-visits}'
+          - '&7{language.sort-visitors}'
+          - '&7{language.sort-used-time}'
+        display-name: '&d{language.gui-sort}'
+      type: MINECART
+    By Waypoint Date Created:
+      meta:
+        lore:
+          - '&7{language.sort-name}'
+          - '&a{language.sort-date-created}'
+          - '&7{language.sort-distance}'
+          - '&7{language.sort-world}'
+          - '&7{language.sort-visibility}'
+        display-name: '&d{language.gui-sort}'
+      type: MINECART
+    By Date Created:
+      meta:
+        lore:
+          - '&7{language.sort-name}'
+          - '&a{language.sort-date-created}'
+          - '&7{language.sort-users}'
+          - '&7{language.sort-visits}'
+          - '&7{language.sort-visitors}'
+          - '&7{language.sort-used-time}'
+        display-name: '&d{language.gui-sort}'
+      type: MINECART
+    Layout Key: a
+  Edit Members:
+    No Access:
+      meta:
+        lore:
+          - '&7{language.waystone-edit-members-no-access}'
+          - '&7{language.waystone-edit-members-no-access2}'
+        display-name: '&c&l{language.waystone-edit-members}'
+      type: PLAYER_HEAD
+    Enable:
+      meta:
+        lore:
+          - '&7{language.waystone-edit-members-info}'
+          - '&7{language.waystone-edit-members-info2}'
+        display-name: '&b&l{language.waystone-edit-members}'
+      type: PLAYER_HEAD
+    Layout Key: q
+  Cancel:
+    Item:
+      meta:
+        display-name: '&c&l{language.confirm-cancel}'
+      type: RED_WOOL
+    Layout Key: o
+  Waypoint Display:
+    Categorized:
+      server:
+        meta:
+          lore:
+            - '&7{language.info-world}: &e{waypoint_worldName}'
+            - '&7{language.info-x}: &e{waypoint_x}'
+            - '&7{language.info-y}: &e{waypoint_y}'
+            - '&7{language.info-z}: &e{waypoint_z}'
+            - '&7{language.info-visible}: &e{waypoint_visible}'
+            - '&7'
+            - '&7   &b{language.info-click-waypoints-edit}'
+          display-name: '{waypoint_colorText}{waypoint_name}'
+        type: '{waypoint_material}'
+      death:
+        meta:
+          lore:
+            - '&7{language.info-world}: &e{waypoint_worldName}'
+            - '&7{language.info-x}: &e{waypoint_x}'
+            - '&7{language.info-y}: &e{waypoint_y}'
+            - '&7{language.info-z}: &e{waypoint_z}'
+            - '&7{language.info-visible}: &e{waypoint_visible}'
+            - '&7'
+            - '&7   &b{language.info-click-waypoints-edit}'
+          display-name: '{waypoint_colorText}{waypoint_name}'
+        type: '{waypoint_material}'
+      waystone:
+        Specified:
+          server:
+            meta:
+              lore:
+                - '&7{language.info-world}: &e{waypoint_worldName}'
+                - '&7{language.info-x}: &e{waypoint_x}'
+                - '&7{language.info-y}: &e{waypoint_y}'
+                - '&7{language.info-z}: &e{waypoint_z}'
+                - '&7{language.info-visible}: &e{waypoint_visible}'
+                - '&7'
+                - '&7   &b{language.info-click-waypoints-edit}'
+              display-name: '{waypoint_colorText}{waypoint_name}'
+            type: BREWING_STAND
+        Unspecified:
+          meta:
+            lore:
+              - '&7{language.info-world}: &e{waypoint_worldName}'
+              - '&7{language.info-x}: &e{waypoint_x}'
+              - '&7{language.info-y}: &e{waypoint_y}'
+              - '&7{language.info-z}: &e{waypoint_z}'
+              - '&7{language.info-visible}: &e{waypoint_visible}'
+              - '&7'
+              - '&7   &b{language.info-click-waypoints-edit}'
+            display-name: '{waypoint_colorText}{waypoint_name}'
+          type: BREWING_STAND
+    Uncategorized:
+      meta:
+        lore:
+          - '&7{language.info-world}: &e{waypoint_worldName}'
+          - '&7{language.info-x}: &e{waypoint_x}'
+          - '&7{language.info-y}: &e{waypoint_y}'
+          - '&7{language.info-z}: &e{waypoint_z}'
+          - '&7{language.info-visible}: &e{waypoint_visible}'
+          - '&7'
+          - '&7   &b{language.info-click-waypoints-edit}'
+        display-name: '{waypoint_colorText}{waypoint_name}'
+      type: '{waypoint_material}'
+    Layout Key: b
+  Confirm:
+    Item:
+      meta:
+        display-name: '&a&l{language.confirm-confirm}'
+      type: LIME_WOOL
+    Layout Key: p
+  Other Items:
+    H:
+      Item:
+        type: BOOK
+        meta:
+          display-name: '&e&lINFORMATION'
+          lore:
+            - '&7Offset X: &b{waystone_offset_x}'
+            - '&7Offset Y: &b{waystone_offset_y}'
+            - '&7Offset Z: &b{waystone_offset_z}'
+    K:
+      Item:
+        meta:
+          display-name: '&7  '
+        type: RAIL
+    L:
+      Item:
+        meta:
+          display-name: '&7  '
+        type: BLACK_STAINED_GLASS_PANE
+  Waystone Category:
+    favorite:
+      Condition:
+        Criteria: LOGIC_AND
+        Conditions:
+          - Criteria: IS_FAVORITE_WAYSTONE
+          - Criteria: LOGIC_OR
+            Conditions:
+              - Criteria: IS_WAYSTONE_ACTIVATED
+              - Criteria: TYPE_WHITELIST
+                Types:
+                  - server
+                  - server_normal
+                  - server_nether
+                  - server_the_end
+      Empty:
+        meta:
+          display-name: '&7&l{language.waystone-category-favorite}'
+        type: LIGHT_GRAY_WOOL
+      Not Empty:
+        meta:
+          display-name: '&e&l{language.waystone-category-favorite}'
+        type: ORANGE_WOOL
+      Disabled:
+        meta:
+          lore:
+            - '{language.waystone-category-disabled}'
+            - '{language.waystone-category-disabled2}'
+          display-name: '&c&l{language.waystone-category-favorite}'
+        type: BEDROCK
+      Layout Key: v
+    server:
+      Condition:
+        Criteria: TYPE_WHITELIST
+        Types:
+          - server
+          - server_normal
+          - server_nether
+          - server_the_end
+      Empty:
+        meta:
+          display-name: '&7&l{language.waystone-category-server}'
+        type: LIGHT_GRAY_WOOL
+      Not Empty:
+        meta:
+          display-name: '&e&l{language.waystone-category-server}'
+        type: BLUE_WOOL
+      Disabled:
+        meta:
+          lore:
+            - '{language.waystone-category-disabled}'
+            - '{language.waystone-category-disabled2}'
+          display-name: '&c&l{language.waystone-category-server}'
+        type: BEDROCK
+      Layout Key: W
+    private:
+      Condition:
+        Criteria: TYPE_WHITELIST
+        Types:
+          - private
+          - private_normal
+          - private_nether
+          - private_the_end
+      Empty:
+        meta:
+          display-name: '&7&l{language.waystone-category-private}'
+        type: LIGHT_GRAY_WOOL
+      Not Empty:
+        meta:
+          display-name: '&e&l{language.waystone-category-private}'
+        type: RED_WOOL
+      Disabled:
+        meta:
+          lore:
+            - '{language.waystone-category-disabled}'
+            - '{language.waystone-category-disabled2}'
+          display-name: '&c&l{language.waystone-category-private}'
+        type: BEDROCK
+      Layout Key: X
+    public:
+      Condition:
+        Criteria: TYPE_WHITELIST
+        Types:
+          - public
+          - public_normal
+          - public_nether
+          - public_the_end
+      Empty:
+        meta:
+          display-name: '&7&l{language.waystone-category-public}'
+        type: LIGHT_GRAY_WOOL
+      Not Empty:
+        meta:
+          display-name: '&e&l{language.waystone-category-public}'
+        type: GREEN_WOOL
+      Disabled:
+        meta:
+          lore:
+            - '{language.waystone-category-disabled}'
+            - '{language.waystone-category-disabled2}'
+          display-name: '&c&l{language.waystone-category-public}'
+        type: BEDROCK
+      Layout Key: Y
+  Rename Item:
+    Enable:
+      meta:
+        lore:
+          - '&7{language.waystone-rename-info}'
+          - '&7{language.waystone-rename-info2}'
+          - '&7'
+          - '&7  {language.waystone-rename-info3}'
+          - '&d  {waystone_name}'
+        display-name: '&b&l{language.waystone-rename}'
+      type: NAME_TAG
+    Disable:
+      meta:
+        lore:
+          - '&7{language.waystone-rename-info4}'
+          - '&7{language.waystone-rename-info5}'
+        display-name: '&7&l{language.waystone-rename}'
+      type: NAME_TAG
+    Layout Key: t
+  Set TP Offset:
+    Active:
+      meta:
+        lore:
+          - '&7{language.waystone-offset-info}'
+          - '&7{language.info-x}: {waystone_offset_x}'
+          - '&7{language.info-y}: {waystone_offset_y}'
+          - '&7{language.info-z}: {waystone_offset_z}'
+          - ''
+          - '&8{language.waystone-offset-info2}'
+        display-name: '&d&l{language.waystone-offset}'
+      type: END_PORTAL_FRAME
+    Inactive:
+      meta:
+        lore:
+          - '&7{language.waystone-offset-info4}'
+          - '&7{language.waystone-offset-info5}'
+          - '&7{language.waystone-offset-info6}'
+          - ''
+          - '&8{language.waystone-offset-info2}'
+        display-name: '&f&l{language.waystone-offset}'
+      type: END_PORTAL_FRAME
+    Disable:
+      meta:
+        display-name: '&8&l{language.waystone-offset}'
+      type: END_PORTAL_FRAME
+    Layout Key: u
+  Search Item:
+    Active:
+      meta:
+        lore:
+          - '&7{language.search-info2}'
+          - '&f{search_keyword}'
+          - ''
+          - '&8{language.search-info3}'
+        display-name: '&d{language.search}'
+      Flags:
+        - HIDE_POTION_EFFECTS
+      type: POTION
+    Inactive:
+      meta:
+        lore:
+          - '&8{language.search-info}'
+        display-name: '&d{language.search}'
+      type: GLASS_BOTTLE
+    Layout Key: f
+  Economy Display:
+    Item:
+      Emerald:
+        type: EMERALD
+        meta:
+          lore:
+            - ''
+            - '&a{language.paywall-item-pay}'
+            - '&7{language.paywall-cost}: &e{cost_value}x {language.paywall-item}'
+            - '&7{language.paywall-balance}: &b{player_economy_value}x {language.paywall-item}'
+      EnderPearl:
+        type: ENDER_PEARL
+        meta:
+          lore:
+            - ''
+            - '&a{language.paywall-item-pay}'
+            - '&7{language.paywall-cost}: &e{cost_value}x {language.paywall-item}'
+            - '&7{language.paywall-balance}: &b{player_economy_value}x {language.paywall-item}'
+    Level:
+      meta:
+        lore:
+          - '&7{language.paywall-cost}: &e{cost_value} {language.paywall-levels}'
+          - '&7{language.paywall-balance}: &b{player_economy_value} {language.paywall-levels}'
+        display-name: '&a{language.paywall-with-level}'
+      type: EXPERIENCE_BOTTLE
+    Vault:
+      meta:
+        lore:
+          - '&7{language.paywall-cost}: &e${cost_value}'
+          - '&7{language.paywall-balance}: &b${player_economy_value}'
+        display-name: '&a{language.paywall-with-money}'
+      type: EMERALD
+    Layout Key: n
+    Stellium:
+      meta:
+        lore:
+          - '&7{language.paywall-cost}: &e{cost_value} Stellium'
+          - '&7{language.paywall-balance}: &b{player_economy_value} Stellium'
+        display-name: '&a{language.paywall-with-stellium}'
+      type: ENDER_EYE
+  Back Item:
+    Layout Key: r
+    Item:
+      meta:
+        display-name: '&c&l{language.gui-back}'
+      type: ARROW
+  Previous Page Item:
+    Enable:
+      meta:
+        display-name: '&a←'
+      type: SLIME_BALL
+    Disable:
+      meta:
+        display-name: '&7←'
+      type: FIREWORK_STAR
+    Layout Key: g
+  Next Page Item:
+    Enable:
+      meta:
+        display-name: '&a→'
+      type: SLIME_BALL
+    Disable:
+      meta:
+        display-name: '&7→'
+      type: FIREWORK_STAR
+    Layout Key: h
+  Order Item:
+    Descend Order:
+      meta:
+        lore:
+          - '&7{order_ascend} &a{order_descend}'
+        display-name: '&d{language.gui-sort-order}'
+      type: HOPPER
+    Layout Key: j
+    Ascend Order:
+      meta:
+        lore:
+          - '&a{order_ascend} &7{order_descend}'
+        display-name: '&d{language.gui-sort-order}'
+      type: HOPPER
+  Deactivate:
+    Item:
+      meta:
+        lore:
+          - '&7{language.waystone-deactivate-info}'
+        display-name: '&c&l{language.waystone-deactivate}'
+      type: BARRIER
+    Layout Key: i
+  Add Waypoint Item:
+    Item:
+      meta:
+        lore:
+          - '&7({language.waypoints-add-info})'
+        display-name: '&e&l{language.waypoints-add}'
+      type: SUNFLOWER
+    Layout Key: T
+  Members Display:
+    Layout Key: m
+    Discovered:
+      type: PLAYER_HEAD
+      meta:
+        meta-type: SKULL
+        display-name: "&a&l{waystone_member_name}"
+        lore:
+          - "&e{waystone_member_uuid}"
+          - "&7{language.members-click}"
+          - "&6&o{language.members-info-discovered}"
+        skull-owner: "{waystone_member_name}"
+    Added:
+      type: PLAYER_HEAD
+      meta:
+        meta-type: SKULL
+        display-name: "&a&l{waystone_member_name}"
+        lore:
+          - "&e{waystone_member_uuid}"
+          - "&7{language.members-click}"
+        skull-owner: "{player_name}"
+  Waystone Display:
+    Active Use Custom Item: true
+    Inactive Use Custom Item: true
+    ACTIVE:
+      UNSPECIFIED:
+        meta:
+          lore:
+            - '&7by &f{waystone_owner_name}'
+            - '&7'
+            - '&7    {language.waystone-info-cost}'
+            - '&7    &e{waystone_teleportation_cost}'
+            - '&7    {language.waystone-info-total-visitors}'
+            - '&7    &e{waystone_statistics_visitors}'
+            - '&7    {language.waystone-info-date-created}'
+            - '&7    &e{waystone_statistics_date_created}'
+            - '&7    &e{waystone_statistics_age}'
+            - '&7'
+            - '&5  [&b &l{language.waystone-button} &5]  &5'
+          display-name: '&a&l{waystone_name}'
+        type: ENDER_EYE
+    INACTIVE:
+      UNSPECIFIED:
+        meta:
+          lore:
+            - '&7{language.waystone-inactive1}'
+            - '&7{language.waystone-inactive2}'
+            - '&7{language.waystone-inactive3}.'
+          display-name: '&8&l{waystone_name}'
+        type: ENDER_PEARL
+    Layout Key: k
+  Waypoint Category:
+    Categorized:
+      server:
+        Empty:
+          meta:
+            display-name: '&7&l{language.waypoints-server}'
+          type: BEACON
+        Not Empty:
+          meta:
+            display-name: '&d&l{language.waypoints-server}'
+          type: BEACON
+        Layout Key: B
+      death:
+        Empty:
+          meta:
+            display-name: '&7&l{language.waypoints-death}'
+          type: DROPPER
+        Not Empty:
+          meta:
+            display-name: '&f&l{language.waypoints-death}'
+          type: DROPPER
+        Layout Key: C
+      waystone:
+        Empty:
+          meta:
+            display-name: '&7&l{language.waypoints-waystones}'
+          type: BREWING_STAND
+        Not Empty:
+          meta:
+            display-name: '&b&l{language.waypoints-waystones}'
+          type: BREWING_STAND
+        Layout Key: D
+    Uncategorized:
+      Empty:
+        meta:
+          display-name: '&7&l{language.waypoints-player}'
+        type: FILLED_MAP
+      Not Empty:
+        meta:
+          display-name: '&e&l{language.waypoints-player}'
+        type: FILLED_MAP
+      Layout Key: E
+  Close Item:
+    Item:
+      meta:
+        display-name: '&c&l{language.gui-close}'
+      type: ARROW
+    Layout Key: c

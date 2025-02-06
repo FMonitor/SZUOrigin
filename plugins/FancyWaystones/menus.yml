@@ -1,0 +1,154 @@
+Input Menu:
+  Waystone Rename Menu:
+    Title: '{language.rename-gui-title}'
+    Right Item:
+    Left Item:
+      type: PAPER
+  Waypoint Rename Menu:
+    Title: '{language.rename-gui-title}'
+    Right Item:
+    Left Item:
+      type: PAPER
+  Search Menu:
+    Title: '{language.search-filter-title}'
+    Right Item:
+    Left Item:
+      type: PAPER
+  Password Prompt Menu:
+    Title: '{language.password-prompt-title}'
+    Right Item:
+    Left Item:
+      type: PAPER
+  Password Set Menu:
+    Title: '{language.password-set-title}'
+    Right Item:
+    Left Item:
+      type: PAPER
+  Source Link Group Menu:
+    Title: '{language.set-source-link-group-title}'
+    Right Item:
+    Left Item:
+      type: PAPER
+  Target Link Group Menu:
+    Title: '{language.set-target-link-group-title}'
+    Right Item:
+    Left Item:
+      type: PAPER
+Menus:
+  Change Waystone Type Menu:
+    Title: '&1{language.gui-select-waystone-type}'
+    Transition: RANDOM
+    Layout:
+      - yyyyyyyyy
+      - yyyyyyyyy
+      - yyyyyyyyy
+      - LLLLrLLLL
+  Select Icon Menu:
+    Title: '&1{language.gui-select-icon}'
+    Transition: RANDOM
+    Layout:
+      - lllllllll
+      - lllllllll
+      - lllllllll
+      - lllllllll
+      - gLLLrLLLh
+  Waystone TP Offset Menu:
+    Title: '&1{language.gui-tp-offset} - {waystone_name}'
+    Transition: RANDOM
+    Layout:
+      - LLLLLLLLL
+      - KLH I JLK
+      - LLLLrLLLL
+  Waystone Control Menu:
+    Title: '&1{language.gui-waystone} - {waystone_name}'
+    Transition: RANDOM
+    Layout:
+      - LLLLLLLLL
+      - KLN   MLK
+      - LLLLrLLLL
+  Whitelist Member Control Menu:
+    Title: '&1{language.gui-whitelist} - {waystone_member_name}'
+    Transition: RANDOM
+    Layout:
+      - LLLLLLLLL
+      - KLe    LK
+      - LLLLrLLLL
+  Discovery Member Control Menu:
+    Title: '&1{language.gui-member} - {waystone_member_name}'
+    Transition: RANDOM
+    Layout:
+      - LLLLLLLLL
+      - KLS     K
+      - LLLLrLLLL
+  Blacklist Member Control Menu:
+    Title: '&1{language.gui-blacklist} - {waystone_member_name}'
+    Transition: RANDOM
+    Layout:
+      - LLLLLLLLL
+      - KLQ    LK
+      - LLLLrLLLL
+  Waypoint Control Menu:
+    Title: '&1{language.gui-waypoint} - {waypoint_name}'
+    Transition: RANDOM
+    Layout:
+      - LLLLLLLLL
+      - KLAUFG LK
+      - LLLLrLLLL
+  Warpstone Menu:
+    Title: '&5{language.gui-warpstone}'
+    Transition: RANDOM
+    Layout:
+      - LLWYXLvLL
+      - KLkkkkkLK
+      - gLkkkkkLh
+      - KLkkkkkLK
+      - LLcajfLLL
+  Waypoints Menu:
+    Layout:
+      - LLDCLBELL
+      - LKbbbbbKL
+      - gKbbbbbKh
+      - LKbbbbbKL
+      - LLcajfTLL
+    Title: '&1{language.waypoints-title}'
+    Transition: RANDOM
+  Members Menu:
+    Layout:
+      - mmmmmmmmm
+      - mmmmmmmmm
+      - mmmmmmmmm
+      - mmmmmmmmm
+      - mmmmmmmmm
+      - gLOPfdrLh
+    Title: '&1{language.members-title}'
+    Transition: RANDOM
+  Waystone Menu:
+    Layout:
+      - LLWYXLvLL
+      - LkkkkkkkL
+      - gkkkkkkkh
+      - LkkkkkkkL
+      - LLLLLLLLL
+      - LcajfiVsL
+    Title: '&1{language.waystone-title} [{page}/{max_page}] &8- &5{waystone_name}'
+    Transition: RANDOM
+  Paywall Menu:
+    Layout:
+      - LLLLLLLLL
+      - LnnnnnnnL
+      - LLLLrLLLL
+    Title: '&1{language.paywall-title}'
+    Transition: RANDOM
+  Confirm Menu:
+    Layout:
+      - o       p
+    Title: '&1{language.confirm-title}'
+    Transition: RANDOM
+  Settings Menu:
+    Layout:
+      - LLLLLLLLL
+      - KLqtuRZLK
+      - KLwxz  LK
+      - LLLLrLLLL
+    Title: '&1{waystone_name} - {language.settings-title}'
+    Transition: RANDOM

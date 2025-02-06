@@ -12,7 +12,7 @@ resource-pack:
       pack-port: 8163
     external-host:
       enabled: true
-      url: https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1738742121150/generated.zip
+      url: https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1738826865237/generated.zip
       skip-url-file-type-check___DONT_ASK_HELP_IF_SET_TRUE: false
   apply-on-join: true
   kick-player-on-decline: false

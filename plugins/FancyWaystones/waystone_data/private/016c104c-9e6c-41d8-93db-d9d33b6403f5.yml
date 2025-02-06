@@ -1,0 +1,22 @@
+uuid: 016c104c-9e6c-41d8-93db-d9d33b6403f5
+name: 新石碑
+ownerUUID: e4e5291e-9720-39fb-b0f9-be097ee85ef5
+ownerName: Four_Yi
+type: private
+noProximityPlayers: []
+worldUID: dca8bf5a-c400-45e9-9657-0c8e1d9f2f45
+worldName: normal
+x: -10
+y: 70
+z: -35
+serverName: d1dd7f85-5051-408f-b68e-106b443aa892
+environment: NORMAL
+model: def
+members:
+  889dcaa5-928a-37e4-9220-e2da97df0d9b: '#test1'
+  e4e5291e-9720-39fb-b0f9-be097ee85ef5: '#Four_Yi'
+statistics:
+  total-visitors: 0
+  total-visits: 0
+  total-users: 0
+  date-created: 1708278976031

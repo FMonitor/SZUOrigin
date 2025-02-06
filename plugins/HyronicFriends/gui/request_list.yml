@@ -1,0 +1,100 @@
+Settings:
+  #Rows on GUI:
+  # * The value can only be from 1 to 6.
+  Rows: 6
+
+  #Plays a sound when the player interacts on GUI:
+  #Empty the string (like below) will disable this feature.
+  #Sound: ''
+  Sound: ui_button_click
+  #Default list filter:
+  # * Available for this GUI: ALL, REQUESTS_SENT, REQUESTS_RECEIVED, RECENTLY_SENT_REQUESTS and RECENTLY_RECEIVED_REQUESTS.
+  Filter: REQUESTS_RECEIVED
+  
+RepresentItems:
+  #List of positions for 2 of below items:
+  Slots: [10-18, 19-27, 28-36, 37-45]
+
+  SentRequest:
+    #For those who prefer to use custom models from ItemsAdder (or Oraxen),
+    #use this option to specify a model.
+    #Format: 'Oraxen:<id>' or 'IA:<namespaceId>'
+    # * If this option is used, it means that: Material and Data cannot be used.
+    # * Remember to remove the 'CustomModelData' option first.
+    # * Leave it blank will disable this feature.
+    Model: '' #May not need to configure.
+    Material: 'PAPER' #May not need to configure.
+    Amount: 1 #May not need to configure.
+    Data: 0 #May not need to configure.
+    #Using 'Texture' option if you want to display the head texture:
+    #Texture: '<value>' #Can be found at: https://minecraft-heads.com/ (Value field).
+    #Texture: 'hdb-<id>' #Using for HeadDatabase plugin.
+    #Texture: '%player%' #Display the requester's head.
+    Texture: '%player%' #May not need to configure.
+    CustomModelData: 3 #May not need to configure.
+    Enchantments: [] #May not need to configure.
+    #- 'durability:10'
+    HideFlags: [] #May not need to configure.
+    #- 'HIDE_ENCHANTS'
+  ReceivedRequest:
+    Texture: '%player%'
+    CustomModelData: 3
+
+ControlItems:
+  PreviousPage:
+    Material: FLINT
+    CustomModelData: 9997
+    Slot: 46
+  NextPage:
+    Material: FLINT
+    CustomModelData: 9998
+    Slot: 54
+  Back:
+    Material: FLINT
+    CustomModelData: 9999
+    Slot: 1
+  SwitchToFriendListGui:
+    Material: FLINT
+    CustomModelData: 9999
+    Slots: [2,3]
+  SwitchToMailboxGui:
+    Material: FLINT
+    CustomModelData: 9999
+    Slots: [6,7]
+  SwitchToBlockedGui:
+    Material: FLINT
+    CustomModelData: 9999
+    Slot: 8
+  SwitchToFriendRequestGui:
+    Material: FLINT
+    CustomModelData: 9999
+    Slots: [4,5]
+  FilterAll:
+    Material: FLINT
+    CustomModelData: 9999
+    Slot: 9
+  FilterRequestsSent:
+    Material: FLINT
+    CustomModelData: 9999
+    Slot: 9
+  FilterRequestsReceived:
+    Material: FLINT
+    CustomModelData: 9999
+    Slot: 9
+  FilterRecentlySentRequests:
+    Material: FLINT
+    CustomModelData: 9999
+    Slot: 9
+  FilterRecentlyReceivedRequests:
+    Material: FLINT
+    CustomModelData: 9999
+    Slot: 9
+#These are decorative items, which will make your GUI more beautiful!
+#You can add/delete items in this section.
+# * You can add the "Commands" option to these item.
+# * Use %player% to get the executor's name.
+# * You can also use placeholder from PlaceholderAPI in this section.
+#- '<command>' - Execute the command as normal player.
+#- 'OP: <command>' - Execute the command as an administrator.
+#- 'CONSOLE: <command>' - Execute the command on Console.
+DecorateItems: {}

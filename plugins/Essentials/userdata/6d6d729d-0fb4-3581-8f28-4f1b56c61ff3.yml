@@ -16,8 +16,8 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1738742191265
-  login: 1738741957598
+  logout: 1738819821569
+  login: 1738819648760
 money: '91407.0'
 last-account-name: LCBugFixer
 lastlocation:
@@ -34,8 +34,8 @@ logoutlocation:
   x: 986.423848244255
   y: 76.0
   z: 661.3000000119209
-  yaw: -100.94318389892578
-  pitch: 35.17831802368164
+  yaw: -119.24321746826172
+  pitch: 10.87831974029541
 homes:
   home:
     world: 04c00a4f-fe5c-47c6-8998-babf81130ba2

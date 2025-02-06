@@ -1,0 +1,25 @@
+Location: FILE
+# Block Storage is saved in local
+Block Directory: blocks
+Structure Directory: structures
+# Validate data on server startup/plugin configuration reload
+Validate Data On Load: false
+File:
+  Waystone Directory: waystone_data
+  Player Directory: player_data
+MySQL:
+  #Url: custom url here?
+  Host: localhost
+  Port: 3306
+  Username: USERNAME HERE
+  Password: PASSWORD HERE
+  Database Name: DATABASE NAME HERE
+  Table:
+    Waystone: waystones
+    Player: fancywaystones_players
+  Advanced:
+    Minimum Idle: 5
+    Maximum Pool Size: 50
+    Connection Timeout: 10000
+    Idle Timeout: 600000
+    Max Lifetime: 1800000

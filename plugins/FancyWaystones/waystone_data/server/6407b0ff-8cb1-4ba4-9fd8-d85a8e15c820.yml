@@ -1,0 +1,19 @@
+uuid: 6407b0ff-8cb1-4ba4-9fd8-d85a8e15c820
+name: ' 牛牛牛'
+ownerUUID: 561690c0-18f0-31a8-9ad6-dbd14463773c
+ownerName: IOxyz
+type: server
+noProximityPlayers: []
+worldUID: 9b0ad572-3ac5-4658-9c1e-57da4217233c
+worldName: Mainland
+x: -326
+y: 80
+z: -195
+serverName: d1dd7f85-5051-408f-b68e-106b443aa892
+environment: NORMAL
+model: def
+statistics:
+  total-visitors: 1
+  total-visits: 0
+  total-users: 0
+  date-created: 1701355036338

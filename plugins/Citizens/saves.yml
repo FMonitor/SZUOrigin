@@ -81,7 +81,7 @@ npc:
         assignment: ''
         assignment_list:
           '0': npc_jesica_assignment
-    traitnames: denizen_flags,constants,rotationtrait,scoreboardtrait,assignment,playerfilter,profession,location,triggers,skintrait,owner,lookclose,spawned,villagertrait,type,equipment,mounttrait,inventory
+    traitnames: playerfilter,owner,constants,equipment,profession,denizen_flags,scoreboardtrait,villagertrait,inventory,type,triggers,location,rotationtrait,lookclose,mounttrait,skintrait,spawned,assignment
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -156,7 +156,7 @@ npc:
         assignment: ''
         assignment_list:
           '0': npc_forester_assignment
-    traitnames: rotationtrait,constants,denizen_flags,scoreboardtrait,assignment,hologramtrait,profession,location,triggers,owner,lookclose,spawned,villagertrait,type,mounttrait
+    traitnames: hologramtrait,owner,constants,profession,denizen_flags,scoreboardtrait,villagertrait,type,triggers,location,rotationtrait,lookclose,mounttrait,spawned,assignment
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -231,7 +231,7 @@ npc:
         assignment: ''
         assignment_list:
           '0': npc_butch_assignment
-    traitnames: constants,denizen_flags,rotationtrait,scoreboardtrait,assignment,hologramtrait,shop,profession,location,triggers,owner,lookclose,spawned,villagertrait,type,mounttrait
+    traitnames: hologramtrait,owner,constants,profession,denizen_flags,villagertrait,scoreboardtrait,type,triggers,location,rotationtrait,lookclose,shop,mounttrait,spawned,assignment
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -310,7 +310,7 @@ npc:
         assignment: ''
         assignment_list:
           '0': npc_lucas_assignment
-    traitnames: constants,denizen_flags,rotationtrait,scoreboardtrait,assignment,hologramtrait,profession,location,triggers,owner,lookclose,spawned,villagertrait,type,mounttrait
+    traitnames: hologramtrait,owner,constants,profession,denizen_flags,scoreboardtrait,villagertrait,type,triggers,location,rotationtrait,lookclose,mounttrait,spawned,assignment
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -385,7 +385,7 @@ npc:
         assignment: ''
         assignment_list:
           '0': npc_antonio_assignment
-    traitnames: denizen_flags,constants,rotationtrait,scoreboardtrait,assignment,hologramtrait,profession,location,triggers,owner,lookclose,spawned,scripttrait,villagertrait,type,commandtrait,equipment,mounttrait
+    traitnames: scripttrait,hologramtrait,owner,equipment,constants,profession,denizen_flags,commandtrait,villagertrait,scoreboardtrait,type,triggers,location,rotationtrait,lookclose,mounttrait,spawned,assignment
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -464,7 +464,7 @@ npc:
         assignment: ''
         assignment_list:
           '0': npc_raphael_assignment
-    traitnames: constants,denizen_flags,rotationtrait,scoreboardtrait,assignment,hologramtrait,profession,location,triggers,owner,lookclose,spawned,villagertrait,type,mounttrait
+    traitnames: hologramtrait,owner,constants,profession,denizen_flags,villagertrait,scoreboardtrait,type,triggers,location,rotationtrait,lookclose,mounttrait,spawned,assignment
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -545,7 +545,7 @@ npc:
         full_flag_data:
           entity_health_bars: map@[__value=map@[bar_entity=map@[__value=e@42446a2c-a0c7-4ecb-94df-c272d6a742b2/text_display]]]
           the_progress_bar: map@[__value=map@[health=map@[__value=§[font=mcbars:sharp_bar]L§[color=f]§[font=mcbars:spaces]0§[reset=font]§[reset=color]§[font=mcbars:sharp_bar]M§[color=f]§[font=mcbars:spaces]0§[reset=font]§[reset=color]§[font=mcbars:sharp_bar]M§[color=f]§[font=mcbars:spaces]0§[reset=font]§[reset=color]§[font=mcbars:sharp_bar]M§[color=f]§[font=mcbars:spaces]0§[reset=font]§[reset=color]§[font=mcbars:sharp_bar]M§[color=f]§[font=mcbars:spaces]0§[reset=font]§[reset=color]§[font=mcbars:sharp_bar]M§[color=f]§[font=mcbars:spaces]0§[reset=font]§[reset=color]§[font=mcbars:sharp_bar]M§[color=f]§[font=mcbars:spaces]0§[reset=font]§[reset=color]§[font=mcbars:sharp_bar]M§[color=f]§[font=mcbars:spaces]0§[reset=font]§[reset=color]§[font=mcbars:sharp_bar]M§[color=f]§[font=mcbars:spaces]0§[reset=font]§[reset=color]§[font=mcbars:sharp_bar]R§[color=f]§[font=mcbars:spaces]0§[reset=font]§[reset=color]]]]
-    traitnames: denizen_flags,constants,rotationtrait,scoreboardtrait,assignment,hologramtrait,profession,location,triggers,owner,lookclose,spawned,villagertrait,type,mounttrait
+    traitnames: hologramtrait,owner,constants,profession,denizen_flags,scoreboardtrait,villagertrait,type,triggers,location,rotationtrait,lookclose,mounttrait,spawned,assignment
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -624,7 +624,7 @@ npc:
         assignment: ''
         assignment_list:
           '0': npc_anchor_assignment
-    traitnames: constants,denizen_flags,rotationtrait,scoreboardtrait,assignment,hologramtrait,profession,location,triggers,owner,lookclose,spawned,villagertrait,type,mounttrait
+    traitnames: hologramtrait,owner,constants,profession,denizen_flags,villagertrait,scoreboardtrait,type,triggers,location,rotationtrait,lookclose,mounttrait,spawned,assignment
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -699,7 +699,7 @@ npc:
         assignment: ''
         assignment_list:
           '0': npc_glinda_assignment
-    traitnames: constants,rotationtrait,denizen_flags,scoreboardtrait,assignment,hologramtrait,profession,location,triggers,owner,lookclose,spawned,villagertrait,type,mounttrait
+    traitnames: hologramtrait,owner,constants,profession,denizen_flags,villagertrait,scoreboardtrait,type,triggers,location,rotationtrait,lookclose,mounttrait,spawned,assignment
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -772,7 +772,7 @@ npc:
         assignment: ''
         assignment_list:
           '0': npc_gatekeeper_assignment
-    traitnames: rotationtrait,constants,denizen_flags,scoreboardtrait,assignment,location,triggers,owner,lookclose,spawned,waypoints,type,mounttrait
+    traitnames: owner,constants,denizen_flags,waypoints,scoreboardtrait,type,triggers,location,rotationtrait,lookclose,mounttrait,spawned,assignment
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -812,7 +812,7 @@ npc:
             margin:
               top: '0.0'
               bottom: '0.0'
-    traitnames: denizen_flags,scoreboardtrait,spawned,villagertrait,hologramtrait,type,profession,location,mounttrait,owner
+    traitnames: location,hologramtrait,owner,profession,denizen_flags,mounttrait,villagertrait,scoreboardtrait,type,spawned
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -864,7 +864,7 @@ npc:
         full_flag_data:
           entity_health_bars: map@[__value=map@[bar_entity=map@[__value=e@30d57a02-9f42-44ca-960e-9084f62ec011/text_display]]]
           the_progress_bar: map@[__value=map@[health=map@[__value=§[font=mcbars:sharp_bar]L§[color=f]§[font=mcbars:spaces]0§[reset=font]§[reset=color]§[font=mcbars:sharp_bar]M§[color=f]§[font=mcbars:spaces]0§[reset=font]§[reset=color]§[font=mcbars:sharp_bar]M§[color=f]§[font=mcbars:spaces]0§[reset=font]§[reset=color]§[font=mcbars:sharp_bar]M§[color=f]§[font=mcbars:spaces]0§[reset=font]§[reset=color]§[font=mcbars:sharp_bar]M§[color=f]§[font=mcbars:spaces]0§[reset=font]§[reset=color]§[font=mcbars:sharp_bar]M§[color=f]§[font=mcbars:spaces]0§[reset=font]§[reset=color]§[font=mcbars:sharp_bar]M§[color=f]§[font=mcbars:spaces]0§[reset=font]§[reset=color]§[font=mcbars:sharp_bar]M§[color=f]§[font=mcbars:spaces]0§[reset=font]§[reset=color]§[font=mcbars:sharp_bar]M§[color=f]§[font=mcbars:spaces]0§[reset=font]§[reset=color]§[font=mcbars:sharp_bar]R§[color=f]§[font=mcbars:spaces]0§[reset=font]§[reset=color]]]]
-    traitnames: rotationtrait,denizen_flags,scoreboardtrait,spawned,hologramtrait,type,location,mounttrait,owner,lookclose
+    traitnames: location,hologramtrait,rotationtrait,owner,lookclose,denizen_flags,mounttrait,scoreboardtrait,type,spawned
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -937,7 +937,7 @@ npc:
         assignment: ''
         assignment_list:
           '0': npc_auctioneer_assignment
-    traitnames: constants,rotationtrait,denizen_flags,scoreboardtrait,assignment,hologramtrait,playerfilter,location,triggers,owner,lookclose,spawned,type,mounttrait,inventory
+    traitnames: playerfilter,hologramtrait,owner,constants,denizen_flags,scoreboardtrait,inventory,type,triggers,location,rotationtrait,lookclose,mounttrait,spawned,assignment
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -1000,7 +1000,7 @@ npc:
         assignment: ''
         assignment_list:
           '0': npc_crist_assignment
-    traitnames: constants,scoreboardtrait,assignment,playerfilter,location,triggers,skintrait,owner,skinlayers,spawned,type,mounttrait,inventory
+    traitnames: playerfilter,owner,constants,scoreboardtrait,inventory,type,triggers,location,skinlayers,mounttrait,skintrait,spawned,assignment
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -1054,7 +1054,7 @@ npc:
         assignment: ''
         assignment_list:
           '0': npc_bank_teller_assignment
-    traitnames: constants,skinlayers,scoreboardtrait,assignment,spawned,type,location,mounttrait,skintrait,triggers,owner,inventory
+    traitnames: location,skinlayers,owner,constants,mounttrait,skintrait,inventory,scoreboardtrait,type,spawned,triggers,assignment
     navigator:
       speedmodifier: '1.0'
       avoidwater: false

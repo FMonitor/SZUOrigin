@@ -1,0 +1,63 @@
+Commands:
+  Plugin Command:
+    Name: fancywaystones
+    Aliases:
+      - fws
+      - ws
+      - waystone
+      - fw
+    Description: Waystone command
+    Permission: admin
+  Waypoint Command:
+    Name: waypoint
+    Aliases:
+      - wp
+      - waypoints
+      - fancywaypoint
+      - fancywaypoints
+      - fwwp
+    Description: Waypoint command
+    Permission: waypoint
+  Warpstone Command:
+    Name: warpstone
+    Aliases:
+      - warpstones
+      - fancywarpstone
+      - fancywarpstones
+      - fwws
+    Description: Warpstone command
+    Permission: warpstone
+  Language Command:
+    Name: fancywaystoneslanguage
+    Aliases:
+      - waystonelanguage
+      - wl
+      - wslang
+      - waypointlanguage
+      - waystoneslanguage
+      - fwlang
+      - fwl
+      - wlang
+      - waystonelang
+      - waypointslanguage
+      - waypointslang
+    Description: Change waypoints and waystones language
+    Permission: language
+
+Permissions:
+  admin:
+    Description: Allows you to use Waystone command
+    Default: op
+    Permission: fancywaystones.admin
+  waypoint:
+    Description: Allows you to use Waypoint command
+    Default: true
+    Permission: fancywaystones.command.waypoint
+  warpstone:
+    Description: Allows you to use Warpstone command
+    Default: true
+    Permission: fancywaystones.command.warpstone
+  language:
+    Description: Allows you to use Waystone command
+    Default: true
+    Permission: fancywaystones.language

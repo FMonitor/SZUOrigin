@@ -1,0 +1,61 @@
+Settings:
+  #Rows on GUI:
+  # * The value can only be from 1 to 6.
+  Rows: 6
+
+  #Plays a sound when the player interacts on GUI:
+  #Empty the string (like below) will disable this feature.
+  #Sound: ''
+  Sound: ui_button_click
+
+RepresentItems:
+  FriendGui:
+    #For those who prefer to use custom models from ItemsAdder (or Oraxen),
+    #use this option to specify a model.
+    #Format: 'Oraxen:<id>' or 'IA:<namespaceId>'
+    # * If this option is used, it means that: Material and Data cannot be used.
+    # * Remember to remove the 'CustomModelData' option first.
+    # * Leave it blank will disable this feature.
+    Model: '' #May not need to configure.
+    Material: 'FLINT' #May not need to configure.
+    Amount: 1 #May not need to configure.
+    Data: 0 #May not need to configure.
+    #Using 'Texture' option if you want to display the head texture:
+    #Texture: '<value>' #Can be found at: https://minecraft-heads.com/ (Value field).
+    #Texture: 'hdb-<id>' #Using for HeadDatabase plugin.
+    #Texture: '%player%' #Display the player's head.
+    Texture: '' #May not need to configure.
+    CustomModelData: 9999 #May not need to configure.
+    Enchantments: [] #May not need to configure.
+    #- 'durability:10'
+    HideFlags: [] #May not need to configure.
+    #- 'HIDE_ENCHANTS'
+    #Position for this item:
+    Slots: [1-5,10-14,19-23,28-32,37-41,46-50]
+  Mailbox:
+    Material: FLINT
+    CustomModelData: 9999
+    Slots: [6-9, 15-18]
+  BlockedGui:
+    Material: FLINT
+    CustomModelData: 9999
+    Slots: [42-45, 51-54]
+  FriendRequestGui:
+    Material: FLINT
+    CustomModelData: 9999
+    Slots: [24-27, 33-36]
+
+# ControlItems:
+#   Close:
+#     Material: OAK_FENCE_GATE
+#     Slot: 9
+
+#These are decorative items, which will make your GUI more beautiful!
+#You can add/delete items in this section.
+# * You can add the "Commands" option to these item.
+# * Use %player% to get the executor's name.
+# * You can also use placeholder from PlaceholderAPI in this section.
+#- '<command>' - Execute the command as normal player.
+#- 'OP: <command>' - Execute the command as an administrator.
+#- 'CONSOLE: <command>' - Execute the command on Console.
+DecorateItems: {}

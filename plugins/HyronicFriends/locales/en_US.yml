@@ -1,0 +1,727 @@
+PREFIX: ''
+RAW_PREFIX: ''
+
+STATUS:
+  enabled: '#4cd137ᴇɴᴀʙʟᴇᴅ'
+  disabled: '&cᴅɪsᴀʙʟᴇᴅ'
+  allowed: '#4cd137ᴀʟʟᴏᴡᴇᴅ'
+  disallowed: '&cᴅɪsᴀʟʟᴏᴡᴇᴅ'
+  online: '&f#2ed573'
+  offline: '&f#e74c3c'
+  expired: '&cᴇxᴘɪʀᴇᴅ'
+  waiting: '&6ᴡᴀɪᴛɪɴɢ'
+  accepted: '#4cd137ᴀᴄᴄᴇᴘᴛᴇᴅ'
+  declined: '&cᴅᴇᴄʟɪɴᴇᴅ'
+  cancelled: '&cᴄᴀɴᴄᴇʟʟᴇᴅ'
+  received: '&6ʀᴇᴄᴇɪᴠᴇᴅ'
+  sent: '&6sᴇɴᴛ'
+  read: '#4cd137ʀᴇᴀᴅ'
+  unlimited: '∞'
+
+FORMAT:
+  years: 'year(s)'
+  months: 'month(s)'
+  weeks: 'week(s)'
+  days: 'day(s)'
+  hours: 'hour(s)'
+  minutes: 'minute(s)'
+  seconds: 'second(s)'
+
+HELP:
+  header: '&8&l------=====[ &eHʏʀᴏɴɪᴄFʀɪᴇɴᴅs v{version} &8&l]=====------'
+  help: '&8 > &c/{label} <help|?> [page] &f: &7Show help page commands.'
+  footer: '&8&l---------------------------------------'
+  Page_1:
+    main: '&8 > &c/{label} &f: &7Open main menu.'
+    toggle: '&8 > &c/{label} toggle &f: &7Toggle receive friend request.'
+    add: '&8 > &c/{label} add <player> &f: &7Send a friend request.'
+    accept: '&8 > &c/{label} accept <player> &f: &7Accept a friend request.'
+    decline: '&8 > &c/{label} decline <player> &f: &7Decline a friend request.'
+    cancel: '&8 > &c/{label} cancel <player> &f: &7Cancel the sent friend request.'
+    list: '&8 > &c/{label} list &f: &7Open your friend list.'
+  Page_2:
+    unfriend: '&8 > &c/unfriend <player> &f: &7Unfriend a player.'
+    notify: '&8 > &c/{label} notify &f: &7Turn on/off notify your friend online status.'
+    blockedlist: '&8 > &c/blockedlist &f: &7List of blocked players.'
+    block: '&8 > &c/block <player> &f: &7Block a player.'
+    unblock: '&8 > &c/unblock <player> &f: &7Unblock a player.'
+    mail: '&8 > &c/fmail help &f: &7View the list of mail commands.'
+    reload: '&8 > &c/{label} reload &f: &7Reload the configuration.'
+  Page_3:
+    teleport: '&8 > &c/ftp <player> &f: &7Teleport to your friend.'
+    toggletp: '&8 > &c/toggletp <player> &f: &7Allow/Disallow your friend to teleport to you.'
+    togglemail: '&8 > &c/togglemail <player> &f: &7Allow/Disallow your friend to send mail to you.'
+    togglemsg: '&8 > &c/togglemsg <player> &f: &7Enable/Disable receiving your friend message.'
+    message: '&8 > &c/fmsg <player> <message> &f: &7Send private message to your friend.'
+    reply: '&8 > &c/freply <message> &f: &7Quick reply to the most recent message.'
+  MAIL:
+    help: '&8 > &c/{label} [help|?] &f: &7Show this help page.'
+    mailbox: '&8 > &c/mailbox &f: &7Open mailbox.'
+    list: '&8 > &c/{label} <player> &f: &7See all mails sent/received to/from a player.'
+    send: '&8 > &c/{label} send <player> <content> &f: &7Send mail to your friend.'
+    read: '&8 > &c/{label} read <player> &f: &7Read the recently received mail.'
+
+BROADCAST:
+  friend-online: '{prefix}&6→ Your friend, #4cd137{display} &6just online!' #Use {player} to display the player's real name.
+  friend-offline: '{prefix}&c→ Your friend, &e{display} &cjust offline!' #Use {player} to display the player's real name.
+
+  no-mail-received: '{prefix}&6→ You have no new mail.'
+
+#Available color tags: black, dark_blue, dark_green, dark_aqua, dark_red, dark_purple, gold, gray, dark_gray, blue, green, aqua, red, light_purple, yellow, or white.
+#Please take a look at (https://docs.advntr.dev/minimessage/format.html#click) once before editing this section.
+RAW:
+  friend-request-accept: '<hover:show_text:''<green>Accept friend request''><click:run_command:/friend accept {player}><green>Accept</green></click></hover>'
+  friend-request-decline: '<hover:show_text:''<red>Decline friend request''><click:run_command:/friend decline {player}><red>Decline</red></click></hover>'
+  friend-request-cancel: '<hover:show_text:''<gold>Cancel friend request''><click:run_command:/friend cancel {player}><gold>Cancel</gold></click></hover>'
+
+  request-sent: '{raw_prefix}<green>→ A friend request has been sent to <yellow>{player}</yellow>.</green> <dark_gray>[{fr_cancel_raw}]</dark_gray>'
+  request-friend: '{raw_prefix}<gold>→ The player <yellow>{player}</yellow> wants to make friend with you.</gold> <dark_gray>[{fr_accept_raw} | {fr_decline_raw}]</dark_gray>'
+
+  read-mail: '<hover:show_text:''<green>Read mail''><click:run_command:/mail read {player}><green>Read Now</green></click></hover>'
+  mailbox: '<hover:show_text:''<green>Open the mailbox''><click:run_command:/mailbox><green>Mailbox</green></click></hover>'
+  quick-reply: '<hover:show_text:''<green>Quickly reply this message.''><click:suggest_command:''/fmessage {player} ''><green>Reply</green></click></hover>'
+
+  unread-mails: '{raw_prefix}<gold>→ You have received new mails!</gold> <dark_gray>[{mailbox}]</dark_gray>'
+  new-mail: '{raw_prefix}<#fbc531>→ You have received new mail from <yellow>{player}</yellow>!</#fbc531> <dark_gray><bold>[{read_mail}]</dark_gray>'
+  mail-sent: '{raw_prefix}<green>→ Mail has been sent to <yellow>{player}</yellow>.</green> <dark_gray>[{mailbox}]</dark_gray>'
+  received-message: '<dark_gray>[<yellow>{player}</yellow> <gray>-></gray> <yellow>you</yellow>]</dark_gray> <white>{message}</white> {quick_reply}'
+
+SUCCESS:
+  config-reload: '{prefix}#4cd137→ Successfully reloaded configs!'
+
+  friend-request-toggled: '{prefix}&7→ You just &r{status} &7to receive friend requests.'
+  online-notifications-toggled: '{prefix}&7→ You just &r{status} &7notifications when your friends are online.'
+
+  unfriend: '{prefix}&7→ You unfriended &e{player}&7.'
+  now-friends: '{prefix}#4cd137→ You and &e{player} #4cd137are now friends.'
+  declined-friend-request: '{prefix}&7→ You declined friend request from &e{player}&7.'
+  friend-request-declined: '{prefix}&e→ {player} &7declined your friend request.'
+  friend-request-cancelled: '{prefix}&7→ You have cancelled the friend request sent to &e{player}&7.'
+
+  blocked-player: '{prefix}&7→ You have blocked &e{player}&7.'
+  unblocked-player: '{prefix}&7→ You have unblocked &e{player}&7.'
+
+  toggled-private-message: '{prefix}&7→ You have &r{status} &7receiving private message from &e{player}&7.'
+  private-message-sent: '&8[&eyou &7-> &e{player}&8] &f{message}'
+
+  toggled-teleport: '{prefix}&7→ You have &r{status} &e{player} &7to teleport to you.'
+  teleported: '{prefix}#4cd137→ You teleported to &e{player}#4cd137.'
+  player-teleported: '{prefix}&e→ {player} &7teleported to you.'
+
+  cancelled-mail: '{prefix}&7→ You have cancelled the mail sent to &e{player}&7.'
+  toggled-sending-mail: '{prefix}&7→ You have &r{status} &e{player} &7to send mail to you.'
+
+  friend-online-toast: '&e{player} &6is online!'
+  friend-offline-toast: '&e{player} &cis offline!'
+  friend-request-toast: '&aYou received friend request from &e{player}&a!'
+  now-friend-toast: '&aYou and &e{player} &aare now friend!'
+  friend-request-declined-toast: '&e{player} &chas declined your friend request!'
+  new-mail-toast: '&aYou received new mail from &e{player}&a!'
+
+FAIL:
+  no-permission: '{prefix}&c→ You don''t have permission to do that!'
+  wrong-syntax: '{prefix}&c→ You entered the wrong syntax! Please check and try again!'
+  missing-args: '{prefix}&c→ Missing arguments! Usage: &e{usage}&c.'
+  only-players: '{prefix}&c→ Only players can use this command!'
+  only-console: '{prefix}&c→ This command can only be run by console!'
+
+  player-not-found: '{prefix}&c→ Could not find that player!'
+  not-yourself: '{prefix}&c→ You cannot do that yourself!'
+  cannot-accept-offline: '{prefix}&c→ You can only accept this friend request when &e{player} &cis online in this server!'
+  player-already-friend: '{prefix}&c→ That player is already your friend!'
+  cannot-send-request: '{prefix}&e→ {player} &cis currently unable to receive friend request!'
+  reached-max-friends: '{prefix}&c→ You have reached the maximum limit of &e{max_friends} &cfriends!'
+  player-reached-max-friends: '{prefix}&e→ {player} &chas reached the maximum number of friends!'
+  request-existed: '{prefix}&c→ Please respond a similar request has been sent from &e{player}&c!'
+  request-already-sent: '{prefix}&c→ Please wait until &e{player} &cresponds to your friend request.'
+  request-not-found: '{prefix}&c→ There is no request found from &e{player}&c!'
+  request-not-sent: '{prefix}&c→ There is no request sent to &e{player}&c!'
+  not-friend: '{prefix}&e→ {player} &cis not your friend!'
+  blocked-private-message: '{prefix}&c→ You cannot send private message to &e{player}&c!'
+  blocked-teleport: '{prefix}&c→ You cannot teleport to &e{player}&c!'
+  blocked-mail: '{prefix}&c→ You cannot send mail to &e{player}&c!'
+  teleport-delay: '{prefix}&c→ Please wait &b{time} second(s) &cto continue teleporting!'
+  player-already-blocked: '{prefix}&c→ You already blocked that player!'
+  have-not-blocked: '{prefix}&c→ You have not blocked that player!'
+  blocked-player: '{prefix}&c→ That player was blocked by you!'
+  player-blocked: '{prefix}&c→ You have been blocked!'
+  inventory-is-full: '{prefix}&c→ Your inventory is full!'
+  item-not-found: '{prefix}&c→ This item cannot be found!'
+
+  request-expired: '{prefix}&c→ This request has expired!'
+  request-already-responded: '{prefix}&c→ This request has been responded before!'
+
+  message-delay: '{prefix}&c→ Please wait &b{time} second(s) &cto continue chatting!'
+  no-new-message: '{prefix}&c→ You have no new messages!'
+
+  item-blacklisted: '{prefix}&c→ This item is prohibited from mailing!'
+  mail-delay: '{prefix}&c→ Please wait &b{time} second(s) &cto send the next mail!'
+  mail-read: '{prefix}&c→ This mail has been read!'
+  cannot-read-mail: '{prefix}&c→ You cannot read this mail (maybe it has been cancelled)!'
+  mail-not-found: '{prefix}&c→ You have not received any mail from &e{player}&c!'
+  reached-max-slots: '{prefix}&c→ You have reached the maximum limit of &e{max_slots} &cslot(s) for the attached item!'
+
+#You can use any placeholder from PlaceholderAPI in this section.
+GUI:
+  #Main menu:
+  main:
+    Title: '&f'
+    RepresentItems:
+      FriendGui:
+        Name: '#c7eceeYour Friend List'
+        Lore:
+        - ''
+        - '&8• &7You have: #c7ecee{amount}&8/#c7ecee{max}'
+        - ''
+        - '#6ab04c→ Left click to open'
+      Mailbox:
+        Name: '#badc58Your Personal Mailbox'
+        Lore:
+        - ''
+        - '&8• &7Mail sent: #badc58{total_sent}'
+        - '&8• &7Mail received: #badc58{total_received}'
+        # - '&8• &7Total mail: #badc58{total}'
+        - ""
+        - "&8• #ced6e0If you don't want to accept"
+        - "  #ced6e0mails, you can toogle it by"
+        - "  #ced6e0using #badc58/mail toggle"
+        - ''
+        - '#6ab04c→ Left click to open mailbox'
+      BlockedGui:
+        Name: '#ff6b81Blocked Player List'
+        Lore:
+        - ''
+        - '&8• &7You blocked: #ff6b81{amount}'
+        - ''
+        - '#6ab04c→ Left click to open '
+      FriendRequestGui:
+        Name: '#1e90ffFriend Request List'
+        Lore:
+        - ''
+        - '&8• &7Request sent: #1e90ff{total_sent}'
+        - '&8• &7Request received: #1e90ff{total_received}'
+        # - '&8 • &7ᴛᴏᴛᴀʟ: &e{total}'
+        - ""
+        - "&8• #ced6e0If you don't want to accept"
+        - "  #ced6e0friend requests, toggle it"
+        - "  #ced6e0by using #1e90ff/friend toggle"
+        - ''
+        - '#6ab04c→ Left click to open the list'
+      FriendRequestToggle:
+        Name: '&6ʀᴇᴄᴇɪᴠᴇ ꜰʀɪᴇɴᴅ ʀᴇǫᴜᴇsᴛ'
+        Lore:
+        - ''
+        - '&8 • &7ᴄᴜʀʀᴇɴᴛʟʏ: &e{status}'
+        - ''
+        - '&fɪꜰ ʏᴏᴜ ᴡᴏᴜʟᴅ ʟɪᴋᴇ ᴛᴏ ʀᴇᴄᴇɪᴠᴇ'
+        - '&fꜰʀɪᴇɴᴅ ʀᴇǫᴜᴇsᴛ ꜰʀᴏᴍ ᴏᴛʜᴇʀ'
+        - '&fᴘʟᴀʏᴇʀs, ᴇɴᴀʙʟᴇ ᴛʜɪs ᴏᴘᴛɪᴏɴ.'
+        - ''
+        - '&8[&6ᴄʟɪᴄᴋ&8] &7ᴄʜᴀɴɢᴇ sᴛᴀᴛᴜs'
+      ToggleNotification:
+        Name: '&6ʀᴇᴄᴇɪᴠᴇ ᴏɴʟɪɴᴇ ɴᴏᴛɪꜰɪᴄᴀᴛɪᴏɴs'
+        Lore:
+        - ''
+        - '&8 • &7ᴄᴜʀʀᴇɴᴛʟʏ: &e{status}'
+        - ''
+        - '&fɪꜰ ʏᴏᴜ ᴡᴏᴜʟᴅ ʟɪᴋᴇ ᴛᴏ ᴋɴᴏᴡ ᴡʜᴇɴ'
+        - '&fʏᴏᴜʀ ꜰʀɪᴇɴᴅ ɪs ᴏɴʟɪɴᴇ/ᴏꜰꜰʟɪɴᴇ,'
+        - '&fᴇɴᴀʙʟᴇ ᴛʜɪs ᴏᴘᴛɪᴏɴ.'
+        - ''
+        - '&8[&6ᴄʟɪᴄᴋ&8] &7ᴄʜᴀɴɢᴇ sᴛᴀᴛᴜs'
+    ControlItems:
+      Close:
+        Name: '&c&l✗ &cᴄʟᴏsᴇ ᴍᴇɴᴜ'
+        Lore: []
+  #Friend settings:
+  friend_settings:
+    Title: '&f'
+    RepresentItems:
+      OnlinePlayer:
+        Name: '{status} {player}'
+        Lore:
+        - ''
+        - '&8• &7Became friends at:'
+        - '  &f{time}'
+      OfflinePlayer:
+        Name: '{status} {player}'
+        Lore:
+        - ''
+        - '&8•&7 Became friends at:'
+        - '  &f{time}'
+        - '&8•&7 Last online:'
+        - '  &f{last_online} ago.'
+
+    ControlItems:
+      MailList:
+        Name: '&7→ View relate mails'
+        Lore: []
+      Back:
+        Name: '#e74c3c← Back to friend list'
+        Lore: []
+      Unfriend:
+        Name: '&c→ Unfriend'
+        Lore: []
+      CanTeleport:
+        Name: '&7→ Quick teleport.'
+        Lore: []
+      CannotTeleport:
+        Name: "&c→ Can't teleport"
+        Lore: []
+      AllowReceivingMessage:
+        Name: '&7Receiving private message'
+        Lore:
+        - ''
+        - '&8● &7Status: &e{status}'
+      DisallowReceivingMessage:
+        Name: '&7Receiving private message'
+        Lore:
+        - ''
+        - '&8● &7Status: &e{status}'
+      ToggleTeleportAllowed:
+        Name: '&7Allow quick teleport'
+        Lore:
+        - ''
+        - '&8• &7Status: &f{status}'
+      ToggleTeleportDisallowed:
+        Name: '&7Allow quick teleport'
+        Lore:
+        - ''
+        - '&8• &7Status: &f{status}'
+      ToggleMailingAllowed:
+        Name: '&7Allow sending mail'
+        Lore:
+        - ''
+        - '&8• &7Status: &e{status}'
+      ToggleMailingDisallowed:
+        Name: '&7Allow sending mail'
+        Lore:
+        - ''
+        - '&8• &7Status: &e{status}'
+  #The list of friend requests:
+  request_list:
+    Title: '&f'
+    RepresentItems:
+      SentRequest:
+        Name: '&7You sent to: &f{player}'
+        Lore:
+        - ''
+        - '&8• &7At: &f{time}'
+        - '&8• &7Status: &f{status}'
+        - ''
+        - '#6ab04c→ Left click to cancel'
+      ReceivedRequest:
+        Name: '&7From &f{player}'
+        Lore:
+        - ''
+        - '&8• &7At: &f{time}'
+        - '&8• &7Status: &e{status}'
+        - ''
+        - '#6ab04c→ Left click to accept'
+        - '#e74c3c→ Right click to deny'
+    ControlItems:
+      PreviousPage:
+        Name: '&2<< #4cd137ᴘʀᴇᴠɪᴏᴜs ᴘᴀɢᴇ'
+        Lore:
+        - '&8(#4cd137{page} &7/ &c{max_pages}&8)'
+      NextPage:
+        Name: '#4cd137ɴᴇxᴛ ᴘᴀɢᴇ &2>>'
+        Lore:
+        - '&8(#4cd137{page} &7/ &c{max_pages}&8)'
+      Back:
+        Name: '#e74c3c← Back to main menu'
+        Lore: []
+      SwitchToFriendListGui:
+        Name: '&7Friend list'
+        Lore: []
+      SwitchToMailboxGui:
+        Name: '&7Mailbox'
+        Lore: []
+      SwitchToBlockedGui:
+        Name: '&7Blocked list'
+        Lore: []
+      SwitchToFriendRequestGui:
+        Name: '&7Friend request'
+        Lore: []
+      FilterAll:
+        Name: '&7Filter the list by:'
+        Lore:
+        - ''
+        - '&2→ #4cd137ᴀʟʟ ʀᴇǫᴜᴇsᴛs'
+        - '&8 • &7ʀᴇǫᴜᴇsᴛs sᴇɴᴛ'
+        - '&8 • &7ʀᴇǫᴜᴇsᴛs ʀᴇᴄᴇɪᴠᴇᴅ'
+        - '&8 • &7ʀᴇᴄᴇɴᴛʟʏ sᴇɴᴛ ʀᴇǫᴜᴇsᴛs'
+        - '&8 • &7ʀᴇᴄᴇɴᴛʟʏ ʀᴇᴄᴇɪᴠᴇᴅ ʀᴇǫᴜᴇsᴛs'
+      FilterRequestsSent:
+        Name: '&7Filter the list by:'
+        Lore:
+        - ''
+        - '&8 • &7ᴀʟʟ ʀᴇǫᴜᴇsᴛs'
+        - '&2→ #4cd137ʀᴇǫᴜᴇsᴛs sᴇɴᴛ'
+        - '&8 • &7ʀᴇǫᴜᴇsᴛs ʀᴇᴄᴇɪᴠᴇᴅ'
+        - '&8 • &7ʀᴇᴄᴇɴᴛʟʏ sᴇɴᴛ ʀᴇǫᴜᴇsᴛs'
+        - '&8 • &7ʀᴇᴄᴇɴᴛʟʏ ʀᴇᴄᴇɪᴠᴇᴅ ʀᴇǫᴜᴇsᴛs'
+      FilterRequestsReceived:
+        Name: '&7Filter the list by:'
+        Lore:
+        - ''
+        - '&8 • &7ᴀʟʟ ʀᴇǫᴜᴇsᴛs'
+        - '&8 • &7ʀᴇǫᴜᴇsᴛs sᴇɴᴛ'
+        - '&2→ #4cd137ʀᴇǫᴜᴇsᴛs ʀᴇᴄᴇɪᴠᴇᴅ'
+        - '&8 • &7ʀᴇᴄᴇɴᴛʟʏ sᴇɴᴛ ʀᴇǫᴜᴇsᴛs'
+        - '&8 • &7ʀᴇᴄᴇɴᴛʟʏ ʀᴇᴄᴇɪᴠᴇᴅ ʀᴇǫᴜᴇsᴛs'
+      FilterRecentlySentRequests:
+        Name: '&7Filter the list by:'
+        Lore:
+        - ''
+        - '&8 • &7ᴀʟʟ ʀᴇǫᴜᴇsᴛs'
+        - '&8 • &7ʀᴇǫᴜᴇsᴛs sᴇɴᴛ'
+        - '&8 • &7ʀᴇǫᴜᴇsᴛs ʀᴇᴄᴇɪᴠᴇᴅ'
+        - '&2→ #4cd137ʀᴇᴄᴇɴᴛʟʏ sᴇɴᴛ ʀᴇǫᴜᴇsᴛs'
+        - '&8 • &7ʀᴇᴄᴇɴᴛʟʏ ʀᴇᴄᴇɪᴠᴇᴅ ʀᴇǫᴜᴇsᴛs'
+      FilterRecentlyReceivedRequests:
+        Name: '&7Filter the list by:'
+        Lore:
+        - ''
+        - '&8 • &7ᴀʟʟ ʀᴇǫᴜᴇsᴛs'
+        - '&8 • &7ʀᴇǫᴜᴇsᴛs sᴇɴᴛ'
+        - '&8 • &7ʀᴇǫᴜᴇsᴛs ʀᴇᴄᴇɪᴠᴇᴅ'
+        - '&8 • &7ʀᴇᴄᴇɴᴛʟʏ sᴇɴᴛ ʀᴇǫᴜᴇsᴛs'
+        - '&2→ #4cd137ʀᴇᴄᴇɴᴛʟʏ ʀᴇᴄᴇɪᴠᴇᴅ ʀᴇǫᴜᴇsᴛs'
+  #The list of friends:
+  friend_list:
+    Title: '&f'
+    RepresentItems:
+      OnlinePlayers:
+        Name: '{status} {player}'
+        Lore:
+        - ''
+        - '&8• &7Became friends at:'
+        - '  &f{time}'
+        - ''
+        - '#6ab04c→ Left click to manage'
+      OfflinePlayers:
+        Name: '{status} {player}'
+        Lore:
+        - ''
+        - '&8•&7 Became friends at:'
+        - '  &f{time}'
+        - '&8•&7 Last online:'
+        - '  &f{last_online} ago.'
+        - ''
+        - '#6ab04c→ Left click to manage'
+    ControlItems:
+      PreviousPage:
+        Name: '&2<< #4cd137ᴘʀᴇᴠɪᴏᴜs ᴘᴀɢᴇ'
+        Lore:
+        - '&8(#4cd137{page} &7/ &c{max_pages}&8)'
+      NextPage:
+        Name: '#4cd137ɴᴇxᴛ ᴘᴀɢᴇ &2>>'
+        Lore:
+        - '&8(#4cd137{page} &7/ &c{max_pages}&8)'
+      Back:
+        Name: '#e74c3c← Back to main menu'
+        Lore: []
+      SwitchToFriendListGui:
+        Name: '&7Friend list'
+        Lore: []
+      SwitchToMailboxGui:
+        Name: '&7Mailbox'
+        Lore: []
+      SwitchToBlockedGui:
+        Name: '&7Blocked list'
+        Lore: []
+      SwitchToFriendRequestGui:
+        Name: '&7Friend request'
+        Lore: []
+      FilterDefault:
+        Name: '&7Filter the list by:'
+        Lore:
+        - ''
+        - '&2→ #4cd137ᴅᴇꜰᴀᴜʟᴛ'
+        - '&8 • &7ᴘʟᴀʏᴇʀ ᴏɴʟɪɴᴇ'
+        - '&8 • &7ᴘʟᴀʏᴇʀ ɴᴀᴍᴇ ↑'
+        - '&8 • &7ᴘʟᴀʏᴇʀ ɴᴀᴍᴇ ↓'
+        - '&8 • &7ʀᴇᴄᴇɴᴛʟʏ ᴀᴅᴅᴇᴅ'
+      FilterPlayerOnline:
+        Name: '&7Filter the list by:'
+        Lore:
+        - ''
+        - '&8 • &7ᴅᴇꜰᴀᴜʟᴛ'
+        - '&2→ #4cd137ᴘʟᴀʏᴇʀ ᴏɴʟɪɴᴇ'
+        - '&8 • &7ᴘʟᴀʏᴇʀ ɴᴀᴍᴇ ↑'
+        - '&8 • &7ᴘʟᴀʏᴇʀ ɴᴀᴍᴇ ↓'
+        - '&8 • &7ʀᴇᴄᴇɴᴛʟʏ ᴀᴅᴅᴇᴅ'
+      FilterNameAscending:
+        Name: '&7Filter the list by:'
+        Lore:
+        - ''
+        - '&8 • &7ᴅᴇꜰᴀᴜʟᴛ'
+        - '&8 • &7ᴘʟᴀʏᴇʀ ᴏɴʟɪɴᴇ'
+        - '&2→ #4cd137ᴘʟᴀʏᴇʀ ɴᴀᴍᴇ ↑'
+        - '&8 • &7ᴘʟᴀʏᴇʀ ɴᴀᴍᴇ ↓'
+        - '&8 • &7ʀᴇᴄᴇɴᴛʟʏ ᴀᴅᴅᴇᴅ'
+      FilterNameDescending:
+        Name: '&7Filter the list by:'
+        Lore:
+        - ''
+        - '&8 • &7ᴅᴇꜰᴀᴜʟᴛ'
+        - '&8 • &7ᴘʟᴀʏᴇʀ ᴏɴʟɪɴᴇ'
+        - '&8 • &7ᴘʟᴀʏᴇʀ ɴᴀᴍᴇ ↑'
+        - '&2→ #4cd137ᴘʟᴀʏᴇʀ ɴᴀᴍᴇ ↓'
+        - '&8 • &7ʀᴇᴄᴇɴᴛʟʏ ᴀᴅᴅᴇᴅ'
+      FilterRecentlyAdded:
+        Name: '&7Filter the list by:'
+        Lore:
+        - ''
+        - '&8 • &7ᴅᴇꜰᴀᴜʟᴛ'
+        - '&8 • &7ᴘʟᴀʏᴇʀ ᴏɴʟɪɴᴇ'
+        - '&8 • &7ᴘʟᴀʏᴇʀ ɴᴀᴍᴇ ↑'
+        - '&8 • &7ᴘʟᴀʏᴇʀ ɴᴀᴍᴇ ↓'
+        - '&2→ #4cd137ʀᴇᴄᴇɴᴛʟʏ ᴀᴅᴅᴇᴅ'
+  #The list of blocked players:
+  blocked_list:
+    Title: '&f'
+    RepresentItem:
+      Name: '&2ᴘʟᴀʏᴇʀ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+      Lore:
+      - ''
+      - '&8• &fɴᴀᴍᴇ: &e{player}'
+      - ''
+      - '&8[&6ᴄʟɪᴄᴋ&8] &7ᴜɴʙʟᴏᴄᴋ ᴛʜɪs ᴘʟᴀʏᴇʀ'
+    ControlItems:
+      PreviousPage:
+        Name: '&2<< #4cd137ᴘʀᴇᴠɪᴏᴜs ᴘᴀɢᴇ'
+        Lore:
+        - '&8(#4cd137{page} &7/ &c{max_pages}&8)'
+      NextPage:
+        Name: '#4cd137ɴᴇxᴛ ᴘᴀɢᴇ &2>>'
+        Lore:
+        - '&8(#4cd137{page} &7/ &c{max_pages}&8)'
+      Back:
+        Name: '#e74c3c← Back to main menu'
+        Lore: []
+      SwitchToFriendListGui:
+        Name: '&7Friend list'
+        Lore: []
+      SwitchToMailboxGui:
+        Name: '&7Mailbox'
+        Lore: []
+      SwitchToBlockedGui:
+        Name: '&7Blocked list'
+        Lore: []
+      SwitchToFriendRequestGui:
+        Name: '&7Friend request'
+        Lore: []
+      FilterDefault:
+        Name: '&7Filter the list by:'
+        Lore:
+        - ''
+        - '&2→ #4cd137ᴅᴇꜰᴀᴜʟᴛ'
+        - '&8 • &7ᴘʟᴀʏᴇʀ ɴᴀᴍᴇ ↑'
+        - '&8 • &7ᴘʟᴀʏᴇʀ ɴᴀᴍᴇ ↓'
+      FilterNameAscending:
+        Name: '&7Filter the list by:'
+        Lore:
+        - ''
+        - '&8 • &7ᴅᴇꜰᴀᴜʟᴛ'
+        - '&2→ #4cd137ᴘʟᴀʏᴇʀ ɴᴀᴍᴇ ↑'
+        - '&8 • &7ᴘʟᴀʏᴇʀ ɴᴀᴍᴇ ↓'
+      FilterNameDescending:
+        Name: '&7Filter the list by:'
+        Lore:
+        - ''
+        - '&8 • &7ᴅᴇꜰᴀᴜʟᴛ'
+        - '&8 • &7ᴘʟᴀʏᴇʀ ɴᴀᴍᴇ ↑'
+        - '&2→ #4cd137ᴘʟᴀʏᴇʀ ɴᴀᴍᴇ ↓'
+  #Mailbox:
+  mailbox:
+    Title: '&f'
+    RepresentItems:
+      MailsSent:
+        Name: '&7You sent to: &f{player}'
+        Lore:
+        - ''
+        - '&8• &7At: &f{time}'
+        - '&8• &7Status: &e{status}'
+        - ''
+        - '&8• &7ᴍᴀɪʟ ᴄᴏɴᴛᴇɴᴛ:'
+        - ''
+        - '{content}'
+        - ''
+        - '#6ab04c→ Left click view detail'
+        - '#e74c3c→ Shift Right click cancel'
+      MailsReceived:
+        Name: '&7From &f{player}'
+        Lore:
+        - ''
+        - '&8• &7At: &f{time}'
+        - '&8• &7Status: &e{status}'
+        - ''
+        - '&8• &7ᴍᴀɪʟ ᴄᴏɴᴛᴇɴᴛ:'
+        - ''
+        - '{content}'
+        - ''
+        - '#6ab04c→ Left click to read mail'
+    ControlItems:
+      PreviousPage:
+        Name: '&2<< #4cd137ᴘʀᴇᴠɪᴏᴜs ᴘᴀɢᴇ'
+        Lore:
+        - '&8(#4cd137{page} &7/ &c{max_pages}&8)'
+      NextPage:
+        Name: '#4cd137ɴᴇxᴛ ᴘᴀɢᴇ &2>>'
+        Lore:
+        - '&8(#4cd137{page} &7/ &c{max_pages}&8)'
+      Back:
+        Name: '#e74c3c← Back to main menu'
+        Lore: []
+      SwitchToFriendListGui:
+        Name: '&7Friend list'
+        Lore: []
+      SwitchToMailboxGui:
+        Name: '&7Mailbox'
+        Lore: []
+      SwitchToBlockedGui:
+        Name: '&7Blocked list'
+        Lore: []
+      SwitchToFriendRequestGui:
+        Name: '&7Friend request'
+        Lore: []
+      FilterAll:
+        Name: '&7Filter the mail list by'
+        Lore:
+        - ''
+        - '&2→ #4cd137ᴀʟʟ ᴍᴀɪʟs'
+        - '&8 • &7ᴍᴀɪʟs sᴇɴᴛ'
+        - '&8 • &7ᴍᴀɪʟs ʀᴇᴄᴇɪᴠᴇᴅ'
+        - '&8 • &7ᴍᴀɪʟs ᴄᴀɴᴄᴇʟʟᴇᴅ'
+        - '&8 • &7ᴍᴀɪʟs ʀᴇᴀᴅ'
+      FilterMailsSent:
+        Name: '&7Filter the mail list by'
+        Lore:
+        - ''
+        - '&8 • &7ᴀʟʟ ᴍᴀɪʟs'
+        - '&2→ #4cd137ᴍᴀɪʟs sᴇɴᴛ'
+        - '&8 • &7ᴍᴀɪʟs ʀᴇᴄᴇɪᴠᴇᴅ'
+        - '&8 • &7ᴍᴀɪʟs ᴄᴀɴᴄᴇʟʟᴇᴅ'
+        - '&8 • &7ᴍᴀɪʟs ʀᴇᴀᴅ'
+      FilterMailsReceived:
+        Name: '&7Filter the mail list by'
+        Lore:
+        - ''
+        - '&8 • &7ᴀʟʟ ᴍᴀɪʟs'
+        - '&8 • &7ᴍᴀɪʟs sᴇɴᴛ'
+        - '&2→ #4cd137ᴍᴀɪʟs ʀᴇᴄᴇɪᴠᴇᴅ'
+        - '&8 • &7ᴍᴀɪʟs ᴄᴀɴᴄᴇʟʟᴇᴅ'
+        - '&8 • &7ᴍᴀɪʟs ʀᴇᴀᴅ'
+      FilterMailsCancelled:
+        Name: '&7Filter the mail list by'
+        Lore:
+        - ''
+        - '&8 • &7ᴀʟʟ ᴍᴀɪʟs'
+        - '&8 • &7ᴍᴀɪʟs sᴇɴᴛ'
+        - '&8 • &7ᴍᴀɪʟs ʀᴇᴄᴇɪᴠᴇᴅ'
+        - '&2→ #4cd137ᴍᴀɪʟs ᴄᴀɴᴄᴇʟʟᴇᴅ'
+        - '&8 • &7ᴍᴀɪʟs ʀᴇᴀᴅ'
+      FilterMailsRead:
+        Name: '&7Filter the mail list by'
+        Lore:
+        - ''
+        - '&8 • &7ᴀʟʟ ᴍᴀɪʟs'
+        - '&8 • &7ᴍᴀɪʟs sᴇɴᴛ'
+        - '&8 • &7ᴍᴀɪʟs ʀᴇᴄᴇɪᴠᴇᴅ'
+        - '&8 • &7ᴍᴀɪʟs ᴄᴀɴᴄᴇʟʟᴇᴅ'
+        - '&2→ #4cd137ᴍᴀɪʟs ʀᴇᴀᴅ'
+  #Envelopes (when sending, used to store mailed items):
+  send_mail:
+    Title: '&f'
+    RepresentItems:
+      AttachedItem:
+        Lore:
+        - ''
+        - '#6ab04c→ Left click to take back'
+        - '#e74c3c→ Shift click to take all'
+        - '       #e74c3csimilar items back'
+      LockedSlot:
+        Name: '&cʟᴏᴄᴋᴇᴅ sʟᴏᴛ'
+        Lore: []
+    ControlItems:
+      Receiver:
+        Name: '&eʀᴇᴄᴇɪᴠᴇʀ: &f{player}'
+        Lore: []
+      Confirm:
+        Name: '&7Send to &f{player}'
+        Lore:
+        - ''
+        - '&8• &fAttached items: &ex{amount}'
+        - ''
+        - '&8• &fᴄᴏɴᴛᴇɴᴛ:'
+        - '{content}'
+      TakeAll:
+        Name: '#4cd137ᴛᴀᴋᴇ ᴀʟʟ ɪᴛᴇᴍs'
+        Lore: []
+  #Envelopes (for reader):
+  read_mail:
+    Title: '&f'
+    RepresentItems:
+      Lore:
+      - ''
+      - '#44bd32→ Click to take this item'
+    ControlItems:
+      Information:
+        Name: '&7From &f{player}'
+        Lore:
+        - ''
+        - '&8• &7Attached items: &8x&f{amount}'
+        - ''
+        - '&8• &7ᴍᴀɪʟ ᴄᴏɴᴛᴇɴᴛ:'
+        - '{content}'
+      Sender:
+        Name: '&7Sender: &f{player}'
+        Lore: []
+      Receiver:
+        Name: '&7You: &f{player}'
+        Lore: []
+      TakeAll:
+        Name: '#6ab04cTake all attached items'
+        Lore: []
+      Back:
+        Name: '#e74c3c← Back to mailbox'
+        Lore: []
+  #Mail details:
+  mail_details:
+    Title: '&f'
+    Information:
+      Name: '&aᴍᴀɪʟ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ'
+      Lore:
+      - ''
+      - '&8• &fꜰʀᴏᴍ: &e{player}'
+      - '&8• &fɴᴜᴍʙᴇʀ ᴏꜰ ɪᴛᴇᴍs: &ex{amount}'
+      - ''
+      - '&8• &fᴄᴏɴᴛᴇɴᴛ:'
+      - '{content}'
+    RepresentItems:
+      Lore:
+      - ''
+      - '#44bd32→ Click to revoke this item'
+    ControlItems:
+      Information:
+        Name: '&7From &f{player}'
+        Lore:
+        - ''
+        - '&8• &7Attached items: &8x&f{amount}'
+        - ''
+        - '&8• &7ᴍᴀɪʟ ᴄᴏɴᴛᴇɴᴛ:'
+        - '{content}'
+      Sender:
+        Name: '&7Sender: &f{player}'
+        Lore: []
+      Receiver:
+        Name: '&7You: &f{player}'
+        Lore: []
+      RevokeAll:
+        Name: '#6ab04cRevoke all attached items'
+        Lore: []
+      Back:
+        Name: '#e74c3c← Back to mailbox'
+        Lore: []

@@ -1,0 +1,15 @@
+Item:
+  type: PAPER
+  meta:
+    display-name: '&d&l传送卷轴'
+    lore:
+      - '&7使用它传送到任意石碑。'
+      - '&e* 限一次 *'
+      - '&e* 10秒冷却 *'
+Warm Up Effect: wuExample
+Post Teleport Effect: ptExample
+Use Condition:
+  Criteria: ALWAYS
+Behavior:
+  One Time Item: true
+  Cooldown: 10s

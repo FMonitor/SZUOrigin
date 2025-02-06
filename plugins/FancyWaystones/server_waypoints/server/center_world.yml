@@ -1,0 +1,14 @@
+Name: "Center of the World"
+World Name: "world"
+X: 0
+Y: 0
+Z: 0
+# Available colors:
+# WHITE, RED, GREEN, BLUE, BLACK, AQUA, PURPLE, MAGENTA, YELLOW, ORANGE, GRAY
+Color: WHITE
+Always Visible: false
+# Visible at start
+Visible: false
+Listing Condition:
+  Criteria: HAS_PERMISSION
+  Permission: 'fancywaystones.vip'

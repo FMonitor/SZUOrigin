@@ -1,0 +1,32 @@
+model:
+  - def
+type:
+  - public
+  - private
+  - server
+  - public_normal
+  - public_nether
+  - public_the_end
+  - private_normal
+  - private_nether
+  - private_the_end
+  - server_normal
+  - server_nether
+  - server_the_end
+item:
+  type: ITEMSADDER
+  amount: 1
+  meta:
+    id: "waystone_def"
+    display-name: "&e传送石碑"
+    ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      - HIDE_ENCHANTS
+      - HIDE_PLACED_ON
+      - HIDE_DESTROYS
+      - HIDE_UNBREAKABLE
+    lore:
+      - "&7 "
+      - "&7放置石碑可以建立一个新的传送点"
+      - "&7"

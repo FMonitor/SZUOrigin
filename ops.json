@@ -24,6 +24,12 @@
     "bypassesPlayerLimit": false
   },
   {
+    "uuid": "cc5fe817-1471-3f89-9c7a-10df7daf86ec",
+    "name": "LCMonitor",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
     "uuid": "72e1022e-42d1-4ecb-bc55-7a11df37b39f",
     "name": "LCMonitor",
     "level": 4,

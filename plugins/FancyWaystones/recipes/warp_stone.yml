@@ -1,0 +1,19 @@
+Result:
+  type: WARP_STONE
+  meta:
+    id: warp_stone
+Auto Give:
+  On Join: false
+  First Join Only: false
+  On Pickup Ingredient: true
+Shape:
+  - "XZX"
+  - "ZYZ"
+  - "XZX"
+Materials:
+  X:
+    type: DIAMOND
+  Y:
+    type: NETHER_STAR
+  Z:
+    type: ENDER_EYE

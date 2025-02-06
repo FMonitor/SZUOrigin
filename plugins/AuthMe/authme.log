@@ -2245,3 +2245,89 @@
 	at java.base/java.lang.Thread.run(Thread.java:842)
 
 [02-05 15:52:50]: [FINE] LCBugFixer logged in 127.0.0.1
+[02-06 13:24:26]: [INFO] SQLite Setup finished
+[02-06 13:24:26]: [INFO] Hooked into LuckPerms!
+[02-06 13:24:26]: [INFO] Hooked successfully into Essentials
+[02-06 13:24:26]: [INFO] Hooked successfully into Multiverse-Core
+[02-06 13:24:26]: [INFO] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
+[02-06 13:24:27]: [INFO] Downloading GEO IP database, because the old database is older than 30 days or doesn't exist
+[02-06 13:24:27]: [WARN] No MaxMind credentials found in the configuration file! GeoIp protections will be disabled.
+[02-06 13:24:27]: [INFO] There is no newer GEO IP database uploaded to MaxMind. Using the old one for now.
+[02-06 13:24:27]: [WARN] Could not download GeoLiteAPI database [FileNotFoundException]: plugins\AuthMe\GeoLite2-Country.mmdb (系统找不到指定的文件。)
+[02-06 13:24:27]: java.io.FileNotFoundException: plugins\AuthMe\GeoLite2-Country.mmdb (系统找不到指定的文件。)
+	at java.base/java.io.RandomAccessFile.open0(Native Method)
+	at java.base/java.io.RandomAccessFile.open(RandomAccessFile.java:344)
+	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:259)
+	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:213)
+	at AuthMe-5.6.0.jar//fr.xephi.authme.libs.com.maxmind.db.BufferHolder.<init>(BufferHolder.java:20)
+	at AuthMe-5.6.0.jar//fr.xephi.authme.libs.com.maxmind.db.Reader.<init>(Reader.java:121)
+	at AuthMe-5.6.0.jar//fr.xephi.authme.service.GeoIpService.startReading(GeoIpService.java:179)
+	at AuthMe-5.6.0.jar//fr.xephi.authme.service.GeoIpService.updateDatabase(GeoIpService.java:150)
+	at org.bukkit.craftbukkit.v1_20_R1.scheduler.CraftTask.run(CraftTask.java:101)
+	at org.bukkit.craftbukkit.v1_20_R1.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:57)
+	at com.destroystokyo.paper.ServerSchedulerReportingWrapper.run(ServerSchedulerReportingWrapper.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+
+[02-06 13:25:10]: [FINE] LCBugFixer logged in 127.0.0.1
+[02-06 13:27:29]: [FINE] LCBugFixer logged in 127.0.0.1
+[02-06 15:22:35]: [INFO] AuthMe 5.6.0-bCUSTOM disabled!
+[02-06 15:24:09]: [INFO] SQLite Setup finished
+[02-06 15:24:09]: [INFO] Hooked into LuckPerms!
+[02-06 15:24:09]: [INFO] Hooked successfully into Essentials
+[02-06 15:24:09]: [INFO] Hooked successfully into Multiverse-Core
+[02-06 15:24:10]: [INFO] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
+[02-06 15:24:10]: [INFO] Downloading GEO IP database, because the old database is older than 30 days or doesn't exist
+[02-06 15:24:10]: [WARN] No MaxMind credentials found in the configuration file! GeoIp protections will be disabled.
+[02-06 15:24:10]: [INFO] There is no newer GEO IP database uploaded to MaxMind. Using the old one for now.
+[02-06 15:24:10]: [WARN] Could not download GeoLiteAPI database [FileNotFoundException]: plugins\AuthMe\GeoLite2-Country.mmdb (系统找不到指定的文件。)
+[02-06 15:24:10]: java.io.FileNotFoundException: plugins\AuthMe\GeoLite2-Country.mmdb (系统找不到指定的文件。)
+	at java.base/java.io.RandomAccessFile.open0(Native Method)
+	at java.base/java.io.RandomAccessFile.open(RandomAccessFile.java:344)
+	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:259)
+	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:213)
+	at AuthMe-5.6.0.jar//fr.xephi.authme.libs.com.maxmind.db.BufferHolder.<init>(BufferHolder.java:20)
+	at AuthMe-5.6.0.jar//fr.xephi.authme.libs.com.maxmind.db.Reader.<init>(Reader.java:121)
+	at AuthMe-5.6.0.jar//fr.xephi.authme.service.GeoIpService.startReading(GeoIpService.java:179)
+	at AuthMe-5.6.0.jar//fr.xephi.authme.service.GeoIpService.updateDatabase(GeoIpService.java:150)
+	at org.bukkit.craftbukkit.v1_20_R1.scheduler.CraftTask.run(CraftTask.java:101)
+	at org.bukkit.craftbukkit.v1_20_R1.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:57)
+	at com.destroystokyo.paper.ServerSchedulerReportingWrapper.run(ServerSchedulerReportingWrapper.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+
+[02-06 15:25:25]: [FINE] The user LCMonitor has 2 accounts:
+[02-06 15:25:25]: [FINE] §7§aLCMonitor§7, lcbugfixer.
+[02-06 15:25:25]: [FINE] LCMonitor logged in 127.0.0.1
+[02-06 15:35:30]: [INFO] AuthMe 5.6.0-bCUSTOM disabled!
+[02-06 15:40:49]: [INFO] SQLite Setup finished
+[02-06 15:40:49]: [INFO] Hooked into LuckPerms!
+[02-06 15:40:49]: [INFO] Hooked successfully into Essentials
+[02-06 15:40:49]: [INFO] Hooked successfully into Multiverse-Core
+[02-06 15:40:49]: [INFO] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
+[02-06 15:40:50]: [INFO] Downloading GEO IP database, because the old database is older than 30 days or doesn't exist
+[02-06 15:40:50]: [WARN] No MaxMind credentials found in the configuration file! GeoIp protections will be disabled.
+[02-06 15:40:50]: [INFO] There is no newer GEO IP database uploaded to MaxMind. Using the old one for now.
+[02-06 15:40:50]: [WARN] Could not download GeoLiteAPI database [FileNotFoundException]: plugins\AuthMe\GeoLite2-Country.mmdb (系统找不到指定的文件。)
+[02-06 15:40:50]: java.io.FileNotFoundException: plugins\AuthMe\GeoLite2-Country.mmdb (系统找不到指定的文件。)
+	at java.base/java.io.RandomAccessFile.open0(Native Method)
+	at java.base/java.io.RandomAccessFile.open(RandomAccessFile.java:344)
+	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:259)
+	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:213)
+	at AuthMe-5.6.0.jar//fr.xephi.authme.libs.com.maxmind.db.BufferHolder.<init>(BufferHolder.java:20)
+	at AuthMe-5.6.0.jar//fr.xephi.authme.libs.com.maxmind.db.Reader.<init>(Reader.java:121)
+	at AuthMe-5.6.0.jar//fr.xephi.authme.service.GeoIpService.startReading(GeoIpService.java:179)
+	at AuthMe-5.6.0.jar//fr.xephi.authme.service.GeoIpService.updateDatabase(GeoIpService.java:150)
+	at org.bukkit.craftbukkit.v1_20_R1.scheduler.CraftTask.run(CraftTask.java:101)
+	at org.bukkit.craftbukkit.v1_20_R1.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:57)
+	at com.destroystokyo.paper.ServerSchedulerReportingWrapper.run(ServerSchedulerReportingWrapper.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+
+[02-06 15:40:56]: [FINE] The user LCMonitor has 2 accounts:
+[02-06 15:40:56]: [FINE] §7§aLCMonitor§7, lcbugfixer.
+[02-06 15:40:56]: [FINE] LCMonitor logged in 127.0.0.1
+[02-06 15:47:31]: [INFO] AuthMe 5.6.0-bCUSTOM disabled!

@@ -1,0 +1,14 @@
+Item:
+  type: COMMAND_BLOCK
+  meta:
+    display-name: '&6&lADMIN WARPSTONE'
+    lore:
+      - '&7Only admins can use this'
+Use Condition:
+  Criteria: HAS_PERMISSION
+  Permission: 'fancywaystones.admin'
+Behavior:
+  One Time Item: false
+  Cooldown: 0s
+  # if Admin Mode sets to true, it will list all loaded waystones
+  Admin Mode: true

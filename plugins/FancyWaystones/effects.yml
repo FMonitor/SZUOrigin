@@ -1,0 +1,531 @@
+# Configuration Version, do not change!
+Configuration Version: "1.0.2"
+
+Waystone Effects:
+  ws_idle_eff:
+    Activation Radius: 30
+    Effects:
+      exampleeff1:
+        Type: CircleParticle
+        Location: WAYSTONE_SOURCE
+        Particle: SPELL_WITCH
+        Radius: 5
+        Speed: 0
+        Global: false
+        Script: |-
+          visible = tick % 20 == 0;
+  ws_atv_eff_example:
+    Activation Radius: 30
+    Effects:
+      exampleeff1:
+        Type: CircleParticle
+        Location: WAYSTONE_SOURCE
+        Particle: SPELL_WITCH
+        Radius: 5
+        Speed: 0
+        Global: false
+        Script: |-
+          visible = tick % 20 == 0;
+  cumshot:
+    Activation Radius: 30
+    Effects:
+      exeff2:
+        Type: LineParticle
+        Location A: WAYSTONE_SOURCE
+        Location B: PLAYER
+        Particle: END_ROD
+        Speed: 0
+        Global: false
+        Gap: 0.5
+        A Offset X: 0
+        A Offset Y: 1.5
+        A Offset Z: 0
+        B Offset X: 0
+        B Offset Y: 0.5
+        B Offset Z: 0
+        Script: |-
+          visible = tick % 5 == 0;
+      exampleeff1:
+        Type: CircleParticle
+        Location: WAYSTONE_SOURCE
+        Particle: SPELL_WITCH
+        Radius: 20
+        Speed: 0
+        Global: false
+        Script: |-
+          visible = tick % 20 == 0;
+          offsetY = playerY;
+
+Warm Up Warpstone:
+  wuExample:
+    Time: 5s
+    Overlay:
+      Title: "&6&l{countdown}"
+      Subtitle: "&c{language.warm-up-subtitle}"
+      Cancelled Title: "&c&l{language.warm-up-cancelled-title}"
+      Cancelled Subtitle: "&6{language.warm-up-cancelled-subtitle}"
+    Effects:
+      example1:
+        Type: CircleParticle
+        Location: PLAYER
+        Particle: PORTAL
+        Radius: 0
+        Speed: 0
+        Global: false
+        # Executed every tick
+        # using JavaScript
+        Script: |-
+          rotateY = rotateY + 5;
+          radius = radius + 0.1;
+          if (radius > 2) radius = 0;
+
+      example2:
+        Type: CircleParticle
+        Location: WAYSTONE_SOURCE
+        Particle: END_ROD
+        Gap: 90
+        Global: true
+        Script: |-
+          if (offsetY < 6) {
+            offsetY = offsetY + 0.15;
+          } else {
+            offsetY = 0;
+          }
+          rotateY = rotateY + 15;
+      example3:
+        Type: PlaySound
+        Sound: ENTITY_GHAST_SCREAM
+        Once: true
+        Tick: 1
+        Global: true
+        Play At Player: false
+        Play At Waystone Source: true
+        Play At Waystone Target: true
+      example4:
+        Type: PlaySound
+        Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+        Once: false
+        Tick: 20
+        Global: false
+        Play At Player: true
+        Play At Waystone Source: false
+        Play At Waystone Target: false
+
+Warm Up Waystone:
+  wuExample:
+    Time: 5s
+    Overlay:
+      Title: "&6&l{countdown}"
+      Subtitle: "&c{language.warm-up-subtitle}"
+      Cancelled Title: "&c&l{language.warm-up-cancelled-title}"
+      Cancelled Subtitle: "&6{language.warm-up-cancelled-subtitle}"
+    Effects:
+      example1:
+        Type: CircleParticle
+        Location: PLAYER
+        Particle: PORTAL
+        Radius: 0
+        Speed: 0
+        Global: false
+        # Executed every tick
+        # using JavaScript
+        Script: |-
+          rotateY = rotateY + 5;
+          radius = radius + 0.1;
+          if (radius > 2) radius = 0;
+
+      example2:
+        Type: CircleParticle
+        Location: WAYSTONE_SOURCE
+        Particle: END_ROD
+        Gap: 90
+        Global: true
+        Script: |-
+          if (offsetY < 6) {
+            offsetY = offsetY + 0.15;
+          } else {
+            offsetY = 0;
+          }
+          rotateY = rotateY + 15;
+      example3:
+        Type: PlaySound
+        Sound: ENTITY_GHAST_SCREAM
+        Once: true
+        Tick: 1
+        Global: true
+        Play At Player: false
+        Play At Waystone Source: true
+        Play At Waystone Target: true
+      example4:
+        Type: PlaySound
+        Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+        Once: false
+        Tick: 20
+        Global: false
+        Play At Player: true
+        Play At Waystone Source: false
+        Play At Waystone Target: false
+
+Post Teleport Warpstone:
+  ptExample:
+    Time: 3s
+    Overlay:
+      Title: "&a&l{language.post-teleport-title}"
+      Subtitle: "&b{waystone_name}"
+    Effects:
+      p1:
+        Type: PlaySound
+        Sound: BLOCK_END_PORTAL_SPAWN
+        Once: true
+        Tick: 1
+        Global: true
+        Play At Player: true
+        Play At Waystone Source: true
+        Play At Waystone Target: false
+      p2:
+        Type: CircleParticle
+        Particle: END_ROD
+        Location: WAYSTONE_TARGET
+        Offset Y: 10
+        Radius: 0.3
+        Global: true
+        Gap: 90
+        Script: |-
+          offsetY = offsetY - 0.25;
+          rotateY = rotateY + 15;
+      p3:
+        Type: CircleParticle
+        Particle: END_ROD
+        Location: WAYSTONE_SOURCE
+        Radius: 0.3
+        Offset Y: 2
+        Global: true
+        Gap: 90
+        Script: |-
+          offsetY = offsetY - 0.25;
+          rotateY = rotateY + 15;
+      p4:
+        Type: SphereParticle
+        Particle: SPELL_WITCH
+        Location: PLAYER
+        Radius: 0
+        Offset Y: 1
+        Global: false
+        Horizontal Gap: 5
+        Vertical Gap: 5
+        Script: |-
+          visible = tick < 10;
+          radius = radius + 0.4;
+          rotateY = rotateY + 20;
+      eff:
+        Type: GivePotionEffect
+        Tick: 1
+        Once: true
+        Potion Effect: BLINDNESS
+        Duration: 2s
+        Amplifier: 0
+        Show Particle: false
+        # Only for newer versions
+        Show Icon: false
+        Show Ambience: false
+        Force: false
+
+Warm Up Teleportation Book:
+  Enable: true
+  Time: 5s
+  Overlay:
+    Title: "&6&l{countdown}"
+    Subtitle: "&c{language.warm-up-subtitle}"
+    Cancelled Title: "&c&l{language.warm-up-cancelled-title}"
+    Cancelled Subtitle: "&6{language.warm-up-cancelled-subtitle}"
+  Effects:
+    example1:
+      Type: CircleParticle
+      Location: PLAYER
+      Particle: PORTAL
+      Radius: 0
+      Speed: 0
+      Global: false
+      # Executed every tick
+      # using JavaScript
+      Script: |-
+        rotateY = rotateY + 5;
+        radius = radius + 0.1;
+        if (radius > 2) radius = 0;
+    example2:
+      Type: CircleParticle
+      Location: WAYSTONE_SOURCE
+      Particle: END_ROD
+      Gap: 90
+      Global: true
+      Script: |-
+        if (offsetY < 6) {
+          offsetY = offsetY + 0.15;
+        } else {
+          offsetY = 0;
+        }
+        rotateY = rotateY + 15;
+    example3:
+      Type: PlaySound
+      Sound: ENTITY_GHAST_SCREAM
+      Once: true
+      Tick: 1
+      Global: true
+      Play At Player: false
+      Play At Waystone Source: true
+      Play At Waystone Target: true
+    example4:
+      Type: PlaySound
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+      Once: false
+      Tick: 20
+      Global: false
+      Play At Player: true
+      Play At Waystone Source: false
+      Play At Waystone Target: false
+
+Warm Up Death Book:
+  Enable: true
+  Time: 5s
+  Overlay:
+    Title: "&6&l{countdown}"
+    Subtitle: "&c{language.warm-up-subtitle}"
+    Cancelled Title: "&c&l{language.warm-up-cancelled-title}"
+    Cancelled Subtitle: "&6{language.warm-up-cancelled-subtitle}"
+  Effects:
+    example1:
+      Type: CircleParticle
+      Location: PLAYER
+      Particle: PORTAL
+      Radius: 0
+      Speed: 0
+      Global: false
+      # Executed every tick
+      # using JavaScript
+      Script: |-
+        rotateY = rotateY + 5;
+        radius = radius + 0.1;
+        if (radius > 2) radius = 0;
+    example2:
+      Type: CircleParticle
+      Location: WAYSTONE_SOURCE
+      Particle: END_ROD
+      Gap: 90
+      Global: true
+      Script: |-
+        if (offsetY < 6) {
+          offsetY = offsetY + 0.15;
+        } else {
+          offsetY = 0;
+        }
+        rotateY = rotateY + 15;
+    example3:
+      Type: PlaySound
+      Sound: ENTITY_GHAST_SCREAM
+      Once: true
+      Tick: 1
+      Global: true
+      Play At Player: false
+      Play At Waystone Source: true
+      Play At Waystone Target: true
+    example4:
+      Type: PlaySound
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+      Once: false
+      Tick: 20
+      Global: false
+      Play At Player: true
+      Play At Waystone Source: false
+      Play At Waystone Target: false
+
+Post Teleport Waystone:
+  ptExample:
+    Time: 3s
+    Overlay:
+      Title: "&a&l{language.post-teleport-title}"
+      Subtitle: "&b{waystone_name}"
+    Effects:
+      p1:
+        Type: PlaySound
+        Sound: BLOCK_END_PORTAL_SPAWN
+        Once: true
+        Tick: 1
+        Global: true
+        Play At Player: true
+        Play At Waystone Source: true
+        Play At Waystone Target: false
+      p2:
+        Type: CircleParticle
+        Particle: END_ROD
+        Location: WAYSTONE_TARGET
+        Offset Y: 10
+        Radius: 0.3
+        Global: true
+        Gap: 90
+        Script: |-
+          offsetY = offsetY - 0.25;
+          rotateY = rotateY + 15;
+      p3:
+        Type: CircleParticle
+        Particle: END_ROD
+        Location: WAYSTONE_SOURCE
+        Radius: 0.3
+        Offset Y: 2
+        Global: true
+        Gap: 90
+        Script: |-
+          offsetY = offsetY - 0.25;
+          rotateY = rotateY + 15;
+      p4:
+        Type: SphereParticle
+        Particle: SPELL_WITCH
+        Location: PLAYER
+        Radius: 0
+        Offset Y: 1
+        Global: false
+        Horizontal Gap: 5
+        Vertical Gap: 5
+        Script: |-
+          visible = tick < 10;
+          radius = radius + 0.4;
+          rotateY = rotateY + 20;
+      eff:
+        Type: GivePotionEffect
+        Tick: 1
+        Once: true
+        Potion Effect: BLINDNESS
+        Duration: 2s
+        Amplifier: 0
+        Show Particle: false
+        # Only for newer versions
+        Show Icon: false
+        Show Ambience: false
+        Force: false
+
+Post Teleport Death Book:
+  Enable: true
+  Time: 3s
+  Overlay:
+    Title: "&a&l{language.post-teleport-title}"
+    Subtitle: "&b{waystone_name}"
+  Effects:
+    p1:
+      Type: PlaySound
+      Sound: BLOCK_END_PORTAL_SPAWN
+      Once: true
+      Tick: 1
+      Global: true
+      Play At Player: true
+      Play At Waystone Source: true
+      Play At Waystone Target: false
+    p2:
+      Type: CircleParticle
+      Particle: END_ROD
+      Location: WAYSTONE_TARGET
+      Offset Y: 10
+      Radius: 0.3
+      Global: true
+      Gap: 90
+      Script: |-
+        offsetY = offsetY - 0.25;
+        rotateY = rotateY + 15;
+    p3:
+      Type: CircleParticle
+      Particle: END_ROD
+      Location: WAYSTONE_SOURCE
+      Radius: 0.3
+      Offset Y: 2
+      Global: true
+      Gap: 90
+      Script: |-
+        offsetY = offsetY - 0.25;
+        rotateY = rotateY + 15;
+    p4:
+      Type: SphereParticle
+      Particle: SPELL_WITCH
+      Location: PLAYER
+      Radius: 0
+      Offset Y: 1
+      Global: false
+      Horizontal Gap: 5
+      Vertical Gap: 5
+      Script: |-
+        visible = tick < 10;
+        radius = radius + 0.4;
+        rotateY = rotateY + 20;
+    eff:
+      Type: GivePotionEffect
+      Tick: 1
+      Once: true
+      Potion Effect: BLINDNESS
+      Duration: 2s
+      Amplifier: 0
+      Show Particle: false
+      # Only for newer versions
+      Show Icon: false
+      Show Ambience: false
+      Force: false
+
+Post Teleport Teleportation Book:
+  Enable: true
+  Time: 3s
+  Overlay:
+    Title: "&a&l{language.post-teleport-title}"
+    Subtitle: "&b{waystone_name}"
+  Effects:
+    p1:
+      Type: PlaySound
+      Sound: BLOCK_END_PORTAL_SPAWN
+      Once: true
+      Tick: 1
+      Global: true
+      Play At Player: true
+      Play At Waystone Source: true
+      Play At Waystone Target: false
+    p2:
+      Type: CircleParticle
+      Particle: END_ROD
+      Location: WAYSTONE_TARGET
+      Offset Y: 10
+      Radius: 0.3
+      Global: true
+      Gap: 90
+      Script: |-
+        offsetY = offsetY - 0.25;
+        rotateY = rotateY + 15;
+    p3:
+      Type: CircleParticle
+      Particle: END_ROD
+      Location: WAYSTONE_SOURCE
+      Radius: 0.3
+      Offset Y: 2
+      Global: true
+      Gap: 90
+      Script: |-
+        offsetY = offsetY - 0.25;
+        rotateY = rotateY + 15;
+    p4:
+      Type: SphereParticle
+      Particle: SPELL_WITCH
+      Location: PLAYER
+      Radius: 0
+      Global: false
+      Offset Y: 1
+      Horizontal Gap: 5
+      Vertical Gap: 5
+      Script: |-
+        visible = tick < 10;
+        radius = radius + 0.4;
+        rotateY = rotateY + 20;
+    eff:
+      Type: GivePotionEffect
+      Tick: 1
+      Once: true
+      Potion Effect: BLINDNESS
+      Duration: 2s
+      Amplifier: 0
+      Show Particle: false
+      # Only for newer versions
+      Show Icon: false
+      Show Ambience: false
+      Force: false

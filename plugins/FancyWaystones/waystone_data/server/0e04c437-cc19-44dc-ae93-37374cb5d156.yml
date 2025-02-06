@@ -1,0 +1,18 @@
+uuid: 0e04c437-cc19-44dc-ae93-37374cb5d156
+ownerUUID: 561690c0-18f0-31a8-9ad6-dbd14463773c
+ownerName: IOxyz
+type: server
+noProximityPlayers: []
+worldUID: 9c7d0a46-ab7b-421d-8e2a-7186aa27348e
+worldName: Mainland
+x: -409
+y: 72
+z: 685
+serverName: d1dd7f85-5051-408f-b68e-106b443aa892
+environment: NORMAL
+model: def
+statistics:
+  total-visitors: 0
+  total-visits: 1
+  total-users: 0
+  date-created: 1696734962999

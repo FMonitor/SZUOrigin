@@ -1,0 +1,19 @@
+Result:
+  type: WARP_STONE
+  meta:
+    id: warp_scroll
+Auto Give:
+  On Join: false
+  First Join Only: false
+  On Pickup Ingredient: true
+Shape:
+  - "XXX"
+  - "YZY"
+  - "XXX"
+Materials:
+  X:
+    type: PAPER
+  Y:
+    type: ENDER_EYE
+  Z:
+    type: ENDER_PEARL

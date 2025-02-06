@@ -1,0 +1,20 @@
+uuid: e9621c63-9169-47e0-83ae-8cdefd0c92e5
+name: 主城
+ownerUUID: e4e5291e-9720-39fb-b0f9-be097ee85ef5
+ownerName: Four_Yi
+type: server
+noProximityPlayers:
+- 390d352a-2ccd-35ca-bafc-63b5ea9c0b50
+worldUID: bb64d057-5306-4fac-875c-1de394942c31
+worldName: Mainland
+x: 222
+y: 47
+z: 223
+serverName: d1dd7f85-5051-408f-b68e-106b443aa892
+environment: NORMAL
+model: def
+statistics:
+  total-visitors: 2
+  total-visits: 1
+  total-users: 0
+  date-created: 1702378634421

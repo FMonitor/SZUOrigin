@@ -1,0 +1,19 @@
+Result:
+  type: DEATH_BOOK
+  meta:
+    id: 'regular'
+Auto Give:
+  On Join: false
+  First Join Only: false
+  On Pickup Ingredient: true
+Shape:
+  - " Y "
+  - "YXY"
+  - " Z "
+Materials:
+  X:
+    type: BOOK
+  Y:
+    type: ENDER_PEARL
+  Z:
+    type: TOTEM_OF_UNDYING;GOLDEN_APPLE
