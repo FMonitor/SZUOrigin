@@ -348,7 +348,3 @@ types:
       always: true
     butcher-drops:
       - 'OAK_LOG:1'
-        #   data:
-        #     chance: 50 # has a 50% chance of dropping
-        #     min: 1 # minimum 1 blaze rod
-        #     max: 2 # maximum 2 blaze rods
